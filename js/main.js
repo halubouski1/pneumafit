@@ -1,10 +1,16 @@
 const reviewsSwiper = new Swiper('.reviews-swiper', {
   slidesPerView: 'auto',
-  spaceBetween: 33,
+  spaceBetween: 15,
   grabCursor: true,
+  breakpointsBase: 'window',
   navigation: {
     prevEl: '#reviewsPrev',
     nextEl: '#reviewsNext',
+  },
+  breakpoints: {
+    1919: {
+      spaceBetween: 33,
+    },
   },
 });
 

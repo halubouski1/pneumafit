@@ -1,207 +1,420 @@
-@media (max-width: 1200px) {
-  .header__nav {
-    gap: 20px;
-  }
-
-  .hero__title {
-    font-size: clamp(32px, 3.5vw, 60px);
-  }
-
-  .section-therapies {
-    height: auto;
-    min-height: var(--fixed-vh, 100vh);
-    overflow: visible;
-  }
-
-  .therapies__body {
-    flex-direction: column;
-  }
-
-  .therapies__left-area {
-    flex: none;
-    width: min(100%, 760px);
-    height: min(calc((100vw - 44px) * 847 / 760), 847px);
-    min-height: 620px;
-  }
-
-  .therapies__right-area {
-    min-height: 620px;
-  }
-
-  .therapies__title-nav {
-    height: auto;
-    padding: 20px 0 10px;
-  }
-
-  .therapies-swiper {
-    height: 620px;
-    flex: none;
-  }
-}
-
-@media (max-width: 900px) {
+@media (max-width: 1919px) {
   .container {
     padding: 0 32px;
   }
+  /* .header */
+  .header {
+    padding-top: 30px;
+  }
+
+  .header__nav-link {
+    font-size: 13px;
+  }
 
   .header__nav {
-    display: none;
+    gap: 25px;
   }
 
-  .header__btn-outline,
+  .header__logo {
+    font-size: 16px;
+  }
+
+  .header__btn-outline {
+    font-size: 13px;
+    padding: 8px 16px;
+  }
+
+  .header__nav-link--active {
+    padding: 8px 16px;
+  }
+
   .header__btn-link {
-    display: none;
+    font-size: 13px;
   }
 
-  .header__burger {
-    display: flex;
-  }
-
+  /* hero */
   .hero__title {
-    font-size: clamp(28px, 5vw, 48px);
+    font-size: 52px;
+    max-width: 1000px;
+    margin-bottom: 20px;
   }
 
-  .hero__links {
-    gap: 20px;
-    flex-wrap: wrap;
-  }
-
-  .section-therapies {
-    padding: 16px;
-  }
-
-  .therapies__left-area {
-    height: min(calc((100vw - 32px) * 847 / 760), 760px);
-    min-height: 560px;
-  }
-
-  .therapies__card-content {
-    padding: 36px 36px 44px;
-  }
-
-  .therapy-card__title {
-    font-size: 56px;
-  }
-
-  .therapies__title-nav {
-    gap: 20px;
-    align-items: flex-start;
-  }
-
-  .therapies__section-title {
-    font-size: 36px;
-  }
-
-  .therapies-swiper {
-    height: 560px;
-  }
-
-  .therapy-chip {
-    width: 150px;
-    min-height: 150px;
-    font-size: 14px;
-  }
-}
-
-@media (max-width: 600px) {
-  .container {
-    padding: 0 20px;
-  }
-
-  .hero__bottom {
-    flex-direction: column;
-    align-items: flex-start;
+  .hero__title sup {
+    font-size: 15px;
   }
 
   .hero__btn {
-    width: 100%;
-    justify-content: center;
+    font-size: 13px;
+    padding: 14px 15px 14px 40px;
   }
 
+  .hero__btn--secondary {
+    padding-left: 50px;
+  }
+
+  .hero__desc {
+    font-size: 13px;
+    max-width: 392px;
+  }
+
+  .hero__content {
+    padding-bottom: 30px;
+  }
+
+  .hero__bottom-left {
+    gap: 14px;
+  }
+
+  /* section-intro */
+  .section-title {
+    font-size: 40px;
+  }
+
+  .section-intro__title {
+    max-width: 700px;
+  }
+
+  .section-intro {
+      padding: 100px 0 50px;
+  }
+
+  .section-intro__label {
+    font-size: 13px;
+  }
+
+  .section-intro__header {
+    gap: 15px;
+    margin-bottom: 30px;
+  }
+
+  .intro-card {
+    gap: 200px;
+    padding: 20px;
+  }
+
+  .intro-card__text {
+    font-size: 17px;
+  }
+
+  .intro-card__icon svg {
+    width: 25px;
+    height: 25px;
+  }
+
+  .section-intro__grid {
+    gap: 10px;
+    margin-bottom: 10px;
+  }
+
+  .section-intro__video-wrap {
+    height: 664px;
+  }
+
+  .video-play-btn {
+    width: 80px;
+    height: 80px;
+  }
+
+  .video-play-btn svg {
+    width: 20px;
+    height: 25px;
+  }
+
+  /* section-therapies */
   .section-therapies {
-    padding: 12px;
-  }
-
-  .therapies__left-area {
-    width: 100%;
-    height: 500px;
-    min-height: 500px;
-  }
-
-  .therapies__tabs {
-    height: 58px;
+    padding-top: 50px;
+    padding-bottom: 50px;
   }
 
   .therapy-tab {
-    font-size: 11px;
-    padding: 0 3px;
+    font-size: 10px;
   }
 
-  .therapies__card-content {
-    top: 58px;
-    padding: 28px 22px 32px;
-  }
-
-  .therapy-card__body {
-    gap: 18px;
+  .therapies__section-title {
+    font-size: 40px;
   }
 
   .therapy-card__title {
     font-size: 42px;
   }
 
+  .therapy-card__body--wrapper {
+    gap: 15px;
+  }
+
   .therapy-card__text {
-    font-size: 14px;
-    max-width: none;
+    font-size: 13px;
+    max-width: 466px;
   }
 
-  .therapies__title-nav {
-    flex-direction: column;
+  .therapies__card-content {
+    padding: 40px 40px 30px 46px;
   }
 
-  .therapies__section-title {
-    font-size: 30px;
+  .therapies-btn {
+    width: 35px;
+    height: 35px;
   }
 
-  .therapies-swiper {
-    height: 500px;
+  .therapies-btn img {
+    width: 9px;
+    height: 9px;
+  }
+
+  .therapies__arrows {
+    gap: 6px;
+  }
+
+  .therapies__left-area {
+    margin-top: 28px;
   }
 
   .therapy-chip {
-    width: 132px;
-    min-height: 132px;
-    padding: 12px;
-    font-size: 12px;
-    left: auto !important;
-    right: auto !important;
-    top: auto !important;
-    bottom: auto !important;
-    transform: none;
+    font-size: 13px;
+    width: 158px;
+    height: 158px;
+    min-height: 158px;
   }
 
-  .therapy-card__right .therapy-chip:nth-of-type(1) {
-    left: 12px !important;
-    bottom: 150px !important;
+  .therapy-chip--last {
+    width: 178px;
+    height: 178px;
   }
 
-  .therapy-card__right .therapy-chip:nth-of-type(2) {
-    left: 50% !important;
-    bottom: 12px !important;
-    transform: translateX(-50%);
+  .therapies-swiper .swiper-slide:nth-child(1) .therapy-chip:nth-of-type(1) {
+    bottom: 194px !important;
   }
 
-  .therapy-card__right .therapy-chip:nth-of-type(3) {
-    right: 12px !important;
-    top: 12px !important;
+  .therapies-swiper .swiper-slide:nth-child(1) .therapy-chip:nth-of-type(2) {
+    left: 194px !important;
   }
 
-  .therapy-card__right .therapy-chip:nth-of-type(4) {
-    left: 12px !important;
-    top: 12px !important;
+  .therapies-swiper .swiper-slide:nth-child(1) .therapy-chip:nth-of-type(3) {
+    right: 194px !important;
+    top: 194px !important;
   }
 
-  .therapy-card__right .therapy-chip:nth-of-type(5) {
-    right: 12px !important;
-    bottom: 12px !important;
+  .therapies-swiper .swiper-slide:nth-child(2) .therapy-chip:nth-of-type(1) {
+    bottom: 200px !important;
   }
+
+  .therapies-swiper .swiper-slide:nth-child(2) .therapy-chip:nth-of-type(2) {
+    left: 200px !important;
+  }
+
+  .therapies-swiper .swiper-slide:nth-child(3) .therapy-chip:nth-of-type(2) {
+    bottom: 186px !important;
+  }
+
+  .therapies-swiper .swiper-slide:nth-child(3) .therapy-chip:nth-of-type(3) {
+    right: 186px !important;
+  }
+
+  .therapies-swiper .swiper-slide:nth-child(4) .therapy-chip:nth-of-type(2) {
+    right: 200px !important;
+  }
+
+  .therapies-swiper .swiper-slide:nth-child(4) .therapy-chip:nth-of-type(3) {
+    top: 392px !important;
+  }
+
+  .therapies-pagination {
+    padding-top: 20px;
+  }
+
+  .therapies-pagination .swiper-pagination-bullet {
+    width: 8px;
+    height: 8px;
+  }
+
+  pagination-bullets .swiper-pagination-bullet, .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
+    margin: 0 var(--swiper-pagination-bullet-horizontal-gap, 4px);
+  }
+
+  /* section-services */
+  .section-services {
+    padding: 50px 0 75px;
+  }
+
+  .section-services__title {
+    margin-bottom: 20px;
+  }
+
+  .service-card {
+    padding: 425px 40px 40px 40px;
+  }
+
+  .service-card__title {
+    font-size: 40px;
+  }
+
+  .service-card__text {
+    font-size: 13px;
+    max-width: 352px;
+  }
+
+  .service-card__left {
+    gap: 10px;
+  }
+
+  /* .section-reviews */
+  .section-reviews {
+    padding-bottom: 50px;
+  }
+
+  .section-reviews__container {
+    padding-top: 50px;
+    padding-left: 30px;
+    padding-bottom: 40px;
+  }
+
+  .section-reviews__title {
+    max-width: 355px;
+    margin-bottom: 150px;
+  }
+
+  .reviews-btn {
+    width: 45px;
+    height: 45px;
+  }
+
+  .section-reviews__nav {
+    gap: 5px;
+  }
+
+  .reviews-btn svg {
+    width: 10px;
+    height: 10px;
+  }
+
+  .reviews-swiper .swiper-slide {
+    width: 366px;
+    height: 503px;
+  }
+
+  .review-card__inner {
+    top: 90px;
+    gap: 30px;
+  }
+
+  .review-card__service {
+    font-size: 20px;
+  }
+
+  .review-card__text {
+    font-size: 14px;
+  }
+
+  .section-contact__inner {
+    padding: 30px 40px 50px;
+  }
+
+  .section-contact__top-text {
+    font-size: 15px;
+    max-width: 436px;
+  }
+
+  .section-contact__bottom {
+    margin-top: 373px;
+  }
+
+  .section-contact__title {
+    margin-bottom: 20px;
+  }
+
+  .section-contact__subtitle {
+    font-size: 13px;
+    margin-bottom: 15px;
+  }
+
+  .section-contact__input {
+    padding: 20px;
+  }
+
+  .section-contact__btn {
+    padding-top: 16px;
+    padding-bottom: 16px;
+    font-size: 13px;
+    padding-left: 37px;
+    padding-right: 37px;
+  }
+
+  .section-contact__form {
+    max-width: 337px;
+    gap: 5px;
+    margin-bottom: 10px;
+  }
+
+  .section-contact__input::placeholder {
+    font-size: 13px;
+  }
+
+  .section-contact__privacy {
+    font-size: 8px;
+    max-width: 337px;
+  }
+
+  .section-contact__brand {
+    font-size: 20px;
+    margin-bottom: 15px;
+  }
+
+  .section-contact__divider {
+    margin-bottom: 10px;
+  }
+
+  .section-contact__brand-desc {
+    font-size: 13px;
+  }
+
+  /* footer */
+.footer {
+  padding-top: 20px;
+}
+
+.footer__content {
+    padding: 40px 41px 0;
+}
+
+.footer__nav-title {
+  font-size: 16px;
+}
+
+.footer__nav-link {
+  font-size: 13px;
+}
+
+.footer__nav-group {
+  gap: 20px;
+  line-height: 48px;
+}
+
+.footer__content {
+  gap: 40px;
+}
+
+.footer__legal {
+  padding: 20px 0px;
+}
+
+.footer__legal a {
+  font-size: 14px;
+}
+
+.footer__scroll-top {
+  width: 50px;
+  height: 50px;
+}
+
+.footer__email-label {
+  font-size: 12px;
+}
+
+.footer__email {
+  font-size: 18px;
+}
+
+.footer__legal span {
+  font-size: 12px;
+}
 }
