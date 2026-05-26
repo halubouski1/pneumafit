@@ -41,8 +41,15 @@ const therapiesSwiper = new Swiper('.therapies-swiper', {
   },
   on: {
     slideChange() {
+      const idx = this.activeIndex;
       document.querySelectorAll('.therapy-tab').forEach((tab, i) => {
-        tab.classList.toggle('therapy-tab--active', i === this.activeIndex);
+        tab.classList.toggle('therapy-tab--active', i === idx);
+      });
+      document.querySelectorAll('.therapy-bg').forEach(bg => {
+        bg.classList.toggle('therapy-bg--active', parseInt(bg.dataset.idx) === idx);
+      });
+      document.querySelectorAll('.therapies__card-content').forEach(panel => {
+        panel.classList.toggle('therapy-content--active', parseInt(panel.dataset.idx) === idx);
       });
     },
   },

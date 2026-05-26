@@ -194,131 +194,152 @@
     </div>
   </section>
 
-  <section class="section-therapies">
+  <section class="section-therapies" data-aos="fade-up" data-aos-duration="900">
+    <div class="therapies__body">
 
-    <!-- Static header: tabs left, title + arrows right -->
-    <div class="therapies__header">
-      <div class="therapies__tabs">
-        <button class="therapy-tab therapy-tab--active" data-index="0">[ Physio ]</button>
-        <button class="therapy-tab" data-index="1">[ Atemtherapie ]</button>
-        <button class="therapy-tab" data-index="2">[ Sporttherapie ]</button>
-        <button class="therapy-tab" data-index="3">[ Craniomandibuläre Dysfunktion ]</button>
-      </div>
-      <div class="therapies__title-nav">
-        <h2 class="therapies__section-title">Unsere Therapieangebote für Sie</h2>
-        <div class="therapies__arrows">
-          <button class="therapies-btn" id="therapiesPrev">
-            <img src="assets/img/Mask group.svg" alt="Zurück" width="13" height="13">
-          </button>
-          <button class="therapies-btn" id="therapiesNext">
-            <img src="assets/img/Mask group.svg" alt="Weiter" width="13" height="13" class="reviews-btn__icon--flip">
-          </button>
+      <!-- LEFT: all 4 SVG Boolean-union shapes stacked + tabs + content panels -->
+      <div class="therapies__left-area">
+
+        <!-- SVG backgrounds — all rendered simultaneously, z-index controls card body color -->
+        <img src="assets/img/bg-card-4.svg" class="therapy-bg" data-idx="3" aria-hidden="true">
+        <img src="assets/img/bg-card-3.svg" class="therapy-bg" data-idx="2" aria-hidden="true">
+        <img src="assets/img/bg-card-2.svg" class="therapy-bg" data-idx="1" aria-hidden="true">
+        <img src="assets/img/bg-card-1.svg" class="therapy-bg therapy-bg--active" data-idx="0" aria-hidden="true">
+
+        <!-- Tab buttons overlaid on the SVG ear zone -->
+        <div class="therapies__tabs">
+          <button class="therapy-tab therapy-tab--active" data-index="0">[ Physio ]</button>
+          <button class="therapy-tab" data-index="1">[ Atem&shy;therapie ]</button>
+          <button class="therapy-tab" data-index="2">[ Sport&shy;therapie ]</button>
+          <button class="therapy-tab" data-index="3">[ Craniomandibuläre Dysfunktion ]</button>
         </div>
-      </div>
-    </div>
 
-    <!-- Swiper: left + right panels change together -->
-    <div class="swiper therapies-swiper">
-      <div class="swiper-wrapper">
-
-        <!-- Slide 1: Physio -->
-        <div class="swiper-slide">
-          <div class="therapy-card">
-            <div class="therapy-card__left">
-              <img src="assets/img/services-cards.png" class="therapy-card__swirls" aria-hidden="true">
-              <div class="therapy-card__body">
-                <h3 class="therapy-card__title">Physio</h3>
-                <p class="therapy-card__text">Die Physiotherapie hat das Ziel Schmerzen zu lindern, Funktionen des Körpers wiederherzustellen und die Beweglichkeit durch Übungen und manuelle Techniken zu verbessern. Wir führen in unserer Praxis unter anderem folgende Behandlungen durch:</p>
-                <a href="#" class="hero__btn hero__btn--primary therapy-card__btn">
-                  Mehr erfahren
-                  <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M7.5 4.37512L10.625 7.50011L7.5 10.6251" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"/><path d="M0.625 0.625V4.99999C0.625 5.66303 0.888388 6.29891 1.35723 6.76774C1.82607 7.23658 2.46194 7.49997 3.12498 7.49997H10.6249" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"/></svg>
-                </a>
-              </div>
+        <!-- Content panel 0: Physio -->
+        <div class="therapies__card-content therapy-content--active" data-idx="0">
+          <img src="assets/img/services-cards.png" class="therapy-card__swirls" aria-hidden="true">
+          <div class="therapy-card__body">
+            <div class="therapy-card__body--wrapper">
+              <h3 class="therapy-card__title">Physio</h3>
+              <p class="therapy-card__text">Die Physiotherapie hat das Ziel Schmerzen zu lindern, Funktionen des Körpers wiederherzustellen und die Beweglichkeit durch Übungen und manuelle Techniken zu verbessern. Wir führen in unserer Praxis unter anderem folgende Behandlungen durch:</p>
             </div>
-            <div class="therapy-card__right">
-              <img src="assets/img/services-card-1.png" class="therapy-card__img" alt="Physiotherapie">
-              <div class="therapy-chip" style="left:30px;bottom:222px">Krankengymastik</div>
-              <div class="therapy-chip" style="left:222px;bottom:30px">Manuelle Therapie</div>
-              <div class="therapy-chip" style="right:30px;bottom:222px">Manuelle Lymphdrainage</div>
-              <div class="therapy-chip" style="right:30px;top:30px">Krankengymastik<br>an Geräten (KKG)</div>
-            </div>
+            <a href="#" class="hero__btn hero__btn--primary therapy-card__btn">
+              Mehr erfahren
+              <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M7.5 4.37512L10.625 7.50011L7.5 10.6251" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"/><path d="M0.625 0.625V4.99999C0.625 5.66303 0.888388 6.29891 1.35723 6.76774C1.82607 7.23658 2.46194 7.49997 3.12498 7.49997H10.6249" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </a>
           </div>
         </div>
 
-        <!-- Slide 2: Atemtherapie -->
-        <div class="swiper-slide">
-          <div class="therapy-card">
-            <div class="therapy-card__left">
-              <img src="assets/img/services-cards.png" class="therapy-card__swirls" aria-hidden="true">
-              <div class="therapy-card__body">
-                <h3 class="therapy-card__title">Atem&shy;therapie</h3>
-                <p class="therapy-card__text">In der Atemtherapie steuern wir bewusst den Atem zur Verbesserung der Atmung, zum Stressabbau sowie zur Förderung des allgemeinen Wohlbefindens.</p>
-                <a href="#" class="hero__btn hero__btn--primary therapy-card__btn">
-                  Mehr erfahren
-                  <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M7.5 4.37512L10.625 7.50011L7.5 10.6251" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"/><path d="M0.625 0.625V4.99999C0.625 5.66303 0.888388 6.29891 1.35723 6.76774C1.82607 7.23658 2.46194 7.49997 3.12498 7.49997H10.6249" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"/></svg>
-                </a>
-              </div>
+        <!-- Content panel 1: Atemtherapie -->
+        <div class="therapies__card-content" data-idx="1">
+          <img src="assets/img/services-cards.png" class="therapy-card__swirls" aria-hidden="true">
+          <div class="therapy-card__body">
+            <div class="therapy-card__body--wrapper">
+              <h3 class="therapy-card__title">Atem&shy;therapie</h3>
+              <p class="therapy-card__text">In der Atemtherapie steuern wir bewusst den Atem zur <br> Verbesserung der Atmung, zum Stressabbau sowie zur <br> Förderung des allgemeinen Wohlbefindens.</p>
             </div>
-            <div class="therapy-card__right">
-              <img src="assets/img/services-card-2.png" class="therapy-card__img" alt="Atemtherapie">
-              <div class="therapy-chip" style="left:30px;bottom:222px">Stressabbau und<br>Entspannung</div>
-              <div class="therapy-chip" style="left:222px;bottom:30px">Verbesserung der<br>Lungenfunktion</div>
-              <div class="therapy-chip" style="right:30px;top:30px">Steigerung des Energielevels<br>&amp; emotionale Balance</div>
-            </div>
+            <a href="#" class="hero__btn hero__btn--primary therapy-card__btn">
+              Mehr erfahren
+              <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M7.5 4.37512L10.625 7.50011L7.5 10.6251" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"/><path d="M0.625 0.625V4.99999C0.625 5.66303 0.888388 6.29891 1.35723 6.76774C1.82607 7.23658 2.46194 7.49997 3.12498 7.49997H10.6249" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </a>
           </div>
         </div>
 
-        <!-- Slide 3: Sporttherapie -->
-        <div class="swiper-slide">
-          <div class="therapy-card">
-            <div class="therapy-card__left">
-              <img src="assets/img/services-cards.png" class="therapy-card__swirls" aria-hidden="true">
-              <div class="therapy-card__body">
+        <!-- Content panel 2: Sporttherapie -->
+        <div class="therapies__card-content" data-idx="2">
+          <img src="assets/img/services-cards.png" class="therapy-card__swirls" aria-hidden="true">
+          <div class="therapy-card__body">
+              <div class="therapy-card__body--wrapper">
                 <h3 class="therapy-card__title">Sport&shy;therapie</h3>
-                <p class="therapy-card__text">Die Sporttherapie nutzt körperliche Aktivitäten zur Vorbeugung, Behandlung und Rehabilitation von Erkrankungen sowie zur gezielten Leistungssteigerung und Verletzungsprävention.</p>
-                <a href="#" class="hero__btn hero__btn--primary therapy-card__btn">
-                  Mehr erfahren
-                  <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M7.5 4.37512L10.625 7.50011L7.5 10.6251" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"/><path d="M0.625 0.625V4.99999C0.625 5.66303 0.888388 6.29891 1.35723 6.76774C1.82607 7.23658 2.46194 7.49997 3.12498 7.49997H10.6249" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"/></svg>
-                </a>
+                <p class="therapy-card__text">Die Sporttherapie ist eine Kombination aus Bewegung und <br> therapeutischen Ansätzen zur Förderung von Fitness, <br> Rehabilitation und Gesundheit.</p>
               </div>
-            </div>
-            <div class="therapy-card__right">
-              <img src="assets/img/services-card-3.png" class="therapy-card__img" alt="Sporttherapie">
-              <div class="therapy-chip" style="left:30px;bottom:222px">Verletzungsprävention</div>
-              <div class="therapy-chip" style="left:222px;bottom:30px">Rehabilitation</div>
-              <div class="therapy-chip" style="right:30px;top:30px">Leistungssteigerung</div>
-            </div>
+            <a href="#" class="hero__btn hero__btn--primary therapy-card__btn">
+              Mehr erfahren
+              <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M7.5 4.37512L10.625 7.50011L7.5 10.6251" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"/><path d="M0.625 0.625V4.99999C0.625 5.66303 0.888388 6.29891 1.35723 6.76774C1.82607 7.23658 2.46194 7.49997 3.12498 7.49997H10.6249" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </a>
           </div>
         </div>
 
-        <!-- Slide 4: CMD -->
-        <div class="swiper-slide">
-          <div class="therapy-card">
-            <div class="therapy-card__left">
-              <img src="assets/img/services-cards.png" class="therapy-card__swirls" aria-hidden="true">
-              <div class="therapy-card__body">
-                <h3 class="therapy-card__title">CMD-<br>Behandlung</h3>
-                <p class="therapy-card__text">Die craniomandibuläre Dysfunktion betrifft den Kauapparat und kann zu Kiefer-, Kopf- und Nackenschmerzen führen. Mit spezialisierten Techniken behandeln wir die Ursachen gezielt.</p>
-                <a href="#" class="hero__btn hero__btn--primary therapy-card__btn">
-                  Mehr erfahren
-                  <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M7.5 4.37512L10.625 7.50011L7.5 10.6251" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"/><path d="M0.625 0.625V4.99999C0.625 5.66303 0.888388 6.29891 1.35723 6.76774C1.82607 7.23658 2.46194 7.49997 3.12498 7.49997H10.6249" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"/></svg>
-                </a>
-              </div>
+        <!-- Content panel 3: CMD -->
+        <div class="therapies__card-content" data-idx="3">
+          <img src="assets/img/services-cards.png" class="therapy-card__swirls" aria-hidden="true">
+          <div class="therapy-card__body">
+            <div class="therapy-card__body--wrapper">
+              <h3 class="therapy-card__title">Craniomandibuläre Dysfunktion</h3>
+              <p class="therapy-card__text">Die therapeutische Behandlung der Craniomandibulären <br> Dysfunktion (CMD) ist ein wesentlicher Bestandteil der <br> ganzheitlichen Therapie und kann helfen, die Beschwerden zu <br> lindern und die Kiefergelenke sowie die Strukturen zu stabilisieren.</p>
             </div>
-            <div class="therapy-card__right">
-              <img src="assets/img/services-card-4.png" class="therapy-card__img" alt="CMD-Behandlung">
-              <div class="therapy-chip" style="left:30px;bottom:222px">Kieferschmerzlinderung</div>
-              <div class="therapy-chip" style="left:222px;bottom:30px">Manuelle Therapie bei CMD</div>
-              <div class="therapy-chip" style="right:30px;top:30px">Kopf- und<br>Nackenschmerzbehandlung</div>
-            </div>
+            <a href="#" class="hero__btn hero__btn--primary therapy-card__btn">
+              Mehr erfahren
+              <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M7.5 4.37512L10.625 7.50011L7.5 10.6251" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"/><path d="M0.625 0.625V4.99999C0.625 5.66303 0.888388 6.29891 1.35723 6.76774C1.82607 7.23658 2.46194 7.49997 3.12498 7.49997H10.6249" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </a>
           </div>
         </div>
 
       </div>
+
+      <!-- RIGHT: title/nav aligned with ear zone + image-only swiper -->
+      <div class="therapies__right-area">
+
+        <div class="therapies__title-nav">
+          <h2 class="therapies__section-title">Unsere Therapieangebote für Sie</h2>
+          <div class="therapies__arrows">
+            <button class="therapies-btn" id="therapiesPrev">
+              <img src="assets/img/Mask group.svg" alt="Zurück" width="13" height="13">
+            </button>
+            <button class="therapies-btn" id="therapiesNext">
+              <img src="assets/img/Mask group.svg" alt="Weiter" width="13" height="13" class="reviews-btn__icon--flip">
+            </button>
+          </div>
+        </div>
+
+        <div class="swiper therapies-swiper">
+          <div class="swiper-wrapper">
+
+            <div class="swiper-slide">
+              <div class="therapy-card__right">
+                <img src="assets/img/services-card-1.png" class="therapy-card__img" alt="Physiotherapie">
+                <div class="therapy-chip" style="left:36px;bottom:214px">Krankengymastik</div>
+                <div class="therapy-chip" style="left:214px;bottom:36px">Manuelle <br> Therapie</div>
+                <div class="therapy-chip" style="right:214px;top:214px">Manuelle Lymphdrainage</div>
+                <div class="therapy-chip" style="right:36px;top:36px">Krankengymastik<br>an Geräten (KGG)</div>
+                <div class="therapy-chip" style="right:36px;bottom:36px">Manuelle Therapie<br>bei CMD<br>(Craniomandibuläre<br>Dysfunktion)</div>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="therapy-card__right">
+                <img src="assets/img/services-card-2.png" class="therapy-card__img" alt="Atemtherapie">
+                <div class="therapy-chip" style="left:30px;bottom:222px">Stressabbau und<br>Entspannung</div>
+                <div class="therapy-chip" style="left:222px;bottom:30px">Verbesserung der<br>Lungenfunktion</div>
+                <div class="therapy-chip" style="right:30px;top:30px">Steigerung des Energielevels &amp; <br> emotionale Balance</div>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="therapy-card__right">
+                <img src="assets/img/services-card-3.png" class="therapy-card__img" alt="Sporttherapie">
+                <div class="therapy-chip" style="left:22px;top:50%;transform:translateY(-50%)">Linderung von<br>Schmerzen</div>
+                <div class="therapy-chip" style="right:28px;top:50%;transform:translateY(-50%)">Besonders geeignet<br>bei Rehabilitation<br>und chronischen<br>Erkrankungen</div>
+                <div class="therapy-chip" style="right:196px;bottom:28px">Verbesserung der<br>Funktionsfähigkeit<br>des Körpers</div>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="therapy-card__right">
+                <img src="assets/img/services-card-4.png" class="therapy-card__img" alt="CMD-Behandlung">
+                <div class="therapy-chip therapy-chip--last" style="left:28px;top:28px">Schmerzlinderung und<br>Entzündungsreduktion</div>
+                <div class="therapy-chip therapy-chip--last" style="right:176px;top:176px">Muskelentspannung<br>und Verbesserung<br>der Kiefermuskulatur</div>
+                <div class="therapy-chip therapy-chip--last" style="right:22px;bottom:112px">Verbesserung der<br>Kiefergelenksbeweglichkeit</div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+
     </div>
 
     <div class="therapies-pagination"></div>
-
   </section>
 
   <section class="section-services" data-aos="fade-up" data-aos-duration="900">
