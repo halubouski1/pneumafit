@@ -1,9 +1,10 @@
 @font-face {
-  font-family: 'STHeiti';
-  src: url('../assets/fonts/STHeiti TC Medium.woff2') format('woff2'),
-       url('../assets/fonts/STHeiti TC Medium.woff') format('woff');
+  font-family: 'STHeitiTC';
+  src: url('../assets/fonts/STHeitiTC-Medium.woff2') format('woff2'),
+       url('../assets/fonts/STHeitiTC-Medium.woff') format('woff');
   font-weight: 500;
   font-style: normal;
+  font-display: swap;
 }
 
 *, *::before, *::after {
@@ -113,10 +114,12 @@ body {
 }
 
 .header__logo {
-  font-family: 'STHeiti', 'Helvetica Neue', sans-serif;
-  font-size: 20px;
+  font-family: 'STHeitiTC', 'Helvetica Neue', sans-serif;
+  font-weight: 500;
+  font-size: 25px;
+  line-height: 92%;
+  letter-spacing: -0.03em;
   color: #fff;
-  text-decoration: none;
   white-space: nowrap;
   flex-shrink: 0;
 }
@@ -134,18 +137,15 @@ body {
   line-height: 93%;
   letter-spacing: -0.03em;
   color: #fff;
-  transition: color 0.2s;
+  border-radius: 100px;
+  padding: 0;
+  transition: background 0.2s, color 0.2s, padding 0.2s;
 }
 
 .header__nav-link:hover {
-  color: #fff;
-}
-
-.header__nav-link--active {
   background: #4d6eff;
-  color: #fff;
-  border-radius: 100px;
   padding: 12px 20px;
+  color: #fff;
 }
 
 .header__actions {
@@ -172,8 +172,7 @@ body {
 }
 
 .header__btn-outline:hover {
-  border-color: #fff;
-  background: rgba(255,255,255,0.08);
+  background: rgba(255,255,255,0.9);
 }
 
 .header__btn-link {
@@ -192,20 +191,115 @@ body {
 
 .header__burger {
   display: none;
-  flex-direction: column;
-  gap: 5px;
-  background: none;
+  align-items: center;
+  justify-content: center;
   border: none;
   cursor: pointer;
-  padding: 4px;
+  width: 42px;
+  height: 42px;
+  padding: 0;
+  border-radius: 50%;
 }
 
-.header__burger span {
-  display: block;
-  width: 22px;
-  height: 2px;
+.header__burger svg {
+  width: 21px;
+  height: 9px;
+}
+
+.mobile-menu {
+  position: fixed;
+  inset: 0;
+  z-index: 20;
+  display: none;
   background: #fff;
-  border-radius: 2px;
+  color: #000;
+  opacity: 0;
+  pointer-events: none;
+  transform: translateX(100%);
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.mobile-menu.is-open {
+  opacity: 1;
+  pointer-events: auto;
+  transform: translateX(0);
+}
+
+.mobile-menu__inner {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 30px 32px;
+}
+
+.mobile-menu__top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.mobile-menu__logo {
+  font-family: 'STHeitiTC', 'Helvetica Neue', sans-serif;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 92%;
+  letter-spacing: -0.03em;
+}
+
+.mobile-menu__close {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.mobile-menu__close svg {
+  width: 18px;
+  height: 18px;
+}
+
+.mobile-menu__nav {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.mobile-menu__link {
+  display: block;
+  padding: 18px 0;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 1.05;
+  letter-spacing: -0.03em;
+}
+
+.mobile-menu__cta {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  min-height: 58px;
+  padding: 0 24px;
+  border-radius: 13px;
+  background: #4d6eff;
+  color: #fff;
+  font-weight: 500;
+  font-size: 16px;
+}
+
+.mobile-menu__cta svg {
+  width: 12px;
+  height: 12px;
+  flex-shrink: 0;
+}
+
+body.menu-open {
+  overflow: hidden;
 }
 
 /* ─── HERO CONTENT ─── */
@@ -486,6 +580,17 @@ background: linear-gradient(7deg, #fff 0%, #ecfff2 100%);
 }
 
 /* ─── SECTION THERAPIES ─── */
+.therapies__desktop-layout {
+  flex: 1;
+  min-height: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.therapies__tablet-layout {
+  display: none;
+}
+
 .section-therapies {
   background: #f2f2f2;
   padding: 22px;
@@ -750,6 +855,9 @@ background: linear-gradient(7deg, #fff 0%, #ecfff2 100%);
   font-size: 16px;
   line-height: 106%;
   color: #657b8d;
+  overflow-wrap: anywhere;
+  word-break: normal;
+  hyphens: auto;
 }
 
 .therapy-chip--last {

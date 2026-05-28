@@ -11,20 +11,20 @@
     font-size: 13px;
   }
 
+  .header__nav-link:hover {
+    padding: 10px 15px;
+  }
+
   .header__nav {
     gap: 25px;
   }
 
   .header__logo {
-    font-size: 16px;
+    font-size: 20px;
   }
 
   .header__btn-outline {
     font-size: 13px;
-    padding: 8px 16px;
-  }
-
-  .header__nav-link--active {
     padding: 8px 16px;
   }
 
@@ -44,12 +44,15 @@
   }
 
   .hero__btn {
-    font-size: 13px;
-    padding: 14px 15px 14px 40px;
+        font-size: 13px;
+        padding: 12px 13px 14px 23px;
+        line-height: 1.5;
+        border-radius: 10px;
   }
 
   .hero__btn--secondary {
-    padding-left: 50px;
+    padding-left: 24px;
+    gap: 64px;
   }
 
   .hero__desc {
@@ -93,7 +96,7 @@
   }
 
   .intro-card__text {
-    font-size: 17px;
+    font-size: 18px;
   }
 
   .intro-card__icon svg {
@@ -154,6 +157,7 @@
   .therapies-btn {
     width: 35px;
     height: 35px;
+    border-radius: 7px;
   }
 
   .therapies-btn img {
@@ -274,8 +278,9 @@
   }
 
   .reviews-btn {
-    width: 45px;
-    height: 45px;
+    width: 35px;
+    height: 35px;
+    border-radius: 7px;
   }
 
   .section-reviews__nav {
@@ -288,17 +293,33 @@
   }
 
   .reviews-swiper .swiper-slide {
-    width: 366px;
-    height: 503px;
+        width: 300px;
+        height: 403px;
+  }
+
+  .review-card__avatar {
+    width: 50px;
+    height: 50px;
+    font-size: 15px;
   }
 
   .review-card__inner {
+    left: 94px;
     top: 90px;
     gap: 30px;
+    padding: 20px 20px 20px 20px;
+  }
+
+  .review-card__header {
+    gap: 10px;
+  }
+
+  .review-card__bottom {
+    gap: 10px;
   }
 
   .review-card__service {
-    font-size: 20px;
+    font-size: 17px;
   }
 
   .review-card__text {
@@ -417,4 +438,931 @@
 .footer__legal span {
   font-size: 12px;
 }
+}
+
+@media (max-width: 1470px) {
+    .therapies-swiper .swiper-slide:nth-child(4) .therapy-chip:nth-of-type(3) {
+        top: 340px !important;
+    }
+
+    .therapies-swiper .swiper-slide:nth-child(4) .therapy-chip:nth-of-type(2) {
+        top: 164px !important;
+    }
+}
+
+@media (max-width: 1370px) {
+
+  /* therapies */
+  .therapies__desktop-layout {
+    display: none;
+  }
+
+  .therapies__tablet-layout {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .therapies__tl-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .therapies__tl-header .therapies__section-title {
+    font-size: 32px;
+    max-width: 70%;
+  }
+
+  .therapies__tl-tabs {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+  }
+
+  .therapy-tl-tab {
+    background: #e2e9e9;
+    color: #657b8d;
+    border: none;
+    border-radius: 12px;
+    padding: 16px 20px;
+    font-size: 13px;
+    font-weight: 500;
+    letter-spacing: -0.02em;
+    line-height: 1.3;
+    cursor: pointer;
+    transition: background 0.2s, color 0.2s;
+    text-align: center;
+  }
+
+  .therapy-tl-tab--active {
+    background: #a5b7b7;
+    color: #fff;
+  }
+
+  .therapy-tl-tab:hover:not(.therapy-tl-tab--active) {
+    background: #cddde0;
+  }
+
+  .therapies__tl-content {
+    background: #e2e9e9;
+    border-radius: 20px;
+    padding: 40px 50px;
+  }
+
+  .therapies__tl-panel {
+    display: none;
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .therapies__tl-panel--active {
+    display: flex;
+  }
+
+  .therapies__tl-panel-text {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .therapies__tl-panel[data-idx="3"] .therapy-card__title {
+    background: linear-gradient(360deg, #657b8d 0%, #1c2227 100%) !important;
+    background-clip: text !important;
+    -webkit-background-clip: text !important;
+    -webkit-text-fill-color: transparent !important;
+  }
+
+  .therapies__tl-panel[data-idx="3"] .therapy-card__text {
+    color: #657b8d !important;
+  }
+
+  .therapies__tl-pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+  }
+
+  .tl-dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: rgba(101, 123, 141, 0.4);
+    cursor: pointer;
+    transition: background 0.2s;
+    display: block;
+  }
+
+  .tl-dot--active {
+    background: #657b8d;
+  }
+
+  .therapies__tl-image {
+    border-radius: 20px;
+    overflow: hidden;
+    width: 100%;
+    aspect-ratio: 16 / 7;
+    position: relative;
+  }
+
+  .therapies__tl-img {
+    display: none;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    inset: 0;
+  }
+
+  .therapies__tl-img--active {
+    display: block;
+  }
+
+  .therapies__tl-chips {
+    display: none;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 10px;
+  }
+
+  .therapies__tl-chips--active {
+    display: grid;
+  }
+
+    .therapy-card__text {
+        max-width: 100%;
+    }
+
+  .therapies__tl-chip {
+    background: #fff;
+    border-radius: 12px;
+    padding: 20px 15px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.2;
+    color: #657b8d;
+    min-height: 140px;
+    display: flex;
+    align-items: flex-end;
+    min-width: 0;
+    overflow-wrap: anywhere;
+    word-break: normal;
+    hyphens: auto;
+  }
+
+  /* services */
+
+  .service-card__content {
+    flex-direction: column;
+    align-items: start;
+    gap: 20px;
+  }
+
+  /* reviews */
+  .section-reviews__bottom {
+    gap: 370px;
+  }
+}
+
+@media (max-width: 1100px) {
+  .header__nav,
+  .header__btn-outline,
+  .header__btn-link--contact {
+    display: none;
+  }
+
+  .header__burger {
+    display: flex;
+  }
+
+  .mobile-menu {
+    display: block;
+  }
+}
+
+@media (max-width: 940px) {
+.hero__bottom {
+  flex-direction: column-reverse;
+  gap: 30px;
+  align-items: start;
+}
+
+.hero__title {
+  font-size: 40px;
+  max-width: 600px;
+  margin-bottom: 20px;
+}
+
+/* .section-intro*/
+.section-intro__grid {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+/* .section-services */
+.section-services__grid {
+  grid-template-columns: 1fr;
+
+}
+
+/* .section-reviews__bottom */
+.section-reviews__bottom {
+  gap: 20px;
+  flex-direction: column;
+  align-items: self-start;
+}
+
+/* .section-contact */
+.section-contact__inner {
+  flex-direction: column;
+  gap: 200px;
+  align-items: self-end;
+}
+
+.section-contact__bottom {
+  margin-top: 200px;
+}
+}
+
+@media (max-width: 769px) {
+  .header__burger {
+    width: 50px;
+    height: 50px;
+  }
+
+  .header__burger svg {
+    width: 25px;
+    height: 11px;
+  }
+
+  .mobile-menu__inner {
+    padding: 24px 20px;
+  }
+
+  .mobile-menu__link {
+    font-size: 24px;
+  }
+
+  /* therapies-section */
+  .therapies__tl-tabs {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  /* footer */
+    .footer__nav-group {
+      flex-basis: 50%;
+    }
+
+    .footer__scroll-top {
+        position: absolute;
+        bottom: 115px;
+    }
+
+    .footer__nav {
+    flex-wrap: wrap;
+    row-gap: 44px;
+    }
+
+    .footer__nav-group--right {
+    text-align: left;
+    }
+
+    .footer__content {
+      padding: 30px;
+    }
+
+    .footer__bottom-left {
+      display: none;
+    }
+
+    .footer__bottom {
+      justify-content: end;
+      position: relative;
+    }
+
+    .footer__email-info {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .footer__email-label-wrapper {
+      gap: 8px;
+    }
+
+    .footer__legal {
+      align-items: center;
+      padding: 0;
+      gap: 22px;
+    }
+}
+
+@media (max-width: 570px) {
+  .container {
+    padding: 0 20px;
+  }
+
+  /* hero */
+  .header {
+    padding-top: 25px;
+  }
+
+  .header__logo {
+    font-size: 16px;
+  }
+
+  .header__burger svg {
+    width: 21px;
+    height: 9px;
+  }
+
+  .header__burger {
+    width: auto;
+    height: auto;
+  }
+
+  .mobile-menu__link {
+    font-size: 18px;
+  }
+
+  .mobile-menu__logo {
+    font-size: 16px;
+  }
+
+  .mobile-menu__inner {
+    padding: 20px;
+  }
+
+  .mobile-menu__close {
+    width: auto;
+    height: 30px;
+  }
+
+  .mobile-menu__close svg {
+    width: 15px;
+    height: 15px;
+  }
+
+  .mobile-menu__cta {
+    font-size: 13px;
+  }
+
+  .hero__title {
+  font-size: 35px;
+  line-height: 109%;
+  max-width: 283px;
+  }
+    
+  .hero__title sup  {
+    font-size: 12px;
+  }
+
+  .hero__desc {
+    font-size: 13px;
+    line-height: 138%;
+  }
+
+  .hero__btn {
+    min-width: 0;
+    padding: 14px 12px 14px 20px;
+    gap: 10px;
+    white-space: nowrap;
+    border-radius: 10px;
+  }
+
+  .hero__btn svg {
+    width: 8px;
+    height: 8px;
+  }
+
+  .hero__bottom-left {
+    display: grid;
+    grid-template-columns: minmax(0, 2.4fr) minmax(0, 2fr);
+    gap: 8px;
+    width: 100%;
+  }
+
+  .hero__content .hero__btn {
+    justify-content: space-between;
+  }
+
+  .hero__btn--secondary {
+    width: auto !important;
+  }
+
+  .hero__btn svg {
+    flex-shrink: 0;
+  }
+
+  .hero__content {
+    padding-bottom: 36px;
+  }
+
+  /* therapies */
+  .therapies__tablet-layout {
+    gap: 0;
+  }
+
+  .section-therapies {
+    padding: 35px 10px 35px 10px;
+  }
+
+  .therapies__section-title {
+    font-size: 28px !important;
+    line-height: 111%;
+    max-width: 340px !important;
+  }
+
+  .therapy-tl-tab {
+    font-size: 12px;
+  }
+
+  .therapies__tl-header {
+    display: contents;
+  }
+
+  .therapies__tl-header .therapies__section-title {
+    order: 1;
+    margin-bottom: 20px;
+  }
+
+  .therapies__tl-tabs {
+    order: 2;
+    grid-template-columns: repeat(12, minmax(0, 1fr));
+  }
+
+  .therapy-tl-tab {
+    min-height: 47px;
+    border-radius: 10px;
+    padding: 0 28px;
+    line-height: 1.1;
+    white-space: nowrap;
+  }
+
+  .therapy-tl-tab:nth-child(1) {
+    grid-column: 1 / 5;
+    padding-right: 30px;
+    padding-left: 30px;
+  }
+
+  .therapy-tl-tab:nth-child(2) {
+    grid-column: 5 / -1;
+    padding-right: 29px;
+    padding-left: 28px;
+  }
+
+  .therapy-tl-tab:nth-child(3) {
+    grid-column: 1 / 7;
+  }
+
+  .therapy-tl-tab:nth-child(4) {
+    grid-column: 7 / -1;
+  }
+
+  .therapies__tl-header .therapies__arrows {
+    order: 3;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    gap: 10px;
+  }
+
+  .therapies__tl-content {
+    order: 4;
+    position: relative;
+    overflow: hidden;
+    padding: 30px 20px 20px;
+    height: 410px;
+    border-radius: 10px;
+  }
+
+  .therapies__tl-content::before {
+    content: "";
+    position: absolute;
+    left: 64px;
+    bottom: -87px;
+    height: 100%;
+     width: 120%;
+    background: url("../assets/img/services-cards.png") left bottom / contain no-repeat;
+    mix-blend-mode: multiply;
+    pointer-events: none;
+  }
+
+  .therapies__tl-pagination {
+    order: 5;
+    margin-top: 10px;
+  }
+
+  .therapies__tl-image {
+    order: 6;
+    margin-top: 30px;
+    height: 360px;
+    border-radius: 15px;
+  }
+
+  .therapies__tl-chips {
+    order: 7;
+    margin-top: 10px;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .therapies__tl-chip {
+    border-radius: 0;
+    min-height: 165px;
+    line-height: 106%;
+  }
+
+  .therapies__tl-panel {
+    height: 100%;
+    justify-content: space-between;
+    position: relative;
+    z-index: 1;
+  }
+
+  .therapy-card__text {
+    line-height: 138%;
+    max-width: 294px;
+  }
+
+  .therapies__tl-panel-text {
+    gap: 15px;
+  }
+
+  .therapy-card__title {
+    font-size: 28px;
+    line-height: 111%;
+  }
+
+  .therapies-btn {
+    width: 48px;
+    height: 48px;
+    border-radius: 13px;
+  }
+
+  .therapy-card__btn {
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  /* .section-intro */
+  .section-intro {
+    padding-top: 70px;
+    padding-bottom: 35px;
+  }
+
+  .section-intro__bg-img {
+    height: 800px;
+  }
+
+  .section-intro__header {
+    gap: 20px;
+  }
+
+  .section-intro__title {
+    font-size: 28px;
+    line-height: 111%;
+    max-width: 320px;
+  }
+
+  .section-intro__container {
+    padding: 0 10px;
+  }
+
+  .section-intro__grid {
+    grid-template-columns: 1fr;
+  }
+
+  .intro-card {
+    padding: 30px;
+    gap: 170px;
+    border-radius: 20px;
+  }
+
+  .intro-card--second  .intro-card__text{
+    max-width: 272px;
+  }
+
+  .intro-card--third  .intro-card__text{
+    max-width: 272px;
+  }
+
+  .intro-card--fourth  .intro-card__text {
+    max-width: 259px;
+  }
+
+  .intro-card__icon svg {
+    width: 30px;
+    height: 30px;
+  }
+
+  .intro-card__text {
+    font-size: 21px;
+    line-height: 110%;
+  }
+
+  .mobile-hidden {
+    display: none;
+  }
+
+  .section-intro__video-wrap {
+    height: 233px;
+    border-radius: 30px;
+  }
+
+  .video-play-btn {
+    width: 44px;
+    height: 44px;
+  }
+
+  .video-play-btn svg {
+    width: 12px;
+    height: 13px;
+    margin-left: 2px;
+  } 
+
+
+  /* section-services */
+  .section-services {
+    padding: 35px 0;
+    padding-bottom: 100px;
+  }
+
+  .section-services__container {
+    padding: 0 10px;
+  }
+
+  .section-services__title {
+    font-size: 28px;
+    line-height: 111%;
+    text-align: start;
+    margin-bottom: 10px;
+  }
+
+  .section-services__grid {
+    gap: 30px;
+  }
+
+  .service-card {
+    display: flex;
+    flex-direction: column;
+    gap: 9px;
+    padding: 0;
+    overflow: visible;
+    background-image: none;
+    border-radius: 0;
+  }
+
+  .service-card::after {
+    display: none;
+  }
+
+  .service-card__content {
+    display: contents;
+  }
+
+  .service-card__left {
+    min-height: 290px;
+    padding: 180px 20px 20px;
+    border-radius: 10px;
+    overflow: hidden;
+    background-size: cover;
+    background-position: center top;
+    background-repeat: no-repeat;
+    position: relative;
+    justify-content: flex-end;
+  }
+
+  .service-card__left::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to top, rgba(0,0,0,0.72) 0%, rgba(0,0,0,0.15) 45%, transparent 70%);
+    pointer-events: none;
+  }
+
+  .service-card--1 .service-card__left {
+    background-image: url('../assets/img/card-1.png');
+  }
+
+  .service-card--2 .service-card__left {
+    background-image: url('../assets/img/card-2.png');
+  }
+
+  .service-card__left > * {
+    position: relative;
+    z-index: 1;
+  }
+
+  .service-card__btn {
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    justify-content: space-between;
+    padding: 14px 12px 14px 20px;
+    border-radius: 10px;
+  }
+
+  .service-card__title {
+    font-size: 28px;
+  }
+  
+  .service-card__text {
+    max-width: 300px;
+  }
+
+  /* .section-reviews */
+  .section-reviews {
+    padding: 0;
+  }
+
+  .section-reviews__container {
+    padding-top: 35px;
+    padding-bottom: 30px;
+  }
+
+  .section-reviews__title {
+    font-size: 28px;
+    line-height: 111%;
+    max-width: 300px;
+    margin-bottom: 300px;
+  }
+
+  .reviews-btn {
+    width: 45px;
+    height: 45px;
+    border-radius: 68px;
+  }
+
+  .section-reviews__nav {
+    gap: 10px;
+  }
+
+  .reviews-swiper .swiper-slide {
+    width: 265px;
+    height: 353px;
+  }
+
+  .review-card__inner {
+    top: 38px;
+    left: 38px;
+    gap: 73px;
+  }
+
+  .review-card__avatar {
+    width: 45px;
+    height: 45px;
+    font-size: 18px;
+  }
+
+  .review-card__header {
+    gap: 12px;
+  }
+
+  .review-card__name {
+    font-size: 10px;
+  }
+
+  .review-card__date {
+    font-size: 7px;
+  }
+
+  .review-card__service {
+    font-size: 21px;
+  }
+
+  .review-card__bottom {
+    gap: 14px;
+  }
+
+  /* .section-contact */
+  .section-contact {
+    padding-top: 124px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .section-contact__inner {
+    padding: 20px;
+    padding-bottom: 40px;
+    gap: 150px;
+  }
+
+  .section-contact__top-text {
+    font-size: 13px;
+    line-height: 138%;
+    max-width: 300px;
+  }
+
+  .section-contact__bottom {
+    margin-top: 155px;
+    align-items: center;
+  }
+
+  .section-contact__title {
+    font-size: 28px;
+    line-height: 111%;
+    margin-bottom: 10px;
+  }
+
+  .section-contact__subtitle {
+    font-size: 14px;
+    line-height: 121%;
+    max-width: 266px;
+    margin-bottom: 45px;
+  }
+
+  .section-contact__input {
+    padding: 26px;
+    padding-left: 20px;
+  }
+
+  .section-contact__form {
+    gap: 10px;
+    max-width: 100%;
+  }
+
+  .section-contact__btn {
+    gap: 15px;
+    padding-top: 25px;
+    padding-bottom: 24px;
+  }
+
+  .section-contact__privacy {
+    font-size: 10px;
+    line-height: 160%;
+    max-width: 254px;
+  }
+
+  .section-contact__brand {
+    font-size: 18px;
+    line-height: 128%;
+    margin-bottom: 10px;
+  }
+
+  .section-contact__brand-desc {
+    line-height: 169%;
+    max-width: 226px;
+  }
+
+  /* .footer */
+  .footer {
+    position: relative;
+    padding-top: 0px;
+    padding-bottom: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .footer__content {
+    position: absolute;
+    top: -10px;
+    left: 10px;
+    right: 10px;
+  }
+
+  .footer__nav-link {
+    font-weight: 400;
+    line-height: 31px;
+  }
+
+  .footer__nav-title {
+    font-weight: 600;
+  }
+
+  .footer__nav-group {
+    gap: 30px;
+  }
+
+  .footer__content {
+    gap: 20px;
+  }
+
+  .footer__scroll-top {
+    bottom: 170px;
+  }
+
+  .footer__divider {
+    margin-top: 60px;
+  }
+
+  .footer__email-label {
+    font-size: 16px;
+    line-height: 140%;
+  }
+
+  .footer__email-info {
+    gap: 4px;
+  }
+
+  .footer__legal {
+    flex-direction: row-reverse;
+    padding-top: 60px;
+  }
+
+  .footer__email {
+    font-weight: 400;
+    font-size: 16px;
+  }
+
+  .footer__legal span {
+    font-size: 10px;
+  }
 }

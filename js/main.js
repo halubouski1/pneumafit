@@ -32,6 +32,42 @@ document.getElementById('scrollTop').addEventListener('click', () => {
   window.scrollTo({ top: 0, behavior: 'smooth' });
 });
 
+const burgerBtn = document.querySelector('.header__burger');
+const mobileMenu = document.getElementById('mobileMenu');
+const mobileMenuClose = document.querySelector('.mobile-menu__close');
+const mobileMenuLinks = document.querySelectorAll('.mobile-menu__link, .mobile-menu__cta');
+
+function setMobileMenuOpen(isOpen) {
+  if (!burgerBtn || !mobileMenu) return;
+
+  burgerBtn.setAttribute('aria-expanded', String(isOpen));
+  mobileMenu.setAttribute('aria-hidden', String(!isOpen));
+  mobileMenu.classList.toggle('is-open', isOpen);
+  document.body.classList.toggle('menu-open', isOpen);
+}
+
+burgerBtn?.addEventListener('click', () => {
+  setMobileMenuOpen(!mobileMenu.classList.contains('is-open'));
+});
+
+mobileMenuClose?.addEventListener('click', () => setMobileMenuOpen(false));
+
+mobileMenuLinks.forEach(link => {
+  link.addEventListener('click', () => setMobileMenuOpen(false));
+});
+
+document.addEventListener('keydown', (event) => {
+  if (event.key === 'Escape') {
+    setMobileMenuOpen(false);
+  }
+});
+
+window.addEventListener('resize', () => {
+  if (window.innerWidth > 1100) {
+    setMobileMenuOpen(false);
+  }
+});
+
 const therapiesSwiper = new Swiper('.therapies-swiper', {
   slidesPerView: 1,
   grabCursor: true,
@@ -65,6 +101,43 @@ document.querySelectorAll('.therapy-tab').forEach((tab) => {
   tab.addEventListener('click', () => {
     therapiesSwiper.slideTo(parseInt(tab.dataset.index));
   });
+});
+
+// ========================================
+// Tablet layout (≤1370px) interactivity
+// ========================================
+let tlActiveIndex = 0;
+const tlTotal = 4;
+
+function setTLActive(idx) {
+  tlActiveIndex = ((idx % tlTotal) + tlTotal) % tlTotal;
+
+  document.querySelectorAll('.therapy-tl-tab').forEach((tab, i) => {
+    tab.classList.toggle('therapy-tl-tab--active', i === tlActiveIndex);
+  });
+  document.querySelectorAll('.therapies__tl-panel').forEach(panel => {
+    panel.classList.toggle('therapies__tl-panel--active', parseInt(panel.dataset.idx) === tlActiveIndex);
+  });
+  document.querySelectorAll('.tl-dot').forEach(dot => {
+    dot.classList.toggle('tl-dot--active', parseInt(dot.dataset.idx) === tlActiveIndex);
+  });
+  document.querySelectorAll('.therapies__tl-img').forEach(img => {
+    img.classList.toggle('therapies__tl-img--active', parseInt(img.dataset.idx) === tlActiveIndex);
+  });
+  document.querySelectorAll('.therapies__tl-chips').forEach(chips => {
+    chips.classList.toggle('therapies__tl-chips--active', parseInt(chips.dataset.idx) === tlActiveIndex);
+  });
+}
+
+document.querySelectorAll('.therapy-tl-tab').forEach(tab => {
+  tab.addEventListener('click', () => setTLActive(parseInt(tab.dataset.index)));
+});
+
+document.getElementById('therapiesTLPrev').addEventListener('click', () => setTLActive(tlActiveIndex - 1));
+document.getElementById('therapiesTLNext').addEventListener('click', () => setTLActive(tlActiveIndex + 1));
+
+document.querySelectorAll('.tl-dot').forEach(dot => {
+  dot.addEventListener('click', () => setTLActive(parseInt(dot.dataset.idx)));
 });
 
 // ========================================
