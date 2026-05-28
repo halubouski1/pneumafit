@@ -1407,6 +1407,16 @@ pagination-bullets .swiper-pagination-bullet, .swiper-pagination-horizontal.swip
   justify-content: space-between;
 }
 
+.footer__nav-col {
+  display: contents;
+}
+
+/* Restore visual order: Leistungen | Über uns | Datenschutz | Social networks */
+.footer__nav-col:first-child .footer__nav-group:first-child { order: 1; }
+.footer__nav-col:last-child  .footer__nav-group:first-child { order: 2; }
+.footer__nav-col:first-child .footer__nav-group:last-child  { order: 3; }
+.footer__nav-col:last-child  .footer__nav-group:last-child  { order: 4; }
+
 .footer__nav-group {
   display: flex;
   flex-direction: column;
