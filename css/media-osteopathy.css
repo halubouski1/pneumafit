@@ -1,0 +1,61 @@
+@media (max-width: 1919px) {
+  /* hero */
+  .osteopathy-hero__title {
+    font-size: 130px;
+  }
+
+  .osteopathy-hero__intro {
+    font-size: 13px;
+    max-width: 310px;
+    margin-right: 30px;
+  }
+
+  .osteopathy-hero__subtitle {
+    font-size: 14px;
+    max-width: 194px;
+  }
+
+  .osteopathy-feature {
+    padding: 18px 28px 18px 20px;
+    gap: 10px;
+  }
+
+  .osteopathy-learn__icon {
+    width: 70px;
+    height: 70px;
+  }
+
+  .osteopathy-hero__cards {
+    gap: 18px;
+    max-width: min-content;
+  }
+
+  .osteopathy-feature__text {
+    font-size: 11px;
+  }
+
+  .osteopathy-hero__cta-row {
+    gap: 20px;
+  }
+
+  .osteopathy-learn__icon svg {
+    width: 15px;
+    height: 23px;
+  }
+
+  .osteopathy-learn__text {
+    font-size: 12px;
+  }
+
+  .osteopathy-learn {
+    right: -5px;
+  }
+
+  .osteopathy-hero__content {
+    margin-top: 100px;
+  }
+
+  .osteopathy-learn svg {
+    height: 200px;
+  }
+}

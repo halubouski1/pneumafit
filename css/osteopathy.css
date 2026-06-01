@@ -1,0 +1,815 @@
+/* ─── OSTEOPATHY HERO ─── */
+.osteopathy-hero {
+  position: relative;
+  width: 100%;
+  height: var(--fixed-vh, 100vh);
+  min-height: 700px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  background-image: url('../assets/img/osteopathie.png');
+  background-size: cover;
+  background-position: center top;
+}
+
+.osteopathy-hero__overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to right, rgba(0,0,0,0.3) 0%, rgba(0,0,0,0.05) 60%, transparent 100%);
+  z-index: 1;
+}
+
+.osteopathy-hero__container {
+  position: relative;
+  z-index: 2;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 47px;
+}
+
+/* ─── HERO CONTENT LAYOUT ─── */
+.osteopathy-hero__content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  margin-top: 194px;
+}
+
+/* Top intro text */
+.osteopathy-hero__intro {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 144%;
+  letter-spacing: -0.03em;
+  color: #fff;
+  align-self: flex-end;
+  max-width: 394px;
+  margin-bottom: 138px;
+}
+
+/* Middle: title + cta row */
+.osteopathy-hero__main {
+  display: flex;
+  flex-direction: column;
+  gap: 27px;
+  margin-bottom: auto;
+  max-width: 930px;
+  align-self: flex-end;
+  margin-right: 90px;
+}
+
+.osteopathy-hero__title {
+  font-weight: 400;
+  font-size: 180px;
+  line-height: 100%;
+  letter-spacing: -0.03em;
+  color: #fff;
+}
+
+.osteopathy-hero__cta-row {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  justify-content: flex-start;
+}
+
+.osteopathy-hero__btn {
+  flex-shrink: 0;
+  gap: 30px;
+}
+
+.osteopathy-hero__subtitle {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 128%;
+  letter-spacing: -0.03em;
+  color: #fff;
+  max-width: 210px;
+}
+
+/* ─── BOTTOM ROW: cards + learn more ─── */
+.osteopathy-hero__bottom {
+  display: flex;
+  align-items: flex-end;
+  position: relative;
+  justify-content: space-between;
+}
+
+/* Three feature cards grid */
+.osteopathy-hero__cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 28px;
+  flex: 1;
+  max-width: 1418px;
+}
+
+.osteopathy-feature {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  border-radius: 10px;
+  padding: 28px 38px 28px 30px;
+  background: #fff;
+}
+
+.osteopathy-feature__number {
+  font-weight: 700;
+  font-size: 10px;
+  letter-spacing: -0.03em;
+  color: #fff;
+  flex-shrink: 0;
+  border-radius: 69px;
+  background: linear-gradient(347deg, #657b8d 0%, #1c2227 100%);
+  padding: 6px 11px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.osteopathy-feature__text {
+  font-weight: 400;
+  white-space: nowrap;
+  font-size: 13px;
+  line-height: 100%;
+  letter-spacing: -0.03em;
+  color: #657b8d;
+}
+
+/* ─── LEARN MORE BUTTON ─── */
+.osteopathy-learn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+  color: #fff;
+  text-decoration: none;
+  transition: opacity 0.2s;
+}
+
+.osteopathy-learn {
+  position: absolute;
+  right: -21px;
+}
+
+.osteopathy-learn:hover {
+  opacity: 0.75;
+}
+
+.osteopathy-learn__line {
+  display: block;
+  width: 1px;
+  height: 363px;
+  background: linear-gradient(to bottom, transparent 0%, rgba(255,255,255,0.6) 50%, transparent 100%);
+  flex-shrink: 0;
+}
+
+.osteopathy-learn__icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 1000px;
+  width: 95px;
+  height: 96px;
+  backdrop-filter: blur(10px);
+  background: rgba(255, 255, 255, 0.02);
+  -webkit-backdrop-filter: blur(10px);
+}
+
+.osteopathy-learn__icon-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.osteopathy-learn__icon svg {
+  width: 20px;
+  height: 28px;
+}
+
+.osteopathy-learn__text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 214%;
+  letter-spacing: -0.03em;
+  color: rgba(255, 255, 255, 0.4);
+}
+
+/* ─── PLACEHOLDER SECTION ─── */
+.osteopathy-placeholder {
+  height: 100vh;
+  background: #f2f2f2;
+}
+
+
+/* ostheopathie-intro */
+.ostheopathie-card-image {
+  mix-blend-mode: multiply;
+}
+
+.ostheopathie-intro-card {
+  gap: 30px;
+}
+
+.intro-card {
+  padding: 40px;
+  padding-right: 35px;
+  border-radius: 10px;
+}
+
+.intro-card--first{
+  background: linear-gradient(9deg, #fff 0%, #dfe3ff 100%);
+}
+
+.intro-card--second {
+  background: linear-gradient(7deg, #fff 0%, #f5ecff 100%);
+}
+
+.intro-card--third {
+  background: linear-gradient(9deg, #fff 0%, #dfe3ff 100%);
+}
+
+.intro-card--fourth {
+  background: linear-gradient(7deg, #fff 0%, #f5ecff 100%);
+}
+
+.intro-card--first img, .intro-card--second img {
+    width: 300px;
+    align-self: center;
+}
+
+.intro-card--third img{
+    width: 330px;
+    align-self: center;
+}
+
+.intro-card--fourth img{
+    width: 220px;
+    align-self: center;
+}
+
+.intro-card__text {
+  font-weight: 400;
+  font-size: 26px;
+  line-height: 104%;
+  color: #657b8d;
+}
+
+.section-intro__text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 144%;
+  text-align: center;
+  color: #fff;
+  max-width: 847px;
+}
+
+.section-intro__title-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+}
+
+.section-intro__header {
+  margin-bottom: 100px;
+}
+
+/* balance */
+.section-balance {
+  background: #F2F2F2;
+  position: relative;
+  padding: 150px 0;
+}
+
+.balance__container {
+  display: flex;
+  gap: 10px;
+  padding: 0 28px;
+  position: relative;
+}
+
+.balance__title {
+  font-weight: 400;
+  font-size: 60px;
+  line-height: 107%;
+  background: linear-gradient(360deg, #657b8d 0%, #1c2227 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-align: left;
+  padding-bottom: 10px;
+  max-width: 525px;
+}
+
+.balance__left-part {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding-top: 30px;
+  padding-left: 50px;
+  padding-right: 180px;
+  background: #e2e9e9;
+  border-radius: 10px;
+  position: relative;
+}
+
+.balance__left-part::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  bottom: -115px;
+  left: 0;
+  mix-blend-mode: multiply;
+  background: url('../assets/img/balance__left-part.png') no-repeat center center;
+}
+
+.balance-centr-part {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  gap: 136px;
+  background: #fff;
+  border-radius: 10px;
+  padding: 20px;
+  padding-bottom: 30px;
+  padding-right: 96px;
+  left: 25%;
+  top: 435px;
+}
+
+.balance-centr-part__name {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 121%;
+  color: rgba(101, 123, 141, 0.4);
+}
+
+.balance-centr-part__desc {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 106%;
+  color: #657b8d;
+  max-width: 500px;
+}
+
+.balance__image {
+  overflow: hidden;
+  border-radius: 10px;
+  height: 100%;
+}
+
+/* ─── SECTION KINDER ─── */
+.section-kinder {
+  display: flex;
+  min-height: 850px;
+}
+
+.kinder__left {
+  width: 50%;
+  background: #dce6e4;
+  position: relative;
+  overflow: hidden;
+  padding: 100px 20px 314px 64px;
+  display: flex;
+  flex-direction: column;
+}
+
+.kinder__left-bg {
+  position: absolute;
+    top: -23px;
+    right: 0;
+    width: 100%;
+    pointer-events: none;
+    opacity: 0.6;
+}
+
+.kinder__left-content {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.kinder__title {
+  font-weight: 400;
+  font-size: 60px;
+  line-height: 107%;
+  background: linear-gradient(360deg, #657b8d 0%, #1c2227 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  max-width: 744px;
+  text-align: left;
+  padding-bottom: 5px;
+  margin-bottom: 25px;
+}
+
+.kinder__desc {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 144%;
+  color: #657b8d;
+  max-width: 640px;
+  margin-bottom: 158px;
+}
+
+.kinder__info-card {
+  background: #657b8d;
+  padding: 195px 24px 30px 20px;
+  max-width: 338px;
+}
+
+.kinder__info-text {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 119%;
+  color: #fff;
+}
+
+/* right side */
+.kinder__right {
+  width: 50%;
+  position: relative;
+  overflow: hidden;
+}
+
+.kinder__right-img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.kinder__grid {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+}
+
+.kinder-card {
+  position: absolute;
+  width: 33.33%;
+  padding: 10px 13px 30px 20px;
+  height: 259px;
+  width: 259px;
+  background: #e2e9e9;
+  display: flex;
+  align-items: flex-end;
+}
+
+.kinder-card__num {
+  position: absolute;
+  top: 10px;
+  right: 13px;
+  font-weight: 700;
+  font-size: 10px;
+  line-height: 230%;
+  letter-spacing: -0.03em;
+  color: rgba(101, 123, 141, 0.25);
+}
+
+.kinder-card__text {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 106%;
+  color: #657b8d;
+}
+
+.kinder-card--themes {
+  background: transparent;
+  width: 60%;
+  padding: 20px 20px 20px 20px;
+}
+
+.kinder-themes__title {
+  font-weight: 400;
+  font-size: 45px;
+  line-height: 122%;
+  color: #fff;
+  position: relative;
+  z-index: 10;
+  max-width: 615px;
+  padding-top: 306px;
+  margin-left: 55px;
+}
+
+/* ─── SECTION KINDERWUNSCH ─── */
+.section-kinderwunsch {
+  padding: 0 28px;
+  padding-top: 150px;
+  padding-bottom: 150px;
+}
+
+.kinderwunsch__inner {
+  border-radius: 20px;
+  overflow: hidden;
+  background-image: url('../assets/img/kinderwunsch.png');
+  background-size: cover;
+  background-position: center right;
+  padding: 80px 0 20px 50px;
+  display: flex;
+  flex-direction: column;
+}
+
+.kinderwunsch__title {
+  font-weight: 400;
+  font-size: 60px;
+  line-height: 107%;
+  color: #fff;
+  margin-bottom: 30px;
+}
+
+.kinderwunsch__desc {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 106%;
+  color: #fff;
+  max-width: 540px;
+  margin-bottom: 67px;
+}
+
+.kinderwunsch__btn {
+  align-self: flex-start;
+  margin-bottom: 480px;
+  gap: 30px;
+}
+
+.kinderwunsch__bottom {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.kinderwunsch__label {
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 100%;
+  letter-spacing: -0.03em;
+  color: #fff;
+}
+
+.kinderwunsch__cards {
+  display: flex;
+  gap: 8px;
+}
+
+.kinderwunsch-card {
+  padding: 20px 36px 30px 30px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 5px;
+  backdrop-filter: blur(40px);
+  -webkit-backdrop-filter: blur(40px);
+  background: rgba(255, 255, 255, 0.02);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 88px;
+  max-width: 377px;
+  width: 100%;
+}
+
+.kinderwunsch-card__text {
+  font-weight: 400;
+  font-size: 26px;
+  line-height: 104%;
+  letter-spacing: -0.03em;
+  color: #fff;
+}
+
+.kinderwunsch-card:last-child  .kinderwunsch-card__text{
+  max-width: 266px;
+}
+
+.kinderwunsch-card--active {
+  background: #fff;
+}
+
+.kinderwunsch-card--active .kinderwunsch-card__text{
+  color: #363636;
+}
+
+/* ─── SECTION PRICING ─── */
+.section-pricing {
+  padding: 0 28px;
+}
+
+.pricing__inner {
+  border-radius: 20px;
+  overflow: hidden;
+  background-image: url('../assets/img/osteopathie-pricing.png');
+  background-size: cover;
+  background-position: center;
+  padding: 128px 65px 50px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.pricing__label {
+  display: block;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 100%;
+  color: #fff;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.pricing__title {
+  font-weight: 400;
+  font-size: 70px;
+  line-height: 111%;
+  text-align: center;
+  color: #fff;
+  text-align: center;
+  margin-bottom: 30px;
+  max-width: 584px;
+  align-self: center;
+}
+
+.pricing__desc {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 106%;
+  text-align: center;
+  color: #fff;
+  text-align: center;
+  max-width: 459px;
+  align-self: center;
+  margin-bottom: 180px;
+}
+
+/* table */
+.pricing__table-wrap {
+  position: relative;
+  max-width: 1045px;
+  width: 100%;
+  margin: 0 auto;
+  border-radius: 10px;
+  backdrop-filter: blur(74px);
+  -webkit-backdrop-filter: blur(74px);
+  background: rgba(255, 255, 255, 0.05);
+  margin-bottom: 30px;
+}
+
+/* yellow floating card */
+.pricing__duration-card {
+  position: absolute;
+  left: 71%;
+  transform: translateX(-50%);
+  top: -80px;
+  width: 230px;
+  background: #e9eac8;
+  border-radius: 20px;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.pricing__duration-brand {
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 110%;
+  letter-spacing: -0.03em;
+  color: #1c2227;
+}
+
+.pricing__duration-item {
+  width: 100%;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 144%;
+  color: #1c2227;
+}
+
+.pricing__col-price-label {
+  position: absolute;
+  top: -50px;
+  right: 77px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 144%;
+  letter-spacing: -0.03em;
+  color: rgba(255, 255, 255, 0.5);
+  display: flex;
+  align-items: center;
+}
+
+/* placeholder keeps the column space under yellow card */
+.pricing__ph {
+  width: 210px;
+  flex-shrink: 0;
+}
+
+/* data rows */
+.pricing__row {
+  display: flex;
+  align-items: center;
+  height: 70px;
+  padding-left: 30px;
+  position: relative;
+  z-index: 1;
+}
+
+.pricing__row:not(.pricing__row--last)::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background: linear-gradient(
+    to right,
+    rgba(255, 255, 255, 0.15) 0%,
+    rgba(255, 255, 255, 0.15) calc(71% - 135px),
+    transparent calc(71% - 135px),
+    transparent calc(71% + 135px),
+    rgba(255, 255, 255, 0.15) calc(71% + 135px),
+    rgba(255, 255, 255, 0.15) calc(100% - 20px),
+    transparent calc(100% - 20px)
+  );
+}
+
+.pricing__service {
+  flex: 1;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 144%;
+  color: #fff;
+  white-space: nowrap;
+}
+
+.pricing__price {
+  width: 180px;
+  text-align: center;
+  font-weight: 500;
+  font-size: 21px;
+  line-height: 110%;
+  color: #fff;
+}
+
+.pricing__price-sign {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+/* footnotes */
+.pricing__footnotes {
+  display: flex;
+  gap: 50px;
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.pricing__footnote {
+  flex: 1;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 100%;
+  color: rgba(255, 255, 255, 0.4);
+  max-width: 275px;
+}
+
+.pricing__table-wrapper {
+  margin-bottom: 170px;
+}
+
+/* buttons */
+.pricing__btns {
+  display: flex;
+  gap: 12px;
+}
+
+/* learn more (absolute, bottom right, reuses hero styles) */
+.pricing__learn {
+  position: absolute;
+  right: 40px;
+  bottom: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+  color: #fff;
+  text-decoration: none;
+  transition: opacity 0.2s;
+}
+
+.pricing__learn:hover {
+  opacity: 0.75;
+}

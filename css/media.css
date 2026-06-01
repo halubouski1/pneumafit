@@ -7,6 +7,10 @@
     padding-top: 30px;
   }
 
+  .header__logo img {
+    width: 90px;
+  }
+
   .header__nav-link {
     font-size: 13px;
   }
@@ -371,7 +375,7 @@
   }
 
   .section-contact__privacy {
-    font-size: 8px;
+    font-size: 10px;
     max-width: 337px;
   }
 
@@ -451,6 +455,11 @@
 }
 
 @media (max-width: 1370px) {
+
+  /* hero */
+  .hero__video--scale {
+    scale: 1.15;
+  }
 
   /* therapies */
   .therapies__desktop-layout {
@@ -778,12 +787,17 @@
   }
 
   .header__logo {
-    font-size: 16px;
+    height: 16px;
   }
 
   .header__burger svg {
     width: 21px;
     height: 9px;
+  }
+
+  .header__logo img {
+    width: 78px;
+    height: 16px;
   }
 
   .header__burger {
@@ -1176,6 +1190,7 @@
   }
   
   .service-card__text {
+    line-height: 18px;
     max-width: 300px;
   }
 
@@ -1187,6 +1202,7 @@
   .section-reviews__container {
     padding-top: 35px;
     padding-bottom: 30px;
+    background: url(../assets/img/reviews.png) left -196px bottom 75px / cover no-repeat;
   }
 
   .section-reviews__title {

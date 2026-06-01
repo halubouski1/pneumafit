@@ -67,6 +67,10 @@ body {
   z-index: 0;
 }
 
+.hero__video--scale {
+  scale: 1.05;
+}
+
 .hero__overlay {
   position: absolute;
   inset: 0;
