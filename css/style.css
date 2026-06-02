@@ -1091,24 +1091,24 @@ pagination-bullets .swiper-pagination-bullet, .swiper-pagination-horizontal.swip
 }
 
 /* Local glass effect, clipped to each card */
-.review-card::before {
+/* .review-card::before {
   content: '';
   position: absolute;
   inset: 0;
   z-index: 0;
   background: rgba(255, 255, 255, 0.08);
   pointer-events: none;
-}
+} */
 
 /* White frosted tint */
-.review-card::after {
+/* .review-card::after {
   content: '';
   position: absolute;
   inset: 0;
   z-index: 1;
   background: rgba(255, 255, 255, 0.18);
   pointer-events: none;
-}
+} */
 
 /* Inner white card */
 .review-card__inner {
