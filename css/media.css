@@ -15,12 +15,8 @@
     font-size: 13px;
   }
 
-  .header__nav-link:hover {
+  .header__nav-link {
     padding: 10px 15px;
-  }
-
-  .header__nav {
-    gap: 25px;
   }
 
   .header__logo {
@@ -1202,7 +1198,7 @@
   .section-reviews__container {
     padding-top: 35px;
     padding-bottom: 30px;
-    background: url(../assets/img/reviews.png) left -196px bottom 75px / cover no-repeat;
+    background: url(../assets/img/reviews.png) left -196px bottom 0 / cover no-repeat;
   }
 
   .section-reviews__title {

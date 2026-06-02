@@ -131,7 +131,7 @@ body {
 .header__nav {
   display: flex;
   align-items: center;
-  gap: 40px;
+  /* gap: 40px; */
 }
 
 .header__nav-link {
@@ -142,13 +142,12 @@ body {
   letter-spacing: -0.03em;
   color: #fff;
   border-radius: 100px;
-  padding: 0;
-  transition: background 0.2s, color 0.2s, padding 0.2s;
+  padding: 12px 20px;
+  transition: background 0.2s, color 0.2s;
 }
 
 .header__nav-link:hover {
   background: #4d6eff;
-  padding: 12px 20px;
   color: #fff;
 }
 
@@ -1088,14 +1087,15 @@ pagination-bullets .swiper-pagination-bullet, .swiper-pagination-horizontal.swip
   border: 1px solid rgba(255, 255, 255, 0.3);
 }
 
-/* Blurred background replica — fixed positioning matches the section bg exactly */
 .review-card::before {
   content: '';
   position: absolute;
   inset: -30px;
   z-index: 0;
-  background: url('../assets/img/reviews.png') center / cover fixed;
+  background: url('../assets/img/reviews.png') center / cover no-repeat;
   filter: blur(15px);
+  will-change: transform;
+  transform: translateZ(0);
   pointer-events: none;
 }
 

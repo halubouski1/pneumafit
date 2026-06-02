@@ -178,4 +178,3 @@ AOS.init({
   offset: 80,
   easing: 'ease-out-cubic',
 });
-lenis.on('scroll', AOS.refresh);
