@@ -1077,7 +1077,7 @@ pagination-bullets .swiper-pagination-bullet, .swiper-pagination-horizontal.swip
   flex-shrink: 0;
 }
 
-/* Review card — frosted glass */
+/* Review card — outer glass */
 .review-card {
   width: 100%;
   height: 100%;
@@ -1085,18 +1085,23 @@ pagination-bullets .swiper-pagination-bullet, .swiper-pagination-horizontal.swip
   overflow: hidden;
   border-radius: 5px;
   border: 1px solid rgba(255, 255, 255, 0.3);
+  background: rgba(255, 255, 255, 0.16);
+  -webkit-backdrop-filter: blur(14px);
+  backdrop-filter: blur(14px);
+  contain: paint;
 }
 
+/* Local glass effect, clipped to each card */
 .review-card::before {
   content: '';
   position: absolute;
-  inset: -30px;
+  inset: 0;
   z-index: 0;
-  background: url('../assets/img/reviews.png') center / cover no-repeat;
-  filter: blur(15px);
+  background: rgba(255, 255, 255, 0.08);
   pointer-events: none;
 }
 
+/* White frosted tint */
 .review-card::after {
   content: '';
   position: absolute;
