@@ -411,7 +411,6 @@ body.menu-open {
 }
 
 .hero__btn--secondary:hover {
-  border-color: #fff;
   background: rgba(255,255,255,0.08);
 }
 
@@ -1402,6 +1401,10 @@ pagination-bullets .swiper-pagination-bullet, .swiper-pagination-horizontal.swip
 .footer {
   background: #F2F2F2;
   padding: 22px;
+}
+
+.mobile-only {
+  display: none;
 }
 
 .footer__content {

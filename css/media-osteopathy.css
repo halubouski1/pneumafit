@@ -10,6 +10,11 @@
     margin-right: 30px;
   }
 
+  .hero__btn svg {
+    width: 10px;
+    height: 10px;
+  }
+
   .osteopathy-hero__subtitle {
     font-size: 14px;
     max-width: 194px;
@@ -57,5 +62,1178 @@
 
   .osteopathy-learn svg {
     height: 200px;
+  }
+
+  /* section-philosophy */
+  .section-philosophy {
+    padding: 100px var(--phi-pad) 20px;
+  }
+
+  .philosophy-label {
+    font-size: 12px;
+  }
+
+  .philosophy-title {
+    font-size: 40px;
+    max-width: 584px;
+    margin-bottom: 20px;
+  }
+
+  .philosophy-text {
+    font-size: 12px;
+    max-width: 500px;
+    margin-bottom: 40px;
+  }
+
+  .philosophy-words {
+    margin-top: 120px;
+  }
+
+  .p-word {
+    font-size: 10px;
+  }
+
+  .philosophy-btn {
+    padding: 12px 13px 14px 23px;
+  }
+
+  /* kinder */
+  .kinder__left {
+    padding: 50px 20px 200px 37px;
+  }
+
+  .kinder__title {
+    font-size: 40px;
+    max-width: 480px;
+    margin-bottom: 20px;
+  }
+
+  .kinder__desc {
+    font-size: 13px;
+    max-width: 514px;
+    margin-bottom: 100px;
+  }
+
+  .kinder__info-card {
+    padding: 165px 24px 24px 20px;
+    max-width: 281px;
+  }
+
+  .kinder__info-text {
+    font-size: 13px;
+  }
+
+  .kinder-card {
+    height: 200px;
+    width: 200px;
+  }
+
+  .kinder-card:nth-of-type(1) {
+    right: 200px !important;
+    top: 0 !important;
+  }
+
+  .kinder-card:nth-of-type(2) {
+    right: 0 !important;
+    top: 200px !important;
+  }
+
+  .kinder-card:nth-of-type(3) {
+    right: 200px !important;
+    top: 400px !important;
+  }
+
+  .kinder-card:nth-of-type(4) {
+    left: 50px !important;
+    top: 450px !important;
+  }
+
+  .kinder-card:nth-of-type(5) {
+    left: 248px !important;
+    bottom: 0px !important;
+  }
+
+  .kinder-themes__title {
+    font-size: 32px;
+    max-width: 421px;
+    padding-top: 248px;
+    margin-left: 55px;
+    }
+
+  .kinder-card__text {
+    font-size: 12px;
+  }
+
+  /* .section-intro */
+  .section-intro {
+    padding: 100px 0 50px;
+  }
+
+  .section-intro__text {
+    font-size: 12px;
+    max-width: 636px;
+  }
+
+  .section-intro__title-wrapper {
+    gap: 20px;
+  }
+
+  .section-intro__header {
+    margin-bottom: 50px;
+  }
+
+  .intro-card__text {
+    font-size: 19px;
+  }
+
+  .section-intro__container {
+    padding: 0 50px;
+  }
+
+  .intro-card {
+    padding: 30px;
+  }
+
+  .intro-card img {
+    width: 250px;
+  }
+
+  .intro-card--first img, .intro-card--second img {
+    width: 250px;
+    align-self: center;
+  }
+
+  .intro-card--fourth img {
+    width: 170px;
+    align-self: center;
+  }
+
+  .section-intro__bg-img {
+    height: 750px;
+  }
+
+  /* .section-kinderwunsch */
+  .section-kinderwunsch {
+    padding-top: 50px;
+    padding-left: 22px;
+    padding-right: 22px;    
+  }
+
+  .kinderwunsch__inner {
+    padding: 30px 40px 40px;
+  }
+
+  .kinderwunsch__title {
+    font-size: 40px;
+    margin-bottom: 20px;
+  }
+
+  .kinderwunsch__desc {
+    font-size: 12px;
+    max-width: 419px;
+    margin-bottom: 40px;
+  }
+
+  .kinderwunsch__btn {
+    margin-bottom: 300px;
+  }
+
+  .kinderwunsch__label {
+    font-size: 24px;
+  }
+
+  .kinderwunsch__bottom {
+    gap: 15px;
+  }
+
+  .kinderwunsch-card {
+    gap: 50px;
+    max-width: 262px;
+    padding: 20px 26px 20px 20px;
+  }
+
+  .kinderwunsch-card svg {
+    width: 12px;
+    height: 13px;
+  }
+
+  .kinderwunsch-card__text {
+    font-size: 18px;
+  }
+
+  .kinderwunsch-card:last-child .kinderwunsch-card__text {
+    max-width: 195px;
+  }
+
+  /* .section-balance */
+  .section-balance {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+
+  .balance__image {
+    object-fit: cover;
+  }
+
+  .balance__right-part {
+    height: 600px;
+  }
+
+  .balance__title {
+    font-size: 40px;
+    max-width: 369px;
+  }
+
+  .balance__left-part {
+    padding-top: 20px;
+    padding-left: 40px;
+    padding-right: 100px;
+    gap: 10px;
+  }
+
+  .balance__left-part::after {
+    width: 100%;
+    height: 80%;
+    background-size: cover;
+    bottom: 0;
+    left: 0;
+  }
+
+  .balance-centr-part {
+    gap: 80px;
+    padding-right: 50px;
+    top: 55%;
+    left: 21%;
+  }
+
+  .balance-centr-part__desc {
+    font-size: 12px;
+    max-width: 362px;
+  }
+
+  .balance-centr-part__name {
+    font-size: 10px;
+  }
+
+  .balance__left-part svg {
+    width: 15px;
+    height: 15px;
+  }
+
+  /* .pricing__inner */
+  .pricing__inner {
+    padding: 60px 35px 20px;
+  }
+
+  .section-pricing {
+    padding: 0 22px;
+    margin-bottom: 50px;
+  }
+
+  .pricing__label {
+    font-size: 12px;
+    margin-bottom: 10px;
+  }
+
+  .pricing__title {
+    font-size: 45px;
+    margin-bottom: 20px;
+    max-width: 408px;
+  }
+
+  .pricing__desc {
+    font-size: 14px;
+    max-width: 439px;
+  }
+
+  .pricing__row {
+    height: 50px;
+  }
+
+  .pricing__service {
+    font-size: 13px;
+  }
+
+  .pricing__price {
+    font-size: 16px;
+    width: 132px;
+  }
+
+  .pricing__duration-item {
+    height: 50px;
+    font-size: 13px;
+  }
+
+  .pricing__duration-brand {
+    height: 60px;
+    font-size: 17px;
+  }
+
+  .pricing__col-price-label {
+    font-size: 13px;
+    top: -40px;
+    right: 55px;
+  }
+
+  .pricing__duration-card {
+    top: -60px;
+    width: 210px;
+    left: 72%;
+  }
+
+  .pricing__table-wrap {
+    max-width: 900px;
+    margin-bottom: 20px;
+  }
+
+  .pricing__footnotes {
+    max-width: 850px;
+    gap: 30px;
+  }
+
+  .pricing__footnote {
+    font-size: 12px;
+    max-width: 236px;
+  }
+
+  .pricing__learn svg {
+    height: 260px;
+  }
+
+  .pricing__table-wrapper {
+    margin-bottom: 120px;
+  }
+
+  .pricing__btn--glass {
+    padding-left: 30px;
+    gap: 37px;
+  }
+
+  .pricing__learn {
+    bottom: 30px;
+  }
+}
+
+@media (max-width: 1370px) {
+  /* hero */
+  .osteopathy-hero__cards {
+    display: none;
+  }
+
+  .osteopathy-learn {
+    display: none;
+  }
+
+  /* pricing */
+  .pricing__learn {
+    display: none;
+  }
+
+  /* kinder */
+  .section-kinder {
+    flex-direction: column;
+  }
+
+  .kinder__left {
+    width: 100%;
+    padding-bottom: 100px;
+  }
+
+  .kinder__left-bg {
+    height: 100%;
+  }
+
+  .kinder__desc, .kinder__title {
+    max-width: 100%;
+  }
+
+  .kinder__desc {
+    margin-bottom: 50px;
+  }
+
+  .kinder__right {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    overflow: visible;
+  }
+
+  .kinder__right-img {
+    position: static;
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+    flex-shrink: 0;
+  }
+
+  .kinder__grid {
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .kinder-themes__title {
+    order: -1;
+    grid-column: 1 / -1;
+    font-size: 22px;
+    padding: 24px 20px;
+    padding-top: 24px;
+    margin-left: 0;
+  }
+
+  .kinder-themes__title {
+    display: none;
+  }
+
+  /* reset absolute positions from the 1919px nth-of-type rules */
+  .kinder-card:nth-of-type(n) {
+    position: relative !important;
+    width: 100% !important;
+    height: 180px !important;
+    right: auto !important;
+    left: auto !important;
+    top: auto !important;
+    bottom: auto !important;
+  }
+
+  /* .section-intro */
+  .section-intro__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  /* section-philosophy */
+  .pw-group {
+    gap: 40px;
+  }
+}
+
+@media (max-width: 940px) {
+
+  /* hero */
+  .osteopathy-hero__main {
+    align-self: start;
+    margin-bottom: 0;
+    margin-right: 0;
+    width: 100%;
+  }
+
+  .osteopathy-hero__intro {
+    display: none;
+  }
+
+  .osteopathy-hero__intro--mobile {
+    display: block;
+    align-self: start;
+    margin-bottom: 0;
+    margin-right: 0;
+  }
+
+  /* .philosophy */
+  .philosophy-top {
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+  }
+
+  .philosophy-label {
+    width: 100%;
+  }
+
+  .philosophy-title, .philosophy-text {
+    text-align: center;
+  }
+
+  .philosophy-btn {
+    align-self: center;
+  }
+
+  .philosophy-main {
+    align-items: center;
+  }
+
+  .l-2, .l-3, .l-5, .l-6, .l-7 {
+    display: none;
+  }
+
+  .l-4 {
+    left: 50%;
+  }
+
+  .philosophy-words {
+    display: flex;
+    margin-top: 60px;
+  }
+
+  .philosophy-words > * {
+    display: none;
+  }
+
+  .philosophy-words .pw-group:first-child {
+    display: contents;
+  }
+
+  .p-word--1 {
+    flex: 1;
+    text-align: left;
+  }
+
+  .p-word--2 {
+    flex: 1;
+    text-align: center;
+  }
+
+  .p-word--3 {
+    display: block;
+    flex: 1;
+    text-align: right;
+  }
+
+    /* kinderwunsch — hide desktop, show mobile */
+  .section-kinderwunsch { display: none; }
+  .section-kwm-mob { display: block; }
+
+  .kwm-mob__hero {
+    position: relative;
+    overflow: hidden;
+    padding-left: 28px;
+    padding-right: 28px;
+  }
+
+  .kwm-mob__img {
+    width: 100%;
+    height: 60vw;
+    object-fit: cover;
+    object-position: center;
+    display: block;
+    border-radius: 10px;
+  }
+
+  .kwm-mob__title {
+    position: absolute;
+    bottom: 20px;
+    left: 50px;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 107%;
+    color: #fff;
+    max-width: 220px;
+  }
+
+  .kwm-mob__body {
+    padding: 20px 28px 40px;
+    display: flex;
+    flex-direction: column;
+    background: #f2f2f2;
+  }
+
+  .kwm-mob__desc {
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 144%;
+    color: #657b8d;
+    margin-bottom: 30px;
+  }
+
+  .kwm-mob__btn {
+    align-self: flex-start;
+    margin-bottom: 70px;
+  }
+
+  .kwm-mob__label {
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 107%;
+    letter-spacing: -0.03em;
+    color: #1c2227;
+    margin-bottom: 30px;
+  }
+
+  .kwm-mob__grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+  }
+
+  .kwm-mob-card {
+    padding: 16px;
+    border: 1px solid rgba(101, 123, 141, 0.3);
+    border-radius: 10px;
+    background: rgba(101, 123, 141, 0.02);
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+  }
+
+  .kwm-mob-card--active {
+    background: #fff;
+    border-color: #fff;
+  }
+
+  .kwm-mob-card__text {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 117%;
+  letter-spacing: -0.03em;
+  color: #363636;
+  }
+
+  /* balance */
+  .balance__desc {
+    display: block;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 138%;
+    color: #657b8d;
+  }
+  
+  .balance__left-part {
+    padding-bottom: 160px;
+  }
+
+  .balance__container {
+    flex-direction: column;
+    padding-bottom: 50px;
+    gap: 20px;
+  }
+
+  .balance__right-part {
+    height: 500px;
+  }
+
+  .balance-centr-part {
+    gap: 80px;
+    padding-right: 50px;
+    top: 800px;
+    left: 35px;
+    right: 35px;
+    /* left: 21%; */
+    /* width: 100%; */
+  }
+
+  .balance-centr-part__desc {
+    max-width: 100%;
+  }
+
+  /* .pricing */
+  .pricing__price {
+    display: none;
+  }
+
+  .pricing__footnotes {
+    display: none;
+  }
+
+  .pricing__col-price-label {
+    display: none;
+  }
+
+  .pricing__duration-card {
+    right: 0;
+    left: auto;
+    transform: none;
+    width: 120px;
+  }
+
+  .pricing__row:not(.pricing__row--last)::after {
+    background: rgba(255, 255, 255, 0.15);
+  }
+
+  .pricing__mobile-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+  }
+
+  .pricing__duration--mobile {
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 177%;
+    color: rgba(255, 255, 255, 0.5);
+  }
+
+  .pricing__row {
+    height: 70px;
+  }
+
+  .pricing__duration-item {
+    height: 70px;
+    font-size: 13px;
+  }
+
+  .pricing__duration-item {
+    display: none;
+  }
+
+  .pricing__duration-item--mobile {
+    display: flex;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 144%;
+    color: #1c2227;
+    gap: 4px;
+  }
+
+  .pricing__price-sign {
+    color: rgba(28, 34, 39, 0.5);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 144%;
+  }
+}
+
+@media (max-width: 769px) {
+  /* hero */
+  .osteopathy-hero__title {
+    font-size: 80px;
+  }
+
+  /* section-intro */
+  .section-intro__grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 570px) {
+  /* hero */
+  .osteopathy-hero__title {
+    font-size: 55px;
+    line-height: 69%;
+    margin-bottom: 20px;
+  }
+
+  .osteopathy-hero__main {
+    gap: 0px;
+  }
+
+  .osteopathy-hero__intro--mobile {
+    margin-bottom: 70px;
+    font-size: 13px;
+    line-height: 138%;
+  }
+
+  .osteopathy-hero__subtitle {
+    font-size: 13px;
+    line-height: 138%;
+    max-width: 142px;
+  }
+
+  .osteopathy-hero__container {
+    padding-bottom: 36px;
+  }
+
+  .osteopathy-hero__cta-row {
+    gap: 15px;
+  }
+
+  .osteopathy-hero__btn {
+    padding-left: 15px;
+    gap: 19px;
+  }
+
+  /* .section-philosophy */
+  .section-philosophy {
+    padding-top: 90px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .philosophy-label {
+    font-size: 13px;
+    line-height: 177%;
+  }
+
+  .philosophy-top {
+    gap: 20px;
+  }
+
+  .philosophy-title {
+    font-size: 27px;
+    max-width: 326px;
+    margin-bottom: 25px;
+  }
+
+  .philosophy-text {
+    display: none;
+  }
+
+  .philosophy-text--mobile {
+    display: block;
+    font-size: 12px;
+    line-height: 138%;
+    max-width: 310px;
+  }
+
+  .philosophy-btn {
+    display: none;
+  }
+
+  .philosophy-btn--mobile {
+    display: flex;
+  }
+
+  .philosophy-words {
+    margin-top: 180px;
+  }
+
+  .p-word {
+    font-size: 11px;
+    line-height: 209%;
+  }
+
+  .l-1 { left: 81px; }
+  .l-4 { left: 50%; }
+  .l-8 { left: auto; right: 81px; }
+
+  /* section-kinder */
+  .kinder__left {
+    padding: 50px 33px 30px 30px;
+  }
+
+  .kinder__title {
+    font-size: 28px;
+    line-height: 111%;
+    max-width: 282px;
+    margin-bottom: 25px;
+  }
+
+  .kinder__desc {
+    font-size: 13px;
+    line-height: 138%;
+    max-width: 300px;
+    margin-bottom: 104px;
+  }
+
+  .kinder__info-card {
+    padding: 132px 10px 10px;
+    max-width: 255px;
+  }
+
+  .kinder__info-text {
+    font-size: 13px;
+    line-height: 146%;
+  }
+
+  .kinder__right-img {
+    height: 548px;
+    margin-bottom: 392px;
+    gap: 10px;
+  }
+
+  .kinder__grid {
+    position: absolute;
+    top: 415px;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    height: max-content;
+    left: 10px;
+    right: 10px;
+  }
+
+  .kinder-card {
+    padding: 14px 11px 14px 13px;
+  }
+
+  .kinder-card:nth-of-type(n) {
+    height: 165px !important;
+  }
+
+  .kinder-card__text {
+    font-size: 13px;
+    line-height: 122%;
+  }
+
+  .kinder-card__br {
+    display: none;
+  }
+
+  .kinder-card__num {
+    top: 9px;
+    right: 7px;
+    font-size: 10px;
+    line-height: 100%;
+  }
+
+  /* section-intro */
+  .section-intro {
+    padding: 70px 0;
+  }
+
+  .section-intro__label {
+    font-size: 13px;
+    line-height: 177%;
+  }
+
+  .section-intro__title-wrapper {
+    gap: 30px;
+  }
+
+  .section-intro__container {
+    padding: 0 10px;
+  }
+
+  .section-intro__title {
+    max-width: 304px;
+  }
+
+  .section-intro__text {
+    font-size: 13px;
+    line-height: 146%;
+    max-width: 270px;
+  }
+
+  .section-intro__header {
+    margin-bottom: 70px;
+  }
+
+  .intro-card {
+    padding: 40px 35px 25px 25px;
+    gap: 52px;
+    border-radius: 20px;
+  }
+
+  .intro-card--first img {
+    width: 234px;
+  }
+
+  .intro-card--second img {
+    width: 234px;
+  } 
+
+  .intro-card--third img {
+    width: 237px;
+  }
+
+  .intro-card--fourth img {
+    width: 164px;
+  }
+
+  .intro-card--third  p{
+    max-width: 272px;
+  }
+
+  .intro-card__br {
+    display: none;
+  }
+
+  .intro-card__text {
+    font-size: 21px;
+    line-height: 105%;
+  }
+
+  .section-intro__grid {
+    margin-bottom: 0px;
+  }
+
+  /* section-kinderwunsch */
+  .kwm-mob__hero {
+    padding: 0 10px;
+  }
+
+  .kwm-mob__img {
+    height: 476px;
+  }
+
+  .kwm-mob__title {
+    left: 30px;
+    bottom: 20px;
+    line-height: 111%;
+  }
+
+  .kwm-mob__body {
+    padding: 20px 30px 0px 30px;
+  }
+
+  .kwm-mob__desc {
+    font-size: 14px;
+    line-height: 121%;
+    max-width: 296px;
+  }
+
+  .kwm-mob__btn {
+    gap: 15px;
+  }
+
+  .kwm-mob__label {
+    font-size: 28px;
+    line-height: 111%;
+    max-width: 200px;
+  }
+
+  .kwm-mob__grid {
+    grid-template-columns: 1fr;
+  }
+
+  .kwm-mob-card {
+    padding: 20px;
+    min-height: 165px;
+    justify-content: space-between;
+    border-radius: 5px;
+  }
+
+  .kwm-mob-card__text {
+    max-width: 231px;
+  }
+
+  /* .balance */
+  .balance__container {
+    padding: 0 10px;
+  }
+
+  .balance__left-part {
+    padding: 30px 23px 164px 20px;
+    position: relative;
+  }
+
+  .balance__left-part svg {
+    position: absolute;
+     top: 15px;
+     right: 15px;
+     width: 15px;
+     height: 15px;
+  }
+
+  .balance__title {
+    font-size: 28px;
+    line-height: 111%;
+    max-width: 257px;
+  }
+
+  .balance__left-part {
+    gap: 13px;
+  }
+
+  .balance__desc {
+    max-width: 300px;
+  }
+
+  .balance__left-part::after {
+    width: 100%;
+    height: 36%;
+    left: 10px;
+  }
+
+  .balance__container {
+    gap: 10px;
+  }
+
+  .balance-centr-part {
+    left: 17px;
+    right: 17px;
+    padding: 20px 23px 20px 20px;
+    gap: 33px;
+    top: 813px;
+  }
+
+  .section-balance {
+    padding-bottom: 180px;
+  }
+
+  .balance-centr-part__desc {
+    font-size: 13px;
+    line-height: 131%;
+  }
+
+  .balance-centr-part__name {
+    font-size: 13px;
+    line-height: 131%;
+    max-width: 283px;
+  }
+
+  /* .section-pricing */
+  .section-pricing {
+    padding: 0 10px;
+    margin-bottom: 0px;
+  }
+
+  .pricing__inner {
+    padding-top: 30px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 80px;
+    border-radius: 10px;
+  }
+
+  .pricing__label {
+    font-size: 14px;
+    line-height: 121%;
+    margin-bottom: 70px;
+  }
+
+  .pricing__title {
+    font-size: 28px;
+    line-height: 111%;
+    max-width: 230px;
+    margin-bottom: 20px;
+  }
+
+  .pricing__desc {
+    font-size: 14px;
+    line-height: 121%;
+    max-width: 255px;
+    margin-bottom: 70px;
+  }
+
+  .pricing__row {
+    height: 72px;
+    padding-left: 15px;
+  }
+
+  .pricing__service {
+    font-size: 13px;
+  }
+
+  .pricing__table-wrapper {
+    margin-bottom: 50px;
+  }
+
+  .pricing__duration-item {
+    height: 72px;
+  }
+
+  .pricing__duration-card {
+    width: 77px;
+    top: -32px;
+    border-radius: 10px;
+  }
+
+  .pricing__duration-brand {
+    font-size: 10px;
+    height: 32px;
+  }
+
+  .pricing__mobile-wrapper {
+    gap: 0;
+  }
+
+  .pricing__table-wrap {
+    border-radius: 10px;
+  }
+/* 
+  .section-contact */
+  .section-contact {
+    padding-top: 70px;
+  }
+
+  .pricing__btn--beige {
+    gap: 15px;
+    width: 56%;
+    justify-content: space-between;
+  }
+
+  .pricing__btn--glass {
+    padding-left: 15px;
+    gap: 15px;
+    width: 44% !important;
+    justify-content: space-between;
+  }
+
+  .pricing__btns {
+    gap: 10px;
+  }
+
+  .pricing__row:not(.pricing__row--last)::after {
+    left: 15px;
+    right: calc(-11% + 130px);
+    background: rgba(255, 255, 255, 0.15);
   }
 }

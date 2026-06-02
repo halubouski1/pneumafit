@@ -1334,6 +1334,10 @@
     padding-right: 10px;
   }
 
+  .mobile-only {
+    display: inline-block;
+  }
+
   .footer__content {
     position: absolute;
     top: -10px;

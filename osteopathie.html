@@ -5,6 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <script>document.documentElement.style.setProperty("--fixed-vh", window.innerHeight + "px");</script>
   <title>Osteopathie | PneumaFit</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css">
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/media.css">
@@ -18,7 +20,9 @@
 
     <div class="container osteopathy-hero__container">
       <header class="header">
-        <a href="index.html" class="header__logo">PneumaFit</a>
+        <a href="index.html" class="header__logo">
+          <img src="assets/img/logo.svg" alt="Manual Therapist Logo">
+        </a>
         <nav class="header__nav">
           <a href="index.html" class="header__nav-link header__nav-link--active">Home</a>
           <a href="index.html#therapies" class="header__nav-link">Leistungen</a>
@@ -83,6 +87,7 @@
 
         <div class="osteopathy-hero__main">
           <h1 class="osteopathy-hero__title">Osteopathie</h1>
+          <p class="osteopathy-hero__intro osteopathy-hero__intro--mobile">Osteopathie ist eine ganzheitliche Behandlungsmethode,  die darauf abzielt, die Beweglichkeit und das Gleichgewicht im Körper wiederherzustellen.</p>
           <div class="osteopathy-hero__cta-row">
             <a href="index.html#contact" class="hero__btn hero__btn--primary osteopathy-hero__btn">
               Jetzt Termin sichern
@@ -135,6 +140,113 @@
       </div>
     </div>
   </section>
+
+  <section class="section-philosophy" data-aos="fade-up" data-aos-duration="900">
+
+    <!-- 8 vertical lines, full height -->
+    <div class="philosophy-lines" aria-hidden="true">
+      <div class="philosophy-line l-1"></div>
+      <div class="philosophy-line l-2"></div>
+      <div class="philosophy-line l-3"></div>
+      <div class="philosophy-line l-4"></div>
+      <div class="philosophy-line l-5"></div>
+      <div class="philosophy-line l-6"></div>
+      <div class="philosophy-line l-7"></div>
+      <div class="philosophy-line l-8"></div>
+    </div>
+
+    <!-- Main content: label left + content right -->
+    <div class="philosophy-top">
+      <span class="philosophy-label">Philosophie der Osteopathie</span>
+      <div class="philosophy-main">
+        <h2 class="philosophy-title">Die Osteopathie betrachtet den Menschen als Einheit aus Körper, Geist und inneren Regulationsprozessen.</h2>
+        <p class="philosophy-text">Gesundheit entsteht dann, wenn Strukturen frei beweglich sind, Flüssigkeiten zirkulieren können und das Nervensystem in Balance ist. Ziel der osteopathischen Arbeit ist es, Voraussetzungen zu schaffen, damit der Körper seine natürlichen Selbstregulationsmechanismen besser nutzen kann.</p>
+        <p class="philosophy-text philosophy-text--mobile">Osteopathie ist eine ganzheitliche Behandlungsmethode, die darauf abzielt, die Beweglichkeit und das Gleichgewicht im Körper wiederherzustellen.</p>
+        <a href="#" class="philosophy-btn hero__btn">
+          Schreiben Sie uns 
+          <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M7.50024 4.37512L10.6253 7.50011L7.50024 10.6251" stroke="#657B8D" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round" />
+            <path d="M0.625 0.625V4.99999C0.625 5.66303 0.888388 6.29891 1.35723 6.76774C1.82607 7.23658 2.46194 7.49997 3.12498 7.49997H10.6249" stroke="#657B8D" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round" />
+          </svg>
+        </a>
+          <a href="#" class="philosophy-btn hero__btn philosophy-btn--mobile">
+          Mehr erfahren
+          <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M7.50024 4.37512L10.6253 7.50011L7.50024 10.6251" stroke="#657B8D" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round" />
+            <path d="M0.625 0.625V4.99999C0.625 5.66303 0.888388 6.29891 1.35723 6.76774C1.82607 7.23658 2.46194 7.49997 3.12498 7.49997H10.6249" stroke="#657B8D" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round" />
+          </svg>
+        </a>
+      </div>
+    </div>
+
+    <!-- Bottom words positioned between the lines -->
+    <div class="philosophy-words" aria-hidden="true">
+      <!-- col 1: 296px — 2 words centered as group -->
+      <div class="pw-group">
+        <span class="p-word p-word--1">Ganzheitlichkeit</span>
+        <span class="p-word p-word--2">Balance</span>
+      </div>
+      <div></div><!-- col 2: 178px spacer -->
+      <!-- col 3: 296px — 1 word centered -->
+      <span class="p-word p-word--3">Selbstregulation</span>
+      <div></div><!-- col 4: 178px spacer -->
+      <!-- col 5: 296px — 2 words centered as group -->
+      <div class="pw-group">
+        <span class="p-word p-word--4">Beweglichkeit</span>
+        <span class="p-word p-word--5">Harmonie</span>
+      </div>
+      <div></div><!-- col 6: 178px spacer -->
+      <div></div><!-- col 7: 296px empty (lines 7→8) -->
+      <!-- col 8: remaining — 1 word centered -->
+      <span class="p-word p-word--6">Gesundheit</span>
+    </div>
+
+  </section>
+    <section class="section-kinder" data-aos="fade-up" data-aos-duration="900">
+    <div class="kinder__left">
+      <img src="assets/img/kinder__left.png" alt="" aria-hidden="true" class="kinder__left-bg">
+      <div class="kinder__left-content">
+        <h2 class="kinder__title section-title">Kinderosteopathie – Sanfte Unterstützung für einen guten Start</h2>
+        <p class="kinder__desc">Die ersten Lebensmonate sind eine besonders sensible Zeit. Säuglinge erleben während der Geburt große Kräfte, die zu Spannungsmustern führen können. Diese können sich in Haltung, Bewegung oder Verhalten zeigen.</p>
+        <div class="kinder__info-card">
+          <p class="kinder__info-text">Die Kinderosteopathie arbeitet mit sehr feinen manuellen Techniken. Sie möchte die natürlichen Entwicklungsschritte unterstützen und dem Nervensystem des Kindes mehr Spielraum zur Regulation geben.</p>
+        </div>
+      </div>
+    </div>
+    <div class="kinder__right">
+      <picture>
+        <source srcset="assets/img/right-part-mobile.jpg" media="(max-width: 570px)">
+        <img src="assets/img/right-part.png" alt="" aria-hidden="true" class="kinder__right-img">
+      </picture>
+      <div class="kinder__grid">
+        <div class="kinder-card" style="right: 259px;;top:0">
+          <span class="kinder-card__num">01</span>
+          <p class="kinder-card__text">Unterstützung bei Verdauungs- oder Bauchbeschwerden</p>
+        </div>
+        <div class="kinder-card" style="right: 0;top: 259px;">
+          <span class="kinder-card__num">02</span>
+          <p class="kinder-card__text">Begleitung nach Geburtstraumata wie starken Drucksituationen, Saugglocken- oder Zangenentbindungen</p>
+        </div>
+          <h3 class="kinder-themes__title">Mögliche Themen, bei denen Eltern osteopathische Begleitung suchen:</h3>
+        <div class="kinder-card" style="right:259px;top:518px">
+          <span class="kinder-card__num">03</span>
+          <p class="kinder-card__text">Unterstützung nach der Geburt, z. B. bei sichtbaren Spannungen oder asymmetrischen Bewegungsmustern</p>
+        </div>
+        <div class="kinder-card" style="left:55px;top:686px">
+          <span class="kinder-card__num">04</span>
+          <p class="kinder-card__text">Begleitung in Wachstumsphasen oder <br class="kinder-card__br"> nach frühen Stürzen</p>
+        </div>
+        <div class="kinder-card" style="left:314px;bottom:0">
+          <span class="kinder-card__num">05</span>
+          <p class="kinder-card__text">Förderung eines ausgeglichenen Muskel- <br class="kinder-card__br"> und Gewebetons</p>
+        </div>
+        <div class="kinder-card" style="right:0;bottom:0">
+          <span class="kinder-card__num">06</span>
+          <p class="kinder-card__text">Unterstützung bei Schädel- oder Wirbelsäulen-Asymmetrien</p>
+        </div>
+      </div>
+    </div>
+  </section>
     <section class="section-intro">
     <div class="section-intro__bg">
       <img src="assets/img/after-hero.png" alt="" aria-hidden="true" class="section-intro__bg-img">
@@ -158,65 +270,23 @@
 
         <div class="intro-card--first intro-card ostheopathie-intro-card">
           <img src="assets/img/ostheopathie-card-1.png" class="ostheopathie-card-image">
-          <p class="intro-card__text">Vorbereitung des Körpers auf die Geburt durch Förderung der Gewebeelastizität</p>
+          <p class="intro-card__text">Vorbereitung des Körpers auf <br> die Geburt durch Förderung <br> der Gewebeelastizität</p>
         </div>
 
         <div class="intro-card--second intro-card ostheopathie-intro-card">
           <img src="assets/img/ostheopathie-card-2.png" class="ostheopathie-card-image">
-          <p class="intro-card__text">Unterstützung des Beckenbodens</p>
+          <p class="intro-card__text">Unterstützung des <br> Beckenbodens</p>
         </div>
 
         <div class="intro-card--third intro-card ostheopathie-intro-card">
           <img src="assets/img/ostheopathie-card-3.png" class="ostheopathie-card-image">
-          <p class="intro-card__text">Entlastung bei <br> Beschwerden durch veränderte Statik</p>
+          <p class="intro-card__text">Entlastung bei <br class="intro-card__br"> Beschwerden durch <br class="intro-card__br"> veränderte Statik</p>
         </div>
         <div class="intro-card--fourth intro-card ostheopathie-intro-card">
           <img src="assets/img/ostheopathie-card-4.png" class="ostheopathie-card-image">
-          <p class="intro-card__text">Förderung einer möglichst freien Beweglichkeit von Mutter und Kind</p>
+          <p class="intro-card__text">Förderung einer möglichst <br> freien Beweglichkeit von <br> Mutter und Kind</p>
         </div>
 
-      </div>
-    </div>
-  </section>
-  <section class="section-kinder" data-aos="fade-up" data-aos-duration="900">
-    <div class="kinder__left">
-      <img src="assets/img/kinder__left.png" alt="" aria-hidden="true" class="kinder__left-bg">
-      <div class="kinder__left-content">
-        <h2 class="kinder__title section-title">Kinderosteopathie – Sanfte Unterstützung für einen guten Start</h2>
-        <p class="kinder__desc">Die ersten Lebensmonate sind eine besonders sensible Zeit. Säuglinge erleben während der Geburt große Kräfte, die zu Spannungsmustern führen können. Diese können sich in Haltung, Bewegung oder Verhalten zeigen.</p>
-        <div class="kinder__info-card">
-          <p class="kinder__info-text">Die Kinderosteopathie arbeitet mit sehr feinen manuellen Techniken. Sie möchte die natürlichen Entwicklungsschritte unterstützen und dem Nervensystem des Kindes mehr Spielraum zur Regulation geben.</p>
-        </div>
-      </div>
-    </div>
-    <div class="kinder__right">
-      <img src="assets/img/right-part.png" alt="" aria-hidden="true" class="kinder__right-img">
-      <div class="kinder__grid">
-        <div class="kinder-card" style="right: 259px;;top:0">
-          <span class="kinder-card__num">01</span>
-          <p class="kinder-card__text">Unterstützung bei Verdauungs- oder Bauchbeschwerden</p>
-        </div>
-        <div class="kinder-card" style="right: 0;top: 259px;">
-          <span class="kinder-card__num">02</span>
-          <p class="kinder-card__text">Begleitung nach Geburtstraumata wie starken Drucksituationen, Saugglocken- oder Zangenentbindungen</p>
-        </div>
-          <h3 class="kinder-themes__title">Mögliche Themen, bei denen Eltern osteopathische Begleitung suchen:</h3>
-        <div class="kinder-card" style="right:259px;top:518px">
-          <span class="kinder-card__num">03</span>
-          <p class="kinder-card__text">Unterstützung nach der Geburt, z. B. bei sichtbaren Spannungen oder asymmetrischen Bewegungsmustern</p>
-        </div>
-        <div class="kinder-card" style="left:55px;top:686px">
-          <span class="kinder-card__num">04</span>
-          <p class="kinder-card__text">Begleitung in Wachstumsphasen oder <br> nach frühen Stürzen</p>
-        </div>
-        <div class="kinder-card" style="left:314px;bottom:0">
-          <span class="kinder-card__num">05</span>
-          <p class="kinder-card__text">Förderung eines ausgeglichenen Muskel- <br> und Gewebetons</p>
-        </div>
-        <div class="kinder-card" style="right:0;bottom:0">
-          <span class="kinder-card__num">06</span>
-          <p class="kinder-card__text">Unterstützung bei Schädel- oder Wirbelsäulen-Asymmetrien</p>
-        </div>
       </div>
     </div>
   </section>
@@ -278,6 +348,94 @@
       </div>
     </div>
   </section>
+
+  <!-- Mobile kinderwunsch — visible at ≤940px only -->
+  <section class="section-kwm-mob">
+    <div class="kwm-mob__hero">
+      <img src="assets/img/kinderwunsch.png" alt="" aria-hidden="true" class="kwm-mob__img">
+      <h2 class="kwm-mob__title">Begleitung bei Kinderwunsch</h2>
+    </div>
+    <div class="kwm-mob__body">
+      <p class="kwm-mob__desc">Die Kinderwunschzeit ist für viele Menschen emotional herausfordernd. Osteopathie und Naturheilkunde bieten hier einen ganzheitlichen Ansatz und beziehen hormonelle, strukturelle und nervale Aspekte ein.</p>
+      <a href="index.html#contact" class="hero__btn hero__btn--primary kwm-mob__btn">
+        Jetzt Termin sichern
+        <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <path d="M7.5 4.37512L10.625 7.50011L7.5 10.6251" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M0.625 0.625V4.99999C0.625 5.66303 0.888388 6.29891 1.35723 6.76774C1.82607 7.23658 2.46194 7.49997 3.12498 7.49997H10.6249" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </a>
+      <span class="kwm-mob__label">Ansatzpunkte können sein:</span>
+      <div class="kwm-mob__grid">
+        <div class="kwm-mob-card">
+          <svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <g opacity="0.5">
+              <path d="M7.95499 0C7.50727 0 7.06399 0.0881816 6.65036 0.259545C6.23681 0.430818 5.86099 0.681911 5.54436 0.998457C5.22781 1.31509 4.97672 1.69091 4.80544 2.10446C4.63408 2.51809 4.5459 2.96137 4.5459 3.4091C4.5459 3.85682 4.63408 4.3001 4.80544 4.71373C4.97672 5.12728 5.22781 5.5031 5.54436 5.81964C5.86099 6.13628 6.23681 6.38737 6.65036 6.55865C7.06399 6.73001 7.50727 6.81819 7.95499 6.81819C8.40272 6.81819 8.846 6.73001 9.25963 6.55865C9.67318 6.38737 10.049 6.13628 10.3656 5.81964C10.6822 5.5031 10.9333 5.12728 11.1045 4.71373C11.2759 4.3001 11.3641 3.85682 11.3641 3.4091C11.3641 2.96137 11.2759 2.51809 11.1045 2.10446C10.9333 1.69091 10.6822 1.31509 10.3656 0.998457C10.049 0.681911 9.67318 0.430818 9.25963 0.259545C8.846 0.0881816 8.40272 0 7.95499 0Z" fill="#657B8D"/>
+              <path d="M3.4091 8.18213C2.96137 8.18213 2.51809 8.27031 2.10446 8.44167C1.69091 8.61295 1.31509 8.86404 0.998457 9.18059C0.681911 9.49722 0.430818 9.87304 0.259545 10.2866C0.0881816 10.7002 0 11.1435 0 11.5912C0 12.039 0.0881816 12.4822 0.259545 12.8959C0.430818 13.3094 0.681911 13.6852 0.998457 14.0018C1.31509 14.3184 1.69091 14.5695 2.10446 14.7408C2.51809 14.9121 2.96137 15.0003 3.4091 15.0003C3.85682 15.0003 4.3001 14.9121 4.71373 14.7408C5.12728 14.5695 5.5031 14.3184 5.81973 14.0018C6.13628 13.6852 6.38737 13.3094 6.55865 12.8959C6.73001 12.4822 6.81819 12.039 6.81819 11.5912C6.81819 11.1435 6.73001 10.7002 6.55865 10.2866C6.38737 9.87304 6.13628 9.49722 5.81973 9.18059C5.5031 8.86404 5.12728 8.61295 4.71373 8.44167C4.3001 8.27031 3.85682 8.18213 3.4091 8.18213Z" fill="#657B8D"/>
+              <path d="M12.5002 8.18213C12.0524 8.18213 11.6092 8.27031 11.1955 8.44167C10.782 8.61295 10.4062 8.86404 10.0895 9.18059C9.77298 9.49722 9.52188 9.87304 9.35061 10.2866C9.17925 10.7002 9.09106 11.1435 9.09106 11.5912C9.09106 12.039 9.17925 12.4822 9.35061 12.8959C9.52188 13.3094 9.77298 13.6852 10.0895 14.0018C10.4062 14.3184 10.782 14.5695 11.1955 14.7408C11.6092 14.9121 12.0524 15.0003 12.5002 15.0003C12.9479 15.0003 13.3912 14.9121 13.8048 14.7408C14.2183 14.5695 14.5942 14.3184 14.9108 14.0018C15.2273 13.6852 15.4784 13.3094 15.6497 12.8959C15.8211 12.4822 15.9093 12.039 15.9093 11.5912C15.9093 11.1435 15.8211 10.7002 15.6497 10.2866C15.4784 9.87304 15.2273 9.49722 14.9108 9.18059C14.5942 8.86404 14.2183 8.61295 13.8048 8.44167C13.3912 8.27031 12.9479 8.18213 12.5002 8.18213Z" fill="#657B8D"/>
+            </g>
+          </svg>
+          <p class="kwm-mob-card__text">Förderung der Durchblutung und Beweglichkeit im Becken</p>
+        </div>
+        <div class="kwm-mob-card">
+          <svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <g opacity="0.5">
+              <path d="M7.95499 0C7.50727 0 7.06399 0.0881816 6.65036 0.259545C6.23681 0.430818 5.86099 0.681911 5.54436 0.998457C5.22781 1.31509 4.97672 1.69091 4.80544 2.10446C4.63408 2.51809 4.5459 2.96137 4.5459 3.4091C4.5459 3.85682 4.63408 4.3001 4.80544 4.71373C4.97672 5.12728 5.22781 5.5031 5.54436 5.81964C5.86099 6.13628 6.23681 6.38737 6.65036 6.55865C7.06399 6.73001 7.50727 6.81819 7.95499 6.81819C8.40272 6.81819 8.846 6.73001 9.25963 6.55865C9.67318 6.38737 10.049 6.13628 10.3656 5.81964C10.6822 5.5031 10.9333 5.12728 11.1045 4.71373C11.2759 4.3001 11.3641 3.85682 11.3641 3.4091C11.3641 2.96137 11.2759 2.51809 11.1045 2.10446C10.9333 1.69091 10.6822 1.31509 10.3656 0.998457C10.049 0.681911 9.67318 0.430818 9.25963 0.259545C8.846 0.0881816 8.40272 0 7.95499 0Z" fill="#657B8D"/>
+              <path d="M3.4091 8.18213C2.96137 8.18213 2.51809 8.27031 2.10446 8.44167C1.69091 8.61295 1.31509 8.86404 0.998457 9.18059C0.681911 9.49722 0.430818 9.87304 0.259545 10.2866C0.0881816 10.7002 0 11.1435 0 11.5912C0 12.039 0.0881816 12.4822 0.259545 12.8959C0.430818 13.3094 0.681911 13.6852 0.998457 14.0018C1.31509 14.3184 1.69091 14.5695 2.10446 14.7408C2.51809 14.9121 2.96137 15.0003 3.4091 15.0003C3.85682 15.0003 4.3001 14.9121 4.71373 14.7408C5.12728 14.5695 5.5031 14.3184 5.81973 14.0018C6.13628 13.6852 6.38737 13.3094 6.55865 12.8959C6.73001 12.4822 6.81819 12.039 6.81819 11.5912C6.81819 11.1435 6.73001 10.7002 6.55865 10.2866C6.38737 9.87304 6.13628 9.49722 5.81973 9.18059C5.5031 8.86404 5.12728 8.61295 4.71373 8.44167C4.3001 8.27031 3.85682 8.18213 3.4091 8.18213Z" fill="#657B8D"/>
+              <path d="M12.5002 8.18213C12.0524 8.18213 11.6092 8.27031 11.1955 8.44167C10.782 8.61295 10.4062 8.86404 10.0895 9.18059C9.77298 9.49722 9.52188 9.87304 9.35061 10.2866C9.17925 10.7002 9.09106 11.1435 9.09106 11.5912C9.09106 12.039 9.17925 12.4822 9.35061 12.8959C9.52188 13.3094 9.77298 13.6852 10.0895 14.0018C10.4062 14.3184 10.782 14.5695 11.1955 14.7408C11.6092 14.9121 12.0524 15.0003 12.5002 15.0003C12.9479 15.0003 13.3912 14.9121 13.8048 14.7408C14.2183 14.5695 14.5942 14.3184 14.9108 14.0018C15.2273 13.6852 15.4784 13.3094 15.6497 12.8959C15.8211 12.4822 15.9093 12.039 15.9093 11.5912C15.9093 11.1435 15.8211 10.7002 15.6497 10.2866C15.4784 9.87304 15.2273 9.49722 14.9108 9.18059C14.5942 8.86404 14.2183 8.61295 13.8048 8.44167C13.3912 8.27031 12.9479 8.18213 12.5002 8.18213Z" fill="#657B8D"/>
+            </g>
+          </svg>
+          <p class="kwm-mob-card__text">Ausgleich von Spannungen, die zyklische Prozesse beeinflussen können</p>
+        </div>
+        <div class="kwm-mob-card kwm-mob-card--active">
+          <svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <g opacity="0.5">
+              <path d="M7.95499 0C7.50727 0 7.06399 0.0881816 6.65036 0.259545C6.23681 0.430818 5.86099 0.681911 5.54436 0.998457C5.22781 1.31509 4.97672 1.69091 4.80544 2.10446C4.63408 2.51809 4.5459 2.96137 4.5459 3.4091C4.5459 3.85682 4.63408 4.3001 4.80544 4.71373C4.97672 5.12728 5.22781 5.5031 5.54436 5.81964C5.86099 6.13628 6.23681 6.38737 6.65036 6.55865C7.06399 6.73001 7.50727 6.81819 7.95499 6.81819C8.40272 6.81819 8.846 6.73001 9.25963 6.55865C9.67318 6.38737 10.049 6.13628 10.3656 5.81964C10.6822 5.5031 10.9333 5.12728 11.1045 4.71373C11.2759 4.3001 11.3641 3.85682 11.3641 3.4091C11.3641 2.96137 11.2759 2.51809 11.1045 2.10446C10.9333 1.69091 10.6822 1.31509 10.3656 0.998457C10.049 0.681911 9.67318 0.430818 9.25963 0.259545C8.846 0.0881816 8.40272 0 7.95499 0Z" fill="#657B8D"/>
+              <path d="M3.4091 8.18213C2.96137 8.18213 2.51809 8.27031 2.10446 8.44167C1.69091 8.61295 1.31509 8.86404 0.998457 9.18059C0.681911 9.49722 0.430818 9.87304 0.259545 10.2866C0.0881816 10.7002 0 11.1435 0 11.5912C0 12.039 0.0881816 12.4822 0.259545 12.8959C0.430818 13.3094 0.681911 13.6852 0.998457 14.0018C1.31509 14.3184 1.69091 14.5695 2.10446 14.7408C2.51809 14.9121 2.96137 15.0003 3.4091 15.0003C3.85682 15.0003 4.3001 14.9121 4.71373 14.7408C5.12728 14.5695 5.5031 14.3184 5.81973 14.0018C6.13628 13.6852 6.38737 13.3094 6.55865 12.8959C6.73001 12.4822 6.81819 12.039 6.81819 11.5912C6.81819 11.1435 6.73001 10.7002 6.55865 10.2866C6.38737 9.87304 6.13628 9.49722 5.81973 9.18059C5.5031 8.86404 5.12728 8.61295 4.71373 8.44167C4.3001 8.27031 3.85682 8.18213 3.4091 8.18213Z" fill="#657B8D"/>
+              <path d="M12.5002 8.18213C12.0524 8.18213 11.6092 8.27031 11.1955 8.44167C10.782 8.61295 10.4062 8.86404 10.0895 9.18059C9.77298 9.49722 9.52188 9.87304 9.35061 10.2866C9.17925 10.7002 9.09106 11.1435 9.09106 11.5912C9.09106 12.039 9.17925 12.4822 9.35061 12.8959C9.52188 13.3094 9.77298 13.6852 10.0895 14.0018C10.4062 14.3184 10.782 14.5695 11.1955 14.7408C11.6092 14.9121 12.0524 15.0003 12.5002 15.0003C12.9479 15.0003 13.3912 14.9121 13.8048 14.7408C14.2183 14.5695 14.5942 14.3184 14.9108 14.0018C15.2273 13.6852 15.4784 13.3094 15.6497 12.8959C15.8211 12.4822 15.9093 12.039 15.9093 11.5912C15.9093 11.1435 15.8211 10.7002 15.6497 10.2866C15.4784 9.87304 15.2273 9.49722 14.9108 9.18059C14.5942 8.86404 14.2183 8.61295 13.8048 8.44167C13.3912 8.27031 12.9479 8.18213 12.5002 8.18213Z" fill="#657B8D"/>
+            </g>
+          </svg>
+          <p class="kwm-mob-card__text">Regulation des vegetativen Nervensystems in Stressphasen</p>
+        </div>
+        <div class="kwm-mob-card">
+          <svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <g opacity="0.5">
+              <path d="M7.95499 0C7.50727 0 7.06399 0.0881816 6.65036 0.259545C6.23681 0.430818 5.86099 0.681911 5.54436 0.998457C5.22781 1.31509 4.97672 1.69091 4.80544 2.10446C4.63408 2.51809 4.5459 2.96137 4.5459 3.4091C4.5459 3.85682 4.63408 4.3001 4.80544 4.71373C4.97672 5.12728 5.22781 5.5031 5.54436 5.81964C5.86099 6.13628 6.23681 6.38737 6.65036 6.55865C7.06399 6.73001 7.50727 6.81819 7.95499 6.81819C8.40272 6.81819 8.846 6.73001 9.25963 6.55865C9.67318 6.38737 10.049 6.13628 10.3656 5.81964C10.6822 5.5031 10.9333 5.12728 11.1045 4.71373C11.2759 4.3001 11.3641 3.85682 11.3641 3.4091C11.3641 2.96137 11.2759 2.51809 11.1045 2.10446C10.9333 1.69091 10.6822 1.31509 10.3656 0.998457C10.049 0.681911 9.67318 0.430818 9.25963 0.259545C8.846 0.0881816 8.40272 0 7.95499 0Z" fill="#657B8D"/>
+              <path d="M3.4091 8.18213C2.96137 8.18213 2.51809 8.27031 2.10446 8.44167C1.69091 8.61295 1.31509 8.86404 0.998457 9.18059C0.681911 9.49722 0.430818 9.87304 0.259545 10.2866C0.0881816 10.7002 0 11.1435 0 11.5912C0 12.039 0.0881816 12.4822 0.259545 12.8959C0.430818 13.3094 0.681911 13.6852 0.998457 14.0018C1.31509 14.3184 1.69091 14.5695 2.10446 14.7408C2.51809 14.9121 2.96137 15.0003 3.4091 15.0003C3.85682 15.0003 4.3001 14.9121 4.71373 14.7408C5.12728 14.5695 5.5031 14.3184 5.81973 14.0018C6.13628 13.6852 6.38737 13.3094 6.55865 12.8959C6.73001 12.4822 6.81819 12.039 6.81819 11.5912C6.81819 11.1435 6.73001 10.7002 6.55865 10.2866C6.38737 9.87304 6.13628 9.49722 5.81973 9.18059C5.5031 8.86404 5.12728 8.61295 4.71373 8.44167C4.3001 8.27031 3.85682 8.18213 3.4091 8.18213Z" fill="#657B8D"/>
+              <path d="M12.5002 8.18213C12.0524 8.18213 11.6092 8.27031 11.1955 8.44167C10.782 8.61295 10.4062 8.86404 10.0895 9.18059C9.77298 9.49722 9.52188 9.87304 9.35061 10.2866C9.17925 10.7002 9.09106 11.1435 9.09106 11.5912C9.09106 12.039 9.17925 12.4822 9.35061 12.8959C9.52188 13.3094 9.77298 13.6852 10.0895 14.0018C10.4062 14.3184 10.782 14.5695 11.1955 14.7408C11.6092 14.9121 12.0524 15.0003 12.5002 15.0003C12.9479 15.0003 13.3912 14.9121 13.8048 14.7408C14.2183 14.5695 14.5942 14.3184 14.9108 14.0018C15.2273 13.6852 15.4784 13.3094 15.6497 12.8959C15.8211 12.4822 15.9093 12.039 15.9093 11.5912C15.9093 11.1435 15.8211 10.7002 15.6497 10.2866C15.4784 9.87304 15.2273 9.49722 14.9108 9.18059C14.5942 8.86404 14.2183 8.61295 13.8048 8.44167C13.3912 8.27031 12.9479 8.18213 12.5002 8.18213Z" fill="#657B8D"/>
+            </g>
+          </svg>
+          <p class="kwm-mob-card__text">Stärkung des allgemeinen Wohlbefindens</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+    <section class="section-balance" data-aos="fade-up" data-aos-duration="900">
+    <div class="container balance__container">
+      <div class="balance__left-part">
+        <svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path opacity="0.5" d="M9.29088 0.678564C9.38645 -0.22589 10.7029 -0.225889 10.7985 0.678566L11.2873 5.30476C11.3505 5.90233 12.0506 6.19234 12.5178 5.81445L16.1347 2.88889C16.8418 2.31693 17.7727 3.2478 17.2007 3.95492L14.2752 7.5718C13.8973 8.03899 14.1873 8.73914 14.7848 8.80229L19.411 9.29113C20.3155 9.3867 20.3155 10.7031 19.411 10.7987L14.7848 11.2876C14.1873 11.3507 13.8973 12.0508 14.2752 12.518L17.2007 16.1349C17.7727 16.842 16.8418 17.7729 16.1347 17.201L12.5178 14.2754C12.0506 13.8975 11.3505 14.1875 11.2873 14.7851L10.7985 19.4113C10.7029 20.3157 9.38645 20.3157 9.29088 19.4113L8.80204 14.7851C8.7389 14.1875 8.03875 13.8975 7.57156 14.2754L3.95468 17.201C3.24755 17.7729 2.31668 16.842 2.88865 16.1349L5.8142 12.518C6.1921 12.0508 5.90209 11.3507 5.30452 11.2876L0.67832 10.7987C-0.226134 10.7031 -0.226133 9.3867 0.678321 9.29113L5.30452 8.80229C5.90209 8.73914 6.1921 8.03899 5.8142 7.5718L2.88865 3.95492C2.31668 3.2478 3.24755 2.31693 3.95468 2.8889L7.57156 5.81445C8.03875 6.19234 8.7389 5.90233 8.80204 5.30476L9.29088 0.678564Z" fill="#657B8D" />
+        </svg>
+        <h2 class="section-title balance__title">
+          Ganzheitliche Heilpraktik – Wege zur Balance
+        </h2>
+          <p class="balance__desc">
+            Die Physiotherapie hat das Ziel Schmerzen zu Lindern, Funktionen des Körpers wiederherzustellen und die Beweglichkeit durch Übungen und manuelle Techniken zu verbessern. Wir führen in unserer Praxis unter anderem folgende Behandlungen durch:          
+          </p>
+      </div>
+      <div class="balance__right-part">
+        <img src="assets/img/balance.jpg" alt="cheropractise" aria-hidden="true" class="balance__image">
+      </div>
+      <div class="balance-centr-part">
+        <span class="balance-centr-part__name">
+          [ Ganzheitliche Heilpraktik ]
+        </span>
+        <p class="balance-centr-part__desc">
+          Als Heilpraktikerin verbinde ich osteopathische Prinzipien mit naturheilkundlichem Wissen. Jede Behandlung wird individuell abgestimmt und berücksichtigt Körper, Nervensystem und persönliche Lebensumstände. Ziel ist es, Ressourcen zu stärken und den Körper in seiner Selbstregulation zu unterstützen.
+        </p>
+      </div>
+    </div>
+  </section>
   <section class="section-pricing" data-aos="fade-up" data-aos-duration="900">
     <div class="pricing__inner">
       <span class="pricing__label">[ Preise & Zeiten – fair, klar, transparent ]</span>
@@ -291,26 +449,42 @@
             <div class="pricing__duration-item">40 min</div>
             <div class="pricing__duration-item">45 min</div>
             <div class="pricing__duration-item">30 min</div>
+            <div class="pricing__duration-item pricing__duration-item--mobile">130 <span class="pricing__price-sign">€</span></div>
+            <div class="pricing__duration-item pricing__duration-item--mobile">80 <span class="pricing__price-sign">€</span></div>
+            <div class="pricing__duration-item pricing__duration-item--mobile">90 <span class="pricing__price-sign">€</span></div>
+            <div class="pricing__duration-item pricing__duration-item--mobile">75 <span class="pricing__price-sign">€</span></div>
           </div>
   
           <span class="pricing__col-price-label">Preis</span>
           <div class="pricing__row">
-            <span class="pricing__service">Osteopathie - Ersttermin</span>
+            <div class="pricing__mobile-wrapper">
+              <span class="pricing__service">Osteopathie - Ersttermin</span>
+              <span class="pricing__duration--mobile">60 min</span>
+            </div>
             <div class="pricing__ph"></div>
             <span class="pricing__price">130 <span class="pricing__price-sign">€</span></span>
           </div>
           <div class="pricing__row">
-            <span class="pricing__service">Osteopathie - Folgetermin</span>
+            <div class="pricing__mobile-wrapper">
+              <span class="pricing__service">Osteopathie - Folgetermin</span>
+              <span class="pricing__duration--mobile">40 min</span>
+            </div>
             <div class="pricing__ph"></div>
             <span class="pricing__price">80 <span class="pricing__price-sign">€</span></span>
           </div>
           <div class="pricing__row">
-            <span class="pricing__service">Craniosacrale Therapie (Cranio)</span>
+            <div class="pricing__mobile-wrapper">
+              <span class="pricing__service">Craniosacrale Therapie (Cranio)</span>
+              <span class="pricing__duration--mobile">45 min</span>
+            </div>
             <div class="pricing__ph"></div>
             <span class="pricing__price">90 <span class="pricing__price-sign">€</span></span>
           </div>
           <div class="pricing__row pricing__row--last">
-            <span class="pricing__service">Fokussierte Kurzbehandlung</span>
+            <div class="pricing__mobile-wrapper">
+              <span class="pricing__service">Fokussierte Kurzbehandlung</span>
+              <span class="pricing__duration--mobile">30 min</span>
+            </div>
             <div class="pricing__ph"></div>
             <span class="pricing__price">75 <span class="pricing__price-sign">€</span></span>
           </div>
@@ -323,14 +497,14 @@
       </div>
 
       <div class="pricing__btns">
-        <a href="index.html#contact" class="hero__btn hero__btn--primary">
+        <a href="index.html#contact" class="hero__btn hero__btn--primary pricing__btn--beige">
           Jetzt Termin sichern
           <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
             <path d="M7.5 4.37512L10.625 7.50011L7.5 10.6251" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"/>
             <path d="M0.625 0.625V4.99999C0.625 5.66303 0.888388 6.29891 1.35723 6.76774C1.82607 7.23658 2.46194 7.49997 3.12498 7.49997H10.6249" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"/>
           </svg>
         </a>
-        <a href="index.html#contact" class="hero__btn hero__btn--secondary">
+        <a href="index.html#contact" class="hero__btn hero__btn--secondary pricing__btn--glass">
           Fragen klären
           <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
             <path d="M7.5 4.37512L10.625 7.50011L7.5 10.6251" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"/>
@@ -340,48 +514,25 @@
       </div>
 
       <a href="#" class="pricing__learn">
-        <svg width="1" height="220" viewBox="0 0 1 220" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <line x1="0.5" y1="0" x2="0.5" y2="220" stroke="url(#pricing_line_grad)"/>
-          <defs>
-            <linearGradient id="pricing_line_grad" x1="0.5" y1="0" x2="0.5" y2="220" gradientUnits="userSpaceOnUse">
-              <stop stop-color="white" stop-opacity="0"/>
-              <stop offset="1" stop-color="white"/>
+            <svg width="1" height="363" viewBox="0 0 1 363" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <line x1="0.5" y1="2.18557e-08" x2="0.499984" y2="363" stroke="url(#paint0_linear_147_16)"/>
+            <defs>
+            <linearGradient id="paint0_linear_147_17" x1="-0.5" y1="-2.18557e-08" x2="-0.500016" y2="363" gradientUnits="userSpaceOnUse">
+            <stop stop-color="white" stop-opacity="0"/>
+            <stop offset="1" stop-color="white"/>
             </linearGradient>
-          </defs>
-        </svg>
-        <div class="osteopathy-learn__icon-wrapper">
-          <span class="osteopathy-learn__icon" aria-hidden="true">
-            <svg width="20" height="28" viewBox="0 0 20 28" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M9.52 27.2C12.0449 27.2 14.4663 26.197 16.2517 24.4117C18.037 22.6263 19.04 20.2049 19.04 17.68V9.52C19.04 6.99514 18.037 4.57369 16.2517 2.78834C14.4663 1.003 12.0449 0 9.52 0C6.99514 0 4.57369 1.003 2.78834 2.78834C1.003 4.57369 0 6.99514 0 9.52V17.68C0 20.2049 1.003 22.6263 2.78834 24.4117C4.57369 26.197 6.99514 27.2 9.52 27.2Z" fill="white"/>
-              <path d="M8.83995 13.26H8.90115L9.03715 13.4028C9.10037 13.4665 9.17558 13.5171 9.25844 13.5516C9.3413 13.5861 9.43018 13.6039 9.51995 13.6039C9.60972 13.6039 9.6986 13.5861 9.78147 13.5516C9.86433 13.5171 9.93954 13.4665 10.0028 13.4028L10.1388 13.26H10.2V13.1988L14.0828 9.32275L13.1172 8.35716L10.2 11.2812V4.07996H8.83995V11.2812L5.92275 8.35716L4.95715 9.32275L8.83995 13.1988V13.26Z" fill="white"/>
+            </defs>
             </svg>
-          </span>
-          <span class="osteopathy-learn__text">Learn More</span>
-        </div>
+            <div class="osteopathy-learn__icon-wrapper">
+              <span class="osteopathy-learn__icon" aria-hidden="true">
+                <svg width="20" height="28" viewBox="0 0 20 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M9.52 27.2C12.0449 27.2 14.4663 26.197 16.2517 24.4117C18.037 22.6263 19.04 20.2049 19.04 17.68V9.52C19.04 6.99514 18.037 4.57369 16.2517 2.78834C14.4663 1.003 12.0449 0 9.52 0C6.99514 0 4.57369 1.003 2.78834 2.78834C1.003 4.57369 0 6.99514 0 9.52V17.68C0 20.2049 1.003 22.6263 2.78834 24.4117C4.57369 26.197 6.99514 27.2 9.52 27.2ZM1.36 9.52C1.36 7.35583 2.21971 5.28031 3.75001 3.75001C5.28031 2.21971 7.35583 1.36 9.52 1.36C11.6842 1.36 13.7597 2.21971 15.29 3.75001C16.8203 5.28031 17.68 7.35583 17.68 9.52V17.68C17.68 19.8442 16.8203 21.9197 15.29 23.45C13.7597 24.9803 11.6842 25.84 9.52 25.84C7.35583 25.84 5.28031 24.9803 3.75001 23.45C2.21971 21.9197 1.36 19.8442 1.36 17.68V9.52Z" fill="white" />
+                  <path d="M8.83995 13.26H8.90115L9.03715 13.4028C9.10037 13.4665 9.17558 13.5171 9.25844 13.5516C9.3413 13.5861 9.43018 13.6039 9.51995 13.6039C9.60972 13.6039 9.6986 13.5861 9.78147 13.5516C9.86433 13.5171 9.93954 13.4665 10.0028 13.4028L10.1388 13.26H10.2V13.1988L14.0828 9.32275L13.1172 8.35716L10.2 11.2812V4.07996H8.83995V11.2812L5.92275 8.35716L4.95715 9.32275L8.83995 13.1988V13.26Z" fill="white" />
+                </svg>
+              </span>
+              <span class="osteopathy-learn__text">Learn More</span>
+            </div>
       </a>
-    </div>
-  </section>
-  <section class="section-balance" data-aos="fade-up" data-aos-duration="900">
-    <div class="container balance__container">
-      <div class="balance__left-part">
-        <svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path opacity="0.5" d="M9.29088 0.678564C9.38645 -0.22589 10.7029 -0.225889 10.7985 0.678566L11.2873 5.30476C11.3505 5.90233 12.0506 6.19234 12.5178 5.81445L16.1347 2.88889C16.8418 2.31693 17.7727 3.2478 17.2007 3.95492L14.2752 7.5718C13.8973 8.03899 14.1873 8.73914 14.7848 8.80229L19.411 9.29113C20.3155 9.3867 20.3155 10.7031 19.411 10.7987L14.7848 11.2876C14.1873 11.3507 13.8973 12.0508 14.2752 12.518L17.2007 16.1349C17.7727 16.842 16.8418 17.7729 16.1347 17.201L12.5178 14.2754C12.0506 13.8975 11.3505 14.1875 11.2873 14.7851L10.7985 19.4113C10.7029 20.3157 9.38645 20.3157 9.29088 19.4113L8.80204 14.7851C8.7389 14.1875 8.03875 13.8975 7.57156 14.2754L3.95468 17.201C3.24755 17.7729 2.31668 16.842 2.88865 16.1349L5.8142 12.518C6.1921 12.0508 5.90209 11.3507 5.30452 11.2876L0.67832 10.7987C-0.226134 10.7031 -0.226133 9.3867 0.678321 9.29113L5.30452 8.80229C5.90209 8.73914 6.1921 8.03899 5.8142 7.5718L2.88865 3.95492C2.31668 3.2478 3.24755 2.31693 3.95468 2.8889L7.57156 5.81445C8.03875 6.19234 8.7389 5.90233 8.80204 5.30476L9.29088 0.678564Z" fill="#657B8D" />
-        </svg>
-        <h2 class="section-title balance__title">
-          Ganzheitliche Heilpraktik – Wege zur Balance
-        </h2>
-      </div>
-      <div class="balance__right-part">
-        <img src="assets/img/balance.jpg" alt="cheropractise" aria-hidden="true" class="balance__image">
-      </div>
-      <div class="balance-centr-part">
-        <span class="balance-centr-part__name">
-          [ Ganzheitliche Heilpraktik ]
-        </span>
-        <p class="balance-centr-part__desc">
-          Als Heilpraktikerin verbinde ich osteopathische Prinzipien mit naturheilkundlichem Wissen. Jede Behandlung wird individuell abgestimmt und berücksichtigt Körper, Nervensystem und persönliche Lebensumstände. Ziel ist es, Ressourcen zu stärken und den Körper in seiner Selbstregulation zu unterstützen.
-        </p>
-      </div>
     </div>
   </section>
     <section class="section-contact" data-aos="fade-up" data-aos-duration="900">
