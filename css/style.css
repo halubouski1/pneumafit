@@ -1064,7 +1064,6 @@ pagination-bullets .swiper-pagination-bullet, .swiper-pagination-horizontal.swip
   overflow: visible;
   min-width: 0;
   /* clip cards that slide out to the left, allow overflow to the right */
-  clip-path: inset(0 -9999px 0 0);
 }
 
 .reviews-swiper {
