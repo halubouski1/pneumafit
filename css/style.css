@@ -1063,7 +1063,13 @@ pagination-bullets .swiper-pagination-bullet, .swiper-pagination-horizontal.swip
   flex: 1;
   overflow: visible;
   min-width: 0;
-  /* clip cards that slide out to the left, allow overflow to the right */
+}
+
+.reviews-clip-left {
+  box-sizing: content-box;
+  overflow: hidden;
+  padding-right: 9999px;
+  margin-right: -9999px;
 }
 
 .reviews-swiper {
