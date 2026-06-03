@@ -926,6 +926,7 @@
     grid-template-columns: repeat(2, 1fr);
     gap: 10px;
     /* height: max-content; */
+    padding-bottom: 10px;
     left: 10px;
     right: 10px;
   }
