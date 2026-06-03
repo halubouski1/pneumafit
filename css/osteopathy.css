@@ -930,6 +930,7 @@
 .pricing__row {
   display: flex;
   align-items: center;
+  justify-content: space-between;
   height: 70px;
   padding-left: 30px;
   position: relative;
@@ -1021,4 +1022,8 @@
 
 .pricing__learn:hover {
   opacity: 0.75;
+}
+
+.pricing__duration--mobile {
+  display: none;
 }

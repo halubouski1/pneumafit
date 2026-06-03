@@ -10,17 +10,15 @@
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/media.css">
+  <link rel="stylesheet" href="css/t-shape.css">
+  <link rel="stylesheet" href="css/media-t-shape.css">
 </head>
 <body>
 
-  <section class="hero">
-    <video class="hero__video hero__video--scale" autoplay muted loop playsinline>
-      <source src="assets/vid/hero.mp4" type="video/mp4">
-    </video>
+  <section class="t-shape-hero">
+    <div class="t-shape-hero__overlay"></div>
 
-    <div class="hero__overlay"></div>
-
-    <div class="container">
+    <div class="container t-shape-hero__container">
 
       <header class="header">
         <a href="#" class="header__logo">
@@ -97,41 +95,166 @@
         </div>
       </div>
 
-      <div class="hero__content">
-          <h1 class="hero__title">Durch gezielte Physiotherapie zu mehr Gesundheit &amp; Wohlbefinden<sup>®</sup></h1>
+      <div class="t-shape-hero__content">
+        <div class="t-shape-hero__left">
+          <h1 class="t-shape-hero__title">Lipödem verstehen. Leichtigkeit zurückgewinnen</h1>
+          <p class="t-shape-hero__desc">Behandlung, die unter die Haut geht – und ins Leben.</p>
+        </div>
+        <div class="t-shape-hero__right">
+          <a href="#" class="hero__btn hero__btn--primary">
+            Termin vereinbaren
+            <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M7.5 4.37512L10.625 7.50011L7.5 10.6251" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M0.625 0.625V4.99999C0.625 5.66303 0.888388 6.29891 1.35723 6.76774C1.82607 7.23658 2.46194 7.49997 3.12498 7.49997H10.6249" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="section-philosophy" data-aos="fade-up" data-aos-duration="900">
 
-        <div class="hero__bottom">
-          <div class="hero__bottom-left">
-            <a href="#" class="hero__btn hero__btn--primary">
-              Termin vereinbaren
-              <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M7.5 4.37512L10.625 7.50011L7.5 10.6251" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"/>
-                <path d="M0.625 0.625V4.99999C0.625 5.66303 0.888388 6.29891 1.35723 6.76774C1.82607 7.23658 2.46194 7.49997 3.12498 7.49997H10.6249" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"/>
-              </svg>
-            </a>
-            <a href="#" class="hero__btn hero__btn--secondary">
-              Mehr erfahren
-              <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M7.5 4.37512L10.625 7.50011L7.5 10.6251" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"/>
-                <path d="M0.625 0.625V4.99999C0.625 5.66303 0.888388 6.29891 1.35723 6.76774C1.82607 7.23658 2.46194 7.49997 3.12498 7.49997H10.6249" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"/>
-              </svg>
-            </a>
-          </div>
-          <div class="hero__bottom-right">
-            <p class="hero__desc">Ihre kompetente Physiopraxis in Leinfelden-Echterdingen. Hausbesuche sind nach Vereinbarung nur in Leinfelden-Echterdingen möglich.</p>
-          </div>
+    <!-- 8 vertical lines, full height -->
+    <div class="philosophy-lines" aria-hidden="true">
+      <div class="philosophy-line l-1"></div>
+      <div class="philosophy-line l-2"></div>
+      <div class="philosophy-line l-3"></div>
+      <div class="philosophy-line l-4"></div>
+      <div class="philosophy-line l-5"></div>
+      <div class="philosophy-line l-6"></div>
+      <div class="philosophy-line l-7"></div>
+      <div class="philosophy-line l-8"></div>
+    </div>
+
+    <!-- Main content: label left + content right -->
+    <div class="philosophy-top">
+      <span class="philosophy-mobile-label">Philosophie der Osteopathie</span>
+      <div class="philosophy-wrapper">
+        <span class="philosophy-label">
+          Leichtigkeit im Körper. Ruhe im Kopf. Sichtbare Veränderung im Spiegel.
+        </span>
+        <span class="philosophy-descr">Doch Lipödem ist nicht nur ein ästhetisches Problem – es ist eine medizinische Herausforderung. Und genau hier setzen wir mit einem ganzheitlichen Ansatz an</span>
+      </div>
+      <div class="philosophy-main">
+        <h2 class="philosophy-title">Lipödem ist mehr als nur „schwere Beine“ – es ist eine chronische Erkrankung, die den Alltag belastet.</h2>
+        <p class="philosophy-text">Ich nehme mir Zeit, höre zu und kombiniere bewährte Naturheilkunde mit moderner Technologie (u. a. T Shape 2) – für Ergebnisse, die Sie fühlen: weniger Druck, glatteres Gewebe, mehr Energie im Alltag.</p>
+
+        <div class="philosophy-video-wrap" id="videoWrap">
+          <video class="philosophy-video" id="sectionVideo" loop playsinline>
+            <source src="assets/vid/section.mp4" type="video/mp4">
+          </video>
+          <button class="philosophy-video-btn" id="videoPlayBtn" type="button" aria-label="Play video">
+            <svg width="20" height="22" viewBox="0 0 20 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M2.99607 21.265C1.66101 22.0318 -0.00348179 21.0658 -5.39249e-06 19.5262L0.0395704 1.99843C0.0430461 0.45883 1.71188 -0.499654 3.04347 0.273155L18.2032 9.07133C19.5348 9.84414 19.5304 11.7686 18.1954 12.5354L2.99607 21.265Z" fill="white" />
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bottom words positioned between the lines -->
+    <div class="philosophy-words" aria-hidden="true">
+      <!-- col 1: 296px — 2 words centered as group -->
+      <div class="pw-group">
+        <span class="p-word p-word--1">Straffung</span>
+        <span class="p-word p-word--2">Regeneration</span>
+      </div>
+      <div></div><!-- col 2: 178px spacer -->
+      <!-- col 3: 296px — 1 word centered -->
+      <span class="p-word p-word--3">Glättung</span>
+      <div></div><!-- col 4: 178px spacer -->
+      <!-- col 5: 296px — 2 words centered as group -->
+      <div class="pw-group">
+        <span class="p-word p-word--4">Konturierung</span>
+        <span class="p-word p-word--5">Elastizität</span>
+      </div>
+      <div></div><!-- col 6: 178px spacer -->
+      <div></div><!-- col 7: 296px empty (lines 7→8) -->
+      <!-- col 8: remaining — 1 word centered -->
+      <span class="p-word p-word--6">Verjüngung</span>
+    </div>
+
+  </section>
+
+  <section class="section-tshape-cards" data-aos="fade-up" data-aos-duration="900">
+    <div class="container tshape-cards__container">
+
+      <div class="tshape-cards__top">
+        <span class="tshape-cards__label">Dauer: Eine Sitzung dauert ca</span>
+        <h2 class="tshape-cards__title">Lipödem – Option T Shape 2: Ihr Begleiter zur Entlastung</h2>
+        <p class="tshape-cards__desc">T-Shape 2 ist kein Ersatz für eine medizinische Therapie, aber eine kraftvolle, nicht-invasive Unterstützung im Umgang mit der Erkrankung. Die einzigartige Kombination modernster Technologien wirkt gezielt auf die Hauptprobleme des Lipödems:</p>
+      </div>
+
+      <div class="tshape-cards__bottom">
+        <div class="tshape-cards__indicator">
+          <img src="assets/img/svg-left-t-shape.svg" alt="" aria-hidden="true" class="tshape-cards__indicator-svg">
+          <span class="tshape-cards__indicator-text">Mehrere Technologien<br>in einem System</span>
+        </div>
+
+        <div class="tshape-cards__grid">
+          <article class="tshape-card tshape-card--1">
+            <img src="assets/img/t-shape-card-1.png" alt="" class="tshape-card__img">
+            <h3 class="tshape-card__title">Mehrere Technologien in einem System</h3>
+            <p class="tshape-card__desc">Radiofrequenz (RF), Low Level Laser (LLLT), Vakuum-Endodermologie und optional mesosphärische Mikrovibration arbeiten synergistisch.</p>
+          </article>
+          <article class="tshape-card tshape-card--2">
+            <img src="assets/img/t-shape-card-2.png" alt="" class="tshape-card__img">
+            <h3 class="tshape-card__title">Gezielte Lymphdrainage &amp; Entstauung</h3>
+            <p class="tshape-card__desc">Das Vakuum und die Mikrovibration regen sanft den Lymphfluss an, helfen, Stauungen zu lösen und reduzieren das Spannungsgefühl.</p>
+          </article>
+          <article class="tshape-card tshape-card--3">
+            <img src="assets/img/t-shape-card-3.png" alt="" class="tshape-card__img">
+            <h3 class="tshape-card__title">Verbesserung der Gewebestruktur</h3>
+            <p class="tshape-card__desc">Radiofrequenz und LLLT-Laser erwärmen das Gewebe, straffen das Bindegewebe und können das Hautbild sichtbar glätten.</p>
+          </article>
+          <article class="tshape-card tshape-card--4">
+            <img src="assets/img/t-shape-card-4.png" alt="" class="tshape-card__img">
+            <h3 class="tshape-card__title">Schmerzlinderung</h3>
+            <p class="tshape-card__desc">Die Wärme der Radiofrequenz und die entstauende Wirkung können helfen, Druckschmerz und das Gefühl schwerer Beine zu lindern.</p>
+          </article>
         </div>
       </div>
 
     </div>
   </section>
 
-  <section class="section-reviews" data-aos="fade-up" data-aos-duration="900">
-    <div class="container section-reviews__container">
+  <section class="section-reviews section-process" data-aos="fade-up" data-aos-duration="900">
+    <div class="container section-reviews__container section-process__container">
       <div class="section-reviews__inner">
-  
-          <h2 class="section-title section-reviews__title">Das sagen Patienten über die Praxis</h2>
-  
+
+        <div class="section-process__top">
+          <div class="section-process__left">
+            <h2 class="section-title section-reviews__title section-process__title">So läuft eine Behandlung ab</h2>
+            <p class="section-process__desc">T-Shape 2 ist kein Ersatz für eine medizinische Therapie, aber eine kraftvolle, nicht-invasive Unterstützung im Umgang mit der Erkrankung. Die einzigartige Kombination modernster Technologien wirkt gezielt auf die Hauptprobleme des Lipödems:</p>
+            <div class="section-process__cta">
+              <a href="#" class="hero__btn hero__btn--primary">
+                Sanft entlasten – ich bin bereit
+                <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M7.5 4.37512L10.625 7.50011L7.5 10.6251" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M0.625 0.625V4.99999C0.625 5.66303 0.888388 6.29891 1.35723 6.76774C1.82607 7.23658 2.46194 7.49997 3.12498 7.49997H10.6249" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </a>
+              <span class="section-process__cta-note">Termin vereinbaren</span>
+            </div>
+          </div>
+          <div class="section-process__right">
+            <span class="section-process__important-label">Wichtig:</span>
+            <div class="section-process__divider"></div>
+            <p class="section-process__important-text">T-Shape 2 und naturheilkundliche Maßnahmen sind begleitend gedacht. Sie ersetzen keine medizinisch notwendige Diagnostik oder Therapie beim Lipödem. Bitte klären Sie Ihre Beschwerden immer zuerst mit einem Arzt ab</p>
+          </div>
+        </div>
+
+        <div class="section-process__mobile-cta">
+          <a href="#" class="hero__btn hero__btn--primary">
+            Sanft entlasten – ich bin bereit
+            <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M7.5 4.37512L10.625 7.50011L7.5 10.6251" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M0.625 0.625V4.99999C0.625 5.66303 0.888388 6.29891 1.35723 6.76774C1.82607 7.23658 2.46194 7.49997 3.12498 7.49997H10.6249" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </a>
+          <span class="section-process__cta-note">Termin vereinbaren</span>
+        </div>
+
         <div class="section-reviews__bottom">
           <div class="section-reviews__nav">
             <button class="reviews-btn reviews-btn--prev" id="reviewsPrev">
@@ -140,7 +263,7 @@
               <rect width="13" height="13" transform="matrix(-1 0 0 1 13 0)" fill="url(#pattern0_264_650)"/>
               </mask>
               <g mask="url(#mask0_264_650)">
-              <ellipse cx="9.39453" cy="6.14453" rx="9.39453" ry="6.14453" transform="matrix(-1 0 0 1 16.9609 0.711914)" fill="#222222"/>
+              <ellipse cx="9.39453" cy="6.14453" rx="9.39453" ry="6.14453" transform="matrix(-1 0 0 1 16.9609 0.711914)"/>
               </g>
               <defs>
               <pattern id="pattern0_264_650" patternContentUnits="objectBoundingBox" width="1" height="1">
@@ -156,7 +279,7 @@
               <rect width="13" height="13" transform="matrix(1 0 0 -1 0 13)" fill="url(#pattern0_264_647)"/>
               </mask>
               <g mask="url(#mask0_264_647)">
-              <ellipse cx="9.39453" cy="6.14453" rx="9.39453" ry="6.14453" transform="matrix(1 0 0 -1 -3.96094 12.2881)" fill="#222222"/>
+              <ellipse cx="9.39453" cy="6.14453" rx="9.39453" ry="6.14453" transform="matrix(1 0 0 -1 -3.96094 12.2881)"/>
               </g>
               <defs>
               <pattern id="pattern0_264_647" patternContentUnits="objectBoundingBox" width="1" height="1">
@@ -177,15 +300,13 @@
                   <div class="review-card">
                     <div class="review-card__inner">
                       <div class="review-card__header">
-                        <div class="review-card__avatar">K</div>
-                        <div class="review-card__info">
-                          <span class="review-card__name">Kobold 13</span>
-                          <span class="review-card__date">01/11/2025</span>
-                        </div>
+                        <svg width="14" height="19" viewBox="0 0 14 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M9.32 0.499961C9.32 0.299561 9.2003 0.118461 9.0159 0.0399612C8.8314 -0.0385389 8.6179 0.000660986 8.4734 0.139561L6.6955 1.84916C4.0483 4.39456 1.8114 7.33476 0.0646 10.5651C0.0235 10.6378 0 10.7217 0 10.8112C0 11.0873 0.2239 11.3112 0.5 11.3112H4.81V18.5C4.81 18.698 4.9268 18.8774 5.108 18.9574C5.2891 19.0374 5.5003 19.003 5.6467 18.8696L6.4422 18.145C9.2269 15.6083 11.5902 12.6446 13.4432 9.36496L13.9353 8.49416C14.0228 8.33936 14.0215 8.14976 13.9318 7.99616C13.8422 7.84256 13.6778 7.74816 13.5 7.74816H9.32V0.499961Z" fill="#4D6EFF" />
+                        </svg>
                       </div>
                       <div class="review-card__bottom">
-                        <h4 class="review-card__service">Allgemeine Physiotherapie</h4>
-                        <p class="review-card__text">ich bin sehr zufrieden!</p>
+                        <h4 class="review-card__service">Dauer:</h4>
+                        <p class="review-card__text">Eine Sitzung dauert ca. 30-60 Minuten, je nach Größe der behandelten Zone</p>
                       </div>
                     </div>
                   </div>
@@ -195,15 +316,20 @@
                   <div class="review-card">
                     <div class="review-card__inner">
                       <div class="review-card__header">
-                        <div class="review-card__avatar">S</div>
-                        <div class="review-card__info">
-                          <span class="review-card__name">Sa Schr</span>
-                          <span class="review-card__date">01/11/2025</span>
-                        </div>
+                        <svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M11.4792 1.1875C10.6035 1.1875 9.89583 1.89514 9.89583 2.77083V6.72917C9.89583 7.60486 10.6035 8.3125 11.4792 8.3125C12.3549 8.3125 13.0625 7.60486 13.0625 6.72917V2.77083C13.0625 1.89514 12.3549 1.1875 11.4792 1.1875Z" fill="#4D6EFF" />
+                          <path d="M16.2292 5.14583C15.3535 5.14583 14.6458 5.85347 14.6458 6.72917V7.91667C14.6458 8.13528 14.8231 8.3125 15.0417 8.3125H16.2292C17.1049 8.3125 17.8125 7.60486 17.8125 6.72917C17.8125 5.85347 17.1049 5.14583 16.2292 5.14583Z" fill="#4D6EFF" />
+                          <path d="M7.52083 10.6875C6.64514 10.6875 5.9375 11.3951 5.9375 12.2708V16.2292C5.9375 17.1049 6.64514 17.8125 7.52083 17.8125C8.39653 17.8125 9.10417 17.1049 9.10417 16.2292V12.2708C9.10417 11.3951 8.39653 10.6875 7.52083 10.6875Z" fill="#4D6EFF" />
+                          <path d="M2.77083 10.6875C1.89514 10.6875 1.1875 11.3951 1.1875 12.2708C1.1875 13.1465 1.89514 13.8542 2.77083 13.8542C3.64653 13.8542 4.35417 13.1465 4.35417 12.2708V11.0833C4.35417 10.8647 4.17695 10.6875 3.95833 10.6875H2.77083Z" fill="#4D6EFF" />
+                          <path d="M12.2708 9.89583C11.3951 9.89583 10.6875 10.6035 10.6875 11.4792C10.6875 12.3549 11.3951 13.0625 12.2708 13.0625H16.2292C17.1049 13.0625 17.8125 12.3549 17.8125 11.4792C17.8125 10.6035 17.1049 9.89583 16.2292 9.89583H12.2708Z" fill="#4D6EFF" />
+                          <path d="M11.0833 14.6458C10.8647 14.6458 10.6875 14.8231 10.6875 15.0417V16.2292C10.6875 17.1049 11.3951 17.8125 12.2708 17.8125C13.1465 17.8125 13.8542 17.1049 13.8542 16.2292C13.8542 15.3535 13.1465 14.6458 12.2708 14.6458H11.0833Z" fill="#4D6EFF" />
+                          <path d="M2.77083 5.9375C1.89514 5.9375 1.1875 6.64514 1.1875 7.52083C1.1875 8.39653 1.89514 9.10417 2.77083 9.10417H6.72917C7.60486 9.10417 8.3125 8.39653 8.3125 7.52083C8.3125 6.64514 7.60486 5.9375 6.72917 5.9375H2.77083Z" fill="#4D6EFF" />
+                          <path d="M6.72917 1.1875C5.85347 1.1875 5.14583 1.89514 5.14583 2.77083C5.14583 3.64653 5.85347 4.35417 6.72917 4.35417H7.91667C8.13528 4.35417 8.3125 4.17695 8.3125 3.95833V2.77083C8.3125 1.89514 7.60486 1.1875 6.72917 1.1875Z" fill="#4D6EFF" />
+                        </svg>
                       </div>
                       <div class="review-card__bottom">
-                        <h4 class="review-card__service">Allgemeine Physiotherapie</h4>
-                        <p class="review-card__text">Ich bin seit gut einem Jahr in Dauerbehandlung → Atemtherapie ← Ich bin rundherum zufrieden und kann die Praxis nur empfehlen.</p>
+                        <h4 class="review-card__service">Gefühl:</h4>
+                        <p class="review-card__text">Die Behandlung ist völlig schmerzfrei und fühlt sich an wie eine wohltuende, warme Tiefengewebsmassage.</p>
                       </div>
                     </div>
                   </div>
@@ -213,15 +339,20 @@
                   <div class="review-card">
                     <div class="review-card__inner">
                       <div class="review-card__header">
-                        <div class="review-card__avatar">B</div>
-                        <div class="review-card__info">
-                          <span class="review-card__name">Bea M.</span>
-                          <span class="review-card__date">15/10/2025</span>
-                        </div>
+                        <svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M11.4792 1.1875C10.6035 1.1875 9.89583 1.89514 9.89583 2.77083V6.72917C9.89583 7.60486 10.6035 8.3125 11.4792 8.3125C12.3549 8.3125 13.0625 7.60486 13.0625 6.72917V2.77083C13.0625 1.89514 12.3549 1.1875 11.4792 1.1875Z" fill="#4D6EFF" />
+                          <path d="M16.2292 5.14583C15.3535 5.14583 14.6458 5.85347 14.6458 6.72917V7.91667C14.6458 8.13528 14.8231 8.3125 15.0417 8.3125H16.2292C17.1049 8.3125 17.8125 7.60486 17.8125 6.72917C17.8125 5.85347 17.1049 5.14583 16.2292 5.14583Z" fill="#4D6EFF" />
+                          <path d="M7.52083 10.6875C6.64514 10.6875 5.9375 11.3951 5.9375 12.2708V16.2292C5.9375 17.1049 6.64514 17.8125 7.52083 17.8125C8.39653 17.8125 9.10417 17.1049 9.10417 16.2292V12.2708C9.10417 11.3951 8.39653 10.6875 7.52083 10.6875Z" fill="#4D6EFF" />
+                          <path d="M2.77083 10.6875C1.89514 10.6875 1.1875 11.3951 1.1875 12.2708C1.1875 13.1465 1.89514 13.8542 2.77083 13.8542C3.64653 13.8542 4.35417 13.1465 4.35417 12.2708V11.0833C4.35417 10.8647 4.17695 10.6875 3.95833 10.6875H2.77083Z" fill="#4D6EFF" />
+                          <path d="M12.2708 9.89583C11.3951 9.89583 10.6875 10.6035 10.6875 11.4792C10.6875 12.3549 11.3951 13.0625 12.2708 13.0625H16.2292C17.1049 13.0625 17.8125 12.3549 17.8125 11.4792C17.8125 10.6035 17.1049 9.89583 16.2292 9.89583H12.2708Z" fill="#4D6EFF" />
+                          <path d="M11.0833 14.6458C10.8647 14.6458 10.6875 14.8231 10.6875 15.0417V16.2292C10.6875 17.1049 11.3951 17.8125 12.2708 17.8125C13.1465 17.8125 13.8542 17.1049 13.8542 16.2292C13.8542 15.3535 13.1465 14.6458 12.2708 14.6458H11.0833Z" fill="#4D6EFF" />
+                          <path d="M2.77083 5.9375C1.89514 5.9375 1.1875 6.64514 1.1875 7.52083C1.1875 8.39653 1.89514 9.10417 2.77083 9.10417H6.72917C7.60486 9.10417 8.3125 8.39653 8.3125 7.52083C8.3125 6.64514 7.60486 5.9375 6.72917 5.9375H2.77083Z" fill="#4D6EFF" />
+                          <path d="M6.72917 1.1875C5.85347 1.1875 5.14583 1.89514 5.14583 2.77083C5.14583 3.64653 5.85347 4.35417 6.72917 4.35417H7.91667C8.13528 4.35417 8.3125 4.17695 8.3125 3.95833V2.77083C8.3125 1.89514 7.60486 1.1875 6.72917 1.1875Z" fill="#4D6EFF" />
+                        </svg>
                       </div>
                       <div class="review-card__bottom">
-                        <h4 class="review-card__service">Allgemeine Physiotherapie</h4>
-                        <p class="review-card__text">Ich hatte starke Kiefermuskelschmerzen. Ich konnte starke Muskelentspannung, Bewegungsverbesserung feststellen.</p>
+                        <h4 class="review-card__service">Gefühl:</h4>
+                        <p class="review-card__text">Die Behandlung ist völlig schmerzfrei und fühlt sich an wie eine wohltuende, warme Tiefengewebsmassage.</p>
                       </div>
                     </div>
                   </div>
@@ -231,15 +362,20 @@
                   <div class="review-card">
                     <div class="review-card__inner">
                       <div class="review-card__header">
-                        <div class="review-card__avatar">M</div>
-                        <div class="review-card__info">
-                          <span class="review-card__name">Max R.</span>
-                          <span class="review-card__date">03/09/2025</span>
-                        </div>
+                        <svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M11.4792 1.1875C10.6035 1.1875 9.89583 1.89514 9.89583 2.77083V6.72917C9.89583 7.60486 10.6035 8.3125 11.4792 8.3125C12.3549 8.3125 13.0625 7.60486 13.0625 6.72917V2.77083C13.0625 1.89514 12.3549 1.1875 11.4792 1.1875Z" fill="#4D6EFF" />
+                          <path d="M16.2292 5.14583C15.3535 5.14583 14.6458 5.85347 14.6458 6.72917V7.91667C14.6458 8.13528 14.8231 8.3125 15.0417 8.3125H16.2292C17.1049 8.3125 17.8125 7.60486 17.8125 6.72917C17.8125 5.85347 17.1049 5.14583 16.2292 5.14583Z" fill="#4D6EFF" />
+                          <path d="M7.52083 10.6875C6.64514 10.6875 5.9375 11.3951 5.9375 12.2708V16.2292C5.9375 17.1049 6.64514 17.8125 7.52083 17.8125C8.39653 17.8125 9.10417 17.1049 9.10417 16.2292V12.2708C9.10417 11.3951 8.39653 10.6875 7.52083 10.6875Z" fill="#4D6EFF" />
+                          <path d="M2.77083 10.6875C1.89514 10.6875 1.1875 11.3951 1.1875 12.2708C1.1875 13.1465 1.89514 13.8542 2.77083 13.8542C3.64653 13.8542 4.35417 13.1465 4.35417 12.2708V11.0833C4.35417 10.8647 4.17695 10.6875 3.95833 10.6875H2.77083Z" fill="#4D6EFF" />
+                          <path d="M12.2708 9.89583C11.3951 9.89583 10.6875 10.6035 10.6875 11.4792C10.6875 12.3549 11.3951 13.0625 12.2708 13.0625H16.2292C17.1049 13.0625 17.8125 12.3549 17.8125 11.4792C17.8125 10.6035 17.1049 9.89583 16.2292 9.89583H12.2708Z" fill="#4D6EFF" />
+                          <path d="M11.0833 14.6458C10.8647 14.6458 10.6875 14.8231 10.6875 15.0417V16.2292C10.6875 17.1049 11.3951 17.8125 12.2708 17.8125C13.1465 17.8125 13.8542 17.1049 13.8542 16.2292C13.8542 15.3535 13.1465 14.6458 12.2708 14.6458H11.0833Z" fill="#4D6EFF" />
+                          <path d="M2.77083 5.9375C1.89514 5.9375 1.1875 6.64514 1.1875 7.52083C1.1875 8.39653 1.89514 9.10417 2.77083 9.10417H6.72917C7.60486 9.10417 8.3125 8.39653 8.3125 7.52083C8.3125 6.64514 7.60486 5.9375 6.72917 5.9375H2.77083Z" fill="#4D6EFF" />
+                          <path d="M6.72917 1.1875C5.85347 1.1875 5.14583 1.89514 5.14583 2.77083C5.14583 3.64653 5.85347 4.35417 6.72917 4.35417H7.91667C8.13528 4.35417 8.3125 4.17695 8.3125 3.95833V2.77083C8.3125 1.89514 7.60486 1.1875 6.72917 1.1875Z" fill="#4D6EFF" />
+                        </svg>
                       </div>
                       <div class="review-card__bottom">
-                        <h4 class="review-card__service">Allgemeine Physiotherapie</h4>
-                        <p class="review-card__text">Sehr professionelle und einfühlsame Behandlung. Ich kann die Praxis nur wärmstens empfehlen!</p>
+                        <h4 class="review-card__service">Gefühl:</h4>
+                        <p class="review-card__text">Die Behandlung ist völlig schmerzfrei und fühlt sich an wie eine wohltuende, warme Tiefengewebsmassage.</p>
                       </div>
                     </div>
                   </div>
@@ -250,47 +386,314 @@
             </div>
           </div>
         </div>
-  
+
+        <div class="section-process__mobile-wichtig">
+          <span class="section-process__important-label">Wichtig:</span>
+          <div class="section-process__divider"></div>
+          <p class="section-process__important-text">T-Shape 2 und naturheilkundliche Maßnahmen sind begleitend gedacht. Sie ersetzen keine medizinisch notwendige Diagnostik oder Therapie beim Lipödem. Bitte klären Sie Ihre Beschwerden immer zuerst mit einem Arzt ab</p>
+        </div>
+
       </div>
     </div>
   </section>
 
-  <section class="section-contact" data-aos="fade-up" data-aos-duration="900">
-    <div class="section-contact__wrap">
-      <video class="section-contact__video" autoplay muted loop playsinline>
-        <source src="assets/vid/contact.mp4" type="video/mp4">
-      </video>
+  <section class="section-analyse" data-aos="fade-up" data-aos-duration="900">
+    <div class="section-analyse__top">
+      <div class="section-analyse__top-inner">
+        <div class="section-analyse__left">
+          <h2 class="section-title section-analyse__title">Der erste Schritt: Ihre persönliche Körperanalyse</h2>
+          <p class="section-analyse__desc">Bevor wir starten, müssen wir Ihren Körper und Ihre ganz persönliche Situation verstehen. In der ausführlichen Analyse besprechen wir Ihre Beschwerden, Ihren Lebensstil und erstellen einen individuellen Plan – für mehr Muskeltonus, Entspannung und gezielte Entstauung</p>
+        </div>
+        <div class="section-analyse__right">
+          <a href="#" class="hero__btn hero__btn--primary">
+            Ich will diesen guten Muskeltonus
+            <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M7.5 4.375L10.625 7.49999L7.5 10.6249" stroke="#F1F1F1" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round" />
+              <path d="M0.625 0.625V4.99999C0.625 5.66303 0.888388 6.29891 1.35723 6.76774C1.82607 7.23658 2.46194 7.49997 3.12498 7.49997H10.6249" stroke="#F1F1F1" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+          </a>
+          <span class="section-analyse__cta-note">Jetzt analysieren</span>
+        </div>
+      </div>
+    </div>
+    <div class="section-analyse__bottom">
+      <div class="section-analyse__img-wrap">
+        <img src="assets/img/t-shape-left-part.jpg" alt="" class="section-analyse__img">
+      </div>
+      <div class="section-analyse__video-wrap" id="videoWrap2">
+        <video class="section-analyse__video" id="sectionVideo2" loop playsinline>
+          <source src="assets/vid/t-shape-right-part.mp4" type="video/mp4">
+        </video>
+        <button class="section-analyse__video-btn" id="videoPlayBtn2" type="button" aria-label="Play video">
+          <svg width="24" height="28" viewBox="0 0 24 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M2 2L22 14L2 26V2Z" fill="white" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </section>
+  <section class="section-pricing" data-aos="fade-up" data-aos-duration="900">
+    <div class="pricing__inner">
+      <span class="pricing__label">(transparent & fair)</span>
+      <h2 class="pricing__title">Preisübersicht</h2>
+      <div class="pricing__table-wrapper">
+        <div class="pricing__table-wrap">
+          <div class="pricing__duration-card">
+            <span class="pricing__duration-brand">PneumaFit</span>
+            <div class="pricing__duration-item">30 min</div>
+            <div class="pricing__duration-item">12 x 30 min</div>
+            <div class="pricing__duration-item">12 x 60 min</div>
+            <div class="pricing__duration-item">12 x 90 min</div>
+            <div class="pricing__duration-item pricing__duration-item--mobile">25 <span class="pricing__price-sign">€</span></div>
+            <div class="pricing__duration-item pricing__duration-item--mobile">1348 <span class="pricing__price-sign">€</span></div>
+            <div class="pricing__duration-item pricing__duration-item--mobile">2548 <span class="pricing__price-sign">€</span></div>
+            <div class="pricing__duration-item pricing__duration-item--mobile">3748 <span class="pricing__price-sign">€</span></div>
+          </div>
+  
+          <span class="pricing__col-price-label">Wert:</span>
+          <div class="pricing__row">
+            <div class="pricing__mobile-wrapper">
+              <span class="pricing__service">Körperanalyse</span>
+              <span class="pricing__duration--mobile">30 min</span>
+            </div>
+            <div class="pricing__ph"></div>
+            <span class="pricing__price">25 <span class="pricing__price-sign">€</span></span>
+          </div>
+          <div class="pricing__row">
+            <div class="pricing__mobile-wrapper">
+              <span class="pricing__service">Kleines Paket</span>
+              <span class="pricing__duration--mobile">12 x 30 min</span>
+            </div>
+            <div class="pricing__ph"></div>
+            <span class="pricing__price">1348 <span class="pricing__price-sign">€</span></span>
+          </div>
+          <div class="pricing__row">
+            <div class="pricing__mobile-wrapper">
+              <span class="pricing__service">Großes Paket</span>
+              <span class="pricing__duration--mobile">12 x 60 min</span>
+            </div>
+            <div class="pricing__ph"></div>
+            <span class="pricing__price">2548 <span class="pricing__price-sign">€</span></span>
+          </div>
+          <div class="pricing__row pricing__row--last">
+            <div class="pricing__mobile-wrapper">
+              <span class="pricing__service">XL Paket</span>
+              <span class="pricing__duration--mobile">12 x 90 min</span>
+            </div>
+            <div class="pricing__ph"></div>
+            <span class="pricing__price">3748 <span class="pricing__price-sign">€</span></span>
+          </div>
+        </div>
+  
+        <div class="pricing__footnotes">
+          <span class="pricing__footnote">*Anzahlung beträgt immer 30%</span>
+        </div>
+      </div>
 
-      <div class="section-contact__inner">
-
-        <div class="section-contact__left">
-          <p class="section-contact__top-text">Die Osteopathie unterstützt den Körper dabei, Spannungen zu lösen und sein natürliches Gleichgewicht wiederzufinden.</p>
-
-          <div class="section-contact__bottom">
-            <h2 class="section-contact__title section-title">Kontakt &amp; Terminanfrage</h2>
-            <p class="section-contact__subtitle">Für einen Termin oder weitere Fragen nehmen Sie gerne Kontakt auf</p>
-            <form class="section-contact__form">
-              <input type="tel" class="section-contact__input" placeholder="+1 (000)-000-00-00">
-              <button type="submit" class="section-contact__btn">
-                Ich will diesen guten Muskeltonus
-                <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M7.5 4.375L10.625 7.49999L7.5 10.6249" stroke="#F1F1F1" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round" />
-                  <path d="M0.625 0.625V4.99999C0.625 5.66303 0.888388 6.29891 1.35723 6.76774C1.82607 7.23658 2.46194 7.49997 3.12498 7.49997H10.6249" stroke="#F1F1F1" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round" />
+      <a href="#" class="pricing__learn">
+            <svg width="1" height="363" viewBox="0 0 1 363" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <line x1="0.5" y1="2.18557e-08" x2="0.499984" y2="363" stroke="url(#paint0_linear_147_16)"/>
+            <defs>
+            <linearGradient id="paint0_linear_147_16" x1="-0.5" y1="-2.18557e-08" x2="-0.500016" y2="363" gradientUnits="userSpaceOnUse">
+            <stop stop-color="white" stop-opacity="0"/>
+            <stop offset="1" stop-color="white"/>
+            </linearGradient>
+            </defs>
+            </svg>
+            <div class="osteopathy-learn__icon-wrapper">
+              <span class="osteopathy-learn__icon" aria-hidden="true">
+                <svg width="20" height="28" viewBox="0 0 20 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M9.52 27.2C12.0449 27.2 14.4663 26.197 16.2517 24.4117C18.037 22.6263 19.04 20.2049 19.04 17.68V9.52C19.04 6.99514 18.037 4.57369 16.2517 2.78834C14.4663 1.003 12.0449 0 9.52 0C6.99514 0 4.57369 1.003 2.78834 2.78834C1.003 4.57369 0 6.99514 0 9.52V17.68C0 20.2049 1.003 22.6263 2.78834 24.4117C4.57369 26.197 6.99514 27.2 9.52 27.2ZM1.36 9.52C1.36 7.35583 2.21971 5.28031 3.75001 3.75001C5.28031 2.21971 7.35583 1.36 9.52 1.36C11.6842 1.36 13.7597 2.21971 15.29 3.75001C16.8203 5.28031 17.68 7.35583 17.68 9.52V17.68C17.68 19.8442 16.8203 21.9197 15.29 23.45C13.7597 24.9803 11.6842 25.84 9.52 25.84C7.35583 25.84 5.28031 24.9803 3.75001 23.45C2.21971 21.9197 1.36 19.8442 1.36 17.68V9.52Z" fill="white" />
+                  <path d="M8.83995 13.26H8.90115L9.03715 13.4028C9.10037 13.4665 9.17558 13.5171 9.25844 13.5516C9.3413 13.5861 9.43018 13.6039 9.51995 13.6039C9.60972 13.6039 9.6986 13.5861 9.78147 13.5516C9.86433 13.5171 9.93954 13.4665 10.0028 13.4028L10.1388 13.26H10.2V13.1988L14.0828 9.32275L13.1172 8.35716L10.2 11.2812V4.07996H8.83995V11.2812L5.92275 8.35716L4.95715 9.32275L8.83995 13.1988V13.26Z" fill="white" />
                 </svg>
-              </button>
-            </form>
-            <span class="section-contact__privacy">durch Klicken auf die Schaltfläche stimmen Sie der <a href="#">Datenschutzrichtlinie zu</a></span>
+              </span>
+            </div>
+      </a>
+    </div>
+  </section>
+
+  <section class="section-faq" data-aos="fade-up" data-aos-duration="900">
+    <div class="container faq__container">
+      <h2 class="section-title faq__title">Fragen und Antworten</h2>
+    </div>
+      <div class="faq__list">
+
+        <div class="faq__row">
+          <span class="faq__question">Kann T Shape 2 mein Lipödem heilen?</span>
+          <div class="faq__right">
+            <p class="faq__answer">T Shape 2 ist keine Heilung, aber eine äußerst wirksame Unterstützung.</p>
+            <span class="faq__number">/01</span>
+          </div>
+          <div class="faq__tooltip">
+            <img src="assets/img/t-shape-faq-card-1.jpg" alt="" class="faq__tooltip-img">
+            <div class="faq__tooltip-body">
+              <h4 class="faq__tooltip-title">Kann T Shape 2 mein Lipödem heilen?</h4>
+              <p class="faq__tooltip-text">T-Shape ist eine innovative, nicht-invasive Technologie, die Vakuum-Massage, Multipolare Radiofrequenz und LLLT-Laser kombiniert, um effektiv gegen Fettpolster, Cellulite und schlaffe Haut vorzugehen und die Haustraffung sowie den Fettabbau zu unterstützen.</p>
+            </div>
           </div>
         </div>
 
-        <div class="section-contact__right">
-          <span class="section-contact__brand">PneumaFit</span>
-          <div class="section-contact__divider"></div>
-          <p class="section-contact__brand-desc">Durch gezielte, sanfte Impulse werden <br class="mobile-hidden">Selbstheilungskräfte aktiviert und das Wohlbefinden <br class="mobile-hidden">nachhaltig gefördert.</p>
+        <div class="faq__row">
+          <span class="faq__question">Ist die Behandlung mit T Shape 2 schmerzhaft?</span>
+          <div class="faq__right">
+            <p class="faq__answer">Nein, die Behandlung ist völlig schmerzfrei. Gerade beim Lipödem mit seiner Berührungsempfindlichkeit ist das ein großer Vorteil.</p>
+            <span class="faq__number">/02</span>
+          </div>
+          <div class="faq__tooltip">
+            <img src="assets/img/t-shape-faq-card-1.jpg" alt="" class="faq__tooltip-img">
+            <div class="faq__tooltip-body">
+              <h4 class="faq__tooltip-title">Ist die Behandlung mit T Shape 2 schmerzhaft?</h4>
+              <p class="faq__tooltip-text">T-Shape ist eine innovative, nicht-invasive Technologie, die Vakuum-Massage, Multipolare Radiofrequenz und LLLT-Laser kombiniert, um effektiv gegen Fettpolster, Cellulite und schlaffe Haut vorzugehen und die Haustraffung sowie den Fettabbau zu unterstützen.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="faq__row">
+          <span class="faq__question">Wie viele Sitzungen brauche ich?</span>
+          <div class="faq__right">
+            <p class="faq__answer">Das ist individuell. Für spürbare und nachhaltige Ergebnisse empfehlen wir in der Regel eine Serie von 10–12 Sitzungen.</p>
+            <span class="faq__number">/03</span>
+          </div>
+          <div class="faq__tooltip">
+            <img src="assets/img/t-shape-faq-card-1.jpg" alt="" class="faq__tooltip-img">
+            <div class="faq__tooltip-body">
+              <h4 class="faq__tooltip-title">Wie viele Sitzungen brauche ich?</h4>
+              <p class="faq__tooltip-text">T-Shape ist eine innovative, nicht-invasive Technologie, die Vakuum-Massage, Multipolare Radiofrequenz und LLLT-Laser kombiniert, um effektiv gegen Fettpolster, Cellulite und schlaffe Haut vorzugehen und die Haustraffung sowie den Fettabbau zu unterstützen.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="faq__row">
+          <span class="faq__question">Wie lange halten die Ergebnisse an?</span>
+          <div class="faq__right">
+            <p class="faq__answer">Die Dauer der Ergebnisse hängt stark von Ihrem Lebensstil ab.</p>
+            <span class="faq__number">/04</span>
+          </div>
+          <div class="faq__tooltip">
+            <img src="assets/img/t-shape-faq-card-1.jpg" alt="" class="faq__tooltip-img">
+            <div class="faq__tooltip-body">
+              <h4 class="faq__tooltip-title">Wie lange halten die Ergebnisse an?</h4>
+              <p class="faq__tooltip-text">T-Shape ist eine innovative, nicht-invasive Technologie, die Vakuum-Massage, Multipolare Radiofrequenz und LLLT-Laser kombiniert, um effektiv gegen Fettpolster, Cellulite und schlaffe Haut vorzugehen und die Haustraffung sowie den Fettabbau zu unterstützen.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="faq__row faq__row--short">
+          <span class="faq__question">Gibt es Ausfallzeiten nach der Behandlung?</span>
+          <div class="faq__right">
+            <p class="faq__answer">Nein, es gibt keine Ausfallzeiten nach der T-Shape Behandlung. Sie können Ihre täglichen Aktivitäten sofort nach der Sitzung ohne Einschränkungen fortsetzen.</p>
+            <span class="faq__number">/05</span>
+          </div>
+          <div class="faq__tooltip">
+            <img src="assets/img/t-shape-faq-card-1.jpg" alt="" class="faq__tooltip-img">
+            <div class="faq__tooltip-body">
+              <h4 class="faq__tooltip-title">Gibt es Ausfallzeiten nach der Behandlung?</h4>
+              <p class="faq__tooltip-text">T-Shape ist eine innovative, nicht-invasive Technologie, die Vakuum-Massage, Multipolare Radiofrequenz und LLLT-Laser kombiniert, um effektiv gegen Fettpolster, Cellulite und schlaffe Haut vorzugehen und die Haustraffung sowie den Fettabbau zu unterstützen.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="faq__row faq__row--short">
+          <span class="faq__question">Für wen ist die Behandlung geeignet?</span>
+          <div class="faq__right">
+            <p class="faq__answer">Die T-Shape Behandlung ist für Frauen und Männer geeignet, die nach einer effektiven, nicht-invasiven Lösung suchen, um hartnäckige Fettpolster zu reduzieren.</p>
+            <span class="faq__number">/06</span>
+          </div>
+          <div class="faq__tooltip">
+            <img src="assets/img/t-shape-faq-card-1.jpg" alt="" class="faq__tooltip-img">
+            <div class="faq__tooltip-body">
+              <h4 class="faq__tooltip-title">Für wen ist die Behandlung geeignet?</h4>
+              <p class="faq__tooltip-text">T-Shape ist eine innovative, nicht-invasive Technologie, die Vakuum-Massage, Multipolare Radiofrequenz und LLLT-Laser kombiniert, um effektiv gegen Fettpolster, Cellulite und schlaffe Haut vorzugehen und die Haustraffung sowie den Fettabbau zu unterstützen.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="faq__row faq__row--short">
+          <span class="faq__question">Wie lange halten die Ergebnisse der T-Shape <br class="faq__br"> 2 Behandlung an?</span>
+          <div class="faq__right">
+            <p class="faq__answer">Die Dauer der Ergebnisse kann variieren, hängt aber stark von individuellen Faktoren wie Lebensstil, Ernährung und körperlicher Aktivität ab.</p>
+            <span class="faq__number">/07</span>
+          </div>
+          <div class="faq__tooltip">
+            <img src="assets/img/t-shape-faq-card-1.jpg" alt="" class="faq__tooltip-img">
+            <div class="faq__tooltip-body">
+              <h4 class="faq__tooltip-title">Wie lange halten die Ergebnisse der T-Shape 2 Behandlung an?</h4>
+              <p class="faq__tooltip-text">T-Shape ist eine innovative, nicht-invasive Technologie, die Vakuum-Massage, Multipolare Radiofrequenz und LLLT-Laser kombiniert, um effektiv gegen Fettpolster, Cellulite und schlaffe Haut vorzugehen und die Haustraffung sowie den Fettabbau zu unterstützen.</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+  </section>
+
+  <section class="section-tcta" data-aos="fade-up" data-aos-duration="900">
+    <div class="section-tcta__inner">
+      <img src="assets/img/t-shape-contact.jpg" alt="" class="section-tcta__bg">
+      <div class="section-tcta__content">
+
+        <div class="section-tcta__top">
+          <p class="section-tcta__top-text">Heilpraktische Verfahren und T Shape 2 gehören zur Komplementärmedizin/Ästhetik.</p>
+          <span class="section-tcta__brand">PneumaFit</span>
+        </div>
+
+        <div class="section-tcta__center">
+          <h2 class="section-tcta__title section-title">Melden Sie sich für das Verfahren an</h2>
+          <span class="section-tcta__subtitle">Der erste Schritt ist ein Gespräch. Teilen Sie Ihre Wünsche unten mit.</span>
+          <form class="section-contact__form section-tcta__form">
+            <input type="tel" class="section-contact__input" placeholder="+1 (000)-000-00-00">
+            <button type="submit" class="section-contact__btn">
+              Ich will diesen guten Muskeltonus
+              <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M7.5 4.375L10.625 7.49999L7.5 10.6249" stroke="#F1F1F1" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round" />
+                <path d="M0.625 0.625V4.99999C0.625 5.66303 0.888388 6.29891 1.35723 6.76774C1.82607 7.23658 2.46194 7.49997 3.12498 7.49997H10.6249" stroke="#F1F1F1" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round" />
+              </svg>
+            </button>
+          </form>
+          <span class="section-contact__privacy">durch Klicken auf die Schaltfläche stimmen Sie der <a href="#">Datenschutzrichtlinie zu</a></span>
+        </div>
+
+        <div class="section-tcta__bottom">
+          <div class="section-tcta__cards">
+            <div class="section-tcta__card"><span class="section-tcta__card-text">Sanfte Schmerzlinderung</span></div>
+            <div class="section-tcta__card"><span class="section-tcta__card-text">Beweglichkeit verbessern</span></div>
+            <div class="section-tcta__card section-tcta__card--active"><span class="section-tcta__card-text">Natürliche Regeneration</span></div>
+            <div class="section-tcta__card"><span class="section-tcta__card-text">Gezielte Entspannung</span></div>
+          </div>
+          <div class="section-tcta__right">
+            <span class="section-tcta__right-title">Rechtlicher Hinweis:</span>
+            <div class="section-tcta__divider"></div>
+            <p class="section-tcta__right-desc">Es wird kein Heilversprechen abgegeben. Ergebnisse sind individuell und abhängig von Ausgangssituation, Lebensstil und der konsequenten Umsetzung Ihrer Empfehlungen. Medizinisch unklare oder akute Beschwerden gehören zuerst in ärztliche Abklärung.</p>
+          </div>
         </div>
 
       </div>
     </div>
+
+    <div class="section-tcta__mobile-content">
+      <form class="section-contact__form section-tcta__form">
+        <input type="tel" class="section-contact__input" placeholder="+1 (000)-000-00-00">
+        <button type="submit" class="section-contact__btn">
+          Ich will diesen guten Muskeltonus
+          <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M7.5 4.375L10.625 7.49999L7.5 10.6249" stroke="#F1F1F1" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round" />
+            <path d="M0.625 0.625V4.99999C0.625 5.66303 0.888388 6.29891 1.35723 6.76774C1.82607 7.23658 2.46194 7.49997 3.12498 7.49997H10.6249" stroke="#F1F1F1" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round" />
+          </svg>
+        </button>
+          <span class="section-contact__privacy">durch Klicken auf die Schaltfläche stimmen Sie der <a href="#">Datenschutzrichtlinie zu</a></span>
+      </form>
+      <div class="section-tcta__cards">
+        <div class="section-tcta__card"><span class="section-tcta__card-text">Sanfte Schmerzlinderung</span></div>
+        <div class="section-tcta__card"><span class="section-tcta__card-text">Beweglichkeit verbessern</span></div>
+        <div class="section-tcta__card section-tcta__card--active"><span class="section-tcta__card-text">Natürliche Regeneration</span></div>
+        <div class="section-tcta__card"><span class="section-tcta__card-text">Gezielte Entspannung</span></div>
+      </div>
+      <div class="section-tcta__right section-tcta__right--mobile">
+        <span class="section-tcta__right-title">Rechtlicher Hinweis:</span>
+        <div class="section-tcta__divider"></div>
+        <p class="section-tcta__right-desc">Es wird kein Heilversprechen abgegeben. Ergebnisse sind individuell und abhängig von Ausgangssituation, Lebensstil und der konsequenten Umsetzung Ihrer Empfehlungen. Medizinisch unklare oder akute Beschwerden gehören zuerst in ärztliche Abklärung.</p>
+      </div>
+    </div>
+
   </section>
 
   <footer class="footer">

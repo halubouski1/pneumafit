@@ -749,6 +749,7 @@
     font-size: 13px;
     line-height: 177%;
     color: rgba(255, 255, 255, 0.5);
+    display: block;
   }
 
   .pricing__row {
@@ -1208,11 +1209,6 @@
   .pricing__table-wrap {
     border-radius: 10px;
   }
-/* 
-  .section-contact */
-  .section-contact {
-    padding-top: 70px;
-  }
 
   .pricing__btn--beige {
     gap: 15px;
@@ -1235,5 +1231,9 @@
     left: 15px;
     right: calc(-11% + 130px);
     background: rgba(255, 255, 255, 0.15);
+  }
+/*  .section-contact */
+  .section-contact {
+    padding-top: 70px;
   }
 }

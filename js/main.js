@@ -1,7 +1,7 @@
 if (document.querySelector('.reviews-swiper')) {
   new Swiper('.reviews-swiper', {
     slidesPerView: 'auto',
-    spaceBetween: 15,
+    spaceBetween: 10,
     grabCursor: true,
     breakpointsBase: 'window',
     navigation: {
@@ -9,6 +9,9 @@ if (document.querySelector('.reviews-swiper')) {
       nextEl: '#reviewsNext',
     },
     breakpoints: {
+      571: {
+        spaceBetween: 15,
+      },
       1919: {
         spaceBetween: 33,
       },
@@ -28,6 +31,22 @@ if (videoWrap && video && playBtn) {
     } else {
       video.pause();
       playBtn.classList.remove('hidden');
+    }
+  });
+}
+
+const videoWrap2 = document.getElementById('videoWrap2');
+const video2 = document.getElementById('sectionVideo2');
+const playBtn2 = document.getElementById('videoPlayBtn2');
+
+if (videoWrap2 && video2 && playBtn2) {
+  videoWrap2.addEventListener('click', () => {
+    if (video2.paused) {
+      video2.play();
+      playBtn2.classList.add('hidden');
+    } else {
+      video2.pause();
+      playBtn2.classList.remove('hidden');
     }
   });
 }
@@ -179,3 +198,52 @@ AOS.init({
   easing: 'ease-out-cubic',
 });
 lenis.on('scroll', AOS.refresh);
+
+// ========================================
+// FAQ Accordion (mobile ≤940px)
+// ========================================
+if (window.innerWidth <= 940 && document.querySelector('.faq__list')) {
+  document.querySelectorAll('.faq__row').forEach(row => {
+    const number = row.querySelector('.faq__number');
+    const question = row.querySelector('.faq__question');
+    const answer = row.querySelector('.faq__answer');
+
+    // Wrap row in .faq__item
+    const item = document.createElement('div');
+    item.className = 'faq__item';
+    row.parentNode.insertBefore(item, row);
+    item.appendChild(row);
+
+    // Build accordion header inside row
+    const header = document.createElement('div');
+    header.className = 'faq__acc-header';
+    const toggle = document.createElement('span');
+    toggle.className = 'faq__toggle';
+    toggle.textContent = '+';
+    const left = document.createElement('div');
+    left.className = 'faq__acc-left';
+    left.append(number, question);
+    row.innerHTML = '';
+    header.append(left, toggle);
+    row.append(header);
+
+    // Body goes AFTER row, outside the colored area
+    const body = document.createElement('div');
+    body.className = 'faq__acc-body';
+    body.append(answer);
+    item.appendChild(body);
+
+    header.addEventListener('click', () => {
+      const isOpen = item.classList.contains('is-open');
+      document.querySelectorAll('.faq__item').forEach(i => {
+        i.classList.remove('is-open');
+        const t = i.querySelector('.faq__toggle');
+        if (t) t.textContent = '+';
+      });
+      if (!isOpen) {
+        item.classList.add('is-open');
+        toggle.textContent = '−';
+      }
+    });
+  });
+}
