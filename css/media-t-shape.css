@@ -1591,7 +1591,8 @@
   .faq__answer {
     font-size: 13px;
     line-height: 120%;
-    max-width: 270px;
+    max-width: 100%;
+    padding-left: 30px;
   }
 
   .faq__item.is-open .faq__acc-body {
