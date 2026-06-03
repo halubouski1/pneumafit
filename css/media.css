@@ -806,7 +806,7 @@
   }
 
   .mobile-menu__logo {
-    font-size: 16px;
+    height: 16px;
   }
 
   .mobile-menu__inner {
@@ -853,6 +853,11 @@
   .hero__btn svg {
     width: 8px;
     height: 8px;
+  }
+
+  .mobile-menu__logo img {
+    width: 78px;
+    height: 16px;
   }
 
   .hero__bottom-left {
