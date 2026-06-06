@@ -139,7 +139,7 @@ const tlNextBtn = document.getElementById('therapiesTLNext');
 
 if (tlPrevBtn && tlNextBtn) {
   let tlActiveIndex = 0;
-  const tlTotal = 4;
+  const tlTotal = document.querySelectorAll('.therapy-tl-tab').length;
 
   function setTLActive(idx) {
     tlActiveIndex = ((idx % tlTotal) + tlTotal) % tlTotal;
