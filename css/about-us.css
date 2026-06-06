@@ -1,0 +1,525 @@
+/* ─── RELOUNGE HERO ─── */
+
+.relounge-hero {
+  position: relative;
+  width: 100%;
+  height: var(--fixed-vh, 100vh);
+  min-height: 700px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  background-image: url('../assets/img/about-us-hero.png');
+  background-size: cover;
+  background-position: center top;
+}
+
+.relounge-hero__overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to right, rgba(0,0,0,0.3) 0%, rgba(0,0,0,0.05) 60%, transparent 100%);
+  z-index: 1;
+}
+
+.relounge-hero__container {
+  position: relative;
+  z-index: 2;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 66px;
+}
+
+.relounge-hero__content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.relounge-hero__bottom {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+
+.relounge-hero__title {
+  font-weight: 400;
+  font-size: 100px;
+  line-height: 100%;
+  letter-spacing: -0.03em;
+  max-width: 1017px;
+  color: #fff;
+}
+
+.relounge-hero__cta {
+  display: flex;
+  align-items: center;
+  gap: 28px;
+  margin-right: 88px;
+}
+
+.relounge-hero__btn {
+  flex-shrink: 0;
+  gap: 30px;
+}
+
+.relounge-hero__subtitle {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 128%;
+    letter-spacing: -0.03em;
+    color: #fff;
+  max-width: 210px;
+}
+
+/* ─── PHILOSOPHY SECTION ─── */
+
+/*
+  All sizes are vw-based from a 1920px reference:
+  divide px by 1920, multiply by 100 to get vw.
+  Two column sizes: wide (296px) and narrow (178px).
+  Line positions are computed from padding + columns.
+*/
+:root {
+  --phi-pad:   1.1458vw;   /* 22px  */
+  --phi-col-w: 15.4167vw;  /* 296px */
+  --phi-col-n: 9.2708vw;   /* 178px */
+
+  --phi-l1: var(--phi-pad);
+  --phi-l2: calc(var(--phi-l1) + var(--phi-col-w));
+  --phi-l3: calc(var(--phi-l2) + var(--phi-col-n));
+  --phi-l4: calc(var(--phi-l3) + var(--phi-col-w));
+  --phi-l5: calc(var(--phi-l4) + var(--phi-col-n));
+  --phi-l6: calc(var(--phi-l5) + var(--phi-col-w));
+  --phi-l7: calc(var(--phi-l6) + var(--phi-col-n));
+  --phi-l8: calc(var(--phi-l7) + var(--phi-col-w));
+}
+
+.section-philosophy {
+  position: relative;
+  padding: 7.8125vw var(--phi-pad) 1.5625vw;  /* 150px 22px 30px */
+  background: #f2f2f2;
+  overflow: hidden;
+  border-bottom: 1px solid rgba(101, 123, 141, 0.15);
+  padding-bottom: 20px;
+}
+
+/* Vertical lines — full height of section */
+.philosophy-lines {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.philosophy-mobile-label {
+  display: none;
+}
+
+.philosophy-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding-left: 2.0833vw;   /* 40px at 1920 */
+  padding-bottom: 2.0833vw; /* 40px at 1920 */
+}
+
+.philosophy-line {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 1px;
+  background: rgba(101, 123, 141, 0.07);
+}
+
+.l-1 { left: var(--phi-l1); }
+.l-2 { left: var(--phi-l2); }
+.l-3 { left: var(--phi-l3); }
+.l-4 { left: var(--phi-l4); }
+.l-5 { left: var(--phi-l5); }
+.l-6 { left: var(--phi-l6); }
+.l-7 { left: var(--phi-l7); }
+.l-8 { left: var(--phi-l8); }
+
+/* Content: label left + gap + main right */
+.philosophy-top {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  gap: 15.1042vw;         /* 290px at 1920 */
+  align-items: flex-start;
+}
+
+.philosophy-label {
+  max-width: 300px;  /* matches column 1 width */
+  font-weight: 400;
+  font-size: 25px;
+  line-height: 120%;
+  color: #657b8d;
+}
+
+.philosophy-descr {
+  max-width: 314px;  /* matches column 1 width */
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 106%;
+  color: rgba(101, 123, 141, 0.5);
+}
+
+.p-word--1, .p-word--2, .p-word--6  {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 164%;
+  letter-spacing: -0.03em;
+  color: rgba(101, 123, 141, 0.4);
+}
+
+.p-word--3, .p-word--4, .p-word--5{
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 164%;
+  letter-spacing: -0.03em;
+  color: #657b8d;
+}
+
+.philosophy-main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.philosophy-title {
+  font-weight: 400;
+  font-size: 45px;
+  line-height: 122%;
+  background: linear-gradient(360deg, #657b8d 0%, #1c2227 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  max-width: 1090px;
+  margin-bottom: 25px;
+  padding-bottom: 5px;
+}
+
+.philosophy-btn {
+  outline: 1px solid rgba(101, 123, 141, 0.4);
+  color: #657b8d;
+  align-self: flex-start;
+  padding-left: 52px;
+}
+
+.philosophy-btn--mobile {
+  display: none;
+}
+
+.philosophy-text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 106%;
+  color: rgba(101, 123, 141, 0.5);
+  max-width: 100%;
+  margin-bottom: 50px;
+}
+
+.philosophy-text--mobile {
+  display: none;
+}
+
+/* ─── PHILOSOPHY VIDEO ─── */
+
+.philosophy-video-wrap {
+  position: relative;
+  width: calc(var(--phi-l8) - var(--phi-pad) - var(--phi-col-w) - 17.1042vw);
+  border-radius: 10px;
+  overflow: hidden;
+  cursor: pointer;
+  flex-shrink: 0;
+}
+
+.philosophy-video {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.philosophy-video-btn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 69px;
+  height: 69px;
+  border-radius: 50%;
+  background: #4D6EFF;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: opacity 0.25s, transform 0.25s;
+}
+
+.philosophy-video-btn svg {
+  margin-left: 4px; /* visually center the icon */
+}
+
+.philosophy-video-btn:hover {
+  transform: translate(-50%, -50%) scale(1.08);
+}
+
+.philosophy-video-btn.hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+
+/* Bottom words — in normal flow, 180px below the main content */
+.philosophy-words {
+  position: relative;
+  z-index: 1;
+  display: grid;
+  grid-template-columns:
+    var(--phi-col-w) var(--phi-col-n)
+    var(--phi-col-w) var(--phi-col-n)
+    var(--phi-col-w) var(--phi-col-n)
+    var(--phi-col-w) 1fr;
+  align-items: center;
+  pointer-events: none;
+  margin-top: 180px;  /* 180px at 1920 */
+}
+
+.p-word {
+  justify-self: center;
+  text-align: center;
+}
+
+/* Two-word group: centered as a unit within its column */
+.pw-group {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 80px;
+  width: 100%;
+}
+
+/* ostheopathie-intro */
+.ostheopathie-card-image {
+  mix-blend-mode: multiply;
+}
+
+.ostheopathie-intro-card {
+  gap: 30px;
+}
+
+.intro-card {
+  padding: 40px;
+  padding-right: 35px;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.intro-card--first{
+  background: linear-gradient(9deg, #fff 0%, #dfe3ff 100%);
+}
+
+.intro-card--second {
+  background: linear-gradient(7deg, #fff 0%, #f5ecff 100%);
+}
+
+.intro-card--third {
+  background: linear-gradient(9deg, #fff 0%, #dfe3ff 100%);
+}
+
+.intro-card--fourth {
+  background: linear-gradient(7deg, #fff 0%, #f5ecff 100%);
+}
+
+.intro-card--first img {
+  width: 232px;
+  align-self: center;
+}
+
+.intro-card--second img {
+    width: 293px;
+    scale: 1.4;
+    align-self: center;
+}
+
+.intro-card--third img{
+    width: 374px;
+    align-self: center;
+}
+
+.intro-card--fourth img{
+    width: 220px;
+    align-self: center;
+}
+
+.intro-card__text {
+  font-weight: 400;
+  font-size: 26px;
+  line-height: 104%;
+  color: #657b8d;
+}
+
+.section-intro__container {
+    padding: 0 62px;
+}
+
+.section-intro__text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 144%;
+  text-align: center;
+  color: #fff;
+  max-width: 847px;
+}
+
+.section-intro__bg-img {
+  height: 1150px;
+}
+
+.section-intro__bg::after {
+  bottom: -1px;
+}
+
+.section-intro__title-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+}
+
+.section-intro {
+  padding-bottom: 100px;
+}
+
+.section-intro__header {
+  margin-bottom: 100px;
+}
+/* ─── SECTION RELOUNGE CONTACT ─── */
+
+.section-rl-contact {
+  padding: 28px;
+  padding-bottom: 0;
+  padding-top: 0px;
+}
+
+.rl-contact__inner {
+  background-image: url('../assets/img/relounge-footer.png');
+  background-size: cover;
+  background-position: center;
+  border-radius: 10px;
+  padding: 70px 48px 80px;
+  overflow: hidden;
+}
+
+.rl-contact__top {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 166px;
+}
+
+.rl-contact__brand {
+  font-weight: 400;
+  font-size: 25px;
+  line-height: 92%;
+  letter-spacing: -0.03em;
+  color: #fff;
+}
+
+.rl-contact__cards {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 18px;
+  max-width: 336px;
+}
+
+.rl-contact__card {
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 5px;
+  background: rgba(255, 255, 255, 0.02);
+  backdrop-filter: blur(40px);
+  -webkit-backdrop-filter: blur(40px);
+  border-radius: 10px;
+  padding: 20px 22px 25px 23px;
+  position: relative;
+}
+
+.rl-contact__card--active {
+  background: #fff;
+}
+
+.rl-contact__card--active  .rl-contact__card-text {
+color: #363636;
+border-color: rgba(54, 54, 54, 0.25);
+}
+
+.rl-contact__card--active  .rl-contact__card-label {
+  color: rgba(54, 54, 54, 0.5);
+}
+
+.rl-contact__dot {
+  position: absolute;
+  top: 13px;
+  right: 13px;
+}
+
+.rl-contact__card-label {
+  display: block;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 138%;
+  letter-spacing: -0.03em;
+  color: rgba(255, 255, 255, 0.5);
+  margin-bottom: 14px;
+}
+
+.rl-contact__card-text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 138%;
+  letter-spacing: -0.03em;
+  color: #fff;
+  border-top: 1px solid rgba(255, 255, 255, 0.25);
+  padding-top: 14px;
+  display: inline-block;
+}
+
+.rl-contact__card-text a {
+  text-decoration: underline;
+  text-decoration-skip-ink: none;
+  text-underline-offset: 3px;
+}
+
+.rl-contact__bottom {
+  max-width: 480px;
+}
+
+.rl-contact__title {
+  font-weight: 400;
+  font-size: 60px;
+  line-height: 100%;
+  letter-spacing: -0.03em;
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+.rl-contact__text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 138%;
+  letter-spacing: -0.03em;
+  color: #fff;
+  margin-bottom: 50px;
+  max-width: 420px;
+}
+
+.rl-contact__btn {
+  gap: 30px;
+}
+
+.rl-contact__img-text,
+.rl-contact__mobile {
+  display: none;
+}
