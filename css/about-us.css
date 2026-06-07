@@ -310,11 +310,25 @@
   gap: 30px;
 }
 
+.section-intro {
+  padding-top: 190px;
+  padding-bottom: 150px;
+}
+
 .intro-card {
   padding: 40px;
   padding-right: 35px;
   overflow: hidden;
   border-radius: 10px;
+}
+
+.section-intro__bg::after {
+  background: #f2f2f2;
+  height: 400px;
+}
+
+.section-intro__text {
+  max-width: 646px;
 }
 
 .intro-card--first{
@@ -336,6 +350,7 @@
 .intro-card--first img {
   width: 232px;
   align-self: center;
+  padding-top: 30px;
 }
 
 .intro-card--second img {
@@ -350,8 +365,9 @@
 }
 
 .intro-card--fourth img{
-    width: 220px;
+    width: 332px;
     align-self: center;
+    padding-top: 30px;
 }
 
 .intro-card__text {
@@ -389,13 +405,257 @@
   gap: 30px;
 }
 
-.section-intro {
-  padding-bottom: 100px;
-}
-
 .section-intro__header {
   margin-bottom: 100px;
 }
+
+/* ─── SECTION FOR-BACK ─── */
+
+.section-for-back {
+  padding: 0 22px;
+}
+
+.for-back__inner {
+  position: relative;
+  background-image: url('../assets/img/potential.png');
+  background-size: cover;
+  background-position: center;
+  border-radius: 10px;
+  padding: 110px 20px 20px 80px;
+  min-height: 860px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.for-back__top {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.for-back__title {
+  font-weight: 400;
+  font-size: 70px;
+  line-height: 100%;
+  color: #fff;
+  margin-bottom: 30px;
+  max-width: 1231px;
+}
+
+.for-back__desc {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 128%;
+  letter-spacing: -0.03em;
+  color: #fff;
+  max-width: 1026px;
+}
+
+.for-back__note {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 128%;
+  letter-spacing: -0.03em;
+  text-align: right;
+  color: #fff;
+  max-width: 282px;
+}
+
+.for-back__btn {
+  gap: 28px;
+  padding-left: 41px;
+}
+
+.for-back__wrapper {
+  position: absolute;
+  top: 110px;
+  right: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  align-items: flex-end;
+}
+
+.for-back__mobile-img {
+  display: none;
+}
+
+.for-back__card {
+  position: absolute;
+  width: 403px;
+  height: 234px;
+  backdrop-filter: blur(40px);
+  -webkit-backdrop-filter: blur(40px);
+  background: rgba(255, 255, 255, 0.02);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 5px;
+  display: flex;
+  align-items: flex-end;
+  padding: 30px;
+}
+
+.for-back__card-title {
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 90%;
+  letter-spacing: -0.03em;
+  color: #fff;
+}
+
+.for-back__cards {
+  position: relative;
+  flex: 1;
+  margin-top: 295px;
+  min-height: 468px;
+}
+
+.for-back__card--1 { 
+  left: 0;  
+  bottom: 0; 
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 17px;
+  justify-content: flex-end;
+  padding-right: 40px;
+}
+
+.for-back__card-text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 106%;
+  letter-spacing: -0.03em;
+  color: #fff;
+}
+
+.for-back__card--1 .for-back__card-text {
+  border-top: 1px solid rgba(255, 255, 255, 0.25);
+  padding-top: 20px;
+}
+
+.for-back__card--2 { left: 403px; bottom: 234px; }
+
+/* ─── SECTION MISSION ─── */
+
+.section-mission {
+  padding: 150px 22px;
+}
+
+.mission__inner {
+  display: flex;
+  gap: 14px;
+}
+
+.mission__left {
+  width: 50%;
+  background-image: url('../assets/img/mission.jpg');
+  background-size: cover;
+  background-position: center;
+  border-radius: 10px;
+  padding: 54px 78px 50px 50px;
+  display: flex;
+  flex-direction: column;
+}
+
+.mission__left-title {
+  font-weight: 400;
+  font-size: 60px;
+  line-height: 107%;
+  color: #fff;
+  margin-bottom: 876px;
+}
+
+.mission__left-text {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 106%;
+  color: #fff;
+}
+
+.mission__right {
+  background: #e2e9e9;
+  width: 50%;
+  border-radius: 10px;
+  padding: 42px 40px 50px 50px;
+  display: flex;
+  flex-direction: column;
+}
+
+.mission__right-top {
+  display: flex;
+  align-items: flex-start;
+  gap: 68px;
+}
+
+.mission__right-text {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 106%;
+  color: #657b8d;
+  flex: 1;
+}
+
+.mission__btn {
+  outline: 1px solid rgba(101, 123, 141, 0.4);
+  color: #657b8d;
+  flex-shrink: 0;
+  padding-left: 52px;
+}
+
+.mission__cards {
+  position: relative;
+  margin-top: 53px;
+  min-height: 310px;
+}
+
+.mission__card {
+  position: absolute;
+  overflow: hidden;
+}
+
+.mission__card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.mission__card--1 {
+  right: 0;
+  top: 0;
+}
+
+.mission__card--2 {
+  right: 233px;
+  bottom: 0px;
+}
+
+.mission__right-bottom {
+  margin-top: 187px;
+}
+
+.mission__bottom-title {
+  font-weight: 400;
+  font-size: 60px;
+  line-height: 107%;
+  background: linear-gradient(360deg, #657b8d 0%, #1c2227 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 30px;
+}
+
+.mission__bottom-sub {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 106%;
+  color: #657b8d;
+}
+
+.section-mission__mobile {
+  display: none;
+}
+
 /* ─── SECTION RELOUNGE CONTACT ─── */
 
 .section-rl-contact {
@@ -405,7 +665,7 @@
 }
 
 .rl-contact__inner {
-  background-image: url('../assets/img/relounge-footer.png');
+  background-image: url('../assets/img/about-us-footer.png');
   background-size: cover;
   background-position: center;
   border-radius: 10px;

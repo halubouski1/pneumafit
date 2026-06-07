@@ -55,6 +55,7 @@
   .philosophy-label {
     font-size: 19px;
     max-width: 210px;
+    margin-right: 50px;
   }
 
   .philosophy-wrapper {
@@ -1133,6 +1134,11 @@
   .rl-contact__mobile .rl-contact__text {
     max-width: 300px;
     margin-bottom: 33px;
+  }
+
+  .section-contact__btn {
+    justify-content: space-between;
+    padding-left: 25px;
   }
 
   .rl-contact__mobile-cards {
