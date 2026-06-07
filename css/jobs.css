@@ -8,7 +8,7 @@
   overflow: hidden;
   display: flex;
   flex-direction: column;
-  background-image: url('../assets/img/re-lounge-hero.png');
+  background-image: url('../assets/img/jobs-hero.png');
   background-size: cover;
   background-position: center top;
 }
@@ -47,7 +47,7 @@
   font-size: 100px;
   line-height: 100%;
   letter-spacing: -0.03em;
-  max-width: 700px;
+  max-width: 1017px;
   color: #fff;
 }
 
@@ -151,7 +151,7 @@
 }
 
 .philosophy-label {
-  max-width: 300px;  /* matches column 1 width */
+  max-width: 310px; /* matches column 1 width */
   font-weight: 400;
   font-size: 25px;
   line-height: 120%;
@@ -159,7 +159,7 @@
 }
 
 .philosophy-descr {
-  max-width: 300px;  /* matches column 1 width */
+  max-width: 314px;  /* matches column 1 width */
   font-weight: 400;
   font-size: 16px;
   line-height: 106%;
@@ -196,9 +196,16 @@
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  max-width: 1090px;
+  max-width: 900px;
   margin-bottom: 25px;
   padding-bottom: 5px;
+}
+
+.philosophy-btn {
+  outline: 1px solid rgba(101, 123, 141, 0.4);
+  color: #657b8d;
+  align-self: flex-start;
+  padding-left: 52px;
 }
 
 .philosophy-btn--mobile {
@@ -210,7 +217,8 @@
   font-size: 16px;
   line-height: 106%;
   color: #657b8d;
-  max-width: 653px;
+  max-width: 682px;
+  margin-bottom: 50px;
 }
 
 .philosophy-text--mobile {
@@ -276,7 +284,7 @@
     var(--phi-col-w) 1fr;
   align-items: center;
   pointer-events: none;
-  margin-top: 220px;  /* 180px at 1920 */
+  margin-top: 180px;  /* 180px at 1920 */
 }
 
 .p-word {
@@ -292,345 +300,223 @@
   gap: 80px;
   width: 100%;
 }
-/* ─── SECTION PROCESS ─── */
 
-.section-process {
-  padding-top: 150px;
-  padding-bottom: 100px;
-}
-
-.section-process__top {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  margin-bottom: 310px;
-}
-
-.section-reviews__container {
-  background-image: url('../assets/img/re-lounge-slider.png');
-}
-
-.section-reviews {
-  min-height: 0;
-}
-
-.reviews-btn svg {
-  fill: #222222;
-}
-
-.section-process__left {
-  display: flex;
-  flex-direction: column;
-}
-
-.section-process__title {
-  color: #fff;
-  max-width: 525px;
-  margin-bottom: 0px;
-}
-
-.section-process__desc {
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 100%;
-  letter-spacing: -0.03em;
-  color: #fff;
-  margin-bottom: 20px;
-}
-
-.section-process__cta {
-  display: flex;
-  align-items: center;
-  gap: 28px;
-}
-
-.section-process__cta-note {
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 128%;
-  letter-spacing: -0.03em;
-  color: #fff;
-  max-width: 120px;
-}
-
-.section-process__right {
-  display: flex;
-  flex-direction: column;
-  max-width: 266px;
-  text-align: right;
-}
-
-.section-process__important-label {
-  font-weight: 400;
-  font-size: 25px;
-  line-height: 100%;
-  letter-spacing: -0.03em;
-  color: #fff;
-  margin-bottom: 15px;
-}
-
-.section-process__divider {
-  height: 1px;
-  background: rgba(255, 255, 255, 0.35);
-  margin-bottom: 14px;
-}
-
-.section-process__important-text {
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 130%;
-  letter-spacing: -0.03em;
-  color: #fff;
-}
-
-.section-process__container {
-  padding-top: 70px;
-  padding-bottom: 80px;
-  padding-left: 50px;
-  padding-right: 50px;
-}
-
-.review-card__inner {
-  justify-content: space-between;
-}
-
-.review-card__text {
-  color: rgba(101, 123, 141, 0.5);
-}
-
-.review-card__inner {
-  padding: 30px 43px 50px 30px;
-}
-
-.section-process__mobile-cta {
-  display: none;
-}
-
-.section-process__mobile-wichtig {
-  display: none;
-}
-/* ─── SECTION FOR-BACK ─── */
-
-.section-for-back {
-  padding: 0 22px;
-}
-
-.for-back__inner {
-  position: relative;
-  background-image: url('../assets/img/for-back.jpg');
-  background-size: cover;
-  background-position: center;
-  border-radius: 10px;
-  padding: 110px 20px 20px 80px;
-  min-height: 860px;
-  overflow: hidden;
-  display: flex;
-  flex-direction: column;
-}
-
-.for-back__top {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-}
-
-.for-back__title {
-  font-weight: 400;
-  font-size: 70px;
-  line-height: 100%;
-  color: #fff;
-  margin-bottom: 20px;
-  max-width: 940px;
-}
-
-.for-back__desc {
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 128%;
-  letter-spacing: -0.03em;
-  color: #fff;
-  max-width: 587px;
-}
-
-.for-back__note {
-  position: absolute;
-  top: 110px;
-  right: 40px;
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 128%;
-  letter-spacing: -0.03em;
-  text-align: right;
-  color: #fff;
-  max-width: 290px;
-}
-
-.for-back__mobile-img {
-  display: none;
-}
-
-.for-back__card {
-  position: absolute;
-  width: 303px;
-  height: 234px;
-  backdrop-filter: blur(40px);
-  -webkit-backdrop-filter: blur(40px);
-  background: rgba(255, 255, 255, 0.02);
-  border: 1px solid rgba(255, 255, 255, 0.3);
-  border-radius: 5px;
-  display: flex;
-  align-items: flex-end;
-  padding: 20px;
-}
-
-.for-back__card-title {
-  font-weight: 400;
-  font-size: 30px;
-  line-height: 90%;
-  letter-spacing: -0.03em;
-  color: #fff;
-}
-
-.for-back__cards {
-  position: relative;
-  flex: 1;
-  margin-top: 50px;
-  min-height: 816px;
-}
-
-.for-back__card--1 { left: 0;  top: 0; }
-.for-back__card--2 { left: 606px; top: 70px; }
-.for-back__card--3 { left: 303px; top: 304px; }
-.for-back__card--4 { right: 0;  bottom: 234px; }
-.for-back__card--5 { right: 304px;  bottom: 0; }
-
-/* tabs section */
-.therapy-tab:nth-child(1) {
-    left: calc(0 / 760 * 100%);
-    width: calc(213 / 760 * 100%);
-}
-
-.therapy-tab:nth-child(2) {
-    left: calc(243 / 760 * 100%);
-    width: calc(151 / 760 * 100%);
-}
-
-.therapy-tab:nth-child(3) {
-    left: calc(442 / 760 * 100%);
-    width: calc(184 / 760 * 100%);
-}
-
-.section-therapies {
+/* ostheopathie-intro */
+.section-intro {
+  padding-top: 190px;
   padding-bottom: 150px;
-  padding-top: 100px;
 }
 
-.therapy-card__text {
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 106%;
-    color: #657b8d;
-    max-width: 571px;
-}
-
-.therapies__card-content:last-child .therapy-card__text {
-    color: #657b8d;
-}
-
-.therapies__card-content:last-child .therapy-card__title {
-background: linear-gradient(360deg, #657b8d 0%, #1c2227 100%);
-background-clip: text;
-}
-
-.therapy-tab:nth-child(3), .therapy-tab:nth-child(4) {
-    color: #657B8D66;
-}
-
-.therapies__card-content:last-child .therapy-card__text {
-  max-width: 607px;
-}
-
-.therapies__left-area {
-  margin-top: 16px;
-}
-
-.therapies__title-nav {
-  justify-content: end;
-}
-
-/* ─── THERAPY OVERLAY CARDS ─── */
-
-.therapy-card__right--overlay {
-  position: relative;
+.intro-card {
+  padding: 40px;
+  padding-right: 35px;
   overflow: hidden;
-}
-
-.therapy-card__right {
   border-radius: 10px;
 }
 
-.therapy-card__right--overlay .therapy-card__img {
+.section-intro__bg::after {
+  background: #f2f2f2;
+  height: 400px;
+}
+
+.section-intro__text {
+  max-width: 646px;
+}
+
+.intro-card--first .intro-card__body{
+  background: linear-gradient(9deg, #fff 0%, #dfe3ff 100%);
+}
+
+.intro-card--second .intro-card__body {
+  background: linear-gradient(7deg, #fff 0%, #f5ecff 100%);
+}
+
+.intro-card--third .intro-card__body {
+  background: linear-gradient(9deg, #fff 0%, #dfe3ff 100%);
+}
+
+.intro-card--fourth .intro-card__body {
+  background: linear-gradient(7deg, #fff 0%, #f5ecff 100%);
+}
+
+.intro-card__text {
+  font-weight: 400;
+  font-size: 26px;
+  line-height: 104%;
+  color: #657b8d;
+}
+
+.section-intro__container {
+  padding: 0 62px;
+}
+
+.section-intro__text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 144%;
+  text-align: center;
+  color: #fff;
+  max-width: 646px;
+}
+
+.section-intro__bg-img {
+  height: 1150px;
+}
+
+.section-intro__bg::after {
+  bottom: -1px;
+}
+
+.section-intro__title-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+}
+
+.section-intro__header {
+  margin-bottom: 100px;
+}
+
+.intro-card.jobs-intro-card {
+  padding: 0;
+  background: transparent;
+  overflow: visible;
+  border-radius: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.intro-card__img-wrap {
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.intro-card__img-wrap img {
   width: 100%;
   height: 100%;
   object-fit: cover;
   display: block;
+  border-radius: 5px;
 }
 
-.therapy-overlay-card {
-  position: absolute;
-  background: #fff;
+.intro-card__body {
+  position: relative;
+  min-height: 183px;
   border-radius: 10px;
+  background: #fff;
   padding: 20px;
-  min-height: 288px;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: flex-end;
 }
 
-.therapy-overlay-card--tr {
+.intro-card__num {
+  position: absolute;
   top: 20px;
   right: 20px;
-  max-width: 346px;
-}
-
-.therapy-overlay-card--bl {
-  bottom: 20px;
-  left: 20px;
-  max-width: 543px;
-}
-
-.therapy-overlay-card__tag {
-  display: block;
-  font-weight: 500;
+  font-weight: 400;
   font-size: 14px;
-  line-height: 121%;
-  color: rgba(101, 123, 141, 0.4);
+  line-height: 100%;
+  letter-spacing: -0.03em;
+  color: rgba(101, 123, 141, 0.5);
+}
+
+/* ─── SECTION FUTURE ─── */
+
+.section-future {
+  padding: 0 22px 150px;
+}
+
+.future__inner {
+  display: flex;
+  gap: 14px;
+}
+
+.future__left {
+  width: 50%;
+  background-image: url('../assets/img/future.png');
+  background-size: cover;
+  justify-content: flex-end;
+  background-position: center;
+  border-radius: 10px;
+  padding: 0 0 50px 50px;
+  display: flex;
+  flex-direction: column;
+}
+
+.future__title {
+  font-weight: 400;
+  font-size: 60px;
+  line-height: 107%;
+  color: #fff;
+  max-width: 620px;
   margin-bottom: 30px;
 }
 
-.therapy-overlay-card__text {
+.future__sub {
   font-weight: 500;
   font-size: 14px;
   line-height: 121%;
+  color: #fff;
+}
+
+.future__right {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.future__card {
+  border-radius: 10px;
+  background: #e2e9e9;
+  padding: 40px 28px 36px 40px;
+}
+
+.future__card-title {
+  font-weight: 400;
+  font-size: 26px;
+  line-height: 104%;
   color: #657b8d;
-  margin-bottom: 16px;
+  margin-bottom: 13px;
 }
 
-.therapy-overlay-card__text:last-child {
-  margin-bottom: 0;
+.future__list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
-.therapy-card__right--first .therapy-overlay-card--bl {
-  padding-right: 30px;
+.future__item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 11px 0;
+  border-bottom: 1px solid rgba(101, 123, 141, 0.4)
 }
 
-.therapy-card__right--third .therapy-overlay-card--tr {
-  padding-right: 32px;
+.future__item:last-child {
+  border-bottom: none;
+  padding-bottom: 0;
 }
 
-.therapy-card__right--third .therapy-overlay-card--bl {
-  padding-right: 78px;
+.future__item-text {
+  font-weight: 500;
+  font-size: 14px;
+  color: #657b8d;
 }
+
+.future__item-num {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 100%;
+  letter-spacing: -0.03em;
+  color: rgba(101, 123, 141, 0.5);
+  flex-shrink: 0;
+}
+
 /* ─── SECTION RELOUNGE CONTACT ─── */
 
 .section-rl-contact {
@@ -640,7 +526,7 @@ background-clip: text;
 }
 
 .rl-contact__inner {
-  background-image: url('../assets/img/relounge-footer.png');
+  background-image: url('../assets/img/jobs-footer.png');
   background-size: cover;
   background-position: center;
   border-radius: 10px;

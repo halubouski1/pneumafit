@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script>document.documentElement.style.setProperty("--fixed-vh", window.innerHeight + "px");</script>
+  <title>Manual Therapist</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/media.css">
+  <link rel="stylesheet" href="css/jobs.css">
+  <link rel="stylesheet" href="css/media-jobs.css">
+</head>
+<body>
+
+  <section class="relounge-hero">
+    <div class="relounge-hero__overlay"></div>
+
+    <div class="container relounge-hero__container">
+
+      <header class="header">
+        <a href="#" class="header__logo">
+          <img src="assets/img/logo.svg" alt="Manual Therapist Logo">
+        </a>
+        <nav class="header__nav">
+          <a href="#" class="header__nav-link">Home</a>
+          <a href="#" class="header__nav-link">Leistungen</a>
+          <a href="#" class="header__nav-link">Heilpraktiker/Osteopathie</a>
+          <a href="#" class="header__nav-link">T-Shape</a>
+          <a href="#" class="header__nav-link">ReLounge</a>
+          <a href="#" class="header__nav-link">Über uns</a>
+          <a href="#" class="header__nav-link">Karriere</a>
+        </nav>
+        <div class="header__actions">
+          <a href="#" class="header__btn-outline">Über uns</a>
+          <a href="#" class="header__btn-link header__btn-link--contact">Contact us
+            <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+            <mask id="mask0_117_57" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="12" height="12">
+            <rect width="8" height="8" transform="matrix(0.707107 -0.707107 -0.707107 -0.707107 5.65685 11.3137)" fill="url(#pattern0_117_57)"/>
+            </mask>
+            <g mask="url(#mask0_117_57)">
+            <ellipse cx="5.78125" cy="3.78125" rx="5.78125" ry="3.78125" transform="matrix(0.707107 -0.707107 -0.707107 -0.707107 3.62365 12.728)" fill="white"/>
+            </g>
+            <defs>
+            <pattern id="pattern0_117_57" patternContentUnits="objectBoundingBox" width="1" height="1">
+            <use xlink:href="#image0_117_57" transform="scale(0.00195312)"/>
+            </pattern>
+            <image id="image0_117_57" width="512" height="512" preserveAspectRatio="none" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAgAAAAIACAYAAAD0eNT6AAAAAXNSR0IArs4c6QAAAERlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAA6ABAAMAAAABAAEAAKACAAQAAAABAAACAKADAAQAAAABAAACAAAAAAAL+LWFAAAbsklEQVR4Ae3YQY4kRxUG4DaMxEXYsLHEwhvDXTiFBTund8MR4DRcgxOwYIU3ZjdEILX9prunul5VZla+fF9JLcfY0ZURXz7r/+2nJx8CBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAIETCXw97vLdie7jKgQIECBAgMA7AjP8/z1+Po2fj+/s9Y8JECBAgACBEwjE8J8FQAk4wUt1BQIECBAgcEngrfBXAi6J+WcECBAgQKC4wKXwVwKKv1zHJ0CAAAECbwlcE/5KwFty/h4BAgQIECgqkAl/JaDoS3ZsAgQIECAQBW4JfyUgCloTIECAAIFiAveEvxJQ7GU7LgECBAgQmAJrhL8SYJYIECBAgEAhgTXDXwko9OIdlQABAgT6CmwR/kpA33lycwIECBAoILBl+CsBBQbAEQkQIECgn8Ae4a8E9JsrNyZAgACBAwvsGf5KwIEHwdEIECBAoI/AI8JfCegzX25KgAABAgcUeGT4KwEHHAhHIkCAAIHzCxwh/JWA88+ZGxIgQIDAgQSOFP5KwIEGw1EIECBA4LwCRwx/JeC88+ZmBAgQIHAAgSOHvxJwgAFxBAIECBA4n0CF8FcCzjd3bkSAAAECDxSoFP5KwAMHxaMJECBA4DwCFcNfCTjP/LkJAQIECDxAoHL4KwEPGBiPJECAAIH6AmcIfyWg/hy6AQECBAjsKHCm8FcCdhwcjyJAgACBugJnDH8loO48OjkBAgQI7CBw5vBXAnYYII8gQIAAgXoCHcJfCag3l05MgAABAhsKdAp/JWDDQfLVBAgQIFBHoGP4KwF15tNJCRAgQGADgc7hrwRsMFC+kgABAgSOLyD8n56UgOPPqRMSIECAwIoCwv+X8FcCVhwsX0WAAAECxxUQ/q/DXwk47rw62QuBX7/4sz8SIEDgWoHfjo1/Gj+/ufYXGu3747jrV+PnH43u7KoECBAg0Ejg23HX/4yf5//y9dfPLT42mgVXJUCAAIFmAkrA56H/sgQpAc3+hXBdAgQIdBJQApSATvPurgQIECAQBJQAJSCMgyUBAgQIdBJQApSATvPurgQIECAQBJQAJSCMgyUBAgQIdBJQApSATvPurgQIECAQBJQAJSCMgyUBAgQIdBJQApSATvPurgQIECAQBJQAJSCMgyUBAgQIdBJQApSATvPurgQIECAQBJQAJSCMgyUBAgQIdBJQApSATvPurgQIECAQBJQAJSCMgyUBAgQIdBJQApSATvPurgQIECAQBJQAJSCMgyUBAgQIdBJQApSATvPurgQIECAQBJQAJSCMgyUBAgQIdBJQApSATvPurgQIECAQBJQAJSCMgyUBAgQIdBJQApSATvPurgQIECAQBJQAJSCMgyUBAgQIdBJQApSATvPurgQIECAQBJQAJSCMgyUBAgQIdBJQApSATvPurgQIECAQBJQAJSCMgyUBAgQIdBJQApSATvPurgQIECAQBJQAJSCMgyUBAgQIdBJQApSATvPurgQIECAQBJQAJSCMgyUBAgQIdBJQApSATvPurgQIECAQBJQAJSCMgyUBAgQIdBJQApSATvPurgQIECAQBJQAJSCMgyUBAgQIdBJQApSATvPurgQIECAQBJQAJSCMgyUBAgQIdBJQApSATvPurgQIECAQBJQAJSCMgyUBAgQIdBJQApSATvPurgQIECAQBJQAJSCMgyUBAgQIdBJQApSATvPurgQIECAQBJQAJSCMgyUBAgQIdBJQApSATvPurgQIECAQBJQAJSCMgyUBAgQIdBJQApSATvPurgQIECAQBJQAJSCMgyUBAgQIdBJQApSATvPurgQIECAQBJQAJSCMgyUBAgQIdBJQApSATvPurgQIECAQBJQAJSCMgyUBAgQIdBJQApSATvPurgQIECAQBJQAJSCMgyUBAgQIdBJQApSATvPurgQIECAQBJQAJSCMgyUBAgQIdBJQApSATvPurgQIECAQBJQAJSCMgyUBAgQIdBJQApSATvPurgQIECAQBJQAJSCMgyUBAgQIdBJQApSATvPurgQIECAQBJQAJSCMgyUBAgQIdBJQApSATvPurgQIECAQBJQAJSCMgyUBAgQIdBJQApSATvPurgQIECAQBJQAJSCMgyUBAgQIdBJQApSATvPurgQIECAQBJQAJSCMgyUBAgQIdBJQApSATvPurgQIECAQBJQAJSCMgyUBAgQIdBJQApSATvPurgQIECAQBJQAJSCMgyUBAgQIdBJQApSATvPurgQIECAQBJQAJSCMgyUBAgQIdBJQApSATvPurgQIECAQBJQAJSCMgyUBAgQIdBJQApSATvPurgQIECAQBJQAJSCMgyUBAgQIdBJQApSATvPurgQIECAQBJQAJSCMgyUBAgQIdBJQApSATvPurgQIECAQBJQAJSCMgyUBAgQIdBJQApSATvPurgQIECAQBJQAJSCMgyUBAgQIdBJQApSATvPurgQIECAQBJQAJSCMgyUBAgQIdBJQApSATvPurgQIECAQBJQAJSCMgyUBAgQIdBJQApSATvPurgQIECAQBJQAJSCMgyUBAgQIdBJQApSATvPurgQIECAQBJQAJSCMgyUBAgQIdBJQApSATvPurgQIECAQBJQAJSCMgyUBAgQIdBJQApSATvPurgQIECAQBJQAJSCMgyUBAgQIdBJQApSATvPurgQIECAQBJQAJSCMgyUBAgQIdBJQApSATvPurgQIECAQBJQAJSCMgyUBAgQIdBJQApSATvPurgQIECAQBJQAJSCMgyUBAgQIdBJQApSATvPurgQIECAQBJQAJSCMgyUBAgQIdBJQApSATvPurgQIECAQBJQAJSCMgyUBAgQI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gMAQOHMJEP5GnAABAgQIXBA4YwkQ/hdeuH9EgAABAgSeBc5UAoT/81v1VwIECBAgcIXAGUqA8L/iRdtCgAABAgReClQuAcL/5dv0ZwIECBAgkBCoWAKEf+IF20qAAAECBL4kUKkECP8vvUV/nwABAgQI3CBQoQQI/xterF8hQIAAAQLvCRy5BAj/996ef06AAAECBO4QOGIJEP53vFC/SoAAAQIErhU4UgkQ/te+NfsIECBAgMAKAkcoAcJ/hRfpKwgQIECAQFbgkSVA+Gfflv0ECBAgQGBFgUeUAOG/4gv0VQQIECBA4FaBPUuA8L/1Lfk9AgQIECCwgcAeJUD4b/DifCUBAgQIELhXYMsSIPzvfTt+nwABAgQIbCiwRQkQ/hu+MF9NgAABAgTWElizBAj/td6K7yFAgAABAjsIrFEChP8OL8ojCBAgQIDA2gL3lADhv/bb8H0ECBAgQGBHgVtKgPDf8QV5FAECBAgQ2EogUwKE/1ZvwfcSIECAAIEHCFxTAoT/A16MRxIgQIAAga0FLpUA4b+1vu8nQIAAAQIPFHirBAj/B74QjyZAgAABAnsJxBIg/PdS9xwCBAgQIHAAga/HGb47wDkcgQABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIEKgn8D8FArhdcAFGLgAAAABJRU5ErkJggg=="/>
+            </defs>
+            </svg>
+          </a>
+          <button class="header__burger" type="button" aria-label="Menu" aria-controls="mobileMenu" aria-expanded="false">
+            <svg width="21" height="9" viewBox="0 0 21 9" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <rect width="21" height="1" fill="white" />
+              <rect y="4" width="21" height="1" fill="white" />
+              <rect y="8" width="21" height="1" fill="white" />
+            </svg>
+          </button>
+        </div>
+      </header>
+
+      <div class="mobile-menu" id="mobileMenu" aria-hidden="true">
+        <div class="mobile-menu__inner">
+          <div class="mobile-menu__top">
+            <a href="index.html" class="mobile-menu__logo">
+              <img src="assets/img/logo-dark.svg" alt="Manual Therapist Logo">
+            </a>
+            <button class="mobile-menu__close" type="button" aria-label="Close menu">
+              <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                <path d="M1 1L17 17" stroke="black" stroke-width="1.5" stroke-linecap="round"/>
+                <path d="M17 1L1 17" stroke="black" stroke-width="1.5" stroke-linecap="round"/>
+              </svg>
+            </button>
+          </div>
+
+          <nav class="mobile-menu__nav" aria-label="Mobile navigation">
+            <a href="#" class="mobile-menu__link">Home</a>
+            <a href="#" class="mobile-menu__link">Leistungen</a>
+            <a href="#" class="mobile-menu__link">Heilpraktiker/Osteopathie</a>
+            <a href="#" class="mobile-menu__link">T-Shape</a>
+            <a href="#" class="mobile-menu__link">ReLounge</a>
+            <a href="#" class="mobile-menu__link">Über uns</a>
+            <a href="#" class="mobile-menu__link">Karriere</a>
+          </nav>
+
+          <a href="#" class="mobile-menu__cta">
+            Contact us
+            <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <path d="M7.5 4.37512L10.625 7.50011L7.5 10.6251" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M0.625 0.625V4.99999C0.625 5.66303 0.888388 6.29891 1.35723 6.76774C1.82607 7.23658 2.46194 7.49997 3.12498 7.49997H10.6249" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </a>
+        </div>
+      </div>
+
+      <div class="relounge-hero__content">
+        <div class="relounge-hero__bottom">
+          <h1 class="relounge-hero__title">Deine Karriere bei Pneumafit</h1>
+          <div class="relounge-hero__cta">
+            <a href="#" class="hero__btn hero__btn--primary relounge-hero__btn">
+              Jetzt Termin sichern
+              <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                <path d="M7.5 4.37512L10.625 7.50011L7.5 10.6251" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M0.625 0.625V4.99999C0.625 5.66303 0.888388 6.29891 1.35723 6.76774C1.82607 7.23658 2.46194 7.49997 3.12498 7.49997H10.6249" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </a>
+            <span class="relounge-hero__subtitle">weil Ihr Wohlbefinden nicht warten sollte</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="section-philosophy" data-aos="fade-up" data-aos-duration="900">
+
+    <!-- 8 vertical lines, full height -->
+    <div class="philosophy-lines" aria-hidden="true">
+      <div class="philosophy-line l-1"></div>
+      <div class="philosophy-line l-2"></div>
+      <div class="philosophy-line l-3"></div>
+      <div class="philosophy-line l-4"></div>
+      <div class="philosophy-line l-5"></div>
+      <div class="philosophy-line l-6"></div>
+      <div class="philosophy-line l-7"></div>
+      <div class="philosophy-line l-8"></div>
+    </div>
+
+    <!-- Main content: label left + content right -->
+    <div class="philosophy-top">
+      <div class="philosophy-wrapper">
+        <span class="philosophy-label">
+          Werde Teil von PneumaFit – wir freuen uns auf dich!
+        </span>
+        <span class="philosophy-descr">PneumaFit – Ihre Adresse für ganzheitliches Wohlbefinden. Unter der Leitung von Dimitri Foos, einem erfahrenen Physiotherapeuten und Gründer der Praxis in Leinfelden-Echterdingen, bieten wir ein umfassendes Angebot an Therapien für Körper und Geist. Unser Fokus liegt auf Physio-, Atem- und Sporttherapie, ergänzt durch exklusive Beauty- und Wellnessbehandlungen.</span>
+      </div>
+      <div class="philosophy-main">
+        <h2 class="philosophy-title">Bei PneumaFit arbeitest du in einem herzlichen Team, das zusammenhält und Spaß an der Arbeit hat.</h2>
+        <p class="philosophy-text">Wir geben dir die Möglichkeit, dich fachlich und persönlich weiterzuentwickeln – deine Ideen sind bei uns willkommen! Freu dich auf ein modernes Arbeitsumfeld, wertschätzende Chefs und Patienten, die deine Arbeit zu schätzen wissen.</p>
+        <a href="#" class="philosophy-btn hero__btn">
+          Schreiben Sie uns 
+          <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M7.50024 4.37512L10.6253 7.50011L7.50024 10.6251" stroke="#657B8D" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round" />
+            <path d="M0.625 0.625V4.99999C0.625 5.66303 0.888388 6.29891 1.35723 6.76774C1.82607 7.23658 2.46194 7.49997 3.12498 7.49997H10.6249" stroke="#657B8D" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round" />
+          </svg>
+        </a>
+      </div>
+    </div>
+
+    <!-- Bottom words positioned between the lines -->
+    <div class="philosophy-words" aria-hidden="true">
+      <!-- col 1: 296px — 2 words centered as group -->
+      <div class="pw-group">
+        <span class="p-word p-word--1">Ganzheitlichkeit</span>
+        <span class="p-word p-word--2">Balance</span>
+      </div>
+      <div></div><!-- col 2: 178px spacer -->
+      <!-- col 3: 296px — 1 word centered -->
+      <span class="p-word p-word--3">Selbstregulation</span>
+      <div></div><!-- col 4: 178px spacer -->
+      <!-- col 5: 296px — 2 words centered as group -->
+      <div class="pw-group">
+        <span class="p-word p-word--4">Beweglichkeit</span>
+        <span class="p-word p-word--5">Harmonie</span>
+      </div>
+      <div></div><!-- col 6: 178px spacer -->
+      <div></div><!-- col 7: 296px empty (lines 7→8) -->
+      <!-- col 8: remaining — 1 word centered -->
+      <span class="p-word p-word--6">Gesundheit</span>
+    </div>
+  </section>
+    <section class="section-intro">
+    <div class="section-intro__bg">
+      <img src="assets/img/after-hero.png" alt="" aria-hidden="true" class="section-intro__bg-img">
+    </div>
+    <div class="container section-intro__container" data-aos="fade-up" data-aos-duration="900">
+
+      <div class="section-intro__header">
+        <div class="section-intro__title-wrapper">     
+          <h2 class="section-title section-intro__title">
+            Deine Vorteile bei uns!
+          </h2>
+          <p class="section-intro__text">
+            Die Kinderwunschzeit ist für viele Menschen emotional herausfordernd. Osteopathie und Naturheilkunde bieten hier einen ganzheitlichen Ansatz und beziehen hormonelle, strukturelle und nervale Aspekte ein.
+          </p>
+        </div>
+
+      </div>
+
+      <div class="section-intro__grid">
+
+        <div class="intro-card--first intro-card jobs-intro-card">
+          <div class="intro-card__img-wrap">
+            <img src="assets/img/advantages-card-1.jpg" alt="">
+          </div>
+          <div class="intro-card__body">
+            <span class="intro-card__num">/01</span>
+            <p class="intro-card__text">Überdurchschnittlich<br>hoher Lohn</p>
+          </div>
+        </div>
+
+        <div class="intro-card--second intro-card jobs-intro-card">
+          <div class="intro-card__img-wrap">
+            <img src="assets/img/advantages-card-2.jpg" alt="">
+          </div>
+          <div class="intro-card__body">
+            <span class="intro-card__num">/02</span>
+            <p class="intro-card__text">Unbefristeter<br>Arbeitsvertrag</p>
+          </div>
+        </div>
+
+        <div class="intro-card--third intro-card jobs-intro-card">
+          <div class="intro-card__img-wrap">
+            <img src="assets/img/advantages-card-3.jpg" alt="">
+          </div>
+          <div class="intro-card__body">
+            <span class="intro-card__num">/03</span>
+            <p class="intro-card__text">30<br>Urlaubstage</p>
+          </div>
+        </div>
+
+        <div class="intro-card--fourth intro-card jobs-intro-card">
+          <div class="intro-card__img-wrap">
+            <img src="assets/img/advantages-card-4.jpg" alt="">
+          </div>
+          <div class="intro-card__body">
+            <span class="intro-card__num">/04</span>
+            <p class="intro-card__text">Option auf eine<br>4-Tage Woche</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section class="section-future" data-aos="fade-up" data-aos-duration="900">
+    <div class="future__inner">
+
+      <div class="future__left">
+        <h2 class="future__title">Starte deine Zukunft bei PneumaFit!</h2>
+        <span class="future__sub">Arbeiten, wo Wertschätzung und Teamgeist zählen.</span>
+      </div>
+
+      <div class="future__right">
+
+        <div class="future__card">
+          <h3 class="future__card-title">Darauf kannst du dich freuen</h3>
+          <ul class="future__list">
+            <li class="future__item"><span class="future__item-text">Überdurchschnittlich hoher Lohn</span><span class="future__item-num">/01</span></li>
+            <li class="future__item"><span class="future__item-text">Weihnachtsgeld</span><span class="future__item-num">/02</span></li>
+            <li class="future__item"><span class="future__item-text">Regelmäßige Lohnerhöhungen</span><span class="future__item-num">/03</span></li>
+            <li class="future__item"><span class="future__item-text">50 € monatlich steuerfrei extra</span><span class="future__item-num">/04</span></li>
+          </ul>
+        </div>
+
+        <div class="future__card">
+          <h3 class="future__card-title">Sicher und fair arbeiten</h3>
+          <ul class="future__list">
+            <li class="future__item"><span class="future__item-text">Unbefristeter Arbeitsvertrag</span><span class="future__item-num">/01</span></li>
+            <li class="future__item"><span class="future__item-text">Kurze Probezeit von 3 Monaten</span><span class="future__item-num">/02</span></li>
+            <li class="future__item"><span class="future__item-text">Betriebliche Arbeits- & Rechtsschutzversicherung</span><span class="future__item-num">/03</span></li>
+          </ul>
+        </div>
+
+        <div class="future__card">
+          <h3 class="future__card-title">Work-Life-Balance, wie sie sein sollte</h3>
+          <ul class="future__list">
+            <li class="future__item"><span class="future__item-text">30 Urlaubstage</span><span class="future__item-num">/01</span></li>
+            <li class="future__item"><span class="future__item-text">Option auf eine 4-Tage-Woche</span><span class="future__item-num">/02</span></li>
+            <li class="future__item"><span class="future__item-text">Kurzer Freitag bis 14 Uhr (nach Absprache)</span><span class="future__item-num">/03</span></li>
+            <li class="future__item"><span class="future__item-text">Flexible Arbeitszeiten</span><span class="future__item-num">/04</span></li>
+            <li class="future__item"><span class="future__item-text">Pünktlicher Feierabend</span><span class="future__item-num">/05</span></li>
+            <li class="future__item"><span class="future__item-text">Rücksichtnahme auf deine privaten Termine</span><span class="future__item-num">/06</span></li>
+            <li class="future__item"><span class="future__item-text">Langfristige Terminplanung bis zu 4 Wochen im Voraus</span><span class="future__item-num">/07</span></li>
+          </ul>
+        </div>
+
+        <div class="future__card">
+          <h3 class="future__card-title">Persönliche Entwicklung & Extras</h3>
+          <ul class="future__list">
+            <li class="future__item"><span class="future__item-text">Möglichkeit zur Entwicklung zur Teamleitung oder stellvertretenden Praxisleitung</span><span class="future__item-num">/01</span></li>
+            <li class="future__item"><span class="future__item-text">Private Nutzung der praxiseigenen Geräte</span><span class="future__item-num">/02</span></li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section class="section-rl-contact" data-aos="fade-up" data-aos-duration="900">
+    <div class="rl-contact__inner">
+
+      <div class="rl-contact__top">
+        <span class="rl-contact__brand">PneumaFit</span>
+        <div class="rl-contact__cards">
+          <div class="rl-contact__card">
+            <svg class="rl-contact__dot" width="7" height="7" viewBox="0 0 7 7" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><circle cx="3.5" cy="3.5" r="3.5" fill="white"/></svg>
+            <span class="rl-contact__card-label">Adresse</span>
+            <p class="rl-contact__card-text">Max-Lang-Straße 5<br>70771 Leinfelden-Echterdingen</p>
+          </div>
+          <div class="rl-contact__card rl-contact__card--active">
+            <svg class="rl-contact__dot" width="7" height="7" viewBox="0 0 7 7" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><circle cx="3.5" cy="3.5" r="3.5" fill="#363636"/></svg>
+            <span class="rl-contact__card-label">Telefon</span>
+            <p class="rl-contact__card-text"><a href="tel:07115043438">0711 – 5043 4348</a><br><a href="tel:017610716925">0176 – 10716925</a> – Mobil (auch WhatsApp)</p>
+          </div>
+          <div class="rl-contact__card">
+            <svg class="rl-contact__dot" width="7" height="7" viewBox="0 0 7 7" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><circle cx="3.5" cy="3.5" r="3.5" fill="white"/></svg>
+            <span class="rl-contact__card-label">E-mail</span>
+            <p class="rl-contact__card-text"><a href="mailto:info@pneumafit.de">info@pneumafit.de</a></p>
+          </div>
+          <div class="rl-contact__card">
+            <svg class="rl-contact__dot" width="7" height="7" viewBox="0 0 7 7" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><circle cx="3.5" cy="3.5" r="3.5" fill="white"/></svg>
+            <span class="rl-contact__card-label">Behandlungszeiten</span>
+            <p class="rl-contact__card-text">Mo: 8 – 18 Uhr<br>Di-Mi-Do: 8 – 20 Uhr<br>Fr: 8 – 15 Uhr</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="rl-contact__bottom">
+        <h2 class="rl-contact__title">Kontakt</h2>
+        <p class="rl-contact__text">Sie möchten einen Termin in unserer Praxis vereinbaren? Rufen Sie uns einfach an oder schreiben Sie uns eine E-Mail.</p>
+        <a href="#" class="hero__btn hero__btn--primary rl-contact__btn">
+          Termin vereinbaren
+          <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <path d="M7.5 4.37512L10.625 7.50011L7.5 10.6251" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M0.625 0.625V4.99999C0.625 5.66303 0.888388 6.29891 1.35723 6.76774C1.82607 7.23658 2.46194 7.49997 3.12498 7.49997H10.6249" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </a>
+      </div>
+
+    </div>
+
+    <div class="rl-contact__mobile">
+      <h2 class="rl-contact__title">Kontakt</h2>
+      <p class="rl-contact__text">Sie möchten einen Termin in unserer Praxis vereinbaren? Rufen Sie uns einfach an oder schreiben Sie uns eine E-Mail.</p>
+
+      <form class="section-contact__form rl-contact__form">
+        <input type="tel" class="section-contact__input" placeholder="+1 (000)-000-00-00">
+        <button type="submit" class="section-contact__btn">
+          Ich will diesen guten Muskeltonus
+          <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <path d="M7.5 4.375L10.625 7.49999L7.5 10.6249" stroke="#F1F1F1" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M0.625 0.625V4.99999C0.625 5.66303 0.888388 6.29891 1.35723 6.76774C1.82607 7.23658 2.46194 7.49997 3.12498 7.49997H10.6249" stroke="#F1F1F1" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </button>
+      </form>
+      <span class="section-contact__privacy">durch Klicken auf die Schaltfläche stimmen Sie der <a href="#">Datenschutzrichtlinie zu</a></span>
+
+      <div class="rl-contact__mobile-cards">
+        <div class="rl-contact__card">
+          <svg class="rl-contact__dot" width="7" height="7" viewBox="0 0 7 7" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><circle cx="3.5" cy="3.5" r="3.5" fill="#363636"/></svg>
+          <span class="rl-contact__card-label">Adresse</span>
+          <p class="rl-contact__card-text">Max-Lang-Straße 5<br>70771 Leinfelden-Echterdingen</p>
+        </div>
+        <div class="rl-contact__card rl-contact__card--active">
+          <svg class="rl-contact__dot" width="7" height="7" viewBox="0 0 7 7" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><circle cx="3.5" cy="3.5" r="3.5" fill="#363636"/></svg>
+          <span class="rl-contact__card-label">Telefon</span>
+          <p class="rl-contact__card-text"><a href="tel:07115043438">0711 – 5043 4348</a><br><a href="tel:017610716925">0176 – 10716925</a> – Mobil (auch WhatsApp)</p>
+        </div>
+        <div class="rl-contact__card">
+          <svg class="rl-contact__dot" width="7" height="7" viewBox="0 0 7 7" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><circle cx="3.5" cy="3.5" r="3.5" fill="#363636"/></svg>
+          <span class="rl-contact__card-label">E-mail</span>
+          <p class="rl-contact__card-text"><a href="mailto:info@pneumafit.de">info@pneumafit.de</a></p>
+        </div>
+        <div class="rl-contact__card">
+          <svg class="rl-contact__dot" width="7" height="7" viewBox="0 0 7 7" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><circle cx="3.5" cy="3.5" r="3.5" fill="#363636"/></svg>
+          <span class="rl-contact__card-label">Behandlungszeiten</span>
+          <p class="rl-contact__card-text">Mo: 8 – 18 Uhr<br>Di-Mi-Do: 8 – 20 Uhr<br>Fr: 8 – 15 Uhr</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="footer__content">
+
+      <nav class="footer__nav">
+        <div class="footer__nav-col">
+          <div class="footer__nav-group">
+            <h4 class="footer__nav-title">Leistungen</h4>
+            <div class="footer__nav-links">
+              <a href="#" class="footer__nav-link">Physiotherapie</a>
+              <a href="#" class="footer__nav-link">Atemtherapie</a>
+              <a href="#" class="footer__nav-link">Sporttherapie</a>
+              <a href="#" class="footer__nav-link">CMD-Behandlung</a>
+              <a href="#" class="footer__nav-link">T-Shape 2</a>
+              <a href="#" class="footer__nav-link">ReLounge</a>
+            </div>
+          </div>
+          <div class="footer__nav-group">
+            <h4 class="footer__nav-title"><span class="mobile-hidden">Nutzungsbedingungen</span><span class="mobile-only">Datenschutz</span> <br>der Website</h4>
+            <div class="footer__nav-links">
+              <a href="#" class="footer__nav-link">Datenschutz</a>
+            </div>
+          </div>
+        </div>
+        <div class="footer__nav-col">
+          <div class="footer__nav-group">
+            <h4 class="footer__nav-title">Über uns</h4>
+            <div class="footer__nav-links">
+              <a href="#" class="footer__nav-link">Über uns und das Team</a>
+              <a href="#" class="footer__nav-link">Karriere</a>
+            </div>
+          </div>
+          <div class="footer__nav-group footer__nav-group--right">
+            <h4 class="footer__nav-title">Social networks</h4>
+            <div class="footer__nav-links">
+              <a href="#" class="footer__nav-link">Instagram</a>
+              <a href="#" class="footer__nav-link">Telegram</a>
+              <a href="#" class="footer__nav-link">WhatsApp</a>
+            </div>
+          </div>
+        </div>
+      </nav>
+
+      <div class="footer__divider"></div>
+
+      <div class="footer__bottom">
+        <button class="footer__scroll-top" id="scrollTop" aria-label="Nach oben">
+          <svg width="12" height="15" viewBox="0 0 12 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M5.95948 14.4189V0.918946M0.459473 6.41895L5.95948 0.918946L11.4595 6.41895" stroke="white" stroke-width="1.3"/>
+          </svg>
+        </button>
+        <div class="footer__email-info">
+          <span class="footer__email-label">e-mail</span>
+          <a href="mailto:Support@PneumaFit.com" class="footer__email">Support@PneumaFit.com</a>
+        </div>
+      </div>
+
+      <div class="footer__legal">
+        <span>PneumaFit. All rights reserved</span>
+        <span>© 2026</span>
+      </div>
+
+    </div>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/@studio-freight/lenis@1.0.42/dist/lenis.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
