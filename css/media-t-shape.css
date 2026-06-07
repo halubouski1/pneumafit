@@ -1702,6 +1702,11 @@
     max-width: 300px;
   }
 
+  .section-contact__btn {
+    justify-content: space-between;
+    padding-left: 25px;
+  }
+
   /* footer */
   .footer__content {
     position: static;
