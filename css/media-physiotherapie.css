@@ -1,0 +1,1543 @@
+@media (max-width: 1919px) {
+  /* hero */
+  .osteopathy-hero__title {
+    font-size: 130px;
+  }
+  
+  .osteopathy-hero__main {
+    gap: 15px;
+  }
+
+  .osteopathy-hero__intro {
+    font-size: 13px;
+    max-width: 310px;
+    margin-right: 30px;
+  }
+
+  .hero__btn svg {
+    width: 10px;
+    height: 10px;
+  }
+
+  .osteopathy-hero__subtitle {
+    font-size: 14px;
+    max-width: 194px;
+  }
+
+  .osteopathy-feature {
+    padding: 18px 28px 18px 20px;
+    gap: 10px;
+  }
+
+  .osteopathy-learn__icon {
+    width: 70px;
+    height: 70px;
+  }
+
+  .osteopathy-hero__cards {
+    gap: 18px;
+    max-width: min-content;
+  }
+
+  .osteopathy-feature__text {
+    font-size: 11px;
+  }
+
+  .osteopathy-hero__cta-row {
+    gap: 20px;
+  }
+
+  .osteopathy-learn__icon svg {
+    width: 15px;
+    height: 23px;
+  }
+
+  .osteopathy-learn__text {
+    font-size: 12px;
+  }
+
+  .osteopathy-learn {
+    right: -5px;
+  }
+
+  .osteopathy-hero__content {
+    gap: 200px;
+  }
+
+  .osteopathy-hero__label {
+    font-size: 14px;
+  }
+
+  .osteopathy-learn svg {
+    height: 200px;
+  }
+
+  /* section-philosophy */
+  .section-philosophy {
+    padding: 100px var(--phi-pad) 20px;
+  }
+
+  .philosophy-label {
+    font-size: 12px;
+    padding-left: 20px;
+  }
+
+  .philosophy-title {
+    font-size: 40px;
+    max-width: 600px;
+    margin-bottom: 20px;
+  }
+
+  .philosophy-text {
+    font-size: 12px;
+    max-width: 554px;
+    margin-bottom: 40px;
+  }
+
+  .philosophy-words {
+    margin-top: 120px;
+  }
+
+  .p-word {
+    font-size: 10px;
+  }
+
+  .philosophy-btn {
+    padding: 12px 13px 14px 23px;
+  }
+
+  /* section-for-back */
+  .for-back__inner {
+  padding: 60px 10px 10px 40px;
+  min-height: 0;
+  }
+
+  .for-back__title {
+      font-size: 40px;
+      margin-bottom: 15px;
+      max-width: 570px;
+  }
+
+  .for-back__desc {
+    font-size: 14px;
+    max-width: 502px;
+  }
+
+  .for-back__note {
+    font-size: 14px;
+    max-width: 245px;
+    padding-top: 10px;
+  }
+
+  .for-back__card-title {
+    font-size: 20px;
+  }
+
+  .for__back-wrapper {
+    top: auto;
+    gap: 10px;
+  }
+
+  .for__back-brand {
+    font-size: 18px;
+  }
+
+  .for-back__card {
+    height: 170px;
+    width: 236px;
+  }
+
+  .for-back__card--2 {
+    left: 236px;
+    top: 220px;
+  }
+
+  .for-back__cards {
+    margin-top: 200px;
+  }
+
+  .for-back__card--3 {
+    left: 472px;
+    top: 51px;
+  }
+
+  .for-back__card--4 {
+      right: 0;
+      top: 220px;
+      bottom: 0;
+      padding-right: 30px;
+  }
+
+  .for-back__cards {
+    min-height: 390px;
+  }
+
+    /* .section-mission */
+  .section-mission {
+    padding-bottom: 100px;
+  }
+
+  .mission__left {
+    padding: 30px 50px 30px 30px;
+  }
+
+  .mission__left-title {
+    font-size: 40px;
+  }
+
+  .mission__left-text {
+    font-size: 12px;
+    max-width: 533px;
+  }
+
+  .mission__right {
+    padding: 30px 30px 30px 30px;
+  }
+
+  .mission__right-text {
+    font-size: 12px;
+    max-width: 414px;
+  }
+
+  .mission__card img {
+    width: 200px;
+    height: 122px;
+  }
+
+  .mission__cards {
+    min-height: 244px;
+    margin-top: 30px;
+  }
+
+  .mission__card--2 {
+    right: 200px;
+  }
+
+  .mission__bottom-title {
+    font-size: 40px;
+    max-width: 591px;
+  }
+
+  .mission__right-bottom {
+    margin-top: 100px;
+  }
+
+  .mission__left-title {
+    margin-bottom: 607px;
+    max-width: 400px;
+  }
+
+  .mission__bottom-sub {
+    font-size: 12px;
+    max-width: 379px;
+  }
+
+  .mission__right-top {
+    gap: 20px;
+    justify-content: space-between;
+  }
+
+  .mission__inner {
+    gap: 10px;
+  }
+
+    /* .section-process */
+  .section-process__container {
+    padding-top: 40px;
+    padding-bottom: 50px;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  .section-process {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+
+  .section-process__left {
+    gap: 20px;
+  }
+  
+  .section-process__text {
+    font-size: 12px;
+    max-width: 460px;
+  }
+
+  .review-card__item {
+    font-size: 12px;
+  }
+
+  .section-process__desc {
+    font-size: 12px;
+    max-width: 450px;
+    margin-bottom: 15px;
+  }
+
+  .section-process__cta-note {
+    font-size: 13px;
+    max-width: 100px;
+  }
+
+  .review-card__service {
+    max-width: 116px;
+  }
+
+  .review-card__list {
+    padding-left: 15px;
+  }
+
+  .swiper-slide:first-child .review-card__service {
+    max-width: 144px;
+  }
+
+  .section-process__cta {
+    gap: 15px;
+  }
+
+  .section-process__important-label {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+
+  .section-process__important-text {
+    font-size: 11px;
+  }
+
+  .section-process__right {
+    max-width: 207px;
+  }
+
+  .section-process__divider {
+    margin-bottom: 10px;
+  }
+
+  .review-card__inner {
+    padding: 15px 13px 30px 15px;
+  }
+
+  .review-card__inner {
+    left: 43px;
+  }
+
+  .review-card__text {
+    font-size: 12px;
+  }
+
+  .section-process__top {
+    margin-bottom: 200px;
+  }
+
+  /* .section-faq */
+  .section-faq {
+    padding: 75px 0;
+  }
+  
+  .faq__label {
+    font-size: 12px;
+    padding-left: 9px;
+  }
+
+  .faq__container {
+    gap: 10px;
+    margin-bottom: 70px;
+  }
+
+  .faq__title {
+    font-size: 40px;
+    padding-left: 9px;
+  }
+
+  .faq__question {
+    font-size: 18px;
+    width: 131px;
+  }
+
+  .faq__answer {
+    font-size: 12px;
+  }
+
+  .faq__number {
+    font-size: 12px;
+  }
+
+  .faq__row {
+    height: 70px;
+    padding-left: 20px;
+    padding-right: 40px;
+    gap: 300px;
+  }
+
+  .faq__tooltip {
+    width: 381px;
+  }
+
+  .faq__tooltip-title {
+    font-size: 16px;
+    margin-bottom: 12px;
+  }
+
+  .faq__tooltip-text {
+    font-size: 14px;
+  }
+
+  .faq__tooltip-body {
+    padding: 14px 20px 20px 20px;
+  }
+
+  .faq__tooltip-img {
+    height: 150px;
+    object-fit: cover;
+  }
+
+}
+
+@media (max-width: 1370px) {
+  /* hero */
+  .osteopathy-hero__cards {
+    display: none;
+  }
+
+  .osteopathy-learn {
+    display: none;
+  }
+
+  .osteopathy-hero__main {
+    margin-right: 0;
+  }
+
+  /* section-philosophy */
+  .pw-group {
+    gap: 40px;
+  }
+
+  /* for-back */
+  .for-back__card--3 {
+    left: 472px;
+    top: 25px;
+  }
+
+  /* mission */
+
+  .mission__right-top {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .mission__bottom-title {
+    font-size: 30px;
+  }
+
+  /* faq */
+  .faq__row {
+    gap: 100px;
+  }
+}
+
+@media (max-width: 940px) {
+
+  /* hero */
+  .osteopathy-hero__main {
+    align-self: start;
+    margin-bottom: 0;
+    margin-right: 0;
+    width: 100%;
+  }
+
+  .osteopathy-hero__content {
+    gap: 0px;
+  }
+
+  .osteopathy-hero__title {
+    font-size: 100px;
+  }
+
+  .osteopathy-hero__intro {
+    display: none;
+  }
+
+  .osteopathy-hero__intro--mobile {
+    display: block;
+    align-self: start;
+    margin-bottom: 0;
+    margin-right: 0;
+  }
+
+  /* .philosophy */
+  .philosophy-top {
+    flex-direction: column;
+    align-items: start;
+    gap: 40px;
+  }
+
+  .section-philosophy {
+    padding-left: 20px;
+    padding-right: 20px;
+    border-bottom: 1px solid rgba(101, 123, 141, 0.15);
+  }
+
+  .philosophy__text-heading {
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 111%;
+    color: #657b8d;
+    margin-bottom: 20px;
+  }
+
+  .philosophy__text-small {
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 138%;
+    color: rgba(101, 123, 141, 0.5);
+  }
+
+  .philosophy-label {
+    display: none;
+  }
+
+  .philosophy-btn {
+    display: none;
+  }
+
+  .philosophy-main {
+    align-items: start;
+  }
+
+  .l-2, .l-3, .l-5, .l-6, .l-7 {
+    display: none;
+  }
+
+  .l-4 {
+    left: 50%;
+  }
+
+  .philosophy-words {
+    display: flex;
+    margin-top: 60px;
+  }
+
+  .philosophy-words > * {
+    display: none;
+  }
+
+  .philosophy-words .pw-group:first-child {
+    display: contents;
+  }
+
+  .p-word--1 {
+    flex: 1;
+    text-align: left;
+  }
+
+  .p-word--2 {
+    flex: 1;
+    text-align: center;
+  }
+
+  .p-word--3 {
+    display: block;
+    flex: 1;
+    text-align: right;
+  }
+
+  .philosophy__text-heading, .philosophy__text-small {
+    display: block;
+  }
+
+    /* .section-for-back */
+  .section-for-back {
+    padding: 0 20px;
+  }
+
+  .for-back__inner {
+    background-image: none;
+    background: transparent;
+    border-radius: 0;
+    padding: 30px 0 40px;
+    min-height: auto;
+    overflow: visible;
+    display: block;
+  }
+
+  .for-back__top {
+    margin-bottom: 20px;
+  }
+
+  .for-back__title {
+    font-size: 28px;
+    line-height: 111%;
+    color: #657b8d;
+    margin-bottom: 12px;
+  }
+
+  .for-back__desc {
+    font-size: 14px;
+    color: #657b8d;
+    max-width: 100%;
+  }
+
+  .for-back__mobile-img {
+    display: block;
+    width: 100%;
+    border-radius: 10px;
+    object-fit: cover;
+    margin-bottom: 30px;
+    max-height: 380px;
+  }
+
+  .for-back__cards {
+    position: relative;
+    min-height: auto;
+    margin-top: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-bottom: 30px;
+  }
+
+  .for-back__card {
+    position: relative;
+    top: auto;
+    left: auto;
+    right: auto;
+    bottom: auto;
+    width: 55%;
+    height: auto;
+    min-height: 90px;
+    background: rgba(101, 123, 141, 0.02);
+    backdrop-filter: none;
+    -webkit-backdrop-filter: none;
+    border: 1px solid rgba(101, 123, 141, 0.3);
+  }
+
+  .for-back__card-title {
+    color: #657b8d;
+  }
+
+  .for-back__card--1 { align-self: flex-start; }
+  .for-back__card--2 { align-self: flex-end; }
+  .for-back__card--3 { align-self: flex-start; margin-left: 10%; }
+  .for-back__card--4 { align-self: flex-end; }
+  .for-back__card--5 { align-self: flex-start; }
+
+  .for-back__note {
+    position: static;
+    text-align: right;
+    margin-left: auto;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 177%;
+    letter-spacing: -0.03em;
+    text-align: right;
+    color: #657b8d;
+    max-width: 240px;
+    display: block;
+  }
+
+  .for__back-wrapper {
+    position: static;
+  }
+
+  .for__back-brand {
+    display: none;
+  }
+
+  /* therapies tl-chips → overlay card style */
+  .therapies__tl-chips {
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+
+  .therapies__tl-chip {
+    background: #fff;
+    border-radius: 10px;
+    padding: 25px 30px 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 130px;
+    border: none;
+  }
+
+  /* section-process */
+  .section-reviews__container {
+    background-image: none;
+    padding: 0;
+  }
+
+  .section-process__title {
+    margin-bottom: 400px;
+  }
+
+  .section-process__desc {
+    display: none;
+  }
+
+  .section-process__cta-note {
+    color: #657B8D;
+  }
+
+  .section-process__container {
+    padding: 0;
+  }
+
+  .review-card {
+    border: 1px solid rgba(101, 123, 141, 0.3);
+  }
+
+  .section-process__top {
+    background-image: url(../assets/img/solutions-slider.png);
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+    flex-direction: column;
+    margin-bottom: 40px;
+    padding: 30px 20px;
+  }
+
+  .section-process__cta {
+    display: none;
+  }
+
+  .section-process__right {
+    display: none;
+  }
+
+  .section-process__mobile-cta {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 90px;
+  }
+
+  .section-reviews__bottom {
+    margin-top: 0;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+    padding-right: 0;
+  }
+
+  .section-process__mobile-wichtig {
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+    max-width: 387px;
+    align-self: end;
+  }
+
+  .section-process__important-label {
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 100%;
+    letter-spacing: -0.03em;
+    text-align: right;
+    color: #657b8d;
+  }
+
+  .section-process__important-text {
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 130%;
+    letter-spacing: -0.03em;
+    text-align: right;
+    color: #657b8d;
+  }
+
+  .section-process__divider {
+    background: rgba(101, 123, 141, 0.35);
+  }
+
+  /* .section-mission */
+  .section-mission {
+    padding: 30px 20px;
+  }
+
+  .mission__inner {
+    display: none;
+  }
+
+  .section-mission__mobile {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .mission-mob__title {
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 111%;
+    background: linear-gradient(360deg, #657b8d 0%, #1c2227 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    padding-bottom: 5px;
+    margin-bottom: 20px;
+  }
+
+  .mission-mob__texts {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-bottom: 50px;
+  }
+
+  .mission-mob__text {
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 131%;
+    color: #657b8d;
+  }
+
+  .mission-mob__img {
+    width: 100%;
+    border-radius: 10px;
+    object-fit: cover;
+    display: block;
+    margin-bottom: 70px;
+  }
+
+  .mission-mob__bottom-title {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 115%;
+    background: linear-gradient(360deg, #657b8d 0%, #1c2227 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 20px;
+  }
+
+  .mission-mob__sub {
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 131%;
+    color: #657b8d;
+    margin-bottom: 50px;
+    display: block;
+  }
+
+  .mission-mob__btn {
+    outline: 1px solid rgba(101, 123, 141, 0.4);
+    color: #657b8d;
+    padding-left: 52px;
+    align-self: flex-start;
+    margin-bottom: 0px;
+  }
+
+  .mission-mob__bottom {
+    display: flex;
+    flex-direction: column;
+    background: #e2e9e9;
+    padding: 30px 20px;
+    border-radius: 10px;
+    gap: 30px;
+  }
+
+  .mission-mob__divider {
+    width: 100%;
+    height: 1px;
+    background: rgba(101, 123, 141, 0.25);
+  }
+
+  .mission-mob__photos {
+    position: relative;
+    min-height: 200px;
+    margin-bottom: 30px;
+    border-radius: 5px;
+  }
+
+  .mission-mob__photo--1 {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    width: 150px;
+    border-radius: 5px;
+  }
+
+  .mission-mob__photo--2 {
+    position: absolute;
+    left: 20px;
+    bottom: 20px;
+    width: 150px;
+    border-radius: 10px;
+  }
+
+  .mission-mob__body {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .mission-mob__body-text {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 138%;
+    letter-spacing: -0.03em;
+    color: #657b8d;
+  }
+
+  /* .section-faq static scroll-fill */
+  .faq__br {
+    display: none;
+  }
+
+  .faq__tooltip {
+    display: none;
+  }
+  
+  .faq__list {
+    margin: 0 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+  }
+
+  .faq__row {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    padding: 0;
+    gap: 0;
+    background: transparent;
+    border-bottom: none;
+    cursor: pointer;
+  }
+
+  .faq__right {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .faq__question {
+    display: block;
+    width: auto;
+    background: transparent;
+    padding: 18px 20px 18px 60px;
+    border-radius: 10px;
+    font-size: 22px;
+    line-height: 107%;
+    width: 100%;
+    color: #1c2227;
+    transition: background 0.3s ease, color 0.3s ease;
+  }
+
+  .faq__row.is-active .faq__question {
+    background: #4d6eff;
+    color: #fff;
+  }
+
+  .faq__row.is-active .faq__answer {
+    color: #657B8D;
+  }
+
+  .faq__number {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    font-size: 12px;
+    line-height: 138%;
+    letter-spacing: -0.03em;
+    color: rgba(101, 123, 141, 0.5);
+    transition: color 0.3s ease;
+  }
+
+  .faq__row.is-active .faq__number {
+    color: rgba(255, 255, 255, 0.6);
+  }
+
+  .faq__answer {
+    padding: 12px 20px 4px 20px;
+    font-size: 14px;
+    line-height: 140%;
+    color: #657b8d;
+    width: 100%;
+  }
+
+  /* contact */
+  .section-contact__left, .section-contact__right {
+    display: none;
+  }
+
+  .section-contact__inner {
+    height: 400px;
+  }
+
+  .footer__content {
+    position: static;
+  }
+
+    /* .rl-contact mobile */
+  .section-rl-contact {
+    padding: 0 22px;
+  }
+
+  .rl-contact__mobile {
+  display: block;
+  }
+
+  .rl-contact__inner {
+    border-radius: 10px;
+    padding: 20px;
+    min-height: 400px;
+    display: block;
+  }
+
+  .rl-contact__top,
+  .rl-contact__bottom {
+    display: none;
+  }
+
+  .rl-contact__img-text {
+    display: block;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 138%;
+    color: rgba(255, 255, 255, 0.85);
+    max-width: 220px;
+  }
+
+  .rl-contact__mobile {
+    display: flex;
+    flex-direction: column;
+    padding: 30px 0px 40px;
+  }
+
+  .rl-contact__mobile .rl-contact__title {
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 111%;
+    letter-spacing: -0.03em;
+    color: #657b8d;
+    margin-bottom: 15px;
+  }
+
+  .section-contact-brand-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: flex-end;
+    padding-top: 70px;
+  }
+
+  .section-contact__brand {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 128%;
+    letter-spacing: -0.03em;
+    text-align: right;
+    color: #657b8d;
+    margin-bottom: 0px;
+  }
+
+  .rl-contact__mobile .rl-contact__text {
+    font-size: 14px;
+    color: #657b8d;
+    margin-bottom: 25px;
+    max-width: 100%;
+  }
+
+  .section-contact__brand-desc {
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 169%;
+    letter-spacing: -0.03em;
+    text-align: right;
+    color: #657b8d;
+    max-width: 226px;
+    padding-top: 10px;
+    border-top: 1px solid #657b8d;
+  }
+
+  .rl-contact__card-text {
+    border: none;
+    padding: 0;
+  }
+
+  .rl-contact__form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 15px;
+    width: 100%;
+  }
+
+  .section-contact__input {
+    border: 1px solid rgba(101, 123, 141, 0.25);
+  }
+
+  .section-contact__input::placeholder {
+    color: rgba(101, 123, 141, 0.55);
+  }
+
+  .section-contact__privacy {
+    color: #657b8d;
+  }
+}
+
+@media (max-width: 769px) {
+  /* hero */
+  .osteopathy-hero__title {
+    font-size: 80px;
+  }
+
+  /* section-intro */
+  .section-intro__grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 570px) {
+  /* hero */
+  .osteopathy-hero__title {
+    font-size: 45px;
+    line-height: 100%;
+    margin-bottom: 10px;
+  }
+
+  .osteopathy-hero {
+    background-image: url(../assets/img/physiotherapie-hero-mobile.png);
+  }
+
+  .osteopathy-hero__main {
+    gap: 0px;
+  }
+
+  .osteopathy-hero__label {
+    order: 2;
+    margin-bottom: 70px;
+  }
+
+  .osteopathy-hero__intro--mobile {
+    margin-bottom: 70px;
+    font-size: 13px;
+    line-height: 138%;
+  }
+
+  .osteopathy-hero__subtitle {
+    font-size: 13px;
+    line-height: 138%;
+    max-width: 142px;
+  }
+
+  .osteopathy-hero__container {
+    padding-bottom: 36px;
+  }
+
+  .osteopathy-hero__cta-row {
+    gap: 15px;
+    order: 3;
+  }
+
+  .osteopathy-hero__btn {
+    padding-left: 15px;
+    gap: 19px;
+  }
+
+  /* .section-philosophy */
+  .section-philosophy {
+    padding-top: 100px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 14px;
+  }
+
+  .philosophy-label {
+    font-size: 13px;
+    line-height: 177%;
+  }
+
+  .philosophy-top {
+    gap: 20px;
+  }
+
+  .philosophy-title {
+    font-size: 26px;
+    max-width: 326px;
+    margin-bottom: 15px;
+  }
+
+  .philosophy-text {
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 138%;
+    letter-spacing: -0.03em;
+    color: #657b8d;
+    max-width: 320px;
+    margin-bottom: 70px;
+  }
+
+  .philosophy__text-heading, .philosophy__text-small {
+    max-width: 320px;
+  }
+
+  .philosophy-btn {
+    display: none;
+  }
+
+  .philosophy-btn--mobile {
+    display: flex;
+  }
+
+  .philosophy-words {
+    margin-top: 115px;
+  }
+
+  .p-word {
+    font-size: 11px;
+    line-height: 209%;
+  }
+
+  .l-1 { left: 81px; }
+  .l-4 { left: 50%; }
+  .l-8 { left: auto; right: 81px; }
+
+  /* .for-back */
+  .for-back__inner {
+    padding: 0;
+  }
+
+  .section-for-back {
+    padding-top: 100px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .for-back__title {
+    margin-bottom: 20px;
+  }
+
+  .for-back__desc {
+    max-width: 320px;
+  }
+
+  .for-back__top {
+    margin-bottom: 38px;
+  }
+
+  .for-back__mobile-img {
+    height: 290px;
+    margin-bottom: 10px;
+  }
+
+  .for-back__card {
+    width: 100%;
+    min-height: 176px;
+  }
+
+  .for-back__cards {
+    gap: 10px;
+    margin-bottom: 70px;
+  }
+
+  .for-back__note {
+    padding-top: 0;
+  }
+
+  .for-back__card--3 {
+    align-self: flex-start;
+    margin-left: 0;
+  }
+
+  /* .section-mission */
+  .section-mission {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+
+  .mission-mob__title {
+    margin-bottom: 15px;
+  }
+
+  .mission-mob__texts {
+    margin-bottom: 70px;
+  }
+
+  .mission-mob__text {
+    max-width: 320px;
+  }
+
+  .mission-mob__img {
+    margin-bottom: 50px;
+  }
+
+  .mission-mob__bottom-title {
+    max-width: 320px;
+    margin-bottom: 30px;
+  }
+
+  .mission-mob__sub {
+    max-width: 273px;
+    margin-bottom: 70px;
+  }
+
+  .mission-mob__divider {
+    margin-bottom: 10px;
+  }
+
+  .mission-mob__btn {
+    padding-left: 25px;
+    gap: 25px;
+  }
+
+  .mission-mob__bottom {
+    margin-left: -10px;
+    margin-right: -10px;
+    width: calc(100% + 20px);
+  }
+
+  .mission-mob__bottom .mission-mob__text {
+    max-width: 300px;
+    max-width: 281px;
+  }
+
+    /* .section-process */
+  .section-process__container {
+    padding: 0 10px;
+  }
+
+  .section-process {
+    padding-bottom: 0;
+  }
+
+  .section-process__top {
+    padding: 40px 20px 20px 20px;
+    background-image: url(../assets/img/solutions-slider-mobile.png);
+    margin-bottom: 70px;
+  }
+
+  .swiper-slide:first-child .review-card__service {
+    max-width: 186px;
+  }
+
+  .review-card__service {
+    max-width: 186px;
+  }
+
+  .review-card__item {
+    font-size: 13px;
+  } 
+
+  .section-process__left {
+    gap: 305px;
+  }
+
+  .section-process__text {
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 138%;
+    color: #fff;
+    max-width: 273px;
+  }
+
+  .section-process__title {
+    font-size: 28px;
+    line-height: 111%;
+    max-width: 266px;
+    margin: 0;
+  }
+
+  .section-process__desc {
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 120%;
+    letter-spacing: -0.03em;
+    color: #fff;
+    max-width: 300px;
+  }
+
+  .section-process__mobile-cta .hero__btn {
+    gap: 25px;
+  }
+
+  .section-process__mobile-cta {
+    flex-direction: column;
+    align-items: start;
+    gap: 10px;
+  }
+
+  .section-process__cta-note {
+    max-width: 100%;
+    font-size: 13px;
+    line-height: 177%;
+  }
+
+  .reviews-btn {
+    background: #657b8d;
+  }
+
+  .reviews-btn svg {
+    fill: #fff;
+  }
+
+  .section-reviews__bottom {
+    gap: 22px;
+  }
+
+  .review-card__inner {
+    top: 34px;
+    left: 38px;
+    padding: 20px;
+    padding-right: 15px;
+  }
+
+  .review-card__header svg {
+    width: 15px;
+    height: 15px;
+  }
+
+  .review-card__service {
+    font-size: 21px;
+    line-height: 100%;
+  }
+
+  .review-card__bottom {
+    gap: 20px;
+  }
+
+  .review-card__text {
+    font-size: 14px;
+    line-height: 114%;
+  }
+
+  .section-process__mobile-wichtig {
+    margin-top: 70px;
+    align-items: flex-end;
+  }
+
+  .section-process__important-label {
+    margin-bottom: 15px;
+  }
+
+  .section-process__important-text {
+    max-width: 273px;
+  }
+
+  .reviews-btn:hover {
+    background: #657b8d;
+  }
+
+  .section-process__divider {
+    max-width: 246px;
+    width: 100%;
+    margin-bottom: 15px;
+  }
+
+  /* .section-faq  */
+
+  .section-faq {
+    padding-top: 70px;
+    padding-bottom: 30px;
+  }
+
+  .faq__container {
+    padding: 0 10px;
+    gap: 20px;
+    margin-bottom: 40px;
+  }
+
+  .faq__title {
+    font-size: 28px;
+    max-width: 263px;
+  }
+
+  .faq__label {
+    font-size: 13px;
+    line-height: 120%;
+    max-width: 270px;
+  }
+
+  .faq__title, .faq__label {
+    padding: 0;
+  }
+
+  .faq__list {
+    margin: 0 10px;
+    gap: 30px;
+  }
+
+  .faq__question {
+    padding: 25px 20px 28px 50px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 126%;
+    letter-spacing: -0.03em;
+    color: #fff;
+    border-radius: 5px;
+  }
+
+  .faq__answer {
+    padding: 20px 20px 0px 50px;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 120%;
+    letter-spacing: -0.03em;
+    color: #657b8d;
+  }
+
+  .faq__answer-3 {
+    padding-right: 60px;
+  }
+
+  .faq__answer-4 {
+    padding-right: 30px;
+  }
+
+  .faq__number {
+    top: 28px;
+    left: 15px;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 160%;
+    letter-spacing: -0.03em;
+    color: #fff;
+  }
+
+  /*.section-contact */
+  .section-contact {
+    padding-top: 70px;
+  }
+
+  .section-contact__inner {
+    height: 274px;
+    padding: 20px;
+    align-items: start;
+  }
+
+  .section-contact__wrap::after, .section-contact__wrap::before {
+    display: none;
+  }
+
+  .rl-contact__mobile .rl-contact__title {
+    margin-bottom: 20px;
+  }
+
+  .rl-contact__mobile .rl-contact__text {
+    margin-bottom: 30px;
+    max-width: 288px;
+  }
+
+  .section-contact__btn {
+    justify-content: space-between;
+    padding-left: 25px;
+  }
+
+  .section-contact__privacy {
+    text-align: start;
+    align-self: self-start;
+  }
+
+  .rl-contact__mobile {
+    padding-bottom: 100px;
+  }
+
+  .section-contact-mobile-text {
+    display: block;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 138%;
+    letter-spacing: -0.03em;
+    color: #fff;
+    max-width: 277px;
+  }
+}

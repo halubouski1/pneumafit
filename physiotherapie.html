@@ -1,0 +1,604 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script>document.documentElement.style.setProperty("--fixed-vh", window.innerHeight + "px");</script>
+  <title>Osteopathie | PneumaFit</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/media.css">
+  <link rel="stylesheet" href="css/physiotherapie.css">
+  <link rel="stylesheet" href="css/media-physiotherapie.css">
+</head>
+<body class="osteopathy-page">
+
+  <section class="osteopathy-hero">
+    <div class="osteopathy-hero__overlay"></div>
+
+    <div class="container osteopathy-hero__container">
+      <header class="header">
+        <a href="index.html" class="header__logo">
+          <img src="assets/img/logo.svg" alt="Manual Therapist Logo">
+        </a>
+        <nav class="header__nav">
+          <a href="index.html" class="header__nav-link header__nav-link--active">Home</a>
+          <a href="index.html#therapies" class="header__nav-link">Leistungen</a>
+          <a href="osteopathie.html" class="header__nav-link">Heilpraktiker/Osteopathie</a>
+          <a href="index.html#services" class="header__nav-link">T-Shape</a>
+          <a href="index.html#services" class="header__nav-link">ReLounge</a>
+          <a href="index.html#about" class="header__nav-link">Über uns</a>
+          <a href="index.html#contact" class="header__nav-link">Karriere</a>
+        </nav>
+        <div class="header__actions">
+          <a href="index.html#about" class="header__btn-outline">Über uns</a>
+          <a href="index.html#contact" class="header__btn-link header__btn-link--contact">Contact us
+            <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <path d="M7.5 4.37512L10.625 7.50011L7.5 10.6251" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M0.625 0.625V4.99999C0.625 5.66303 0.888388 6.29891 1.35723 6.76774C1.82607 7.23658 2.46194 7.49997 3.12498 7.49997H10.6249" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </a>
+          <button class="header__burger" type="button" aria-label="Menu" aria-controls="mobileMenu" aria-expanded="false">
+            <svg width="21" height="9" viewBox="0 0 21 9" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <rect width="21" height="1" fill="white" />
+              <rect y="4" width="21" height="1" fill="white" />
+              <rect y="8" width="21" height="1" fill="white" />
+            </svg>
+          </button>
+        </div>
+      </header>
+
+      <div class="mobile-menu" id="mobileMenu" aria-hidden="true">
+        <div class="mobile-menu__inner">
+          <div class="mobile-menu__top">
+            <a href="index.html" class="mobile-menu__logo">
+              <img src="assets/img/logo-dark.svg" alt="Manual Therapist Logo">
+            </a>
+            <button class="mobile-menu__close" type="button" aria-label="Close menu">
+              <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                <path d="M1 1L17 17" stroke="black" stroke-width="1.5" stroke-linecap="round"/>
+                <path d="M17 1L1 17" stroke="black" stroke-width="1.5" stroke-linecap="round"/>
+              </svg>
+            </button>
+          </div>
+
+          <nav class="mobile-menu__nav" aria-label="Mobile navigation">
+            <a href="index.html" class="mobile-menu__link">Home</a>
+            <a href="index.html#therapies" class="mobile-menu__link">Leistungen</a>
+            <a href="osteopathie.html" class="mobile-menu__link">Heilpraktiker/Osteopathie</a>
+            <a href="index.html#services" class="mobile-menu__link">T-Shape</a>
+            <a href="index.html#services" class="mobile-menu__link">ReLounge</a>
+            <a href="index.html#about" class="mobile-menu__link">Über uns</a>
+            <a href="index.html#contact" class="mobile-menu__link">Karriere</a>
+          </nav>
+
+          <a href="index.html#contact" class="mobile-menu__cta">
+            Contact us
+            <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <path d="M7.5 4.37512L10.625 7.50011L7.5 10.6251" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M0.625 0.625V4.99999C0.625 5.66303 0.888388 6.29891 1.35723 6.76774C1.82607 7.23658 2.46194 7.49997 3.12498 7.49997H10.6249" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </a>
+        </div>
+      </div>
+
+      <div class="osteopathy-hero__content">
+        <div class="osteopathy-hero__main">
+          <span class="osteopathy-hero__label">
+            in Leinfelden-Echterdingen
+          </span>
+          <h1 class="osteopathy-hero__title">Physiotherapie</h1>
+          <div class="osteopathy-hero__cta-row">
+            <a href="index.html#contact" class="hero__btn hero__btn--primary osteopathy-hero__btn">
+              Jetzt Termin sichern
+              <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                <path d="M7.5 4.37512L10.625 7.50011L7.5 10.6251" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M0.625 0.625V4.99999C0.625 5.66303 0.888388 6.29891 1.35723 6.76774C1.82607 7.23658 2.46194 7.49997 3.12498 7.49997H10.6249" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </a>
+            <p class="osteopathy-hero__subtitle">weil Ihr Wohlbefinden nicht  warten sollte</p>
+          </div>
+        </div>
+
+        <div class="osteopathy-hero__bottom">
+          <div class="osteopathy-hero__cards">
+            <article class="osteopathy-feature">
+              <span class="osteopathy-feature__number">01</span>
+              <p class="osteopathy-feature__text">Ganzheitliche Betreuung für Ihre Gesundheit und Ihr Wohlbefinden.</p>
+            </article>
+            <article class="osteopathy-feature">
+              <span class="osteopathy-feature__number">02</span>
+              <p class="osteopathy-feature__text">Kompetente Betreuung durch erfahrene Spezialisten.</p>
+            </article>
+            <article class="osteopathy-feature">
+              <span class="osteopathy-feature__number">03</span>
+              <p class="osteopathy-feature__text">Flexibel, zuverlässig und auf Ihre Bedürfnisse abgestimmt.</p>
+            </article>
+          </div>
+
+          <a href="#osteopathy-more" class="osteopathy-learn">
+            <svg width="1" height="363" viewBox="0 0 1 363" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <line x1="0.5" y1="2.18557e-08" x2="0.499984" y2="363" stroke="url(#paint0_linear_147_16)"/>
+            <defs>
+            <linearGradient id="paint0_linear_147_16" x1="-0.5" y1="-2.18557e-08" x2="-0.500016" y2="363" gradientUnits="userSpaceOnUse">
+            <stop stop-color="white" stop-opacity="0"/>
+            <stop offset="1" stop-color="white"/>
+            </linearGradient>
+            </defs>
+            </svg>
+            <div class="osteopathy-learn__icon-wrapper">
+              <span class="osteopathy-learn__icon" aria-hidden="true">
+                <svg width="20" height="28" viewBox="0 0 20 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M9.52 27.2C12.0449 27.2 14.4663 26.197 16.2517 24.4117C18.037 22.6263 19.04 20.2049 19.04 17.68V9.52C19.04 6.99514 18.037 4.57369 16.2517 2.78834C14.4663 1.003 12.0449 0 9.52 0C6.99514 0 4.57369 1.003 2.78834 2.78834C1.003 4.57369 0 6.99514 0 9.52V17.68C0 20.2049 1.003 22.6263 2.78834 24.4117C4.57369 26.197 6.99514 27.2 9.52 27.2ZM1.36 9.52C1.36 7.35583 2.21971 5.28031 3.75001 3.75001C5.28031 2.21971 7.35583 1.36 9.52 1.36C11.6842 1.36 13.7597 2.21971 15.29 3.75001C16.8203 5.28031 17.68 7.35583 17.68 9.52V17.68C17.68 19.8442 16.8203 21.9197 15.29 23.45C13.7597 24.9803 11.6842 25.84 9.52 25.84C7.35583 25.84 5.28031 24.9803 3.75001 23.45C2.21971 21.9197 1.36 19.8442 1.36 17.68V9.52Z" fill="white" />
+                  <path d="M8.83995 13.26H8.90115L9.03715 13.4028C9.10037 13.4665 9.17558 13.5171 9.25844 13.5516C9.3413 13.5861 9.43018 13.6039 9.51995 13.6039C9.60972 13.6039 9.6986 13.5861 9.78147 13.5516C9.86433 13.5171 9.93954 13.4665 10.0028 13.4028L10.1388 13.26H10.2V13.1988L14.0828 9.32275L13.1172 8.35716L10.2 11.2812V4.07996H8.83995V11.2812L5.92275 8.35716L4.95715 9.32275L8.83995 13.1988V13.26Z" fill="white" />
+                </svg>
+              </span>
+              <span class="osteopathy-learn__text">Learn More</span>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section-philosophy" data-aos="fade-up" data-aos-duration="900">
+
+    <!-- 8 vertical lines, full height -->
+    <div class="philosophy-lines" aria-hidden="true">
+      <div class="philosophy-line l-1"></div>
+      <div class="philosophy-line l-2"></div>
+      <div class="philosophy-line l-3"></div>
+      <div class="philosophy-line l-4"></div>
+      <div class="philosophy-line l-5"></div>
+      <div class="philosophy-line l-6"></div>
+      <div class="philosophy-line l-7"></div>
+      <div class="philosophy-line l-8"></div>
+    </div>
+
+    <!-- Main content: label left + content right -->
+    <div class="philosophy-top">
+      <span class="philosophy-label">Der erste Schritt:</span>
+      <div class="philosophy-main">
+        <h2 class="philosophy-title">Wiederherstellung, Rehabilitation & Prävention</h2>
+        <p class="philosophy-text">Die moderne Physiotherapie hat das Ziel Mobilität zurückzugewinnen und Beschwerden zu reduzieren, vor allem im Anschluss an Unfälle oder chirurgische Eingriffe. <br>
+          Darüber hinaus unterstützen wir Menschen mit chronischen Krankheiten dabei, ihre körperliche Leistungsfähigkeit zu optimieren und so ein unabhängigeres Leben zu gestalten.</p>
+        <a href="#" class="philosophy-btn hero__btn">
+          Schreiben Sie uns 
+          <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M7.50024 4.37512L10.6253 7.50011L7.50024 10.6251" stroke="#657B8D" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round" />
+            <path d="M0.625 0.625V4.99999C0.625 5.66303 0.888388 6.29891 1.35723 6.76774C1.82607 7.23658 2.46194 7.49997 3.12498 7.49997H10.6249" stroke="#657B8D" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round" />
+          </svg>
+        </a>
+        <span class="philosophy__text-heading">
+          Werde Teil von PneumaFit – wir freuen uns auf dich!
+        </span>
+        <p class="philosophy__text-small">
+          PneumaFit – Ihre Adresse für ganzheitliches Wohlbefinden. Unter der Leitung von Dimitri Foos, einem erfahrenen Physiotherapeuten und Gründer der Praxis in Leinfelden-Echterdingen, bieten wir ein umfassendes Angebot an Therapien für Körper und Geist. Unser Fokus liegt auf Physio-, Atem- und Sporttherapie, ergänzt durch exklusive Beauty- und Wellnessbehandlungen.
+        </p>
+      </div>
+    </div>
+
+    <!-- Bottom words positioned between the lines -->
+    <div class="philosophy-words" aria-hidden="true">
+      <!-- col 1: 296px — 2 words centered as group -->
+      <div class="pw-group">
+        <span class="p-word p-word--1">Mobilität</span>
+        <span class="p-word p-word--2">Rehabilitation</span>
+      </div>
+      <div></div><!-- col 2: 178px spacer -->
+      <!-- col 3: 296px — 1 word centered -->
+      <span class="p-word p-word--3">Prävention</span>
+      <div></div><!-- col 4: 178px spacer -->
+      <!-- col 5: 296px — 2 words centered as group -->
+      <div class="pw-group">
+        <span class="p-word p-word--4">Gesundheit</span>
+        <span class="p-word p-word--5">Kraft</span>
+      </div>
+      <div></div><!-- col 6: 178px spacer -->
+      <div></div><!-- col 7: 296px empty (lines 7→8) -->
+      <!-- col 8: remaining — 1 word centered -->
+      <span class="p-word p-word--6">Stabilität</span>
+    </div>
+
+  </section>
+  <section class="section-for-back" data-aos="fade-up" data-aos-duration="900">
+    <div class="for-back__inner">
+      <div class="for-back__top">
+        <div class="for-back__top-left">
+          <h2 class="for-back__title">Ihre Vorteile bei PneumaFit</h2>
+          <p class="for-back__desc">Viele Körperfunktionen hängen zusammen, oft ist dies jedoch nicht offensichtlich. Deswegen betrachten wir Sie ganzheitlich und tragen dafür Sorge, den Ursprung Ihrer Beschwerden zu finden und zu lösen.</p>
+        </div>
+      </div>
+
+      <img src="assets/img/physiotherapie-cards-bg.jpg" class="for-back__mobile-img" alt="" aria-hidden="true">
+
+      <div class="for-back__cards">
+        <div class="for-back__card for-back__card--1">
+          <span class="for-back__card-title">Umfangreiches Therapieangebot</span>
+        </div>
+        <div class="for-back__card for-back__card--2">
+          <span class="for-back__card-title">Fachkundige therapeutische Betreuung</span>
+        </div>
+        <div class="for-back__card for-back__card--3">
+          <span class="for-back__card-title">Zügige und anpassungsfähige Terminplanung</span>
+        </div>
+        <div class="for-back__card for-back__card--4">
+          <span class="for-back__card-title">Ausgeprägte Expertise und jahrelange Erfahrung</span>
+        </div>
+      </div>
+      <div class="for__back-wrapper">
+        <span class="for__back-brand">
+          PneumaFit
+        </span>
+        <p class="for-back__note">Bei PneumaFit in Leinfelden-Echterdingen erhalten Sie deshalb eine Rundum-Physiotherapie.</p>
+      </div>
+    </div>
+  </section>
+    <section class="section-mission" data-aos="fade-up" data-aos-duration="900">
+    <div class="mission__inner">
+
+      <div class="mission__left">
+        <h2 class="mission__left-title">Ganzheitliche Physiotherapie</h2>
+        <p class="mission__left-text">Das Hauptziel unserer physiotherapeutischer Maßnahmen ist es, Ihre Beschwerden in betroffenen Extremitäten oder Gelenken zu mindern. Ein weiterer Vorteil unserer Behandlungen ist die potenzielle Steigerung von Bewegungsfreiheit, Koordination, Stärke und Ausdauer.</p>
+      </div>
+
+      <div class="mission__right">
+
+        <div class="mission__right-top">
+          <p class="mission__right-text">Mit der Anwendung vieler verschiedener Techniken, wie spezielle Übungen, Massagen und Lymphdrainagen, behandeln wir Ihre Beschwerden mit dem Bewegungsapparat und den Körperfunktionen.</p>
+          <a href="#" class="mission__btn hero__btn">
+            Schreiben Sie uns
+            <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M7.50024 4.37512L10.6253 7.50011L7.50024 10.6251" stroke="#657B8D" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M0.625 0.625V4.99999C0.625 5.66303 0.888388 6.29891 1.35723 6.76774C1.82607 7.23658 2.46194 7.49997 3.12498 7.49997H10.6249" stroke="#657B8D" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </a>
+        </div>
+
+        <div class="mission__right-bottom">
+          <h2 class="mission__bottom-title">Durch dein Einsatz unserer Therapien können oft sogar Operationen und Medikamente vermieden oder zumindest reduziert werden.</h2>
+          <span class="mission__bottom-sub">Die Physiopraxis PneumaFit in Leinfelden-Echterdingen ist immer für Sie da und freut sich auf Ihren Besuch.</span>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Mobile-only layout -->
+    <div class="section-mission__mobile">
+
+      <h2 class="mission-mob__title">Ganzheitliche Physiotherapie</h2>
+
+      <div class="mission-mob__texts">
+        <p class="mission-mob__text">Das Hauptziel unserer physiotherapeutischer Maßnahmen ist es, Ihre Beschwerden in betroffenen Extremitäten oder Gelenken zu mindern. Ein weiterer Vorteil unserer Behandlungen ist die potenzielle Steigerung von Bewegungsfreiheit, Koordination, Stärke und Ausdauer.</p>
+      </div>
+
+      <img class="mission-mob__img" src="assets/img/holistic-physiotherapy.jpg" alt="" aria-hidden="true">
+
+      <h2 class="mission-mob__bottom-title">Durch dein Einsatz unserer Therapien können oft sogar Operationen und Medikamente vermieden oder zumindest reduziert werden.</h2>
+      <span class="mission-mob__sub">Die Physiopraxis PneumaFit in Leinfelden-Echterdingen ist immer für Sie da und freut sich auf Ihren Besuch.</span>
+      
+      <div class="mission-mob__bottom">
+        <div class="mission-mob__divider">
+        </div>
+        <p class="mission-mob__text">Mit der Anwendung vieler verschiedener Techniken, wie spezielle Übungen, Massagen und Lymphdrainagen, behandeln wir Ihre Beschwerden mit dem Bewegungsapparat und den Körperfunktionen.</p>
+        <a href="#" class="mission-mob__btn hero__btn">
+          Schreiben Sie uns
+          <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M7.50024 4.37512L10.6253 7.50011L7.50024 10.6251" stroke="#657B8D" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M0.625 0.625V4.99999C0.625 5.66303 0.888388 6.29891 1.35723 6.76774C1.82607 7.23658 2.46194 7.49997 3.12498 7.49997H10.6249" stroke="#657B8D" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </a>
+      </div>
+
+    </div>
+  </section>
+    <section class="section-reviews section-process" data-aos="fade-up" data-aos-duration="900">
+    <div class="container section-reviews__container section-process__container">
+      <div class="section-reviews__inner">
+
+        <div class="section-process__top">
+          <div class="section-process__left">
+            <h2 class="section-title section-reviews__title section-process__title">Unsere Anwendungen für Sie</h2>
+            <p class="section-process__text">In unseren Einrichtungen in angenehmster Atmosphäre in Leinfelden-Echterdingen bieten wir Ihnen ein umfassendes Angebot an physiotherapeutischen Behandlungen für mehr Gesundheit und Wohlbefinden.</p>
+          </div>
+        </div>
+
+        <div class="section-reviews__bottom">
+          <div class="section-reviews__nav">
+            <button class="reviews-btn reviews-btn--prev" id="reviewsPrev">
+              <svg width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+              <mask id="mask0_264_650" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="13" height="13">
+              <rect width="13" height="13" transform="matrix(-1 0 0 1 13 0)" fill="url(#pattern0_264_650)"/>
+              </mask>
+              <g mask="url(#mask0_264_650)">
+              <ellipse cx="9.39453" cy="6.14453" rx="9.39453" ry="6.14453" transform="matrix(-1 0 0 1 16.9609 0.711914)"/>
+              </g>
+              <defs>
+              <pattern id="pattern0_264_650" patternContentUnits="objectBoundingBox" width="1" height="1">
+              <use xlink:href="#image0_264_650" transform="scale(0.00195312)"/>
+              </pattern>
+              <image id="image0_264_650" width="512" height="512" preserveAspectRatio="none" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAgAAAAIACAYAAAD0eNT6AAAAAXNSR0IArs4c6QAAAERlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAA6ABAAMAAAABAAEAAKACAAQAAAABAAACAKADAAQAAAABAAACAAAAAAAL+LWFAAAbsklEQVR4Ae3YQY4kRxUG4DaMxEXYsLHEwhvDXTiFBTund8MR4DRcgxOwYIU3ZjdEILX9prunul5VZla+fF9JLcfY0ZURXz7r/+2nJx8CBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAIETCXw97vLdie7jKgQIECBAgMA7AjP8/z1+Po2fj+/s9Y8JECBAgACBEwjE8J8FQAk4wUt1BQIECBAgcEngrfBXAi6J+WcECBAgQKC4wKXwVwKKv1zHJ0CAAAECbwlcE/5KwFty/h4BAgQIECgqkAl/JaDoS3ZsAgQIECAQBW4JfyUgCloTIECAAIFiAveEvxJQ7GU7LgECBAgQmAJrhL8SYJYIECBAgEAhgTXDXwko9OIdlQABAgT6CmwR/kpA33lycwIECBAoILBl+CsBBQbAEQkQIECgn8Ae4a8E9JsrNyZAgACBAwvsGf5KwIEHwdEIECBAoI/AI8JfCegzX25KgAABAgcUeGT4KwEHHAhHIkCAAIHzCxwh/JWA88+ZGxIgQIDAgQSOFP5KwIEGw1EIECBA4LwCRwx/JeC88+ZmBAgQIHAAgSOHvxJwgAFxBAIECBA4n0CF8FcCzjd3bkSAAAECDxSoFP5KwAMHxaMJECBA4DwCFcNfCTjP/LkJAQIECDxAoHL4KwEPGBiPJECAAIH6AmcIfyWg/hy6AQECBAjsKHCm8FcCdhwcjyJAgACBugJnDH8loO48OjkBAgQI7CBw5vBXAnYYII8gQIAAgXoCHcJfCag3l05MgAABAhsKdAp/JWDDQfLVBAgQIFBHoGP4KwF15tNJCRAgQGADgc7hrwRsMFC+kgABAgSOLyD8n56UgOPPqRMSIECAwIoCwv+X8FcCVhwsX0WAAAECxxUQ/q/DXwk47rw62QuBX7/4sz8SIEDgWoHfjo1/Gj+/ufYXGu3747jrV+PnH43u7KoECBAg0Ejg23HX/4yf5//y9dfPLT42mgVXJUCAAIFmAkrA56H/sgQpAc3+hXBdAgQIdBJQApSATvPurgQIECAQBJQAJSCMgyUBAgQIdBJQApSATvPurgQIECAQBJQAJSCMgyUBAgQIdBJQApSATvPurgQIECAQBJQAJSCMgyUBAgQIdBJQApSATvPurgQIECAQBJQAJSCMgyUBAgQIdBJQApSATvPurgQIECAQBJQAJSCMgyUBAgQIdBJQApSATvPurgQIECAQBJQAJSCMgyUBAgQIdBJQApSATvPurgQIECAQBJQAJSCMgyUBAgQIdBJQApSATvPurgQIECAQBJQAJSCMgyUBAgQIdBJQApSATvPurgQIECAQBJQAJSCMgyUBAgQIdBJQApSATvPurgQIECAQBJQAJSCMgyUBAgQIdBJQApSATvPurgQIECAQBJQAJSCMgyUBAgQIdBJQApSATvPurgQIECAQBJQAJSCMgyUBAgQIdBJQApSATvPurgQIECAQBJQAJSCMgyUBAgQIdBJQApSATvPurgQIECAQBJQAJSCMgyUBAgQIdBJQApSATvPurgQIECAQBJQAJSCMgyUBAgQIdBJQApSATvPurgQIECAQBJQAJSCMgyUBAgQIdBJQApSATvPurgQIECAQBJQAJSCMgyUBAgQIdBJQApSATvPurgQIECAQBJQAJSCMgyUBAgQIdBJQApSATvPurgQIECAQBJQAJSCMgyUBAgQIdBJQApSATvPurgQIECAQBJQAJSCMgyUBAgQIdBJQApSATvPurgQIECAQBJQAJSCMgyUBAgQIdBJQApSATvPurgQIECAQBJQAJSCMgyUBAgQIdBJQApSATvPurgQIECAQBJQAJSCMgyUBAgQIdBJQApSATvPurgQIECAQBJQAJSCMgyUBAgQIdBJQApSATvPurgQIECAQBJQAJSCMgyUBAgQIdBJQApSATvPurgQIECAQBJQAJSCMgyUBAgQIdBJQApSATvPurgQIECAQBJQAJSCMgyUBAgQIdBJQApSATvPurgQIECAQBJQAJSCMgyUBAgQIdBJQApSATvPurgQIECAQBJQAJSCMgyUBAgQIdBJQApSATvPurgQIECAQBJQAJSCMgyUBAgQIdBJQApSATvPurgQIECAQBJQAJSCMgyUBAgQIdBJQApSATvPurgQIECAQBJQAJSCMgyUBAgQIdBJQApSATvPurgQIECAQBJQAJSCMgyUBAgQIdBJQApSATvPurgQIECAQBJQAJSCMgyUBAgQIdBJQApSATvPurgQIECAQBJQAJSCMgyUBAgQIdBJQApSATvPurgQIECAQBJQAJSCMgyUBAgQIdBJQApSATvPurgQIECAQBJQAJSCMgyUBAgQIdBJQApSATvPurgQIECAQBJQAJSCMgyUBAgQIdBJQApSATvPurgQIECAQBJQAJSCMgyUBAgQIdBJQApSATvPurgQIECAQBJQAJSCMgyUBAgQIdBJQApSATvPurgQIECAQBJQAJSCMgyUBAgQIdBJQApSATvPurgQIECAQBJQAJSCMgyUBAgQIdBJQApSATvPurgQIECAQBJQAJSCMgyUBAgQIdBJQApSATvPurgQIECAQBJQAJSCMgyUBAgQIdBJQApSATvPurgQIECAQBJQAJSCMgyUBAgQIdBJQApSATvPurgQIECAQBJQAJSCMgyUBAgQIdBJQApSATvPurgQIECAQBJQAJSCMgyUBAgQIdBJQApSATvPurgQIECAQBJQAJSCMgyUBAgQIdBJQApSATvPurgQIECAQBJQAJSCMgyUBAgQIdBJQApSATvPurgQIECAQBJQAJSCMgyUBAgQIdBJQApSATvPurgQIECAQBJQAJSCMgyUBAgQIdBJQApSATvPurgQIECAQBJQAJSCMgyUBAgQIdBJQApSATvPurgQIECAQBJQAJSCMgyUBAgQIdBJQApSATvPurgQIECAQBJQAJSCMgyUBAgQIdBJQApSATvPurgQIECAQBJQAJSCMgyUBAgQIdBJQApSATvPurgQIECAQBJQAJSCMgyUBAgQIdBJQApSATvPurgQIECAQBJQAJSCMgyUBAgQIdBJQApSATvPurgQIECAQBJQAJSCMgyUBAgQIdBJQApSATvPurgQIECAQBJQAJSCMgyUBAgQIdBJQApSATvPurgQIECAQBJQAJSCMgyUBAgQIdBJQApSATvPurgQIECAQBJQAJSCMgyUBAgQIdBJQApSATvPurgQIECAQBJQAJSCMgyUBAgQIdBJQApSATvPurgQIECAQBJQAJSCMgyUBAgQIdBJQApSATvPurgQIECAQBJQAJSCMgyUBAgQIdBJQApSATvPurgQIECAQBJQAJSCMgyUBAgQIdBJQApSATvPurgQIECAQBJQAJSCMgyUBAgQIdBJQApSATvPurgQIECAQBJQAJSCMgyUBAgQIdBJQApSATvPurgQIECAQBJQAJSCMgyUBAgQIdBJQApSATvPurgQIECAQBJQAJSCMgyUBAgQIdBJQApSATvPurgQIECAQBJSAg5SAD+Ol/C28GEsCBAgQILC1wD/HA77Z+iFFv//P49z/HT/L1uf/ajzg09YP8f0ECBAgQIBASuCvY/dfUr+R3Pyr5H7bCRAgQIAAge0F5v8J+LjlYxSALXV9NwECBAgQuF1g0xKgANz+YvwmAQIECBDYWmCzEqAAbP3qfD8BAgQIELhPYJMSoADc91L8NgECBAgQ2ENg9RKgAOzx2jyDAAECBAjcL7BqCVAA7n8hvoEAAQIECOwlsFoJUAD2emWeQ4AAAQIE1hFYpQQoAOu8DN9CgAABAgT2FLi7BCgAe74uzyJAgAABAusJ3FUCFID1XoRvIkCAAAECewvcXAIUgL1flecRIECAAIF1BW4qAQrAui/BtxEgQIAAgUcIpEuAAvCI1+SZBAgQIEBgfYFUCVAA1n8BvpEAAQIECDxK4OoSoAA86hV5LgECBAgQ2EbgqhKgAGyD71sJECBAgMAjBd4tAQrAI1+PZxMgQIAAge0ELpYABWA7eN9MgAABAgQeLfDFEqAAPPrVeD4BAgQIENhW4M0SoABsi+7bCRAgQIDAEQRelQAF4AivxRkIECBAgMD2Ap+VAAVge3BPIECAAAECRxH4uQR8OMqJnIMAAQIECBDYRWCWgCf/B2AXaw8hQIAAAQKHEvhJATjU+3AYAgQIECCwucAynvCDArC5swcQIECAAIHDCCzjJD/M0ygAU8GHAAECBAicX2AZV/x/+M+rKgBTwYcAAQIECJxbYBnX+zn851UVgKngQ4AAAQIEziuwjKt9Fv7zqgrAVPAhQIAAAQLnFFjGtV6F/7yqAjAVfAgQIECAwPkElnGlN8N/XlUBmAo+BAgQIEDgXALLuM4Xw39eVQGYCj4ECBAgQOA8Asu4ysXwn1dVAKaCDwECBAgQOIfAMq7xbvjPqyoAU8GHAAECBAjUF1jGFa4K/3lVBWAq+BAgQIAAgdoCyzj+1eE/r6oATAUfAgQIECBQV2AZR0+F/7yqAjAVfAgQIECAQE2BZRw7Hf7zqgrAVPAhQIAAAQL1BJZx5JvCf15VAZgKPgQIECBAoJbAMo57c/jPqyoAU8GHAAECBAjUEVjGUe8K/3lVBWAq+BAgQIAAgRoCyzjm3eE/r6oATAUfAgQIECBwfIFlHHGV8J9XVQCmgg8BAgQIEDi2wDKOt1r4z6sqAFPBhwABAgQIHFdgGUdbNfznVRWAqeBDgAABAgSOKbCMY60e/vOqCsBU8CFAgAABAscTWMaRNgn/eVUFYCr4ECBAgACBYwks4zibhf+86ofx8/e58CFAgAABAjsJ/H4855udnlXxMTP4Nw3/iijOTIAAAQK1Bb4dx/9x/Hzy86bB97Vfr9MTIECAAIHXAsL/cvER/q9nxt8hQIAAgeICwl/4Fx9hxydAgACBrIDwF/7ZmbGfAAECBIoLCH/hX3yEHZ8AAQIEsgLCX/hnZ8Z+AgQIECguIPyFf/ERdnwCBAgQyAoIf+GfnRn7CRAgQKC4gPAX/sVH2PEJECBAICsg/IV/dmbsJ0CAAIHiAsJf+BcfYccnQIAAgayA8Bf+2ZmxnwABAgSKCwh/4V98hB2fAAECBLICwl/4Z2fGfgIECBAoLiD8hX/xEXZ8AgQIEMgKCH/hn50Z+wkQIECguIDwF/7FR9jxCRAgQCArIPyFf3Zm7CdAgACB4gLCX/gXH2HHJ0CAAIGsgPAX/tmZsZ8AAQIEigsIf+FffIQdnwABAgSyAsJf+Gdnxn4CBAgQKC4g/IV/8RF2fAIECBDICgh/4Z+dGfsJECBAoLiA8Bf+xUfY8QkQIEAgKyD8hX92ZuwnQIAAgeICwl/4Fx9hxydAgACBrIDwF/7ZmbGfAAECBIoLCH/hX3yEHZ8AAQIEsgLCX/hnZ8Z+AgQIECguIPyFf/ERdnwCBAgQyAoIf+GfnRn7CRAgQKC4gPAX/sVH2PEJECBAICsg/IV/dmbsJ0CAAIHiAsJf+BcfYccnQIAAgayA8Bf+2ZmxnwABAgSKCwh/4V98hB2fAAECBLICwl/4Z2fGfgIECBAoLiD8hX/xEXZ8AgQIEMgKCH/hn50Z+wkQIECguIDwF/7FR9jxCRAgQCArIPyFf3Zm7CdAgACB4gLCX/gXH2HHJ0CAAIGsgPAX/tmZsZ8AAQIEigsIf+FffIQdnwABAgSyAsJf+Gdnxn4CBAgQKC4g/IV/8RF2fAIECBDICgh/4Z+dGfsJECBAoLiA8Bf+xUfY8QkQIEAgKyD8hX92ZuwnQIAAgeICwl/4Fx9hxydAgACBrIDwF/7ZmbGfAAECBIoLCH/hX3yEHZ8AAQIEsgLCX/hnZ8Z+AgQIECguIPyFf/ERdnwCBAgQyAoIf+GfnRn7CRAgQKC4gPAX/sVH2PEJECBAICsg/IV/dmbsJ0CAAIHiAsJf+BcfYccnQIAAgayA8Bf+2ZmxnwABAgSKCwh/4V98hB2fAAECBLICwl/4Z2fGfgIECBAoLiD8hX/xEXZ8AgQIEMgKCH/hn50Z+wkQIECguIDwF/7FR9jxCRAgQCArIPyFf3Zm7CdAgACB4gLCX/gXH2HHJ0CAAIGsgPAX/tmZsZ8AAQIEigsIf+FffIQdnwABAgSyAsJf+Gdnxn4CBAgQKC4g/IV/8RF2fAIECBDICgh/4Z+dGfsJECBAoLiA8Bf+xUfY8QkQIEAgKyD8hX92ZuwnQIAAgeICwl/4Fx9hxydAgACBrIDwF/7ZmbGfAAECBIoLCH/hX3yEHZ8AAQIEsgLCX/hnZ8Z+AgQIECguIPyFf/ERdnwCBAgQyAoIf+GfnRn7CRAgQKC4gPAX/sVH2PEJECBAICsg/IV/dmbsJ0CAAIHiAsJf+BcfYccnQIAAgayA8Bf+2ZmxnwABAgSKCwh/4V98hB2fAAECBLICwl/4Z2fGfgIECBAoLiD8hX/xEXZ8AgQIEMgKCH/hn50Z+wkQIECguIDwF/7FR9jxCRAgQCArIPyFf3Zm7CdAgACB4gLCX/gXH2HHJ0CAAIGsgPAX/tmZsZ8AAQIEigsIf+FffIQdnwABAgSyAsJf+Gdnxn4CBAgQKC4g/IV/8RF2fAIECBDICgh/4Z+dGfsJECBAoLiA8Bf+xUfY8QkQIEAgKyD8hX92ZuwnQIAAgeICwl/4Fx9hxydAgACBrIDwF/7ZmbGfAAECBIoLCH/hX3yEHZ8AAQIEsgLCX/hnZ8Z+AgQIECguIPyFf/ERdnwCBAgQyAoIf+GfnRn7CRAgQKC4gPAX/sVH2PEJECBAICsg/IV/dmbsJ0CAAIHiAsJf+BcfYccnQIAAgayA8Bf+2ZmxnwABAgSKCwh/4V98hB2fAAECBLICwl/4Z2fGfgIECBAoLiD8hX/xEXZ8AgQIEMgKCH/hn50Z+wkQIECguIDwF/7FR9jxCRAgQCArIPyFf3Zm7CdAgACB4gLCX/gXH2HHJ0CAAIGsgPAX/tmZsZ8AAQIEigsIf+FffIQdnwABAgSyAsJf+Gdnxn4CBAgQKC4g/IV/8RF2fAIECBDICgh/4Z+dGfsJECBAoLiA8Bf+xUfY8QkQIEAgKyD8hX92ZuwnQIAAgeICwl/4Fx9hxydAgACBrIDwF/7ZmbGfAAECBIoLCH/hX3yEHZ8AAQIEsgLCX/hnZ8Z+AgQIECguIPyFf/ERdnwCBAgQyAoIf+GfnRn7CRAgQKC4gPAX/sVH2PEJECBAICsg/IV/dmbsJ0CAAIHiAsJf+BcfYccnQIAAgayA8Bf+2ZmxnwABAgSKCwh/4V98hB2fAAECBLICwl/4Z2fGfgIECBAoLiD8hX/xEXZ8AgQIEMgKCH/hn50Z+wkQIECguIDwF/7FR9jxCRAgQCArIPyFf3Zm7CdAgACB4gLCX/gXH2HHJ0CAAIGsgPAX/tmZsZ8AAQIEigsIf+FffIQdnwABAgSyAsJf+Gdnxn4CBAgQKC7wh3H+H8fPJz9vGizDxYcAAQIECJxO4HfjRv8aPwrAa4PvT/e2XYgAAQIECAQBJUD4h3GwJECAAIFOAkrALyXAf/l3mnx3JUCAAIEnJeDpSfj7F4EAAQIEWgp0LgHCv+XIuzQBAgQIPAt0LAHC//nt+ysBAgQItBboVAKEf+tRd3kCBAgQeCnQoQQI/5dv3Z8JECBAgMAQOHMJEP5GnAABAgQIXBA4YwkQ/hdeuH9EgAABAgSeBc5UAoT/81v1VwIECBAgcIXAGUqA8L/iRdtCgAABAgReClQuAcL/5dv0ZwIECBAgkBCoWAKEf+IF20qAAAECBL4kUKkECP8vvUV/nwABAgQI3CBQoQQI/xterF8hQIAAAQLvCRy5BAj/996ef06AAAECBO4QOGIJEP53vFC/SoAAAQIErhU4UgkQ/te+NfsIECBAgMAKAkcoAcJ/hRfpKwgQIECAQFbgkSVA+Gfflv0ECBAgQGBFgUeUAOG/4gv0VQQIECBA4FaBPUuA8L/1Lfk9AgQIECCwgcAeJUD4b/DifCUBAgQIELhXYMsSIPzvfTt+nwABAgQIbCiwRQkQ/hu+MF9NgAABAgTWElizBAj/td6K7yFAgAABAjsIrFEChP8OL8ojCBAgQIDA2gL3lADhv/bb8H0ECBAgQGBHgVtKgPDf8QV5FAECBAgQ2EogUwKE/1ZvwfcSIECAAIEHCFxTAoT/A16MRxIgQIAAga0FLpUA4b+1vu8nQIAAAQIPFHirBAj/B74QjyZAgAABAnsJxBIg/PdS9xwCBAgQIHAAga/HGb47wDkcgQABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIEKgn8D8FArhdcAFGLgAAAABJRU5ErkJggg=="/>
+              </defs>
+              </svg>
+            </button>
+            <button class="reviews-btn reviews-btn--next" id="reviewsNext">
+              <svg width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+              <mask id="mask0_264_647" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="13" height="13">
+              <rect width="13" height="13" transform="matrix(1 0 0 -1 0 13)" fill="url(#pattern0_264_647)"/>
+              </mask>
+              <g mask="url(#mask0_264_647)">
+              <ellipse cx="9.39453" cy="6.14453" rx="9.39453" ry="6.14453" transform="matrix(1 0 0 -1 -3.96094 12.2881)"/>
+              </g>
+              <defs>
+              <pattern id="pattern0_264_647" patternContentUnits="objectBoundingBox" width="1" height="1">
+              <use xlink:href="#image0_264_647" transform="scale(0.00195312)"/>
+              </pattern>
+              <image id="image0_264_647" width="512" height="512" preserveAspectRatio="none" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAgAAAAIACAYAAAD0eNT6AAAAAXNSR0IArs4c6QAAAERlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAA6ABAAMAAAABAAEAAKACAAQAAAABAAACAKADAAQAAAABAAACAAAAAAAL+LWFAAAbsklEQVR4Ae3YQY4kRxUG4DaMxEXYsLHEwhvDXTiFBTund8MR4DRcgxOwYIU3ZjdEILX9prunul5VZla+fF9JLcfY0ZURXz7r/+2nJx8CBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAIETCXw97vLdie7jKgQIECBAgMA7AjP8/z1+Po2fj+/s9Y8JECBAgACBEwjE8J8FQAk4wUt1BQIECBAgcEngrfBXAi6J+WcECBAgQKC4wKXwVwKKv1zHJ0CAAAECbwlcE/5KwFty/h4BAgQIECgqkAl/JaDoS3ZsAgQIECAQBW4JfyUgCloTIECAAIFiAveEvxJQ7GU7LgECBAgQmAJrhL8SYJYIECBAgEAhgTXDXwko9OIdlQABAgT6CmwR/kpA33lycwIECBAoILBl+CsBBQbAEQkQIECgn8Ae4a8E9JsrNyZAgACBAwvsGf5KwIEHwdEIECBAoI/AI8JfCegzX25KgAABAgcUeGT4KwEHHAhHIkCAAIHzCxwh/JWA88+ZGxIgQIDAgQSOFP5KwIEGw1EIECBA4LwCRwx/JeC88+ZmBAgQIHAAgSOHvxJwgAFxBAIECBA4n0CF8FcCzjd3bkSAAAECDxSoFP5KwAMHxaMJECBA4DwCFcNfCTjP/LkJAQIECDxAoHL4KwEPGBiPJECAAIH6AmcIfyWg/hy6AQECBAjsKHCm8FcCdhwcjyJAgACBugJnDH8loO48OjkBAgQI7CBw5vBXAnYYII8gQIAAgXoCHcJfCag3l05MgAABAhsKdAp/JWDDQfLVBAgQIFBHoGP4KwF15tNJCRAgQGADgc7hrwRsMFC+kgABAgSOLyD8n56UgOPPqRMSIECAwIoCwv+X8FcCVhwsX0WAAAECxxUQ/q/DXwk47rw62QuBX7/4sz8SIEDgWoHfjo1/Gj+/ufYXGu3747jrV+PnH43u7KoECBAg0Ejg23HX/4yf5//y9dfPLT42mgVXJUCAAIFmAkrA56H/sgQpAc3+hXBdAgQIdBJQApSATvPurgQIECAQBJQAJSCMgyUBAgQIdBJQApSATvPurgQIECAQBJQAJSCMgyUBAgQIdBJQApSATvPurgQIECAQBJQAJSCMgyUBAgQIdBJQApSATvPurgQIECAQBJQAJSCMgyUBAgQIdBJQApSATvPurgQIECAQBJQAJSCMgyUBAgQIdBJQApSATvPurgQIECAQBJQAJSCMgyUBAgQIdBJQApSATvPurgQIECAQBJQAJSCMgyUBAgQIdBJQApSATvPurgQIECAQBJQAJSCMgyUBAgQIdBJQApSATvPurgQIECAQBJQAJSCMgyUBAgQIdBJQApSATvPurgQIECAQBJQAJSCMgyUBAgQIdBJQApSATvPurgQIECAQBJQAJSCMgyUBAgQIdBJQApSATvPurgQIECAQBJQAJSCMgyUBAgQIdBJQApSATvPurgQIECAQBJQAJSCMgyUBAgQIdBJQApSATvPurgQIECAQBJQAJSCMgyUBAgQIdBJQApSATvPurgQIECAQBJQAJSCMgyUBAgQIdBJQApSATvPurgQIECAQBJQAJSCMgyUBAgQIdBJQApSATvPurgQIECAQBJQAJSCMgyUBAgQIdBJQApSATvPurgQIECAQBJQAJSCMgyUBAgQIdBJQApSATvPurgQIECAQBJQAJSCMgyUBAgQIdBJQApSATvPurgQIECAQBJQAJSCMgyUBAgQIdBJQApSATvPurgQIECAQBJQAJSCMgyUBAgQIdBJQApSATvPurgQIECAQBJQAJSCMgyUBAgQIdBJQApSATvPurgQIECAQBJQAJSCMgyUBAgQIdBJQApSATvPurgQIECAQBJQAJSCMgyUBAgQIdBJQApSATvPurgQIECAQBJQAJSCMgyUBAgQIdBJQApSATvPurgQIECAQBJQAJSCMgyUBAgQIdBJQApSATvPurgQIECAQBJQAJSCMgyUBAgQIdBJQApSATvPurgQIECAQBJQAJSCMgyUBAgQIdBJQApSATvPurgQIECAQBJQAJSCMgyUBAgQIdBJQApSATvPurgQIECAQBJQAJSCMgyUBAgQIdBJQApSATvPurgQIECAQBJQAJSCMgyUBAgQIdBJQApSATvPurgQIECAQBJQAJSCMgyUBAgQIdBJQApSATvPurgQIECAQBJQAJSCMgyUBAgQIdBJQApSATvPurgQIECAQBJQAJSCMgyUBAgQIdBJQApSATvPurgQIECAQBJQAJSCMgyUBAgQIdBJQApSATvPurgQIECAQBJQAJSCMgyUBAgQIdBJQApSATvPurgQIECAQBJQAJSCMgyUBAgQIdBJQApSATvPurgQIECAQBJQAJSCMgyUBAgQIdBJQApSATvPurgQIECAQBJQAJSCMgyUBAgQIdBJQApSATvPurgQIECAQBJQAJSCMgyUBAgQIdBJQApSATvPurgQIECAQBJQAJSCMgyUBAgQIdBJQApSATvPurgQIECAQBJQAJSCMgyUBAgQIdBJQApSATvPurgQIECAQBJQAJSCMgyUBAgQIdBJQApSATvPurgQIECAQBJQAJSCMgyUBAgQIdBJQApSATvPurgQIECAQBJQAJSCMgyUBAgQIdBJQApSATvPurgQIECAQBJQAJSCMgyUBAgQIdBJQApSATvPurgQIECAQBJQAJSCMgyUBAgQIdBJQApSATvPurgQIECAQBJQAJSCMgyUBAgQIdBJQApSATvPurgQIECAQBJQAJSCMgyUBAgQIdBJQApSATvPurgQIECAQBJQAJSCMgyUBAgQIdBJQApSATvPurgQIECAQBJQAJSCMgyUBAgQI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gMAQOHMJEP5GnAABAgQIXBA4YwkQ/hdeuH9EgAABAgSeBc5UAoT/81v1VwIECBAgcIXAGUqA8L/iRdtCgAABAgReClQuAcL/5dv0ZwIECBAgkBCoWAKEf+IF20qAAAECBL4kUKkECP8vvUV/nwABAgQI3CBQoQQI/xterF8hQIAAAQLvCRy5BAj/996ef06AAAECBO4QOGIJEP53vFC/SoAAAQIErhU4UgkQ/te+NfsIECBAgMAKAkcoAcJ/hRfpKwgQIECAQFbgkSVA+Gfflv0ECBAgQGBFgUeUAOG/4gv0VQQIECBA4FaBPUuA8L/1Lfk9AgQIECCwgcAeJUD4b/DifCUBAgQIELhXYMsSIPzvfTt+nwABAgQIbCiwRQkQ/hu+MF9NgAABAgTWElizBAj/td6K7yFAgAABAjsIrFEChP8OL8ojCBAgQIDA2gL3lADhv/bb8H0ECBAgQGBHgVtKgPDf8QV5FAECBAgQ2EogUwKE/1ZvwfcSIECAAIEHCFxTAoT/A16MRxIgQIAAga0FLpUA4b+1vu8nQIAAAQIPFHirBAj/B74QjyZAgAABAnsJxBIg/PdS9xwCBAgQIHAAga/HGb47wDkcgQABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIEKgn8D8FArhdcAFGLgAAAABJRU5ErkJggg=="/>
+              </defs>
+              </svg>
+            </button>
+          </div>
+  
+          <div class="section-reviews__slider-wrap">
+            <div class="reviews-clip-left">
+            <div class="swiper reviews-swiper">
+              <div class="swiper-wrapper">
+  
+                <div class="swiper-slide">
+                  <div class="review-card">
+                    <div class="review-card__inner">
+                      <div class="review-card__bottom">
+                        <h4 class="review-card__service">Allgemeine Physiotherapie</h4>
+                        <ul class="review-card__list">
+                          <li class="review-card__item">Allgemeine Physiotherapie</li>
+                          <li class="review-card__item">Manuelle Behandlung</li>
+                          <li class="review-card__item">Lymphatische Drainage</li>
+                          <li class="review-card__item">Gerätegestütze Physiotherapie (GPP)</li>
+                          <li class="review-card__item">Medizinische und traditionelle Massage</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+  
+                <div class="swiper-slide">
+                  <div class="review-card">
+                    <div class="review-card__inner">
+                      <div class="review-card__bottom">
+                        <h4 class="review-card__service">Zusätzliche Anwendungen</h4>
+                        <ul class="review-card__list">
+                          <li class="review-card__item">Wärmebehandlungen (z.B. Heißluft, Naturmoorpackungen, heiße Wickel)</li>
+                          <li class="review-card__item">Kältetherapie (wie Eispackungen)</li>
+                          <li class="review-card__item">Elektrotherapeutische Anwendungen</li>
+                          <li class="review-card__item">Ultraschalltherapie</li>
+                          <li class="review-card__item">Dehnungstherapie (z.B. am Schlingentisch, Gymwood-Geräte)</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="swiper-slide">
+                  <div class="review-card">
+                    <div class="review-card__inner">
+                      <div class="review-card__bottom">
+                        <h4 class="review-card__service">PneumaFit Spezialgebiete</h4>
+                        <ul class="review-card__list">
+                          <li class="review-card__item">Skoliose-Behandlung (nach modernen Methoden)</li>
+                          <li class="review-card__item">Nachsorge nach Operationen, z.B. nach Gelenkersatz oder Kreuzbandoperationen</li>
+                          <li class="review-card__item">Sportbezogene Physiotherapie und Behandlung von Sportverletzungen</li>
+                          <li class="review-card__item">Rücken fokussierte Physiotherapie</li>
+                          <li class="review-card__item">Spezialbehandlungen in der Neurophysiotherapie, z.B. nach einem</li>
+                          <li class="review-card__item">Schlaganfall, bei Parkinson oder anderen neurologischen Erkankungen</li>
+                          <li class="review-card__item">Kinesiologisches Taping</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+  
+              </div>
+            </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+    <section class="section-faq" data-aos="fade-up" data-aos-duration="900">
+    <div class="container faq__container">
+      <span class="faq__label faq__label--bold">
+        Der erste Schritt:
+      </span>
+      <h2 class="section-title faq__title">Ihre Gesundheit im Mittelpunkt</h2>
+      <span class="faq__label">
+        In 7 Schritten begleiten wir Sie auf dem Weg zu dauerhaft mehr Gesundheit und Wohlbefinden.
+      </span>
+    </div>
+      <div class="faq__list" data-static>
+        <div class="faq__row faq__row--short">
+          <span class="faq__question">Anamnese</span>
+          <div class="faq__right">
+            <p class="faq__answer">Wir erfassen Ihre Krankengeschichte, Beschwerden und individuellen Bedürfnisse.</p>
+            <span class="faq__number">/01</span>
+          </div>
+        </div>
+
+        <div class="faq__row">
+          <span class="faq__question">Untersuchung</span>
+          <div class="faq__right">
+            <p class="faq__answer">Gründliche Untersuchung, um die genaue Ursache der Beschwerden zu identifizieren.</p>
+            <span class="faq__number">/02</span>
+          </div>
+        </div>
+
+        <div class="faq__row">
+          <span class="faq__question">Behandlungsplan</span>
+          <div class="faq__right">
+            <p class="faq__answer faq__answer-3">Wir erstellen einen individuellen Behandlungsplan für Sie basierend auf den Untersuchungsergebnissen.</p>
+            <span class="faq__number">/03</span>
+          </div>
+        </div>
+
+        <div class="faq__row">
+          <span class="faq__question">Behandlung</span>
+          <div class="faq__right">
+            <p class="faq__answer faq__answer-4">Verschiedene therapeutische Interventionen, wie manuelle Techniken, Bewegungsübungen, Massagen oder physikalische Therapie.</p>
+            <span class="faq__number">/04</span>
+          </div>
+        </div>
+
+        <div class="faq__row">
+          <span class="faq__question">Kontrolle</span>
+          <div class="faq__right">
+            <p class="faq__answer">Überwachung des Fortschritts des Patienten und Anpassung des Behandlungsplans bei Bedarf.</p>
+            <span class="faq__number">/05</span>
+          </div>
+        </div>
+
+        <div class="faq__row faq__row--short">
+          <span class="faq__question">Hilfe</span>
+          <div class="faq__right">
+            <p class="faq__answer">Bereitstellung von Übungen und Empfehlungen für die Selbsthilfe zu Hause.</p>
+            <span class="faq__number">/06</span>
+          </div>
+        </div>
+
+        <div class="faq__row faq__row--short">
+          <span class="faq__question">Unterstützung</span>
+          <div class="faq__right">
+            <p class="faq__answer">Vereinbarung von regelmäßigen Folgeterminen zur Überprüfung des Fortschritts und möglichen weiteren Behandlungen.</p>
+            <span class="faq__number">/07</span>
+          </div>
+        </div>
+
+      </div>
+  </section>
+    <section class="section-contact" data-aos="fade-up" data-aos-duration="900">
+    <div class="section-contact__wrap">
+      <img class="section-contact__video" src="assets/img/physiotherapie-footer.png" alt="" aria-hidden="true">
+
+      <div class="section-contact__inner">
+        <span class="section-contact-mobile-text">
+          Heilpraktische Verfahren und T Shape 2 gehören zur Komplementärmedizin/Ästhetik. 
+        </span>
+        <div class="section-contact__left">
+          <span class="section-contact__brand">PneumaFit</span>
+
+          <div class="section-contact__bottom">
+            <h2 class="section-contact__title section-title">Kontakt &amp; Terminanfrage</h2>
+            <p class="section-contact__subtitle">Für einen Termin oder weitere Fragen nehmen Sie gerne Kontakt auf</p>
+            <form class="section-contact__form">
+              <input type="tel" class="section-contact__input" placeholder="+1 (000)-000-00-00">
+              <button type="submit" class="section-contact__btn">
+                Ich will diesen guten Muskeltonus
+                <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M7.5 4.375L10.625 7.49999L7.5 10.6249" stroke="#F1F1F1" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round" />
+                  <path d="M0.625 0.625V4.99999C0.625 5.66303 0.888388 6.29891 1.35723 6.76774C1.82607 7.23658 2.46194 7.49997 3.12498 7.49997H10.6249" stroke="#F1F1F1" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+              </button>
+            </form>
+            <span class="section-contact__privacy">durch Klicken auf die Schaltfläche stimmen Sie der <a href="#">Datenschutzrichtlinie zu</a></span>
+          </div>
+        </div>
+
+        <div class="section-contact__right">
+          <div class="section-contact__divider"></div>
+          <p class="section-contact__brand-desc">Durch gezielte, sanfte Impulse werden <br class="mobile-hidden">Selbstheilungskräfte aktiviert und das Wohlbefinden <br class="mobile-hidden">nachhaltig gefördert.</p>
+        </div>
+
+      </div>
+    </div>
+      <div class="rl-contact__mobile">
+      <h2 class="rl-contact__title">Kontakt</h2>
+      <p class="rl-contact__text">Für einen Termin oder weitere Fragen nehmen Sie gerne Kontakt auf</p>
+
+      <form class="section-contact__form rl-contact__form">
+        <input type="tel" class="section-contact__input" placeholder="+1 (000)-000-00-00">
+        <button type="submit" class="section-contact__btn">
+          Ich will diesen guten Muskeltonus
+          <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <path d="M7.5 4.375L10.625 7.49999L7.5 10.6249" stroke="#F1F1F1" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M0.625 0.625V4.99999C0.625 5.66303 0.888388 6.29891 1.35723 6.76774C1.82607 7.23658 2.46194 7.49997 3.12498 7.49997H10.6249" stroke="#F1F1F1" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </button>
+      </form>
+      <span class="section-contact__privacy">durch Klicken auf die Schaltfläche stimmen Sie der <a href="#">Datenschutzrichtlinie zu</a></span>
+      <div class="section-contact-brand-wrapper">
+        <span class="section-contact__brand">PneumaFit</span>
+        <p class="section-contact__brand-desc">Durch gezielte, sanfte Impulse werden Selbstheilungskräfte aktiviert und das Wohlbefinden nachhaltig gefördert.</p>
+      </div>
+      </div>
+  </section>
+    <footer class="footer">
+    <div class="footer__content">
+
+      <nav class="footer__nav">
+        <div class="footer__nav-col">
+          <div class="footer__nav-group">
+            <h4 class="footer__nav-title">Leistungen</h4>
+            <div class="footer__nav-links">
+              <a href="#" class="footer__nav-link">Physiotherapie</a>
+              <a href="#" class="footer__nav-link">Atemtherapie</a>
+              <a href="#" class="footer__nav-link">Sporttherapie</a>
+              <a href="#" class="footer__nav-link">CMD-Behandlung</a>
+              <a href="#" class="footer__nav-link">T-Shape 2</a>
+              <a href="#" class="footer__nav-link">ReLounge</a>
+            </div>
+          </div>
+          <div class="footer__nav-group">
+            <h4 class="footer__nav-title"><span class="mobile-hidden">Nutzungsbedingungen</span><span class="mobile-only">Datenschutz</span> <br>der Website</h4>
+            <div class="footer__nav-links">
+              <a href="#" class="footer__nav-link">Datenschutz</a>
+            </div>
+          </div>
+        </div>
+        <div class="footer__nav-col">
+          <div class="footer__nav-group">
+            <h4 class="footer__nav-title">Über uns</h4>
+            <div class="footer__nav-links">
+              <a href="#" class="footer__nav-link">Über uns und das Team</a>
+              <a href="#" class="footer__nav-link">Karriere</a>
+            </div>
+          </div>
+          <div class="footer__nav-group footer__nav-group--right">
+            <h4 class="footer__nav-title">Social networks</h4>
+            <div class="footer__nav-links">
+              <a href="#" class="footer__nav-link">Instagram</a>
+              <a href="#" class="footer__nav-link">Telegram</a>
+              <a href="#" class="footer__nav-link">WhatsApp</a>
+            </div>
+          </div>
+        </div>
+      </nav>
+
+      <div class="footer__divider"></div>
+
+      <div class="footer__bottom">
+        <button class="footer__scroll-top" id="scrollTop" aria-label="Nach oben">
+          <svg width="12" height="15" viewBox="0 0 12 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M5.95948 14.4189V0.918946M0.459473 6.41895L5.95948 0.918946L11.4595 6.41895" stroke="white" stroke-width="1.3"/>
+          </svg>
+        </button>
+        <div class="footer__email-info">
+          <span class="footer__email-label">e-mail</span>
+          <a href="mailto:Support@PneumaFit.com" class="footer__email">Support@PneumaFit.com</a>
+        </div>
+      </div>
+
+      <div class="footer__legal">
+        <span>PneumaFit. All rights reserved</span>
+        <span>© 2026</span>
+      </div>
+
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/@studio-freight/lenis@1.0.42/dist/lenis.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

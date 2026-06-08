@@ -200,10 +200,28 @@ AOS.init({
 lenis.on('scroll', AOS.refresh);
 
 // ========================================
+// FAQ scroll-fill (mobile ≤940px, non-accordion lists)
+// ========================================
+if (window.innerWidth <= 940 && document.querySelector('.faq__list:not([data-accordion])')) {
+  const faqObserver = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('is-active');
+        faqObserver.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.5 });
+
+  document.querySelectorAll('.faq__list:not([data-accordion]) .faq__row').forEach(row => {
+    faqObserver.observe(row);
+  });
+}
+
+// ========================================
 // FAQ Accordion (mobile ≤940px)
 // ========================================
-if (window.innerWidth <= 940 && document.querySelector('.faq__list')) {
-  document.querySelectorAll('.faq__row').forEach(row => {
+if (window.innerWidth <= 940 && document.querySelector('.faq__list:not([data-static])')) {
+  document.querySelectorAll('.faq__list:not([data-static]) .faq__row').forEach(row => {
     const number = row.querySelector('.faq__number');
     const question = row.querySelector('.faq__question');
     const answer = row.querySelector('.faq__answer');

@@ -1205,7 +1205,7 @@ pagination-bullets .swiper-pagination-bullet, .swiper-pagination-horizontal.swip
 
 .section-contact__wrap {
   position: relative;
-  border-radius: 5px;
+  border-radius: 10px;
   overflow: hidden;
 }
 
