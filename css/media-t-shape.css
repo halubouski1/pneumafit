@@ -401,7 +401,7 @@
 
   .faq__question {
     font-size: 18px;
-    width: 345px;
+    width: 358px;
   }
 
   .faq__answer {
@@ -424,6 +424,7 @@
 
   .faq__tooltip {
     width: 381px;
+    top: -123px;
   }
 
   .faq__tooltip-title {
