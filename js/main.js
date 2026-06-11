@@ -391,3 +391,84 @@ if (window.innerWidth <= 940 && document.querySelector('.faq__list-accordion')) 
     });
   });
 }
+
+// ========================================
+// Burger Menu
+// ========================================
+(function () {
+  const overlay = document.createElement('div');
+  overlay.className = 'burger-menu-overlay';
+
+  const menu = document.createElement('div');
+  menu.className = 'burger-menu';
+  menu.id = 'burgerMenu';
+  menu.setAttribute('role', 'dialog');
+  menu.setAttribute('aria-label', 'Navigation');
+
+  const links = [
+    { href: 'physiotherapie.html', label: 'Physiotherapie' },
+    { href: 'atemtherapie.html',   label: 'Atemtherapie' },
+    { href: 'sporttherapie.html',  label: 'Sporttherapie' },
+    { href: 'cmd-behandlung.html', label: 'CMD-Behandlung' },
+    { href: 't-shape.html',        label: 'T-Shape 2' },
+    { href: 'relounge.html',       label: 'ReLounge' },
+    { href: 'about-us.html',       label: 'Über uns und das Team' },
+    { href: 'jobs.html',           label: 'Karriere' },
+  ];
+
+  const currentPage = window.location.pathname.split('/').pop() || 'index.html';
+
+  const navHTML = links.map(({ href, label }) => {
+    const isActive = href === currentPage;
+    const cls = isActive ? ' burger-menu__link--active' : '';
+    return `<a href="${href}" class="burger-menu__link${cls}">${label}<span class="burger-menu__dot"></span></a>`;
+  }).join('\n');
+
+  menu.innerHTML = `
+    <button class="burger-menu__close" type="button" aria-label="Menü schließen">
+      <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <path d="M1.30213 15.5504C0.968571 15.5504 0.635009 15.4234 0.381578 15.1673C-0.127193 14.6569 -0.127193 13.8294 0.381578 13.3189L13.2757 0.382811C13.7848 -0.127604 14.6097 -0.127604 15.1184 0.382811C15.6272 0.893225 15.6272 1.72073 15.1184 2.23147L2.22396 15.1673C1.96703 15.4234 1.63379 15.5504 1.30213 15.5504Z" fill="#7B7B7B"/>
+        <path d="M14.1961 15.5504C13.8628 15.5504 13.5293 15.4234 13.2758 15.1672L0.381812 2.23163C-0.127271 1.72116 -0.127271 0.89356 0.381812 0.383091C0.890577 -0.127697 1.71541 -0.127697 2.22418 0.383091L15.1182 13.3203C15.6273 13.8308 15.6273 14.6584 15.1182 15.1688C14.8632 15.4234 14.5296 15.5504 14.1961 15.5504Z" fill="#7B7B7B"/>
+      </svg>
+    </button>
+    <span class="burger-menu__label">Menü</span>
+    <div class="burger-menu__divider"></div>
+    <nav class="burger-menu__nav">
+      ${navHTML}
+    </nav>
+  `;
+
+  document.body.appendChild(overlay);
+  document.body.appendChild(menu);
+
+  let _menuScrollY = 0;
+
+  function openMenu() {
+    _menuScrollY = window.scrollY;
+    menu.classList.add('is-open');
+    overlay.classList.add('is-open');
+    document.documentElement.style.overflow = 'hidden';
+    document.body.style.overflow = 'hidden';
+  }
+
+  function closeMenu() {
+    menu.classList.remove('is-open');
+    overlay.classList.remove('is-open');
+    document.documentElement.style.overflow = '';
+    document.body.style.overflow = '';
+    window.scrollTo(0, _menuScrollY);
+  }
+
+  menu.querySelector('.burger-menu__close').addEventListener('click', closeMenu);
+  overlay.addEventListener('click', closeMenu);
+
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape' && menu.classList.contains('is-open')) closeMenu();
+  });
+
+  document.querySelectorAll('.header__burger').forEach(btn => {
+    btn.addEventListener('click', () => {
+      menu.classList.contains('is-open') ? closeMenu() : openMenu();
+    });
+  });
+})();

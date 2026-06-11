@@ -501,6 +501,33 @@
   background-repeat: no-repeat;
   background-size: contain;
 }
+
+  /* menu */
+  .burger-menu {
+    top: 90px;
+    right: 32px;
+    max-width: 400px;
+    padding: 30px 20px;
+    border-radius: 20px;
+  }
+
+  .burger-menu__link {
+    font-size: 25px;
+  }
+
+  .burger-menu__nav {
+    gap: 18px;
+  }
+
+  .burger-menu__label {
+    font-size: 13px;
+    margin-bottom: 14px;
+  }
+
+  .burger-menu__close {
+    top: 20px;
+    right: 20px;
+  }
 }
 
 @media (max-width: 1470px) {
@@ -1540,4 +1567,34 @@
   background-repeat: no-repeat;
   background-size: contain;
 }
+
+/* menu */
+  .burger-menu {
+    top: 45px;
+    right: 15px;
+    left: 15px;
+    width: auto;
+    max-width: none;
+    padding: 40px 20px;
+    border-radius: 15px;
+  }
+
+  .burger-menu__link {
+    font-size: 25px;
+    font-weight: 400;
+  }
+
+  .burger-menu__nav {
+    gap: 19px;
+  }
+
+  .burger-menu__label {
+    font-size: 14px;
+    margin-bottom: 10px;
+  }
+
+  .burger-menu__close {
+    top: 20px;
+    right: 20px;
+  }
 }
