@@ -265,3 +265,52 @@ if (window.innerWidth <= 940 && document.querySelector('.faq__list:not([data-sta
     });
   });
 }
+
+// ========================================
+// FAQ Accordion (section-faq-accordion)
+// ========================================
+if (window.innerWidth <= 940 && document.querySelector('.faq__list-accordion')) {
+  document.querySelectorAll('.faq__list-accordion .faq__row-accordion').forEach(row => {
+    const number   = row.querySelector('.faq__number-accordion');
+    const question = row.querySelector('.faq__question-accordion');
+    const answer   = row.querySelector('.faq__answer-accordion');
+
+    // Wrap row in .faq__item-accordion
+    const item = document.createElement('div');
+    item.className = 'faq__item-accordion';
+    row.parentNode.insertBefore(item, row);
+    item.appendChild(row);
+
+    // Build accordion header inside row
+    const header = document.createElement('div');
+    header.className = 'faq__acc-header-accordion';
+    const toggle = document.createElement('span');
+    toggle.className = 'faq__acc-toggle';
+    toggle.textContent = '+';
+    const left = document.createElement('div');
+    left.className = 'faq__acc-left-accordion';
+    left.append(number, question);
+    row.innerHTML = '';
+    header.append(left, toggle);
+    row.append(header);
+
+    // Body goes AFTER row, outside the colored area
+    const body = document.createElement('div');
+    body.className = 'faq__acc-body-accordion';
+    body.append(answer);
+    item.appendChild(body);
+
+    header.addEventListener('click', () => {
+      const isOpen = item.classList.contains('is-open');
+      document.querySelectorAll('.faq__item-accordion').forEach(i => {
+        i.classList.remove('is-open');
+        const t = i.querySelector('.faq__acc-toggle');
+        if (t) t.textContent = '+';
+      });
+      if (!isOpen) {
+        item.classList.add('is-open');
+        toggle.textContent = '−';
+      }
+    });
+  });
+}

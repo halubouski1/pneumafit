@@ -1,0 +1,633 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script>document.documentElement.style.setProperty("--fixed-vh", window.innerHeight + "px");</script>
+  <title>Osteopathie | PneumaFit</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/media.css">
+  <link rel="stylesheet" href="css/atemtherapie.css">
+  <link rel="stylesheet" href="css/media-atemtherapie.css">
+</head>
+<body class="osteopathy-page">
+
+  <section class="osteopathy-hero">
+    <div class="osteopathy-hero__overlay"></div>
+
+    <div class="container osteopathy-hero__container">
+      <header class="header">
+        <a href="index.html" class="header__logo">
+          <img src="assets/img/logo.svg" alt="Manual Therapist Logo">
+        </a>
+        <nav class="header__nav">
+          <a href="index.html" class="header__nav-link header__nav-link--active">Home</a>
+          <a href="index.html#therapies" class="header__nav-link">Leistungen</a>
+          <a href="osteopathie.html" class="header__nav-link">Heilpraktiker/Osteopathie</a>
+          <a href="index.html#services" class="header__nav-link">T-Shape</a>
+          <a href="index.html#services" class="header__nav-link">ReLounge</a>
+          <a href="index.html#about" class="header__nav-link">Über uns</a>
+          <a href="index.html#contact" class="header__nav-link">Karriere</a>
+        </nav>
+        <div class="header__actions">
+          <a href="index.html#about" class="header__btn-outline">Über uns</a>
+          <a href="index.html#contact" class="header__btn-link header__btn-link--contact">Contact us
+            <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <path d="M7.5 4.37512L10.625 7.50011L7.5 10.6251" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M0.625 0.625V4.99999C0.625 5.66303 0.888388 6.29891 1.35723 6.76774C1.82607 7.23658 2.46194 7.49997 3.12498 7.49997H10.6249" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </a>
+          <button class="header__burger" type="button" aria-label="Menu" aria-controls="mobileMenu" aria-expanded="false">
+            <svg width="21" height="9" viewBox="0 0 21 9" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <rect width="21" height="1" fill="white" />
+              <rect y="4" width="21" height="1" fill="white" />
+              <rect y="8" width="21" height="1" fill="white" />
+            </svg>
+          </button>
+        </div>
+      </header>
+
+      <div class="mobile-menu" id="mobileMenu" aria-hidden="true">
+        <div class="mobile-menu__inner">
+          <div class="mobile-menu__top">
+            <a href="index.html" class="mobile-menu__logo">
+              <img src="assets/img/logo-dark.svg" alt="Manual Therapist Logo">
+            </a>
+            <button class="mobile-menu__close" type="button" aria-label="Close menu">
+              <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                <path d="M1 1L17 17" stroke="black" stroke-width="1.5" stroke-linecap="round"/>
+                <path d="M17 1L1 17" stroke="black" stroke-width="1.5" stroke-linecap="round"/>
+              </svg>
+            </button>
+          </div>
+
+          <nav class="mobile-menu__nav" aria-label="Mobile navigation">
+            <a href="index.html" class="mobile-menu__link">Home</a>
+            <a href="index.html#therapies" class="mobile-menu__link">Leistungen</a>
+            <a href="osteopathie.html" class="mobile-menu__link">Heilpraktiker/Osteopathie</a>
+            <a href="index.html#services" class="mobile-menu__link">T-Shape</a>
+            <a href="index.html#services" class="mobile-menu__link">ReLounge</a>
+            <a href="index.html#about" class="mobile-menu__link">Über uns</a>
+            <a href="index.html#contact" class="mobile-menu__link">Karriere</a>
+          </nav>
+
+          <a href="index.html#contact" class="mobile-menu__cta">
+            Contact us
+            <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <path d="M7.5 4.37512L10.625 7.50011L7.5 10.6251" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M0.625 0.625V4.99999C0.625 5.66303 0.888388 6.29891 1.35723 6.76774C1.82607 7.23658 2.46194 7.49997 3.12498 7.49997H10.6249" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </a>
+        </div>
+      </div>
+
+      <div class="osteopathy-hero__content">
+        <div class="osteopathy-hero__main">
+          <span class="osteopathy-hero__label">
+            in Leinfelden-Echterdingen
+          </span>
+          <h1 class="osteopathy-hero__title">Atemtherapie</h1>
+          <div class="osteopathy-hero__cta-row">
+            <a href="index.html#contact" class="hero__btn hero__btn--primary osteopathy-hero__btn">
+              Jetzt Termin sichern
+              <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                <path d="M7.5 4.37512L10.625 7.50011L7.5 10.6251" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M0.625 0.625V4.99999C0.625 5.66303 0.888388 6.29891 1.35723 6.76774C1.82607 7.23658 2.46194 7.49997 3.12498 7.49997H10.6249" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </a>
+            <p class="osteopathy-hero__subtitle">weil Ihr Wohlbefinden nicht  warten sollte</p>
+          </div>
+        </div>
+
+        <div class="osteopathy-hero__bottom">
+          <div class="osteopathy-hero__cards">
+            <article class="osteopathy-feature">
+              <span class="osteopathy-feature__number">01</span>
+              <p class="osteopathy-feature__text">Ganzheitliche Betreuung für Ihre Gesundheit und Ihr Wohlbefinden.</p>
+            </article>
+            <article class="osteopathy-feature">
+              <span class="osteopathy-feature__number">02</span>
+              <p class="osteopathy-feature__text">Kompetente Betreuung durch erfahrene Spezialisten.</p>
+            </article>
+            <article class="osteopathy-feature">
+              <span class="osteopathy-feature__number">03</span>
+              <p class="osteopathy-feature__text">Flexibel, zuverlässig und auf Ihre Bedürfnisse abgestimmt.</p>
+            </article>
+          </div>
+
+          <a href="#osteopathy-more" class="osteopathy-learn">
+            <svg width="1" height="363" viewBox="0 0 1 363" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <line x1="0.5" y1="2.18557e-08" x2="0.499984" y2="363" stroke="url(#paint0_linear_147_16)"/>
+            <defs>
+            <linearGradient id="paint0_linear_147_16" x1="-0.5" y1="-2.18557e-08" x2="-0.500016" y2="363" gradientUnits="userSpaceOnUse">
+            <stop stop-color="white" stop-opacity="0"/>
+            <stop offset="1" stop-color="white"/>
+            </linearGradient>
+            </defs>
+            </svg>
+            <div class="osteopathy-learn__icon-wrapper">
+              <span class="osteopathy-learn__icon" aria-hidden="true">
+                <svg width="20" height="28" viewBox="0 0 20 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M9.52 27.2C12.0449 27.2 14.4663 26.197 16.2517 24.4117C18.037 22.6263 19.04 20.2049 19.04 17.68V9.52C19.04 6.99514 18.037 4.57369 16.2517 2.78834C14.4663 1.003 12.0449 0 9.52 0C6.99514 0 4.57369 1.003 2.78834 2.78834C1.003 4.57369 0 6.99514 0 9.52V17.68C0 20.2049 1.003 22.6263 2.78834 24.4117C4.57369 26.197 6.99514 27.2 9.52 27.2ZM1.36 9.52C1.36 7.35583 2.21971 5.28031 3.75001 3.75001C5.28031 2.21971 7.35583 1.36 9.52 1.36C11.6842 1.36 13.7597 2.21971 15.29 3.75001C16.8203 5.28031 17.68 7.35583 17.68 9.52V17.68C17.68 19.8442 16.8203 21.9197 15.29 23.45C13.7597 24.9803 11.6842 25.84 9.52 25.84C7.35583 25.84 5.28031 24.9803 3.75001 23.45C2.21971 21.9197 1.36 19.8442 1.36 17.68V9.52Z" fill="white" />
+                  <path d="M8.83995 13.26H8.90115L9.03715 13.4028C9.10037 13.4665 9.17558 13.5171 9.25844 13.5516C9.3413 13.5861 9.43018 13.6039 9.51995 13.6039C9.60972 13.6039 9.6986 13.5861 9.78147 13.5516C9.86433 13.5171 9.93954 13.4665 10.0028 13.4028L10.1388 13.26H10.2V13.1988L14.0828 9.32275L13.1172 8.35716L10.2 11.2812V4.07996H8.83995V11.2812L5.92275 8.35716L4.95715 9.32275L8.83995 13.1988V13.26Z" fill="white" />
+                </svg>
+              </span>
+              <span class="osteopathy-learn__text">Learn More</span>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section-philosophy" data-aos="fade-up" data-aos-duration="900">
+
+    <!-- 8 vertical lines, full height -->
+    <div class="philosophy-lines" aria-hidden="true">
+      <div class="philosophy-line l-1"></div>
+      <div class="philosophy-line l-2"></div>
+      <div class="philosophy-line l-3"></div>
+      <div class="philosophy-line l-4"></div>
+      <div class="philosophy-line l-5"></div>
+      <div class="philosophy-line l-6"></div>
+      <div class="philosophy-line l-7"></div>
+      <div class="philosophy-line l-8"></div>
+    </div>
+
+    <!-- Main content: label left + content right -->
+    <div class="philosophy-top">
+      <span class="philosophy-label">Deshalb bieten wir bei PneumaFit eine ganz spezielle Atemtherapie an und bringen Ihnen die Atemübungen bei, die Sie immer, überall und ohne zusätzlichen Aufwand anwenden und so gesünder und glücklicher werden können.</span>
+      <div class="philosophy-main">
+        <h2 class="philosophy-title">Achtsames Atmen, für ein besseres Wohlbefinden</h2>
+        <p class="philosophy-text">Obwohl das Atmen eine Körperfunktion ist, die wir ständig und unbewusst ausführen, können wir durch besondere Atemübungen und bewusstes Atmen dafür sorgen langfristig das Wohlbefinden zu steigern.</p>
+        <p class="philosophy__text-small">
+          Deshalb bieten wir bei PneumaFit eine ganz spezielle Atemtherapie an und bringen Ihnen die Atemübungen bei, die Sie immer, überall und ohne zusätzlichen Aufwand anwenden und so gesünder und glücklicher werden können.
+        </p>
+      </div>
+    </div>
+
+    <!-- Bottom words positioned between the lines -->
+    <div class="philosophy-words" aria-hidden="true">
+      <!-- col 1: 296px — 2 words centered as group -->
+      <div class="pw-group">
+        <span class="p-word p-word--1">Straffung</span>
+        <span class="p-word p-word--2">Regeneration</span>
+      </div>
+      <div></div><!-- col 2: 178px spacer -->
+      <!-- col 3: 296px — 1 word centered -->
+      <span class="p-word p-word--3">Glättung</span>
+      <div></div><!-- col 4: 178px spacer -->
+      <!-- col 5: 296px — 2 words centered as group -->
+      <div class="pw-group">
+        <span class="p-word p-word--4">Konturierung</span>
+        <span class="p-word p-word--5">Elastizität</span>
+      </div>
+      <div></div><!-- col 6: 178px spacer -->
+      <div></div><!-- col 7: 296px empty (lines 7→8) -->
+      <!-- col 8: remaining — 1 word centered -->
+      <span class="p-word p-word--6">Verjüngung</span>
+    </div>
+
+  </section>
+    <section class="section-reviews section-process" data-aos="fade-up" data-aos-duration="900">
+    <div class="container section-reviews__container section-process__container">
+      <div class="section-reviews__inner">
+
+        <div class="section-process__top">
+          <div class="section-process__left">
+            <h2 class="section-title section-reviews__title section-process__title">Ihre Vorteile bei einer qualitativen Atemtherapie</h2>
+            <p class="section-process__text">Viele Körperfunktionen hängen zusammen, oft ist dies jedoch nicht offensichtlich. Deswegen betrachten wir Sie ganzheitlich und tragen dafür Sorge, den Ursprung Ihrer Beschwerden zu finden und zu lösen.</p>
+            <img class="section-process__mobile-img" src="assets/img/respiratory-therapy-slider.png" alt="" aria-hidden="true">
+          </div>
+        </div>
+
+        <div class="section-reviews__bottom">
+          <div class="section-reviews__nav">
+            <button class="reviews-btn reviews-btn--prev" id="reviewsPrev">
+              <svg width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+              <mask id="mask0_264_650" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="13" height="13">
+              <rect width="13" height="13" transform="matrix(-1 0 0 1 13 0)" fill="url(#pattern0_264_650)"/>
+              </mask>
+              <g mask="url(#mask0_264_650)">
+              <ellipse cx="9.39453" cy="6.14453" rx="9.39453" ry="6.14453" transform="matrix(-1 0 0 1 16.9609 0.711914)"/>
+              </g>
+              <defs>
+              <pattern id="pattern0_264_650" patternContentUnits="objectBoundingBox" width="1" height="1">
+              <use xlink:href="#image0_264_650" transform="scale(0.00195312)"/>
+              </pattern>
+              <image id="image0_264_650" width="512" height="512" preserveAspectRatio="none" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAgAAAAIACAYAAAD0eNT6AAAAAXNSR0IArs4c6QAAAERlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAA6ABAAMAAAABAAEAAKACAAQAAAABAAACAKADAAQAAAABAAACAAAAAAAL+LWFAAAbsklEQVR4Ae3YQY4kRxUG4DaMxEXYsLHEwhvDXTiFBTund8MR4DRcgxOwYIU3ZjdEILX9prunul5VZla+fF9JLcfY0ZURXz7r/+2nJx8CBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAIETCXw97vLdie7jKgQIECBAgMA7AjP8/z1+Po2fj+/s9Y8JECBAgACBEwjE8J8FQAk4wUt1BQIECBAgcEngrfBXAi6J+WcECBAgQKC4wKXwVwKKv1zHJ0CAAAECbwlcE/5KwFty/h4BAgQIECgqkAl/JaDoS3ZsAgQIECAQBW4JfyUgCloTIECAAIFiAveEvxJQ7GU7LgECBAgQmAJrhL8SYJYIECBAgEAhgTXDXwko9OIdlQABAgT6CmwR/kpA33lycwIECBAoILBl+CsBBQbAEQkQIECgn8Ae4a8E9JsrNyZAgACBAwvsGf5KwIEHwdEIECBAoI/AI8JfCegzX25KgAABAgcUeGT4KwEHHAhHIkCAAIHzCxwh/JWA88+ZGxIgQIDAgQSOFP5KwIEGw1EIECBA4LwCRwx/JeC88+ZmBAgQIHAAgSOHvxJwgAFxBAIECBA4n0CF8FcCzjd3bkSAAAECDxSoFP5KwAMHxaMJECBA4DwCFcNfCTjP/LkJAQIECDxAoHL4KwEPGBiPJECAAIH6AmcIfyWg/hy6AQECBAjsKHCm8FcCdhwcjyJAgACBugJnDH8loO48OjkBAgQI7CBw5vBXAnYYII8gQIAAgXoCHcJfCag3l05MgAABAhsKdAp/JWDDQfLVBAgQIFBHoGP4KwF15tNJCRAgQGADgc7hrwRsMFC+kgABAgSOLyD8n56UgOPPqRMSIECAwIoCwv+X8FcCVhwsX0WAAAECxxUQ/q/DXwk47rw62QuBX7/4sz8SIEDgWoHfjo1/Gj+/ufYXGu3747jrV+PnH43u7KoECBAg0Ejg23HX/4yf5//y9dfPLT42mgVXJUCAAIFmAkrA56H/sgQpAc3+hXBdAgQIdBJQApSATvPurgQIECAQBJQAJSCMgyUBAgQIdBJQApSATvPurgQIECAQBJQAJSCMgyUBAgQIdBJQApSATvPurgQIECAQBJQAJSCMgyUBAgQIdBJQApSATvPurgQIECAQBJQAJSCMgyUBAgQIdBJQApSATvPurgQIECAQBJQAJSCMgyUBAgQIdBJQApSATvPurgQIECAQBJQAJSCMgyUBAgQIdBJQApSATvPurgQIECAQBJQAJSCMgyUBAgQIdBJQApSATvPurgQIECAQBJQAJSCMgyUBAgQIdBJQApSATvPurgQIECAQBJQAJSCMgyUBAgQIdBJQApSATvPurgQIECAQBJQAJSCMgyUBAgQIdBJQApSATvPurgQIECAQBJQAJSCMgyUBAgQIdBJQApSATvPurgQIECAQBJQAJSCMgyUBAgQIdBJQApSATvPurgQIECAQBJQAJSCMgyUBAgQIdBJQApSATvPurgQIECAQBJQAJSCMgyUBAgQIdBJQApSATvPurgQIECAQBJQAJSCMgyUBAgQIdBJQApSATvPurgQIECAQBJQAJSCMgyUBAgQIdBJQApSATvPurgQIECAQBJQAJSCMgyUBAgQIdBJQApSATvPurgQIECAQBJQAJSCMgyUBAgQIdBJQApSATvPurgQIECAQBJQAJSCMgyUBAgQIdBJQApSATvPurgQIECAQBJQAJSCMgyUBAgQIdBJQApSATvPurgQIECAQBJQAJSCMgyUBAgQIdBJQApSATvPurgQIECAQBJQAJSCMgyUBAgQIdBJQApSATvPurgQIECAQBJQAJSCMgyUBAgQIdBJQApSATvPurgQIECAQBJQAJSCMgyUBAgQIdBJQApSATvPurgQIECAQBJQAJSCMgyUBAgQIdBJQApSATvPurgQIECAQBJQAJSCMgyUBAgQIdBJQApSATvPurgQIECAQBJQAJSCMgyUBAgQIdBJQApSATvPurgQIECAQBJQAJSCMgyUBAgQIdBJQApSATvPurgQIECAQBJQAJSCMgyUBAgQIdBJQApSATvPurgQIECAQBJQAJSCMgyUBAgQIdBJQApSATvPurgQIECAQBJQAJSCMgyUBAgQIdBJQApSATvPurgQIECAQBJQAJSCMgyUBAgQIdBJQApSATvPurgQIECAQBJQAJSCMgyUBAgQIdBJQApSATvPurgQIECAQBJQAJSCMgyUBAgQIdBJQApSATvPurgQIECAQBJQAJSCMgyUBAgQIdBJQApSATvPurgQIECAQBJQAJSCMgyUBAgQIdBJQApSATvPurgQIECAQBJQAJSCMgyUBAgQIdBJQApSATvPurgQIECAQBJQAJSCMgyUBAgQIdBJQApSATvPurgQIECAQBJQAJSCMgyUBAgQIdBJQApSATvPurgQIECAQBJQAJSCMgyUBAgQIdBJQApSATvPurgQIECAQBJQAJSCMgyUBAgQIdBJQApSATvPurgQIECAQBJQAJSCMgyUBAgQIdBJQApSATvPurgQIECAQBJQAJSCMgyUBAgQIdBJQApSATvPurgQIECAQBJQAJSCMgyUBAgQIdBJQApSATvPurgQIECAQBJQAJSCMgyUBAgQIdBJQApSATvPurgQIECAQBJQAJSCMgyUBAgQIdBJQApSATvPurgQIECAQBJQAJSCMgyUBAgQIdBJQApSATvPurgQIECAQBJQAJSCMgyUBAgQIdBJQApSATvPurgQIECAQBJQAJSCMgyUBAgQIdBJQApSATvPurgQIECAQBJQAJSCMgyUBAgQIdBJQApSATvPurgQIECAQBJQAJSCMgyUBAgQI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gMAQOHMJEP5GnAABAgQIXBA4YwkQ/hdeuH9EgAABAgSeBc5UAoT/81v1VwIECBAgcIXAGUqA8L/iRdtCgAABAgReClQuAcL/5dv0ZwIECBAgkBCoWAKEf+IF20qAAAECBL4kUKkECP8vvUV/nwABAgQI3CBQoQQI/xterF8hQIAAAQLvCRy5BAj/996ef06AAAECBO4QOGIJEP53vFC/SoAAAQIErhU4UgkQ/te+NfsIECBAgMAKAkcoAcJ/hRfpKwgQIECAQFbgkSVA+Gfflv0ECBAgQGBFgUeUAOG/4gv0VQQIECBA4FaBPUuA8L/1Lfk9AgQIECCwgcAeJUD4b/DifCUBAgQIELhXYMsSIPzvfTt+nwABAgQIbCiwRQkQ/hu+MF9NgAABAgTWElizBAj/td6K7yFAgAABAjsIrFEChP8OL8ojCBAgQIDA2gL3lADhv/bb8H0ECBAgQGBHgVtKgPDf8QV5FAECBAgQ2EogUwKE/1ZvwfcSIECAAIEHCFxTAoT/A16MRxIgQIAAga0FLpUA4b+1vu8nQIAAAQIPFHirBAj/B74QjyZAgAABAnsJxBIg/PdS9xwCBAgQIHAAga/HGb47wDkcgQABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIEKgn8D8FArhdcAFGLgAAAABJRU5ErkJggg=="/>
+              </defs>
+              </svg>
+            </button>
+            <button class="reviews-btn reviews-btn--next" id="reviewsNext">
+              <svg width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+              <mask id="mask0_264_647" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="13" height="13">
+              <rect width="13" height="13" transform="matrix(1 0 0 -1 0 13)" fill="url(#pattern0_264_647)"/>
+              </mask>
+              <g mask="url(#mask0_264_647)">
+              <ellipse cx="9.39453" cy="6.14453" rx="9.39453" ry="6.14453" transform="matrix(1 0 0 -1 -3.96094 12.2881)"/>
+              </g>
+              <defs>
+              <pattern id="pattern0_264_647" patternContentUnits="objectBoundingBox" width="1" height="1">
+              <use xlink:href="#image0_264_647" transform="scale(0.00195312)"/>
+              </pattern>
+              <image id="image0_264_647" width="512" height="512" preserveAspectRatio="none" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAgAAAAIACAYAAAD0eNT6AAAAAXNSR0IArs4c6QAAAERlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAA6ABAAMAAAABAAEAAKACAAQAAAABAAACAKADAAQAAAABAAACAAAAAAAL+LWFAAAbsklEQVR4Ae3YQY4kRxUG4DaMxEXYsLHEwhvDXTiFBTund8MR4DRcgxOwYIU3ZjdEILX9prunul5VZla+fF9JLcfY0ZURXz7r/+2nJx8CBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAIETCXw97vLdie7jKgQIECBAgMA7AjP8/z1+Po2fj+/s9Y8JECBAgACBEwjE8J8FQAk4wUt1BQIECBAgcEngrfBXAi6J+WcECBAgQKC4wKXwVwKKv1zHJ0CAAAECbwlcE/5KwFty/h4BAgQIECgqkAl/JaDoS3ZsAgQIECAQBW4JfyUgCloTIECAAIFiAveEvxJQ7GU7LgECBAgQmAJrhL8SYJYIECBAgEAhgTXDXwko9OIdlQABAgT6CmwR/kpA33lycwIECBAoILBl+CsBBQbAEQkQIECgn8Ae4a8E9JsrNyZAgACBAwvsGf5KwIEHwdEIECBAoI/AI8JfCegzX25KgAABAgcUeGT4KwEHHAhHIkCAAIHzCxwh/JWA88+ZGxIgQIDAgQSOFP5KwIEGw1EIECBA4LwCRwx/JeC88+ZmBAgQIHAAgSOHvxJwgAFxBAIECBA4n0CF8FcCzjd3bkSAAAECDxSoFP5KwAMHxaMJECBA4DwCFcNfCTjP/LkJAQIECDxAoHL4KwEPGBiPJECAAIH6AmcIfyWg/hy6AQECBAjsKHCm8FcCdhwcjyJAgACBugJnDH8loO48OjkBAgQI7CBw5vBXAnYYII8gQIAAgXoCHcJfCag3l05MgAABAhsKdAp/JWDDQfLVBAgQIFBHoGP4KwF15tNJCRAgQGADgc7hrwRsMFC+kgABAgSOLyD8n56UgOPPqRMSIECAwIoCwv+X8FcCVhwsX0WAAAECxxUQ/q/DXwk47rw62QuBX7/4sz8SIEDgWoHfjo1/Gj+/ufYXGu3747jrV+PnH43u7KoECBAg0Ejg23HX/4yf5//y9dfPLT42mgVXJUCAAIFmAkrA56H/sgQpAc3+hXBdAgQIdBJQApSATvPurgQIECAQBJQAJSCMgyUBAgQIdBJQApSATvPurgQIECAQBJQAJSCMgyUBAgQIdBJQApSATvPurgQIECAQBJQAJSCMgyUBAgQIdBJQApSATvPurgQIECAQBJQAJSCMgyUBAgQIdBJQApSATvPurgQIECAQBJQAJSCMgyUBAgQIdBJQApSATvPurgQIECAQBJQAJSCMgyUBAgQIdBJQApSATvPurgQIECAQBJQAJSCMgyUBAgQIdBJQApSATvPurgQIECAQBJQAJSCMgyUBAgQIdBJQApSATvPurgQIECAQBJQAJSCMgyUBAgQIdBJQApSATvPurgQIECAQBJQAJSCMgyUBAgQIdBJQApSATvPurgQIECAQBJQAJSCMgyUBAgQIdBJQApSATvPurgQIECAQBJQAJSCMgyUBAgQIdBJQApSATvPurgQIECAQBJQAJSCMgyUBAgQIdBJQApSATvPurgQIECAQBJQAJSCMgyUBAgQIdBJQApSATvPurgQIECAQBJQAJSCMgyUBAgQIdBJQApSATvPurgQIECAQBJQAJSCMgyUBAgQIdBJQApSATvPurgQIECAQBJQAJSCMgyUBAgQIdBJQApSATvPurgQIECAQBJQAJSCMgyUBAgQIdBJQApSATvPurgQIECAQBJQAJSCMgyUBAgQIdBJQApSATvPurgQIECAQBJQAJSCMgyUBAgQIdBJQApSATvPurgQIECAQBJQAJSCMgyUBAgQIdBJQApSATvPurgQIECAQBJQAJSCMgyUBAgQIdBJQApSATvPurgQIECAQBJQAJSCMgyUBAgQIdBJQApSATvPurgQIECAQBJQAJSCMgyUBAgQIdBJQApSATvPurgQIECAQBJQAJSCMgyUBAgQIdBJQApSATvPurgQIECAQBJQAJSCMgyUBAgQIdBJQApSATvPurgQIECAQBJQAJSCMgyUBAgQIdBJQApSATvPurgQIECAQBJQAJSCMgyUBAgQIdBJQApSATvPurgQIECAQBJQAJSCMgyUBAgQIdBJQApSATvPurgQIECAQBJQAJSCMgyUBAgQIdBJQApSATvPurgQIECAQBJQAJSCMgyUBAgQIdBJQApSATvPurgQIECAQBJQAJSCMgyUBAgQIdBJQApSATvPurgQIECAQBJQAJSCMgyUBAgQIdBJQApSATvPurgQIECAQBJQAJSCMgyUBAgQIdBJQApSATvPurgQIECAQBJQAJSCMgyUBAgQIdBJQApSATvPurgQIECAQBJQAJSCMgyUBAgQIdBJQApSATvPurgQIECAQBJQAJSCMgyUBAgQIdBJQApSATvPurgQIECAQBJQAJSCMgyUBAgQIdBJQApSATvPurgQIECAQBJQAJSCMgyUBAgQIdBJQApSATvPurgQIECAQBJQAJSCMgyUBAgQIdBJQApSATvPurgQIECAQBJQAJSCMgyUBAgQIdBJQApSATvPurgQIECAQBJQAJSCMgyUBAgQIdBJQApSATvPurgQIECAQBJQAJSCMgyUBAgQIdBJQApSATvPurgQIECAQBJQAJSCMgyUBAgQIdBJQApSATvPurgQIECAQBJQAJSCMgyUBAgQIdBJQApSATvPurgQIECAQBJQAJSCMgyUBAgQIdBJQApSATvPurgQIECAQBJQAJSCMgyUBAgQIdBJQApSATvPurgQIECAQBJQAJSCMgyUBAgQIdBJQApSATvPurgQIECAQBJQAJSCMgyUBAgQIdBJQApSATvPurgQIECAQBJQAJSCMgyUBAgQIdBJQApSATvPurgQIECAQBJQAJSCMgyUBAgQI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gMAQOHMJEP5GnAABAgQIXBA4YwkQ/hdeuH9EgAABAgSeBc5UAoT/81v1VwIECBAgcIXAGUqA8L/iRdtCgAABAgReClQuAcL/5dv0ZwIECBAgkBCoWAKEf+IF20qAAAECBL4kUKkECP8vvUV/nwABAgQI3CBQoQQI/xterF8hQIAAAQLvCRy5BAj/996ef06AAAECBO4QOGIJEP53vFC/SoAAAQIErhU4UgkQ/te+NfsIECBAgMAKAkcoAcJ/hRfpKwgQIECAQFbgkSVA+Gfflv0ECBAgQGBFgUeUAOG/4gv0VQQIECBA4FaBPUuA8L/1Lfk9AgQIECCwgcAeJUD4b/DifCUBAgQIELhXYMsSIPzvfTt+nwABAgQIbCiwRQkQ/hu+MF9NgAABAgTWElizBAj/td6K7yFAgAABAjsIrFEChP8OL8ojCBAgQIDA2gL3lADhv/bb8H0ECBAgQGBHgVtKgPDf8QV5FAECBAgQ2EogUwKE/1ZvwfcSIECAAIEHCFxTAoT/A16MRxIgQIAAga0FLpUA4b+1vu8nQIAAAQIPFHirBAj/B74QjyZAgAABAnsJxBIg/PdS9xwCBAgQIHAAga/HGb47wDkcgQABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIEKgn8D8FArhdcAFGLgAAAABJRU5ErkJggg=="/>
+              </defs>
+              </svg>
+            </button>
+          </div>
+  
+          <div class="section-reviews__slider-wrap">
+            <div class="reviews-clip-left">
+            <div class="swiper reviews-swiper">
+              <div class="swiper-wrapper">
+  
+                <div class="swiper-slide">
+                  <div class="review-card">
+                    <div class="review-card__inner">
+                      <div class="review-card__header">
+                        <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M8.96171 6.49512C12.1305 6.49772 11.8388 10.8077 11.8375 12.5318C11.8357 14.7322 12.3759 19.1735 10.6784 20.864C8.94855 22.5866 5.49104 23.4458 3.76381 22.0077C2.03657 20.5695 4.9288 6.49181 8.96171 6.49512Z" fill="#4D6EFF" />
+                          <path d="M17.0534 6.50171C13.8846 6.49911 14.1692 10.8096 14.1678 12.5337C14.166 14.7341 13.6185 19.1744 15.3132 20.8677C17.0402 22.5932 20.4963 23.4581 22.2259 22.0228C23.9554 20.5874 21.0863 6.50501 17.0534 6.50171Z" fill="#4D6EFF" />
+                          <path fill-rule="evenodd" clip-rule="evenodd" d="M12.4664 3.24952C12.4664 3.24952 12.4664 3.24945 13.0081 3.24989C13.5497 3.25034 13.5497 3.2504 13.5497 3.2504L13.5433 11.1007C13.5424 12.2389 13.0351 12.8913 12.4609 13.2257C12.1915 13.3827 11.9269 13.4587 11.7329 13.4962C11.6349 13.5153 11.5517 13.525 11.4905 13.53C11.4598 13.5326 11.4344 13.5339 11.415 13.5347C11.4054 13.5351 11.3972 13.5353 11.3906 13.5354L11.3819 13.5355H11.3785H11.3764C11.3764 13.5355 11.3758 13.5355 11.3762 12.9938C11.3766 12.4522 11.376 12.4522 11.376 12.4522L11.3745 12.4522H11.3728H11.3711C11.3711 12.4522 11.3723 12.4522 11.3738 12.4521C11.3782 12.452 11.3877 12.4515 11.4014 12.4504C11.4291 12.4481 11.4728 12.4432 11.527 12.4327C11.6375 12.4113 11.779 12.3692 11.9157 12.2896C12.1538 12.151 12.4593 11.8566 12.46 11.0999L12.4664 3.24952Z" fill="#4D6EFF" />
+                          <path fill-rule="evenodd" clip-rule="evenodd" d="M13.5507 3.2504C13.5507 3.2504 13.5507 3.25034 13.0091 3.24989C12.4674 3.24945 12.4674 3.24952 12.4674 3.24952L12.4609 11.0999C12.46 12.2381 12.9661 12.8913 13.5398 13.2266C13.809 13.384 14.0734 13.4604 14.2673 13.4983C14.3654 13.5175 14.4485 13.5274 14.5097 13.5325C14.5404 13.5351 14.5659 13.5365 14.5852 13.5373C14.5949 13.5377 14.6031 13.5379 14.6096 13.538L14.6183 13.5382H14.6217H14.6232H14.6238C14.6238 13.5382 14.6245 13.5382 14.6249 12.9965C14.6253 12.4548 14.626 12.4548 14.626 12.4548H14.6276L14.6292 12.4549H14.6309C14.6309 12.4549 14.6304 12.4549 14.6281 12.4548C14.6237 12.4546 14.6143 12.4541 14.6006 12.453C14.573 12.4507 14.5292 12.4457 14.4751 12.4351C14.3646 12.4135 14.2231 12.3712 14.0865 12.2914C13.8487 12.1523 13.5436 11.8574 13.5443 11.1007L13.5507 3.2504Z" fill="#4D6EFF" />
+                        </svg>
+                      </div>
+                      <div class="review-card__bottom">
+                        <h4 class="review-card__service">Stressabbau und Entspannung</h4>
+                        <p class="review-card__text">Atemübungen helfen, sich zu entspannen und weniger gestresst zu fühlen.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+  
+                <div class="swiper-slide">
+                  <div class="review-card">
+                    <div class="review-card__inner">
+                      <div class="review-card__header">
+                        <svg width="20" height="15" viewBox="0 0 20 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M5.15 0C2.3691 0 0 2.0793 0 4.7798C0 6.6427 0.8723 8.2112 2.0285 9.5104C3.1807 10.8052 4.6671 11.892 6.011 12.8016L8.3296 14.3711C8.5835 14.543 8.9165 14.543 9.1704 14.3711L11.489 12.8016C11.9187 12.5108 12.363 12.2018 12.8063 11.8737C12.9223 11.7879 12.9592 11.6312 12.8952 11.5019L11.5324 8.7508C11.468 8.6209 11.2911 8.6005 11.1989 8.7123L11.1261 8.8005C10.7461 9.2611 10.1803 9.5278 9.5833 9.5278H7.75C6.6454 9.5278 5.75 8.6323 5.75 7.5278C5.75 6.4232 6.6454 5.5278 7.75 5.5278H8.452C8.5714 5.5278 8.6846 5.4744 8.7605 5.3823L10.3323 3.4772C10.7706 2.946 11.4514 2.6776 12.1343 2.7669C12.8172 2.8562 13.4062 3.2906 13.6931 3.9167L14.4958 5.6681C14.5801 5.8518 14.8195 5.9008 14.9941 5.799C15.2913 5.6259 15.6358 5.5278 16 5.5278H17.1884C17.3394 5.5278 17.4677 5.4156 17.4801 5.2651C17.4932 5.1056 17.5 4.9438 17.5 4.7798C17.5 2.0793 15.1309 0 12.35 0C10.9165 0 9.6552 0.6721 8.75 1.5418C7.8448 0.6721 6.5835 0 5.15 0Z" fill="#4D6EFF" />
+                          <path d="M12.5568 4.43754C12.4492 4.20274 12.2283 4.03984 11.9722 4.00634C11.7161 3.97284 11.4608 4.07354 11.2965 4.27274L9.2298 6.77784H7.75C7.3358 6.77784 7 7.11364 7 7.52784C7 7.94204 7.3358 8.27784 7.75 8.27784H9.5833C9.8072 8.27784 10.0194 8.17784 10.1619 8.00514L11.6919 6.15054L13.4849 10.0625C13.5925 10.2973 13.8133 10.4602 14.0694 10.4937C14.3255 10.5272 14.5808 10.4265 14.7452 10.2273L16.3535 8.27784H18.75C19.1642 8.27784 19.5 7.94204 19.5 7.52784C19.5 7.11364 19.1642 6.77784 18.75 6.77784H16C15.7761 6.77784 15.5639 6.87784 15.4215 7.05054L14.3498 8.34954L12.5568 4.43754Z" fill="#4D6EFF" />
+                        </svg>
+                      </div>
+                      <div class="review-card__bottom">
+                        <h4 class="review-card__service">Verbesserung der Lungenfunktion</h4>
+                        <p class="review-card__text">Mit Atemtherapie atmet man besser, was gut für Sportler und ältere Menschen ist.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+  
+                <div class="swiper-slide">
+                  <div class="review-card">
+                    <div class="review-card__inner">
+                      <div class="review-card__header">
+                        <svg width="27" height="27" viewBox="0 0 27 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M14.0625 19.4132V15.9795C14.2168 15.9623 14.4232 15.9353 14.6466 15.8951C14.8786 15.8533 15.1396 15.7954 15.3839 15.7153C15.6172 15.6387 15.8859 15.5259 16.0945 15.3509C16.3028 15.1761 16.4603 14.9316 16.5761 14.7154C16.6973 14.4893 16.7996 14.2427 16.881 14.0217C17.0335 13.6078 17.1269 13.2444 17.1405 13.1902C17.174 13.0617 17.1617 12.9225 17.1002 12.7984C16.9991 12.5945 16.7851 12.4716 16.558 12.487L16.5571 12.4871L16.5557 12.4872L16.5513 12.4876L16.5363 12.4886C16.5236 12.4896 16.5056 12.491 16.4829 12.493C16.4375 12.4969 16.3731 12.503 16.2946 12.5116C16.1383 12.5287 15.9231 12.5562 15.6894 12.5983C15.4574 12.6401 15.1963 12.698 14.9521 12.7781C14.7188 12.8547 14.4501 12.9675 14.2415 13.1425C14.177 13.1965 14.1175 13.2573 14.0625 13.3217V12.042C14.2168 12.0248 14.4232 11.9978 14.6466 11.9576C14.8786 11.9158 15.1396 11.8579 15.3839 11.7778C15.6172 11.7012 15.8859 11.5884 16.0945 11.4134C16.3028 11.2386 16.4603 10.9941 16.5761 10.7779C16.6973 10.5518 16.7996 10.3052 16.881 10.0842C17.0335 9.67033 17.1269 9.3069 17.1405 9.25273C17.174 9.1242 17.1617 8.98498 17.1002 8.86095C16.9991 8.65699 16.7851 8.53408 16.558 8.54955L16.5571 8.5496L16.5557 8.54972L16.5513 8.55006L16.5363 8.55112C16.5236 8.55214 16.5056 8.55354 16.4829 8.55551C16.4375 8.55945 16.3731 8.56547 16.2946 8.57407C16.1383 8.59117 15.9231 8.61874 15.6894 8.66081C15.4574 8.70261 15.1963 8.76049 14.9521 8.84064C14.7188 8.9172 14.4501 9.02998 14.2415 9.20503C14.0332 9.37969 13.8758 9.62415 13.76 9.84015C13.7106 9.93229 13.6643 10.0279 13.6213 10.1237C13.5772 9.96756 13.5048 9.72776 13.4092 9.46817C13.3278 9.24727 13.2256 9.00079 13.1043 8.77466C12.9885 8.55866 12.8311 8.31426 12.6229 8.13954C12.4143 7.96455 12.1456 7.85177 11.9122 7.77516C11.668 7.69506 11.407 7.63712 11.175 7.59538C10.9412 7.55331 10.726 7.52569 10.5697 7.50859C10.4912 7.50004 10.4269 7.49402 10.3814 7.49008C10.3587 7.48811 10.3407 7.48665 10.328 7.48569L10.313 7.48457L10.3086 7.48423L10.3065 7.48412C10.0793 7.46859 9.86496 7.59167 9.76393 7.7958C9.70262 7.91983 9.69036 8.05882 9.72382 8.1873C9.73744 8.24147 9.83092 8.6049 9.98336 9.01879C10.0648 9.23974 10.167 9.48634 10.2882 9.71252C10.4041 9.92863 10.5616 10.1732 10.7698 10.3479C10.9784 10.523 11.2472 10.6357 11.4805 10.7123C11.7247 10.7925 11.9857 10.8503 12.2177 10.8921C12.4516 10.9342 12.6668 10.9618 12.823 10.9789C12.8656 10.9835 12.904 10.9874 12.9375 10.9907V12.435C12.8487 12.305 12.7444 12.1792 12.6229 12.0772C12.4143 11.9022 12.1456 11.7894 11.9122 11.7128C11.668 11.6327 11.407 11.5748 11.175 11.533C10.9412 11.4909 10.726 11.4634 10.5697 11.4463C10.4912 11.4376 10.4269 11.4316 10.3814 11.4277C10.3587 11.4257 10.3407 11.4243 10.328 11.4233L10.313 11.4222L10.3086 11.4219L10.3065 11.4217C10.0793 11.4063 9.86496 11.5293 9.76393 11.7335C9.70262 11.8574 9.69036 11.9965 9.72382 12.1249C9.73744 12.1791 9.83092 12.5426 9.98336 12.9565C10.0648 13.1774 10.167 13.424 10.2882 13.6502C10.4041 13.8663 10.5616 14.1108 10.7698 14.2856C10.9784 14.4606 11.2472 14.5734 11.4805 14.6499C11.7247 14.7301 11.9857 14.788 12.2177 14.8297C12.4516 14.8718 12.6668 14.8994 12.823 14.9165C12.8656 14.9212 12.904 14.9251 12.9375 14.9283V19.4068C12.6547 19.1739 12.3621 18.9362 12.0633 18.6933L12.0605 18.6911C8.62397 15.8983 4.35881 12.4321 4.50359 8.04622C4.55757 6.49401 5.34023 5.00562 6.6087 4.12905C8.98369 2.48546 11.9164 3.78958 13.4997 5.67056C15.083 3.78958 18.0158 2.47633 20.3908 4.12905C21.6592 5.00562 22.4419 6.49401 22.4959 8.04622C22.6536 12.4839 18.2583 16.0282 14.7862 18.8281C14.5396 19.0268 14.2978 19.2219 14.0625 19.4132Z" fill="#4D6EFF" />
+                          <path d="M11.2788 9.18113C11.2048 9.04309 11.135 8.88357 11.0723 8.72095C11.2429 8.75447 11.4118 8.79537 11.5604 8.84408C11.7481 8.90573 11.8548 8.96451 11.8987 9.00135C11.9425 9.03808 12.0187 9.13258 12.1118 9.30623C12.1857 9.44421 12.2555 9.60385 12.3184 9.76658C12.1477 9.73305 11.9788 9.69216 11.8302 9.64339C11.6425 9.5818 11.5358 9.52296 11.4919 9.48617C11.4481 9.44939 11.3719 9.35483 11.2788 9.18113Z" fill="#4D6EFF" />
+                          <path d="M14.5449 10.8323C14.7156 10.7987 14.8844 10.7578 15.033 10.7091C15.2208 10.6475 15.3274 10.5887 15.3713 10.5518C15.4151 10.5151 15.4914 10.4206 15.5845 10.2468C15.6584 10.1088 15.7282 9.94924 15.791 9.78662C15.6203 9.82015 15.4514 9.86104 15.3029 9.90981C15.1151 9.9714 15.0085 10.0302 14.9645 10.0671C14.9208 10.1038 14.8446 10.1983 14.7515 10.3719C14.6775 10.5099 14.6077 10.6696 14.5449 10.8323Z" fill="#4D6EFF" />
+                          <path d="M14.5449 14.7698C14.7156 14.7362 14.8844 14.6953 15.033 14.6466C15.2208 14.585 15.3274 14.5262 15.3713 14.4893C15.4151 14.4526 15.4914 14.3581 15.5845 14.1843C15.6584 14.0463 15.7282 13.8867 15.791 13.7241C15.6203 13.7576 15.4514 13.7985 15.3029 13.8473C15.1151 13.9089 15.0085 13.9677 14.9645 14.0046C14.9208 14.0413 14.8446 14.1358 14.7515 14.3094C14.6775 14.4474 14.6077 14.6071 14.5449 14.7698Z" fill="#4D6EFF" />
+                          <path d="M11.2788 13.1186C11.2048 12.9806 11.135 12.8211 11.0723 12.6584C11.2429 12.692 11.4118 12.7329 11.5604 12.7816C11.7481 12.8432 11.8548 12.9021 11.8987 12.9389C11.9425 12.9756 12.0187 13.0701 12.1118 13.2437C12.1857 13.3818 12.2555 13.5413 12.3184 13.7041C12.1477 13.6706 11.9788 13.6297 11.8302 13.5809C11.6425 13.5193 11.5358 13.4605 11.4919 13.4237C11.4481 13.3869 11.3719 13.2924 11.2788 13.1186Z" fill="#4D6EFF" />
+                          <path d="M5.72473 20.2538C5.50576 19.9543 5.2729 19.7191 5.03823 19.4821L4.12943 18.3855C4.0571 18.2675 3.98369 18.1541 3.91253 18.0441C3.65555 17.6471 3.42779 17.2952 3.38538 16.9354C3.33123 16.4759 3.49927 13.7199 3.64853 13.3028C3.79778 12.8857 4.65863 12.652 4.95603 13.5855C5.10277 14.0462 5.14911 14.6387 5.19115 15.176C5.2343 15.7276 5.27291 16.2212 5.41094 16.4543C5.68344 16.9145 6.56117 18.0588 6.56117 18.0588L5.80404 16.6265C5.80404 16.6265 5.68856 16.4282 5.74926 16.0518C5.81001 15.6755 6.26676 15.1488 6.48135 15.5671C6.696 15.9854 7.07108 16.3625 7.07108 16.3625L8.3961 17.9536C8.3961 17.9536 8.82782 18.5118 8.83969 18.818C8.84807 19.0358 8.94482 19.8191 9 20.2538V20.8125H5.72473V20.2538Z" fill="#4D6EFF" />
+                          <path d="M9 23.0625C9 23.3732 8.74817 23.625 8.4375 23.625H6.1875C5.87683 23.625 5.625 23.3732 5.625 23.0625V21.9375C5.625 21.6268 5.87683 21.375 6.1875 21.375H8.4375C8.74817 21.375 9 21.6268 9 21.9375V23.0625Z" fill="#4D6EFF" />
+                          <path d="M21.2476 20.2538C21.4658 19.9543 21.6979 19.7191 21.9318 19.4821C22.2397 19.1701 22.5508 18.8549 22.8376 18.3855C22.9097 18.2675 22.9829 18.1541 23.0538 18.0442C23.3099 17.6471 23.5369 17.2952 23.5792 16.9354C23.6332 16.4759 23.6668 13.7199 23.5181 13.3028C23.3693 12.8857 22.5114 12.652 22.2149 13.5855C22.0687 14.0462 22.0225 14.6387 21.9806 15.176C21.9376 15.7276 21.8991 16.2212 21.7615 16.4543C21.49 16.9145 20.6151 18.0588 20.6151 18.0588L21.3697 16.6265C21.3697 16.6265 21.4848 16.4282 21.4243 16.0518C21.3638 15.6755 20.9086 15.1488 20.6947 15.5671C20.4808 15.9854 20.1069 16.3625 20.1069 16.3625L18.7863 17.9536C18.7863 17.9536 18.356 18.5118 18.3442 18.818C18.3403 18.9203 18.2762 19.1473 18.2037 19.4043C18.1219 19.6946 18.0292 20.0233 18 20.2538V20.8125H21.2476V20.2538Z" fill="#4D6EFF" />
+                          <path d="M18 23.0625C18 23.3732 18.2518 23.625 18.5625 23.625H20.8125C21.1232 23.625 21.375 23.3732 21.375 23.0625V21.9375C21.375 21.6268 21.1232 21.375 20.8125 21.375H18.5625C18.2518 21.375 18 21.6268 18 21.9375V23.0625Z" fill="#4D6EFF" />
+                        </svg>
+                      </div>
+                      <div class="review-card__bottom">
+                        <h4 class="review-card__service">Emotionale Balance und Wohlbefinden</h4>
+                        <p class="review-card__text">Atemtherapie hilft, sich emotional besser zu fühlen.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+  
+                <div class="swiper-slide">
+                  <div class="review-card">
+                    <div class="review-card__inner">
+                      <div class="review-card__header">
+                        <svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M11.4792 1.1875C10.6035 1.1875 9.89583 1.89514 9.89583 2.77083V6.72917C9.89583 7.60486 10.6035 8.3125 11.4792 8.3125C12.3549 8.3125 13.0625 7.60486 13.0625 6.72917V2.77083C13.0625 1.89514 12.3549 1.1875 11.4792 1.1875Z" fill="#4D6EFF" />
+                          <path d="M16.2292 5.14583C15.3535 5.14583 14.6458 5.85347 14.6458 6.72917V7.91667C14.6458 8.13528 14.8231 8.3125 15.0417 8.3125H16.2292C17.1049 8.3125 17.8125 7.60486 17.8125 6.72917C17.8125 5.85347 17.1049 5.14583 16.2292 5.14583Z" fill="#4D6EFF" />
+                          <path d="M7.52083 10.6875C6.64514 10.6875 5.9375 11.3951 5.9375 12.2708V16.2292C5.9375 17.1049 6.64514 17.8125 7.52083 17.8125C8.39653 17.8125 9.10417 17.1049 9.10417 16.2292V12.2708C9.10417 11.3951 8.39653 10.6875 7.52083 10.6875Z" fill="#4D6EFF" />
+                          <path d="M2.77083 10.6875C1.89514 10.6875 1.1875 11.3951 1.1875 12.2708C1.1875 13.1465 1.89514 13.8542 2.77083 13.8542C3.64653 13.8542 4.35417 13.1465 4.35417 12.2708V11.0833C4.35417 10.8647 4.17695 10.6875 3.95833 10.6875H2.77083Z" fill="#4D6EFF" />
+                          <path d="M12.2708 9.89583C11.3951 9.89583 10.6875 10.6035 10.6875 11.4792C10.6875 12.3549 11.3951 13.0625 12.2708 13.0625H16.2292C17.1049 13.0625 17.8125 12.3549 17.8125 11.4792C17.8125 10.6035 17.1049 9.89583 16.2292 9.89583H12.2708Z" fill="#4D6EFF" />
+                          <path d="M11.0833 14.6458C10.8647 14.6458 10.6875 14.8231 10.6875 15.0417V16.2292C10.6875 17.1049 11.3951 17.8125 12.2708 17.8125C13.1465 17.8125 13.8542 17.1049 13.8542 16.2292C13.8542 15.3535 13.1465 14.6458 12.2708 14.6458H11.0833Z" fill="#4D6EFF" />
+                          <path d="M2.77083 5.9375C1.89514 5.9375 1.1875 6.64514 1.1875 7.52083C1.1875 8.39653 1.89514 9.10417 2.77083 9.10417H6.72917C7.60486 9.10417 8.3125 8.39653 8.3125 7.52083C8.3125 6.64514 7.60486 5.9375 6.72917 5.9375H2.77083Z" fill="#4D6EFF" />
+                          <path d="M6.72917 1.1875C5.85347 1.1875 5.14583 1.89514 5.14583 2.77083C5.14583 3.64653 5.85347 4.35417 6.72917 4.35417H7.91667C8.13528 4.35417 8.3125 4.17695 8.3125 3.95833V2.77083C8.3125 1.89514 7.60486 1.1875 6.72917 1.1875Z" fill="#4D6EFF" />
+                        </svg>
+                      </div>
+                      <div class="review-card__bottom">
+                        <h4 class="review-card__service">Gefühl:</h4>
+                        <p class="review-card__text">Die Behandlung ist völlig schmerzfrei und fühlt sich an wie eine wohltuende, warme Tiefengewebsmassage.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>  
+              </div>
+            </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+    <section class="section-future" data-aos="fade-up" data-aos-duration="900">
+    <div class="future__inner">
+
+      <div class="future__left">
+        <h2 class="future__title">Die Atemtherapie</h2>
+        <span class="future__sub">Sie kennen sicher das Gefühl, tief durchzuatmen, wenn Sie gestresst sind. Das ist ein kleiner Teil der Atemtherapie.</span>
+      </div>
+      <img src="./assets/img/breathing-therapy-left.png" alt="therapy" class="future__img--mobile">
+
+      <div class="future__right">
+
+        <div class="future__card future__card--first">
+          <div class="future__card-header">
+            <span class="future__item-num">/01</span>
+          </div>
+          <div class="future__card-bottom">
+            <h3 class="future__card-title">Was genau ist Atemtherapie?</h3>
+            <p class="future__card-text">
+              Bei der Atemtherapie lernen Sie, durch spezielle Übungen besser und tiefer zu atmen. Das kann helfen, sich zu entspannen und mehr Energie zu haben.
+            </p>
+          </div>
+        </div>
+
+        <div class="future__card future__card--second">
+          <div class="future__card-header">
+            <span class="future__item-num">/02</span>
+          </div>
+          <div class="future__card-bottom">
+            <h3 class="future__card-title">Und was ist mit Physiotherapie?</h3>
+            <p class="future__card-text">
+              Physiotherapie ist eine Art Training für den Körper. Wenn man sich verletzt hat oder Schmerzen hat, hilft ein Physiotherapeut mit Übungen und Techniken, damit es einem wieder besser geht.
+            </p>
+          </div>
+        </div>
+
+        <div class="future__card future__card--third">
+          <div class="future__card-header">
+            <span class="future__item-num">/03</span>
+          </div>
+          <div class="future__card-bottom">
+            <h3 class="future__card-title">Wie hängen die beiden zusammen?</h3>
+            <p class="future__card-text">
+              Stellen Sie sich vor, Ihr Körper ist wie eine Maschine. Wenn ein Teil nicht richtig funktioniert, beeinflusst das auch andere Teile. Wenn Sie zum Beispiel Probleme mit Ihrer Atmung haben, kann das Ihren Rücken oder Ihre Schultern beeinflussen. Umgekehrt können körperliche Probleme auch Ihre Atmung beeinträchtigen. Deshalb arbeiten Atemtherapie und Physiotherapie oft Hand in Hand, um Ihnen zu helfen, sich rundum besser zu fühlen.
+            </p>
+          </div>
+        </div>
+
+        <div class="future__card future__card--fourth">
+          <div class="future__card-header">
+            <span class="future__item-num">/04</span>
+          </div>
+          <div class="future__card-bottom">
+            <h3 class="future__card-title">Kurz gesagt:</h3>
+            <p class="future__card-text future__card-text--last">
+              Atemtherapie und Physiotherapie sind wie zwei Freunde, die zusammenarbeiten, um Ihnen zu helfen, sich von Kopf bis Fuß gut zu fühlen.
+            </p>
+            <p class="future__card-text future__card-text--bold">
+              Wir fördern Ihre persönliche Entwicklung und bieten Ihnen Möglichkeiten, sich weiterzubilden und zu wachsen.
+            </p>
+            <p class="future__card-text future__card-text--mobile">
+              Unsere Physiopraxis in Leinfelden-Echterdingen ist immer für Sie da und freut sich auf Ihren Besuch.
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+    <section class="section-faq" data-aos="fade-up" data-aos-duration="900">
+    <div class="container faq__container">
+      <span class="faq__label faq__label--bold">
+        Der erste Schritt:
+      </span>
+      <h2 class="section-title faq__title">Ihre Gesundheit im Mittelpunkt</h2>
+      <span class="faq__label">
+        In 7 Schritten begleiten wir Sie auf dem Weg zu dauerhaft mehr Gesundheit und Wohlbefinden.
+      </span>
+    </div>
+      <div class="faq__list" data-static>
+        <div class="faq__row faq__row--short">
+          <span class="faq__question">Anamnese</span>
+          <div class="faq__right">
+            <p class="faq__answer">Wir erfassen Ihre Krankengeschichte, Beschwerden und individuellen Bedürfnisse.</p>
+            <span class="faq__number">/01</span>
+          </div>
+        </div>
+
+        <div class="faq__row">
+          <span class="faq__question">Untersuchung</span>
+          <div class="faq__right">
+            <p class="faq__answer">Gründliche Untersuchung, um die genaue Ursache der Beschwerden zu identifizieren.</p>
+            <span class="faq__number">/02</span>
+          </div>
+        </div>
+
+        <div class="faq__row">
+          <span class="faq__question">Behandlungsplan</span>
+          <div class="faq__right">
+            <p class="faq__answer faq__answer-3">Wir erstellen einen individuellen Behandlungsplan für Sie basierend auf den Untersuchungsergebnissen.</p>
+            <span class="faq__number">/03</span>
+          </div>
+        </div>
+
+        <div class="faq__row">
+          <span class="faq__question">Behandlung</span>
+          <div class="faq__right">
+            <p class="faq__answer faq__answer-4">Verschiedene therapeutische Interventionen, wie manuelle Techniken, Bewegungsübungen, Massagen oder physikalische Therapie.</p>
+            <span class="faq__number">/04</span>
+          </div>
+        </div>
+
+        <div class="faq__row">
+          <span class="faq__question">Kontrolle</span>
+          <div class="faq__right">
+            <p class="faq__answer">Überwachung des Fortschritts des Patienten und Anpassung des Behandlungsplans bei Bedarf.</p>
+            <span class="faq__number">/05</span>
+          </div>
+        </div>
+
+        <div class="faq__row faq__row--short">
+          <span class="faq__question">Hilfe</span>
+          <div class="faq__right">
+            <p class="faq__answer">Bereitstellung von Übungen und Empfehlungen für die Selbsthilfe zu Hause.</p>
+            <span class="faq__number">/06</span>
+          </div>
+        </div>
+
+        <div class="faq__row faq__row--short">
+          <span class="faq__question">Unterstützung</span>
+          <div class="faq__right">
+            <p class="faq__answer">Vereinbarung von regelmäßigen Folgeterminen zur Überprüfung des Fortschritts und möglichen weiteren Behandlungen.</p>
+            <span class="faq__number">/07</span>
+          </div>
+        </div>
+
+      </div>
+  </section>
+    <section class="section-faq-accordion" data-aos="fade-up" data-aos-duration="900">
+    <div class="container faq__container-accordion">
+      <h2 class="section-title faq__title-accordion">Fragen und Antworten</h2>
+      <p class="faq__text-accordion">In unseren Einrichtungen in angenehmster Atmosphäre in Leinfelden-Echterdingen bieten wir Ihnen ein umfassendes Angebot an atemtherapeutischen Behandlungen. Hier finden Sie Antworten auf Ihre Fragen.</p>
+      <p class="faq__text-accordion faq__text-accordion--mobile">Vereinbarung von regelmäßigen Folgeterminen zur Überprüfung des Fortschritts und möglichen weiteren Behandlungen.</p>
+    </div>
+      <div class="faq__list-accordion">
+
+        <div class="faq__row-accordion faq__row-accordion--first">
+          <span class="faq__question-accordion">Was unterscheidet PneumaFit von anderen <br> Physiopraxen in Stuttgart und Umgebung?</span>
+          <div class="faq__right-accordion">
+            <p class="faq__answer-accordion">Pneumafit legt besonderen Wert auf Fachkenntnis, Professionalität und Achtsamkeit für Körper und Geist. Die Praxis bietet nicht nur traditionelle Physiotherapie an, sondern auch spezialisierte Dienstleistungen wie Atemtherapie und Sporttherapie, um das volle Potenzial jedes Einzelnen zu entfalten.</p>
+            <span class="faq__number-accordion">/01</span>
+          </div>
+        </div>
+
+        <div class="faq__row-accordion faq__row-accordion--second">
+          <span class="faq__question-accordion">Ich habe von der ,,Achtsamkeit für Körper und Geist'' gehört. Wie integriert PneumaFit diesen Ansatz in die Atemtherapie?</span>
+          <div class="faq__right-accordion">
+            <p class="faq__answer-accordion">Bei Pneumafit steht der Mensch in seiner Einzigartigkeit im Mittelpunkt. Durch die Kombination von Atemtherapie mit Achtsamkeit wird nicht nur die physische, sondern auch die mentale Gesundheit gefördert. Dieser ganzheitliche Ansatz hilft den Patienten, sich sowohl körperlich als auch geistig zu regenerieren.</p>
+            <span class="faq__number-accordion">/02</span>
+          </div>
+        </div>
+
+        <div class="faq__row-accordion faq__row-accordion--third">
+          <span class="faq__question-accordion">Neben Atemtherapie bietet die Physiopraxis PneumaFit auch Sporttherapie und Beautytherapie an. Wie hängen diese Therapieformen zusammen und wie können sie gemeinsam mein Wohlbefinden steigern?</span>
+          <div class="faq__right-accordion">
+            <p class="faq__answer-accordion">Alle Therapieformen bei Pneumafit zielen darauf ab, das Wohlbefinden und die Lebensqualität zu verbessern. Während die Atemtherapie sich auf die Atmung und Entspannung konzentriert, fokussiert sich die Sporttherapie auf Fitness und Rehabilitation. Die Beautytherapie bietet zusätzliche Dienstleistungen, um das äußere Erscheinungsbild zu verbessern. Die Kombination dieser Therapien bietet einen ganzheitlichen Ansatz zur Gesundheitsförderung.</p>
+            <span class="faq__number-accordion">/03</span>
+          </div>
+        </div>
+      </div>
+  </section>
+    <section class="section-contact" data-aos="fade-up" data-aos-duration="900">
+    <div class="section-contact__wrap">
+      <img class="section-contact__video" src="assets/img/atemtherapie-footer.png" alt="" aria-hidden="true">
+
+      <div class="section-contact__inner">
+        <span class="section-contact-mobile-text">
+          Heilpraktische Verfahren und T Shape 2 gehören zur Komplementärmedizin/Ästhetik. 
+        </span>
+        <div class="section-contact__left">
+
+          <div class="section-contact__bottom">
+            <h2 class="section-contact__title section-title">Kontakt &amp; Terminanfrage</h2>
+            <p class="section-contact__subtitle">Für einen Termin oder weitere Fragen nehmen Sie gerne Kontakt auf</p>
+            <form class="section-contact__form">
+              <input type="tel" class="section-contact__input" placeholder="+1 (000)-000-00-00">
+              <button type="submit" class="section-contact__btn">
+                Ich will diesen guten Muskeltonus
+                <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M7.5 4.375L10.625 7.49999L7.5 10.6249" stroke="#F1F1F1" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round" />
+                  <path d="M0.625 0.625V4.99999C0.625 5.66303 0.888388 6.29891 1.35723 6.76774C1.82607 7.23658 2.46194 7.49997 3.12498 7.49997H10.6249" stroke="#F1F1F1" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+              </button>
+            </form>
+            <span class="section-contact__privacy">durch Klicken auf die Schaltfläche stimmen Sie der <a href="#">Datenschutzrichtlinie zu</a></span>
+          </div>
+        </div>
+
+        <div class="section-contact__right">
+          <span class="section-contact__brand">PneumaFit</span>
+          <div class="section-contact__divider"></div>
+          <p class="section-contact__brand-desc">Durch gezielte, sanfte Impulse werden <br class="mobile-hidden">Selbstheilungskräfte aktiviert und das Wohlbefinden <br class="mobile-hidden">nachhaltig gefördert.</p>
+        </div>
+
+      </div>
+    </div>
+      <div class="rl-contact__mobile">
+      <h2 class="rl-contact__title">Kontakt</h2>
+      <p class="rl-contact__text">Für einen Termin oder weitere Fragen nehmen Sie gerne Kontakt auf</p>
+
+      <form class="section-contact__form rl-contact__form">
+        <input type="tel" class="section-contact__input" placeholder="+1 (000)-000-00-00">
+        <button type="submit" class="section-contact__btn">
+          Ich will diesen guten Muskeltonus
+          <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <path d="M7.5 4.375L10.625 7.49999L7.5 10.6249" stroke="#F1F1F1" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M0.625 0.625V4.99999C0.625 5.66303 0.888388 6.29891 1.35723 6.76774C1.82607 7.23658 2.46194 7.49997 3.12498 7.49997H10.6249" stroke="#F1F1F1" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </button>
+      </form>
+      <span class="section-contact__privacy">durch Klicken auf die Schaltfläche stimmen Sie der <a href="#">Datenschutzrichtlinie zu</a></span>
+      <div class="section-contact-brand-wrapper">
+        <span class="section-contact__brand">PneumaFit</span>
+        <p class="section-contact__brand-desc">Durch gezielte, sanfte Impulse werden Selbstheilungskräfte aktiviert und das Wohlbefinden nachhaltig gefördert.</p>
+      </div>
+      </div>
+  </section>
+    <footer class="footer">
+    <div class="footer__content">
+
+      <nav class="footer__nav">
+        <div class="footer__nav-col">
+          <div class="footer__nav-group">
+            <h4 class="footer__nav-title">Leistungen</h4>
+            <div class="footer__nav-links">
+              <a href="#" class="footer__nav-link">Physiotherapie</a>
+              <a href="#" class="footer__nav-link">Atemtherapie</a>
+              <a href="#" class="footer__nav-link">Sporttherapie</a>
+              <a href="#" class="footer__nav-link">CMD-Behandlung</a>
+              <a href="#" class="footer__nav-link">T-Shape 2</a>
+              <a href="#" class="footer__nav-link">ReLounge</a>
+            </div>
+          </div>
+          <div class="footer__nav-group">
+            <h4 class="footer__nav-title"><span class="mobile-hidden">Nutzungsbedingungen</span><span class="mobile-only">Datenschutz</span> <br>der Website</h4>
+            <div class="footer__nav-links">
+              <a href="#" class="footer__nav-link">Datenschutz</a>
+            </div>
+          </div>
+        </div>
+        <div class="footer__nav-col">
+          <div class="footer__nav-group">
+            <h4 class="footer__nav-title">Über uns</h4>
+            <div class="footer__nav-links">
+              <a href="#" class="footer__nav-link">Über uns und das Team</a>
+              <a href="#" class="footer__nav-link">Karriere</a>
+            </div>
+          </div>
+          <div class="footer__nav-group footer__nav-group--right">
+            <h4 class="footer__nav-title">Social networks</h4>
+            <div class="footer__nav-links">
+              <a href="#" class="footer__nav-link">Instagram</a>
+              <a href="#" class="footer__nav-link">Telegram</a>
+              <a href="#" class="footer__nav-link">WhatsApp</a>
+            </div>
+          </div>
+        </div>
+      </nav>
+
+      <div class="footer__divider"></div>
+
+      <div class="footer__bottom">
+        <button class="footer__scroll-top" id="scrollTop" aria-label="Nach oben">
+          <svg width="12" height="15" viewBox="0 0 12 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M5.95948 14.4189V0.918946M0.459473 6.41895L5.95948 0.918946L11.4595 6.41895" stroke="white" stroke-width="1.3"/>
+          </svg>
+        </button>
+        <div class="footer__email-info">
+          <span class="footer__email-label">e-mail</span>
+          <a href="mailto:Support@PneumaFit.com" class="footer__email">Support@PneumaFit.com</a>
+        </div>
+      </div>
+
+      <div class="footer__legal">
+        <span>PneumaFit. All rights reserved</span>
+        <span>© 2026</span>
+      </div>
+
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/@studio-freight/lenis@1.0.42/dist/lenis.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

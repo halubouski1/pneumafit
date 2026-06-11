@@ -895,6 +895,7 @@
     justify-content: space-between;
     padding: 18px 16px;
     cursor: pointer;
+    gap: 20px;
   }
 
   .faq__acc-left {
@@ -905,6 +906,7 @@
 
   .faq__question {
     width: auto;
+    flex-shrink: 1;
     font-size: 18px;
     transition: color 0.3s ease;
   }
