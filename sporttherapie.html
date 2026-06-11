@@ -1,0 +1,615 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script>document.documentElement.style.setProperty("--fixed-vh", window.innerHeight + "px");</script>
+  <title>Osteopathie | PneumaFit</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/media.css">
+  <link rel="stylesheet" href="css/sporttherapie.css">
+  <link rel="stylesheet" href="css/media-sporttherapie.css">
+</head>
+<body class="osteopathy-page">
+
+  <section class="osteopathy-hero">
+    <div class="osteopathy-hero__overlay"></div>
+
+    <div class="container osteopathy-hero__container">
+      <header class="header">
+        <a href="index.html" class="header__logo">
+          <img src="assets/img/logo.svg" alt="Manual Therapist Logo">
+        </a>
+        <nav class="header__nav">
+          <a href="index.html" class="header__nav-link header__nav-link--active">Home</a>
+          <a href="index.html#therapies" class="header__nav-link">Leistungen</a>
+          <a href="osteopathie.html" class="header__nav-link">Heilpraktiker/Osteopathie</a>
+          <a href="index.html#services" class="header__nav-link">T-Shape</a>
+          <a href="index.html#services" class="header__nav-link">ReLounge</a>
+          <a href="index.html#about" class="header__nav-link">Über uns</a>
+          <a href="index.html#contact" class="header__nav-link">Karriere</a>
+        </nav>
+        <div class="header__actions">
+          <a href="index.html#about" class="header__btn-outline">Über uns</a>
+          <a href="index.html#contact" class="header__btn-link header__btn-link--contact">Contact us
+            <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <path d="M7.5 4.37512L10.625 7.50011L7.5 10.6251" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M0.625 0.625V4.99999C0.625 5.66303 0.888388 6.29891 1.35723 6.76774C1.82607 7.23658 2.46194 7.49997 3.12498 7.49997H10.6249" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </a>
+          <button class="header__burger" type="button" aria-label="Menu" aria-controls="mobileMenu" aria-expanded="false">
+            <svg width="21" height="9" viewBox="0 0 21 9" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <rect width="21" height="1" fill="white" />
+              <rect y="4" width="21" height="1" fill="white" />
+              <rect y="8" width="21" height="1" fill="white" />
+            </svg>
+          </button>
+        </div>
+      </header>
+
+      <div class="mobile-menu" id="mobileMenu" aria-hidden="true">
+        <div class="mobile-menu__inner">
+          <div class="mobile-menu__top">
+            <a href="index.html" class="mobile-menu__logo">
+              <img src="assets/img/logo-dark.svg" alt="Manual Therapist Logo">
+            </a>
+            <button class="mobile-menu__close" type="button" aria-label="Close menu">
+              <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                <path d="M1 1L17 17" stroke="black" stroke-width="1.5" stroke-linecap="round"/>
+                <path d="M17 1L1 17" stroke="black" stroke-width="1.5" stroke-linecap="round"/>
+              </svg>
+            </button>
+          </div>
+
+          <nav class="mobile-menu__nav" aria-label="Mobile navigation">
+            <a href="index.html" class="mobile-menu__link">Home</a>
+            <a href="index.html#therapies" class="mobile-menu__link">Leistungen</a>
+            <a href="osteopathie.html" class="mobile-menu__link">Heilpraktiker/Osteopathie</a>
+            <a href="index.html#services" class="mobile-menu__link">T-Shape</a>
+            <a href="index.html#services" class="mobile-menu__link">ReLounge</a>
+            <a href="index.html#about" class="mobile-menu__link">Über uns</a>
+            <a href="index.html#contact" class="mobile-menu__link">Karriere</a>
+          </nav>
+
+          <a href="index.html#contact" class="mobile-menu__cta">
+            Contact us
+            <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <path d="M7.5 4.37512L10.625 7.50011L7.5 10.6251" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M0.625 0.625V4.99999C0.625 5.66303 0.888388 6.29891 1.35723 6.76774C1.82607 7.23658 2.46194 7.49997 3.12498 7.49997H10.6249" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </a>
+        </div>
+      </div>
+
+      <div class="osteopathy-hero__content">
+        <div class="osteopathy-hero__main">
+          <span class="osteopathy-hero__label">
+            in Leinfelden-Echterdingen
+          </span>
+          <h1 class="osteopathy-hero__title">Sporttherapie</h1>
+          <div class="osteopathy-hero__cta-row">
+            <a href="index.html#contact" class="hero__btn hero__btn--primary osteopathy-hero__btn">
+              Jetzt Termin sichern
+              <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                <path d="M7.5 4.37512L10.625 7.50011L7.5 10.6251" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M0.625 0.625V4.99999C0.625 5.66303 0.888388 6.29891 1.35723 6.76774C1.82607 7.23658 2.46194 7.49997 3.12498 7.49997H10.6249" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </a>
+            <p class="osteopathy-hero__subtitle">weil Ihr Wohlbefinden nicht  warten sollte</p>
+          </div>
+        </div>
+
+        <div class="osteopathy-hero__bottom">
+          <div class="osteopathy-hero__cards">
+            <article class="osteopathy-feature">
+              <span class="osteopathy-feature__number">01</span>
+              <p class="osteopathy-feature__text">Ganzheitliche Betreuung für Ihre Gesundheit und Ihr Wohlbefinden.</p>
+            </article>
+            <article class="osteopathy-feature">
+              <span class="osteopathy-feature__number">02</span>
+              <p class="osteopathy-feature__text">Kompetente Betreuung durch erfahrene Spezialisten.</p>
+            </article>
+            <article class="osteopathy-feature">
+              <span class="osteopathy-feature__number">03</span>
+              <p class="osteopathy-feature__text">Flexibel, zuverlässig und auf Ihre Bedürfnisse abgestimmt.</p>
+            </article>
+          </div>
+
+          <a href="#osteopathy-more" class="osteopathy-learn">
+            <svg width="1" height="363" viewBox="0 0 1 363" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <line x1="0.5" y1="2.18557e-08" x2="0.499984" y2="363" stroke="url(#paint0_linear_147_16)"/>
+            <defs>
+            <linearGradient id="paint0_linear_147_16" x1="-0.5" y1="-2.18557e-08" x2="-0.500016" y2="363" gradientUnits="userSpaceOnUse">
+            <stop stop-color="white" stop-opacity="0"/>
+            <stop offset="1" stop-color="white"/>
+            </linearGradient>
+            </defs>
+            </svg>
+            <div class="osteopathy-learn__icon-wrapper">
+              <span class="osteopathy-learn__icon" aria-hidden="true">
+                <svg width="20" height="28" viewBox="0 0 20 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M9.52 27.2C12.0449 27.2 14.4663 26.197 16.2517 24.4117C18.037 22.6263 19.04 20.2049 19.04 17.68V9.52C19.04 6.99514 18.037 4.57369 16.2517 2.78834C14.4663 1.003 12.0449 0 9.52 0C6.99514 0 4.57369 1.003 2.78834 2.78834C1.003 4.57369 0 6.99514 0 9.52V17.68C0 20.2049 1.003 22.6263 2.78834 24.4117C4.57369 26.197 6.99514 27.2 9.52 27.2ZM1.36 9.52C1.36 7.35583 2.21971 5.28031 3.75001 3.75001C5.28031 2.21971 7.35583 1.36 9.52 1.36C11.6842 1.36 13.7597 2.21971 15.29 3.75001C16.8203 5.28031 17.68 7.35583 17.68 9.52V17.68C17.68 19.8442 16.8203 21.9197 15.29 23.45C13.7597 24.9803 11.6842 25.84 9.52 25.84C7.35583 25.84 5.28031 24.9803 3.75001 23.45C2.21971 21.9197 1.36 19.8442 1.36 17.68V9.52Z" fill="white" />
+                  <path d="M8.83995 13.26H8.90115L9.03715 13.4028C9.10037 13.4665 9.17558 13.5171 9.25844 13.5516C9.3413 13.5861 9.43018 13.6039 9.51995 13.6039C9.60972 13.6039 9.6986 13.5861 9.78147 13.5516C9.86433 13.5171 9.93954 13.4665 10.0028 13.4028L10.1388 13.26H10.2V13.1988L14.0828 9.32275L13.1172 8.35716L10.2 11.2812V4.07996H8.83995V11.2812L5.92275 8.35716L4.95715 9.32275L8.83995 13.1988V13.26Z" fill="white" />
+                </svg>
+              </span>
+              <span class="osteopathy-learn__text">Learn More</span>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+      <section class="section-balance" data-aos="fade-up" data-aos-duration="900">
+    <div class="container balance__container">
+      <div class="balance__left-part">
+        <svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path opacity="0.5" d="M9.29088 0.678564C9.38645 -0.22589 10.7029 -0.225889 10.7985 0.678566L11.2873 5.30476C11.3505 5.90233 12.0506 6.19234 12.5178 5.81445L16.1347 2.88889C16.8418 2.31693 17.7727 3.2478 17.2007 3.95492L14.2752 7.5718C13.8973 8.03899 14.1873 8.73914 14.7848 8.80229L19.411 9.29113C20.3155 9.3867 20.3155 10.7031 19.411 10.7987L14.7848 11.2876C14.1873 11.3507 13.8973 12.0508 14.2752 12.518L17.2007 16.1349C17.7727 16.842 16.8418 17.7729 16.1347 17.201L12.5178 14.2754C12.0506 13.8975 11.3505 14.1875 11.2873 14.7851L10.7985 19.4113C10.7029 20.3157 9.38645 20.3157 9.29088 19.4113L8.80204 14.7851C8.7389 14.1875 8.03875 13.8975 7.57156 14.2754L3.95468 17.201C3.24755 17.7729 2.31668 16.842 2.88865 16.1349L5.8142 12.518C6.1921 12.0508 5.90209 11.3507 5.30452 11.2876L0.67832 10.7987C-0.226134 10.7031 -0.226133 9.3867 0.678321 9.29113L5.30452 8.80229C5.90209 8.73914 6.1921 8.03899 5.8142 7.5718L2.88865 3.95492C2.31668 3.2478 3.24755 2.31693 3.95468 2.8889L7.57156 5.81445C8.03875 6.19234 8.7389 5.90233 8.80204 5.30476L9.29088 0.678564Z" fill="#657B8D" />
+        </svg>
+        <h2 class="section-title balance__title">
+          Wiederherstellung, Rehabilitation & Prävention
+        </h2>
+          <p class="balance__desc">
+            Sporttherapie ist von großer Bedeutung, da sie dazu beiträgt, die Beweglichkeit wiederherzustellen und Schmerzen zu lindern, insbesondere nach Verletzungen oder Operationen.        
+          </p>
+      </div>
+      <div class="balance__right-part">
+        <img src="assets/img/restoration-right.jpg" alt="cheropractise" aria-hidden="true" class="balance__image">
+      </div>
+      <div class="balance-centr-part">
+        <span class="balance-centr-part__name">
+          [ Rehabilitation & Prävention ]
+        </span>
+        <p class="balance-centr-part__desc">
+          Sie spielt auch eine wichtige Rolle bei der Rehabilitation von Menschen mit chronischen Erkrankungen, indem sie ihnen hilft, ihre Funktionsfähigkeit zu verbessern und ein selbstständigeres Leben zu führen.
+        </p>
+      </div>
+    </div>
+  </section>
+    <section class="section-for-back" data-aos="fade-up" data-aos-duration="900">
+    <div class="for-back__inner">
+      <div class="for-back__top">
+        <div class="for-back__top-left">
+          <h2 class="for-back__title">Ihre Vorteile bei PneumaFit</h2>
+          <p class="for-back__desc">Viele Körperfunktionen hängen zusammen, oft ist dies jedoch nicht offensichtlich. Deswegen betrachten wir Sie ganzheitlich und tragen dafür Sorge, den Ursprung Ihrer Beschwerden zu finden und zu lösen.</p>
+        </div>
+      </div>
+
+      <img src="assets/img/sporttherapie-cards-bg.jpg" class="for-back__mobile-img" alt="" aria-hidden="true">
+
+      <div class="for-back__cards">
+        <div class="for-back__card for-back__card--1">
+          <span class="for-back__card-title">Umfangreiches Therapieangebot</span>
+        </div>
+        <div class="for-back__card for-back__card--2">
+          <span class="for-back__card-title">Fachkundige therapeutische Betreuung</span>
+        </div>
+        <div class="for-back__card for-back__card--3">
+          <span class="for-back__card-title">Zügige und anpassungsfähige Terminplanung</span>
+        </div>
+        <div class="for-back__card for-back__card--4">
+          <span class="for-back__card-title">Ausgeprägte Expertise und jahrelange Erfahrung</span>
+        </div>
+      </div>
+      <div class="for__back-wrapper">
+        <span class="for__back-brand">
+          PneumaFit
+        </span>
+        <p class="for-back__note">Bei PneumaFit in Leinfelden-Echterdingen erhalten Sie deshalb eine Rundum-Physiotherapie.</p>
+      </div>
+    </div>
+  </section>
+    <section class="section-therapies" data-aos="fade-up" data-aos-duration="900">
+    <div class="therapies__desktop-layout">
+    <div class="therapies__body">
+
+      <div class="therapies__left-area">
+
+        <img src="assets/img/relounge-bg-card-1.svg" class="therapy-bg therapy-bg--active" data-idx="0" aria-hidden="true">
+        <img src="assets/img/relounge-bg-card-2.svg" class="therapy-bg" data-idx="1" aria-hidden="true">
+
+        <div class="therapies__tabs">
+          <button class="therapy-tab therapy-tab--active" data-index="0">[ Sportlich aktiv sein ]</button>
+          <button class="therapy-tab" data-index="1">[ Ziele der Sporttherapie ]</button>
+        </div>
+
+        <div class="therapies__card-content therapies__card-content--first therapy-content--active" data-idx="0">
+          <img src="assets/img/sporttherapie-slider-left-card.png" class="therapy-card__swirls" aria-hidden="true">
+          <div class="therapy-card__body">
+            <div class="therapy-card__body--wrapper">
+              <h3 class="therapy-card__title">Sportlich aktiv sein, nur ohne Beschwerden</h3>
+              <p class="therapy-card__text">Unser Ziel ist klar: Wir möchten, dass Sie Ihren Sport und jede Bewegung ohne Schmerzen genießen und sich dabei fit fühlen können.</p>
+            </div>
+              <p class="therapy-card__text therapy-card__text--bottom">Unsere Physiopraxis in Leinfelden-Echterdingen ist immer für Sie da und freut sich auf Ihren Besuch.</p>
+          </div>
+        </div>
+
+        <div class="therapies__card-content therapies__card-content--second" data-idx="1">
+          <img src="assets/img/sporttherapie-slider-left-card.png" class="therapy-card__swirls" aria-hidden="true">
+          <div class="therapy-card__body">
+            <div class="therapy-card__body--wrapper">
+              <h3 class="therapy-card__title">Ziele der Sporttherapie</h3>
+              <div class="therapy-card__text-wrapper">
+                <p class="therapy-card__text">Viele Menschen in Stuttgart suchen eine Sporttherapie aufgrund von Schulterschmerzen oder Nackenverspannungen, die nach einem anstrengenden Arbeitstag auftreten.</p>
+                <p class="therapy-card__text">Bei unserer Sporttherapie in Stuttgart werden Sie individuell betreut und machen Übungen, die genau auf Ihre Bedürfnisse und Beschwerden abgestimmt sind. Außerdem haben Sie die Möglichkeit, Ihre Sporttherapie mit Hilfe von Video-Anleitungen zu unterstützen.</p>
+              </div>
+            </div>
+            <p class="therapy-card__text therapy-card__text--bottom">Im Prinzip kann jeder von der Sporttherapie profitieren, solange der körperliche Zustand dies erlaubt. Deshalb führen wir vor Beginn der Therapie eine Untersuchung durch, um die körperliche Belastbarkeit der Teilnehmer zu bestimmen.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- RIGHT: title/nav aligned with ear zone + image-only swiper -->
+      <div class="therapies__right-area">
+
+        <div class="therapies__title-nav">
+          <div class="therapies__arrows">
+            <button class="therapies-btn" id="therapiesPrev">
+              <img src="assets/img/Mask group.svg" alt="Zurück" width="13" height="13">
+            </button>
+            <button class="therapies-btn" id="therapiesNext">
+              <img src="assets/img/Mask group.svg" alt="Weiter" width="13" height="13" class="reviews-btn__icon--flip">
+            </button>
+          </div>
+        </div>
+
+        <div class="swiper therapies-swiper">
+          <div class="swiper-wrapper">
+
+            <div class="swiper-slide">
+              <div class="therapy-card__right therapy-card__right--first therapy-card__right--overlay">
+                <img src="assets/img/sporttherapie-slider-card.png" class="therapy-card__img" alt="Das Prinzip">
+                <div class="therapy-overlay-card therapy-overlay-card--tr">
+                  <span class="therapy-overlay-card__tag">[ PneumaFit ]</span>
+                  <div class="therapy-overlay-card__text-wrapper">
+                    <p class="therapy-overlay-card__text">Mit unserer Sport- und Bewegungstherapie möchten wir durch gut durchdachte Bewegungsprogramme für körperliches und seelisches Wohlbefinden sorgen.</p>
+                    <p class="therapy-overlay-card__text">Unsere umfassende Sporttherapie hat den Ruf, Folgeschäden zu verhindern und ein gesundheitsbewusstes Verhalten zu unterstützen.</p>
+                  </div>
+                </div>
+                <div class="therapy-overlay-card therapy-overlay-card--bl">
+                  <span class="therapy-overlay-card__tag">[ PneumaFit ]</span>
+                  <p class="therapy-overlay-card__text">Deshalb beginnen wir mit einer eingehend Anamnese und finden heraus, wo die Ursache der Bewegungsprobleme <br> liegen. Anschließend an die Behandlung geben wir Ihnen Tipps und zeigen Ihnen spezifische Übungen, um diese Probleme nachhaltig zu beheben. So können Sie Ihre gewohnten Aktivitäten wieder bestmöglich ausüben.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="therapy-card__right therapy-card__right--second therapy-card__right--overlay">
+                <img src="assets/img/sporttherapie-slider-card.png" class="therapy-card__img" alt="Fit im Alltag">
+                <div class="therapy-overlay-card therapy-overlay-card--tr">
+                  <span class="therapy-overlay-card__tag">[ PneumaFit ]</span>
+                  <p class="therapy-overlay-card__text">Gemeinsam arbeiten wir daran, Ihre sportlichen Herausforderungen zu meistern. In einem persönlichen Gespräch informieren wir Sie gerne ausführlich über unser Angebot.</p>
+                </div>
+                <div class="therapy-overlay-card therapy-overlay-card--bl">
+                  <span class="therapy-overlay-card__tag">[ PneumaFit ]</span>
+                  <div class="therapy-overlay-card__text-wrapper">
+                    <p class="therapy-overlay-card__text">Uns geht es vor allem darum, ein gutes körperliches Gefühl bei unseren Teilnehmern zu fördern.</p>
+                    <p class="therapy-overlay-card__text">Die genaue Analyse Ihrer körperlichen Probleme bildet die Basis für Ihren individuellen Trainings- & Behandlungsplan, den wir dann gemeinsam durchführen werden.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+    <div class="therapies-pagination"></div>
+    </div><!-- /therapies__desktop-layout -->
+
+    <div class="therapies__tablet-layout">
+
+      <div class="therapies__tl-header">
+        <div class="therapies__arrows">
+          <button class="therapies-btn" id="therapiesTLPrev">
+            <img src="assets/img/Mask group.svg" alt="Zurück" width="13" height="13">
+          </button>
+          <button class="therapies-btn" id="therapiesTLNext">
+            <img src="assets/img/Mask group.svg" alt="Weiter" width="13" height="13" class="reviews-btn__icon--flip">
+          </button>
+        </div>
+      </div>
+
+      <div class="therapies__tl-tabs">
+        <button class="therapy-tl-tab therapy-tl-tab--active" data-index="0">Sportlich aktiv sein</button>
+        <button class="therapy-tl-tab" data-index="1">Ziele der Sporttherapie</button>
+      </div>
+
+      <div class="therapies__tl-content">
+
+        <div class="therapies__tl-panel therapies__tl-panel--first therapies__tl-panel--active" data-idx="0">
+          <div class="therapies__tl-panel-text">
+            <h3 class="therapy-card__title">Sportlich aktiv sein, nur ohne Beschwerden</h3>
+            <p class="therapy-card__text">Unser Ziel ist klar: Wir möchten, dass Sie Ihren Sport und jede Bewegung ohne Schmerzen genießen und sich dabei fit fühlen können.</p>
+          </div>
+          <p class="therapy-card__text">Unsere Physiopraxis in Leinfelden-Echterdingen ist immer für Sie da und freut sich auf Ihren Besuch.</p>
+        </div>
+
+        <div class="therapies__tl-panel therapies__tl-panel--second" data-idx="1">
+          <div class="therapies__tl-panel-text">
+            <h3 class="therapy-card__title">Ziele der Sporttherapie</h3>
+            <p class="therapy-card__text">Viele Menschen in Stuttgart suchen eine Sporttherapie aufgrund von Schulterschmerzen oder Nackenverspannungen, die nach einem anstrengenden Arbeitstag auftreten.</p>
+          </div>
+          <p class="therapy-card__text">Im Prinzip kann jeder von der Sporttherapie profitieren, solange der körperliche Zustand dies erlaubt. Deshalb führen wir vor Beginn der Therapie eine Untersuchung durch, um die körperliche Belastbarkeit der Teilnehmer zu bestimmen.</p>
+        </div>
+
+      </div>
+
+      <div class="therapies__tl-pagination">
+        <span class="tl-dot tl-dot--active" data-idx="0"></span>
+        <span class="tl-dot" data-idx="1"></span>
+      </div>
+
+      <div class="therapies__tl-image">
+        <img src="assets/img/sporttherapie-slider-card.png" class="therapies__tl-img therapies__tl-img--active" data-idx="0" alt="Das Prinzip">
+        <img src="assets/img/sporttherapie-slider-card.png" class="therapies__tl-img" data-idx="1" alt="Fit im Alltag">
+      </div>
+
+      <div class="therapies__tl-chips therapies__tl-chips--active" data-idx="0">
+        <div class="therapies__tl-chip">
+          <span class="therapy-overlay-card__tag">[ PneumaFit ]</span>
+          <span class="therapy-overlay-card__text therapy-overlay-card__text--short">
+              Deshalb beginnen wir mit einer eingehend Anamnese und finden heraus, wo die Ursache der Bewegungsprobleme liegen. Anschließend an die Behandlung geben wir Ihnen Tipps und zeigen Ihnen spezifische Übungen, um diese Probleme nachhaltig zu beheben. So können Sie Ihre gewohnten Aktivitäten wieder bestmöglich ausüben.
+          </span>
+        </div>
+        <div class="therapies__tl-chip">
+          <span class="therapy-overlay-card__tag">[ PneumaFit ]</span>
+          <div class="therapy-overlay-card__text-wrapper">
+            <span class="therapy-overlay-card__text">
+              Mit unserer Sport- und Bewegungstherapie möchten wir durch gut durchdachte Bewegungsprogramme für körperliches und seelisches Wohlbefinden sorgen.
+            </span>
+            <span class="therapy-overlay-card__text">Unsere umfassende Sporttherapie hat den Ruf, Folgeschäden zu verhindern und ein gesundheitsbewusstes Verhalten zu unterstützen.</span>
+          </div>
+        </div>
+      </div>
+      <div class="therapies__tl-chips" data-idx="1">
+        <div class="therapies__tl-chip">
+          <span class="therapy-overlay-card__tag">[ PneumaFit ]</span>
+          <div class="therapy-overlay-card__text-wrapper">
+            <span class="therapy-overlay-card__text">
+              Uns geht es vor allem darum, ein gutes körperliches Gefühl bei unseren Teilnehmern zu fördern.
+            </span>
+            <span class="therapy-overlay-card__text">
+              Die genaue Analyse Ihrer körperlichen Probleme bildet die Basis für Ihren individuellen Trainings- & Behandlungsplan, den wir dann gemeinsam durchführen werden.
+            </span>
+          </div>
+        </div>
+        <div class="therapies__tl-chip">
+          <span class="therapy-overlay-card__tag">[ PneumaFit ]</span>
+          <span class="therapy-overlay-card__text therapy-overlay-card__text--short">
+            Gemeinsam arbeiten wir daran, Ihre sportlichen Herausforderungen zu meistern. In einem persönlichen Gespräch informieren wir Sie gerne ausführlich über unser Angebot.
+          </span>
+        </div>
+      </div>
+
+    </div><!-- /therapies__tablet-layout -->
+
+  </section>
+    <section class="section-faq" data-aos="fade-up" data-aos-duration="900">
+    <div class="container faq__container">
+      <span class="faq__label faq__label--bold">
+        Der erste Schritt:
+      </span>
+      <h2 class="section-title faq__title">Ihre Gesundheit im Mittelpunkt</h2>
+      <span class="faq__label">
+        In 7 Schritten begleiten wir Sie auf dem Weg zu dauerhaft mehr Gesundheit und Wohlbefinden.
+      </span>
+    </div>
+      <div class="faq__list" data-static>
+        <div class="faq__row faq__row--short">
+          <span class="faq__question">Anamnese</span>
+          <div class="faq__right">
+            <p class="faq__answer">Wir erfassen Ihre Krankengeschichte, Beschwerden und individuellen Bedürfnisse.</p>
+            <span class="faq__number">/01</span>
+          </div>
+        </div>
+
+        <div class="faq__row">
+          <span class="faq__question">Untersuchung</span>
+          <div class="faq__right">
+            <p class="faq__answer">Gründliche Untersuchung, um die genaue Ursache der Beschwerden zu identifizieren.</p>
+            <span class="faq__number">/02</span>
+          </div>
+        </div>
+
+        <div class="faq__row">
+          <span class="faq__question">Behandlungsplan</span>
+          <div class="faq__right">
+            <p class="faq__answer faq__answer-3">Wir erstellen einen individuellen Behandlungsplan für Sie basierend auf den Untersuchungsergebnissen.</p>
+            <span class="faq__number">/03</span>
+          </div>
+        </div>
+
+        <div class="faq__row">
+          <span class="faq__question">Behandlung</span>
+          <div class="faq__right">
+            <p class="faq__answer faq__answer-4">Verschiedene therapeutische Interventionen, wie manuelle Techniken, Bewegungsübungen, Massagen oder physikalische Therapie.</p>
+            <span class="faq__number">/04</span>
+          </div>
+        </div>
+
+        <div class="faq__row">
+          <span class="faq__question">Kontrolle</span>
+          <div class="faq__right">
+            <p class="faq__answer">Überwachung des Fortschritts des Patienten und Anpassung des Behandlungsplans bei Bedarf.</p>
+            <span class="faq__number">/05</span>
+          </div>
+        </div>
+
+        <div class="faq__row faq__row--short">
+          <span class="faq__question">Hilfe</span>
+          <div class="faq__right">
+            <p class="faq__answer">Bereitstellung von Übungen und Empfehlungen für die Selbsthilfe zu Hause.</p>
+            <span class="faq__number">/06</span>
+          </div>
+        </div>
+
+        <div class="faq__row faq__row--short">
+          <span class="faq__question">Unterstützung</span>
+          <div class="faq__right">
+            <p class="faq__answer">Vereinbarung von regelmäßigen Folgeterminen zur Überprüfung des Fortschritts und möglichen weiteren Behandlungen.</p>
+            <span class="faq__number">/07</span>
+          </div>
+        </div>
+
+      </div>
+  </section>
+    <section class="section-faq-accordion" data-aos="fade-up" data-aos-duration="900">
+    <div class="container faq__container-accordion">
+      <h2 class="section-title faq__title-accordion">Fragen und Antworten</h2>
+      <p class="faq__text-accordion">In unseren Einrichtungen in angenehmster Atmosphäre in Leinfelden-Echterdingen bieten wir Ihnen ein umfassendes Angebot an atemtherapeutischen Behandlungen. Hier finden Sie Antworten auf Ihre Fragen.</p>
+      <p class="faq__text-accordion faq__text-accordion--mobile">Vereinbarung von regelmäßigen Folgeterminen zur Überprüfung des Fortschritts und möglichen weiteren Behandlungen.</p>
+    </div>
+      <div class="faq__list-accordion">
+
+        <div class="faq__row-accordion faq__row-accordion--first">
+          <span class="faq__question-accordion">Was unterscheidet PneumaFit von anderen <br> Physiopraxen in Stuttgart und Umgebung?</span>
+          <div class="faq__right-accordion">
+            <p class="faq__answer-accordion">Pneumafit legt besonderen Wert auf Fachkenntnis, Professionalität und Achtsamkeit für Körper und Geist. Die Praxis bietet nicht nur traditionelle Physiotherapie an, sondern auch spezialisierte Dienstleistungen wie Atemtherapie und Sporttherapie, um das volle Potenzial jedes Einzelnen zu entfalten.</p>
+            <span class="faq__number-accordion">/01</span>
+          </div>
+        </div>
+
+        <div class="faq__row-accordion faq__row-accordion--second">
+          <span class="faq__question-accordion">Ich habe von der ,,Achtsamkeit für Körper und Geist'' gehört. Wie integriert PneumaFit diesen Ansatz in die Atemtherapie?</span>
+          <div class="faq__right-accordion">
+            <p class="faq__answer-accordion">Bei Pneumafit steht der Mensch in seiner Einzigartigkeit im Mittelpunkt. Durch die Kombination von Atemtherapie mit Achtsamkeit wird nicht nur die physische, sondern auch die mentale Gesundheit gefördert. Dieser ganzheitliche Ansatz hilft den Patienten, sich sowohl körperlich als auch geistig zu regenerieren.</p>
+            <span class="faq__number-accordion">/02</span>
+          </div>
+        </div>
+
+        <div class="faq__row-accordion faq__row-accordion--third">
+          <span class="faq__question-accordion">Neben Atemtherapie bietet die Physiopraxis PneumaFit auch Sporttherapie und Beautytherapie an. Wie hängen diese Therapieformen zusammen und wie können sie gemeinsam mein Wohlbefinden steigern?</span>
+          <div class="faq__right-accordion">
+            <p class="faq__answer-accordion">Alle Therapieformen bei Pneumafit zielen darauf ab, das Wohlbefinden und die Lebensqualität zu verbessern. Während die Atemtherapie sich auf die Atmung und Entspannung konzentriert, fokussiert sich die Sporttherapie auf Fitness und Rehabilitation. Die Beautytherapie bietet zusätzliche Dienstleistungen, um das äußere Erscheinungsbild zu verbessern. Die Kombination dieser Therapien bietet einen ganzheitlichen Ansatz zur Gesundheitsförderung.</p>
+            <span class="faq__number-accordion">/03</span>
+          </div>
+        </div>
+      </div>
+  </section>
+    <section class="section-contact" data-aos="fade-up" data-aos-duration="900">
+    <div class="section-contact__wrap">
+      <img class="section-contact__video" src="assets/img/sporttherapie-footer.png" alt="" aria-hidden="true">
+
+      <div class="section-contact__inner">
+        <div class="section-contact__left">
+          <span class="section-contact__brand">PneumaFit</span>
+          <div class="section-contact__bottom">
+            <h2 class="section-contact__title section-title">Kontakt &amp; Terminanfrage</h2>
+            <p class="section-contact__subtitle">Für einen Termin oder weitere Fragen nehmen Sie gerne Kontakt auf</p>
+            <form class="section-contact__form">
+              <input type="tel" class="section-contact__input" placeholder="+1 (000)-000-00-00">
+              <button type="submit" class="section-contact__btn">
+                Ich will diesen guten Muskeltonus
+                <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M7.5 4.375L10.625 7.49999L7.5 10.6249" stroke="#F1F1F1" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round" />
+                  <path d="M0.625 0.625V4.99999C0.625 5.66303 0.888388 6.29891 1.35723 6.76774C1.82607 7.23658 2.46194 7.49997 3.12498 7.49997H10.6249" stroke="#F1F1F1" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+              </button>
+            </form>
+            <span class="section-contact__privacy">durch Klicken auf die Schaltfläche stimmen Sie der <a href="#">Datenschutzrichtlinie zu</a></span>
+          </div>
+        </div>
+
+        <div class="section-contact__right">
+          <div class="section-contact__divider"></div>
+          <p class="section-contact__brand-desc">Durch gezielte, sanfte Impulse werden <br class="mobile-hidden">Selbstheilungskräfte aktiviert und das Wohlbefinden <br class="mobile-hidden">nachhaltig gefördert.</p>
+        </div>
+
+      </div>
+    </div>
+      <div class="rl-contact__mobile">
+      <h2 class="rl-contact__title">Kontakt</h2>
+      <p class="rl-contact__text">Für einen Termin oder weitere Fragen nehmen Sie gerne Kontakt auf</p>
+
+      <form class="section-contact__form rl-contact__form">
+        <input type="tel" class="section-contact__input" placeholder="+1 (000)-000-00-00">
+        <button type="submit" class="section-contact__btn">
+          Ich will diesen guten Muskeltonus
+          <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <path d="M7.5 4.375L10.625 7.49999L7.5 10.6249" stroke="#F1F1F1" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M0.625 0.625V4.99999C0.625 5.66303 0.888388 6.29891 1.35723 6.76774C1.82607 7.23658 2.46194 7.49997 3.12498 7.49997H10.6249" stroke="#F1F1F1" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </button>
+      </form>
+      <span class="section-contact__privacy">durch Klicken auf die Schaltfläche stimmen Sie der <a href="#">Datenschutzrichtlinie zu</a></span>
+      <div class="section-contact-brand-wrapper">
+        <span class="section-contact__brand">PneumaFit</span>
+        <p class="section-contact__brand-desc">Durch gezielte, sanfte Impulse werden Selbstheilungskräfte aktiviert und das Wohlbefinden nachhaltig gefördert.</p>
+      </div>
+      </div>
+  </section>
+    <footer class="footer">
+    <div class="footer__content">
+
+      <nav class="footer__nav">
+        <div class="footer__nav-col">
+          <div class="footer__nav-group">
+            <h4 class="footer__nav-title">Leistungen</h4>
+            <div class="footer__nav-links">
+              <a href="#" class="footer__nav-link">Physiotherapie</a>
+              <a href="#" class="footer__nav-link">Atemtherapie</a>
+              <a href="#" class="footer__nav-link">Sporttherapie</a>
+              <a href="#" class="footer__nav-link">CMD-Behandlung</a>
+              <a href="#" class="footer__nav-link">T-Shape 2</a>
+              <a href="#" class="footer__nav-link">ReLounge</a>
+            </div>
+          </div>
+          <div class="footer__nav-group">
+            <h4 class="footer__nav-title"><span class="mobile-hidden">Nutzungsbedingungen</span><span class="mobile-only">Datenschutz</span> <br>der Website</h4>
+            <div class="footer__nav-links">
+              <a href="#" class="footer__nav-link">Datenschutz</a>
+            </div>
+          </div>
+        </div>
+        <div class="footer__nav-col">
+          <div class="footer__nav-group">
+            <h4 class="footer__nav-title">Über uns</h4>
+            <div class="footer__nav-links">
+              <a href="#" class="footer__nav-link">Über uns und das Team</a>
+              <a href="#" class="footer__nav-link">Karriere</a>
+            </div>
+          </div>
+          <div class="footer__nav-group footer__nav-group--right">
+            <h4 class="footer__nav-title">Social networks</h4>
+            <div class="footer__nav-links">
+              <a href="#" class="footer__nav-link">Instagram</a>
+              <a href="#" class="footer__nav-link">Telegram</a>
+              <a href="#" class="footer__nav-link">WhatsApp</a>
+            </div>
+          </div>
+        </div>
+      </nav>
+
+      <div class="footer__divider"></div>
+
+      <div class="footer__bottom">
+        <button class="footer__scroll-top" id="scrollTop" aria-label="Nach oben">
+          <svg width="12" height="15" viewBox="0 0 12 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M5.95948 14.4189V0.918946M0.459473 6.41895L5.95948 0.918946L11.4595 6.41895" stroke="white" stroke-width="1.3"/>
+          </svg>
+        </button>
+        <div class="footer__email-info">
+          <span class="footer__email-label">e-mail</span>
+          <a href="mailto:Support@PneumaFit.com" class="footer__email">Support@PneumaFit.com</a>
+        </div>
+      </div>
+
+      <div class="footer__legal">
+        <span>PneumaFit. All rights reserved</span>
+        <span>© 2026</span>
+      </div>
+
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/@studio-freight/lenis@1.0.42/dist/lenis.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
