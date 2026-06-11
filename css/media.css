@@ -438,6 +438,69 @@
 .footer__legal span {
   font-size: 12px;
 }
+
+/* ─── POPUP ─── */
+.popup {
+  border-radius: 20px;
+  max-width: 737px;
+  padding: 60px 0 60px 30px;
+}
+
+.popup__close {
+  top: 20px;
+  right: 20px;
+  padding: 6px;
+}
+
+.popup__title {
+  font-size: 40px;
+  max-width: 450px;
+  padding-bottom: 5px;
+  margin-bottom: 25px;
+}
+
+.popup__form {
+  max-width: 350px;
+}
+
+.popup__inputs-row {
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.popup__input {
+  height: 50px;
+  border-radius: 10px;
+  padding: 0 15px;
+  font-size: 13px;
+}
+
+.popup__input::placeholder {
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 100%;
+  letter-spacing: -0.03em;
+  color: rgba(101, 123, 141, 0.45);
+}
+
+.popup__btn {
+  margin-top: 15px;
+  align-self: flex-start;
+}
+
+.popup__decor {
+  position: absolute;
+  right: 0;
+  top: 60%;
+  transform: translateY(-50%);
+  pointer-events: none;
+  z-index: 0;
+  width: 433px;
+  height: 338px;
+  background-image: url("data:image/svg+xml,%3Csvg width='633' height='538' viewBox='0 0 633 538' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M695.747 186.732C779.415 238.143 847.383 301.201 889.644 361.571C931.932 421.98 948.363 479.516 929.348 520.025C910.333 560.534 859.336 576.638 791.964 569.666C724.638 562.698 641.154 532.692 557.486 481.281C473.819 429.871 405.85 366.813 363.59 306.445C321.301 246.035 304.87 188.498 323.885 147.989C342.9 107.48 393.897 91.3768 461.269 98.3496C528.596 105.318 612.079 135.321 695.747 186.732Z' stroke='%23657B8D' stroke-opacity='0.12'/%3E%3Cpath d='M752.986 349.173C840.635 431.946 904.611 525.34 937.202 609.405C969.806 693.504 970.946 768.096 933.227 813.466C895.508 858.836 825.893 866.61 743.636 842.236C661.412 817.872 566.72 761.425 479.071 678.652C391.422 595.879 327.447 502.485 294.855 418.42C262.251 334.321 261.11 259.729 298.829 214.358C336.548 168.988 406.164 161.215 488.421 185.589C570.645 209.952 665.337 266.399 752.986 349.173Z' stroke='%23657B8D' stroke-opacity='0.12'/%3E%3Cpath d='M573.373 364.551C673.739 403.874 752.848 466.777 799.627 536.666C846.408 606.558 860.83 683.386 831.945 750.623C803.059 817.859 736.29 862.879 651.588 881.256C566.889 899.633 464.312 891.353 363.947 852.031C263.581 812.708 184.471 749.805 137.692 679.916C90.9109 610.024 76.49 533.195 105.376 465.958C134.261 398.722 201.029 353.703 285.731 335.326C370.43 316.949 473.007 325.229 573.373 364.551Z' stroke='%23657B8D' stroke-opacity='0.12'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
 }
 
 @media (max-width: 1470px) {
@@ -1401,4 +1464,80 @@
   .footer__legal span {
     font-size: 10px;
   }
+
+/* ─── POPUP ─── */
+.popup {
+  border-radius: 15px;
+  max-width: 737px;
+  padding: 70px 20px 93px 20px;
+  background: #edf2f2;
+}
+
+.popup-overlay {
+  padding: 15px;
+}
+
+.popup__close {
+  top: 20px;
+  right: 20px;
+  padding: 0px;
+}
+
+.popup__title {
+  font-size: 32px;
+  max-width: 450px;
+  padding-bottom: 5px;
+  margin-bottom: 25px;
+}
+
+.popup__form {
+  max-width: 100%;
+}
+
+.popup__inputs-row {
+  gap: 7px;
+  margin-bottom: 7px;
+  flex-direction: column;
+}
+
+.popup__input {
+  height: 47px;
+  border-radius: 10px;
+  padding: 0 20px;
+  font-size: 14px;
+}
+
+.popup__inputs-row .popup__input {
+  flex: none;
+}
+
+.popup__input::placeholder {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 100%;
+  letter-spacing: -0.03em;
+  color: rgba(101, 123, 141, 0.45);
+}
+
+.popup__btn {
+  margin-top: 15px;
+  align-self: flex-start;
+  width: 100%;
+  justify-content: space-between;
+  padding-right: 20px;
+}
+
+.popup__decor {
+  position: absolute;
+  right: 0;
+  top: 81%;
+  right: 0;
+  pointer-events: none;
+  z-index: 0;
+  width: 265px;
+  height: 191px;
+  background-image: url("data:image/svg+xml,%3Csvg width='265' height='191' viewBox='0 0 265 191' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M318.885 85.863C357.222 109.42 388.354 138.307 407.703 165.946C427.08 193.626 434.524 219.874 425.877 238.294C417.231 256.713 393.995 264.108 363.125 260.913C332.3 257.723 294.058 243.982 255.722 220.425C217.385 196.869 186.253 167.982 166.905 140.343C147.528 112.663 140.083 86.4158 148.729 67.996C157.376 49.5763 180.612 42.1805 211.482 45.3755C242.307 48.5657 280.548 62.3065 318.885 85.863Z' stroke='%23657B8D' stroke-opacity='0.12'/%3E%3Cpath d='M345.074 160.306C385.238 198.236 414.544 241.024 429.469 279.521C444.408 318.053 444.884 352.115 427.692 372.795C410.5 393.474 378.716 397.07 341.028 385.902C303.375 374.745 259.992 348.888 219.828 310.958C179.664 273.029 150.358 230.241 135.433 191.744C120.495 153.213 120.018 119.15 137.21 98.4709C154.402 77.7915 186.186 74.1955 223.874 85.3627C261.528 96.5199 304.91 122.376 345.074 160.306Z' stroke='%23657B8D' stroke-opacity='0.12'/%3E%3Cpath d='M262.788 167.398C308.762 185.411 344.989 214.221 366.404 246.216C387.82 278.213 394.398 313.346 381.2 344.067C368.001 374.789 337.481 395.387 298.704 403.801C259.929 412.213 212.953 408.426 166.978 390.413C121.004 372.401 84.7772 343.59 63.3622 311.596C41.9455 279.598 35.3681 244.466 48.5665 213.744C61.7649 183.022 92.2847 162.424 131.062 154.011C169.837 145.598 216.813 149.386 262.788 167.398Z' stroke='%23657B8D' stroke-opacity='0.12'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
 }

@@ -267,6 +267,83 @@ if (window.innerWidth <= 940 && document.querySelector('.faq__list:not([data-sta
 }
 
 // ========================================
+// Popup
+// ========================================
+(function () {
+  const overlay = document.createElement('div');
+  overlay.className = 'popup-overlay';
+  overlay.id = 'popupOverlay';
+  overlay.innerHTML = `
+    <div class="popup" role="dialog" aria-modal="true" aria-labelledby="popupTitle">
+      <button class="popup__close" type="button" aria-label="Schließen">
+        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <path d="M1.30213 15.5C0.968571 15.5 0.635009 15.3734 0.381578 15.1181C-0.127193 14.6094 -0.127193 13.7845 0.381578 13.2758L13.2757 0.38157C13.7848 -0.12719 14.6097 -0.12719 15.1184 0.38157C15.6272 0.890329 15.6272 1.71516 15.1184 2.22423L2.22396 15.1181C1.96703 15.3734 1.63379 15.5 1.30213 15.5Z" fill="#7B7B7B"/>
+          <path d="M14.1961 15.5C13.8628 15.5 13.5293 15.3734 13.2758 15.1181L0.381812 2.22439C-0.127271 1.71558 -0.127271 0.890664 0.381812 0.381849C0.890577 -0.127283 1.71541 -0.127283 2.22418 0.381849L15.1182 13.2771C15.6273 13.7859 15.6273 14.6108 15.1182 15.1197C14.8632 15.3734 14.5296 15.5 14.1961 15.5Z" fill="#7B7B7B"/>
+        </svg>
+      </button>
+
+      <div class="popup__content">
+        <h2 class="popup__title" id="popupTitle">Lassen Sie eine Konsultationsanfrage ab</h2>
+        <form class="popup__form">
+          <div class="popup__inputs-row">
+            <input type="text" class="popup__input" placeholder="Name">
+            <input type="tel" class="popup__input" placeholder="+1 (000)-000-00-00">
+          </div>
+          <input type="email" class="popup__input" placeholder="example@mail.com">
+          <button type="submit" class="popup__btn hero__btn hero__btn--primary">
+            Termin vereinbaren
+            <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <path d="M7.5 4.375L10.625 7.49999L7.5 10.6249" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M0.625 0.625V4.99999C0.625 5.66303 0.888388 6.29891 1.35723 6.76774C1.82607 7.23658 2.46194 7.49997 3.12498 7.49997H10.6249" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </button>
+        </form>
+      </div>
+
+      <div class="popup__decor" aria-hidden="true"></div>
+    </div>
+  `;
+
+  document.body.appendChild(overlay);
+
+  let _scrollY = 0;
+
+  function openPopup() {
+    _scrollY = window.scrollY;
+    overlay.classList.add('is-open');
+    document.documentElement.style.overflow = 'hidden';
+    document.body.style.overflow = 'hidden';
+  }
+
+  function closePopup() {
+    overlay.classList.remove('is-open');
+    document.documentElement.style.overflow = '';
+    document.body.style.overflow = '';
+    window.scrollTo(0, _scrollY);
+  }
+
+  overlay.querySelector('.popup__close').addEventListener('click', closePopup);
+
+  overlay.addEventListener('click', (e) => {
+    if (e.target === overlay) closePopup();
+  });
+
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape' && overlay.classList.contains('is-open')) closePopup();
+  });
+
+  document.querySelectorAll('[data-popup]').forEach(trigger => {
+    trigger.addEventListener('click', (e) => {
+      e.preventDefault();
+      openPopup();
+    });
+  });
+
+  window.openPopup = openPopup;
+  window.closePopup = closePopup;
+})();
+
+// ========================================
 // FAQ Accordion (section-faq-accordion)
 // ========================================
 if (window.innerWidth <= 940 && document.querySelector('.faq__list-accordion')) {

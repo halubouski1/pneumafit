@@ -1532,3 +1532,147 @@ pagination-bullets .swiper-pagination-bullet, .swiper-pagination-horizontal.swip
   letter-spacing: -0.03em;
   color: #363636;
 }
+
+/* ─── POPUP ─── */
+
+body.popup-open {
+  overflow: hidden;
+}
+
+.popup-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(28, 34, 39, 0.55);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+  padding: 20px;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.35s ease, visibility 0.35s ease;
+}
+
+.popup-overlay.is-open {
+  opacity: 1;
+  visibility: visible;
+}
+
+.popup {
+  position: relative;
+  background: #fff;
+  border-radius: 30px;
+  max-width: 1037px;
+  width: 100%;
+  padding: 122px 0 122px 60px;
+  overflow: hidden;
+  transform: translateY(24px);
+  transition: transform 0.35s ease;
+}
+
+.popup-overlay.is-open .popup {
+  transform: translateY(0);
+}
+
+.popup__close {
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0.7;
+  transition: opacity 0.2s;
+}
+
+.popup__close:hover {
+  opacity: 1;
+}
+
+.popup__content {
+  position: relative;
+  z-index: 1;
+}
+
+.popup__title {
+  font-weight: 400;
+  font-size: 60px;
+  line-height: 100%;
+  letter-spacing: -0.03em;
+  background: linear-gradient(360deg, #657b8d 0%, #1c2227 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  max-width: 785px;
+  padding-bottom: 5px;
+  margin-bottom: 35px;
+}
+
+.popup__form {
+  max-width: 508px;
+  display: flex;
+  flex-direction: column;
+}
+
+.popup__inputs-row {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+.popup__inputs-row .popup__input {
+  flex: 1;
+  min-width: 0;
+}
+
+.popup__input {
+  height: 65px;
+  border: 1px solid rgba(101, 123, 141, 0.45);
+  border-radius: 15px;
+  padding: 0 30px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 100%;
+  letter-spacing: -0.03em;
+  color: rgba(101, 123, 141, 0.45);
+  background: transparent;
+  outline: none;
+  width: 100%;
+  box-sizing: border-box;
+  transition: border-color 0.2s;
+}
+
+.popup__input::placeholder {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 100%;
+  letter-spacing: -0.03em;
+  color: rgba(101, 123, 141, 0.45);
+}
+
+.popup__input:focus {
+  border-color: rgba(101, 123, 141, 0.5);
+}
+
+.popup__btn {
+  margin-top: 25px;
+  align-self: flex-start;
+}
+
+.popup__decor {
+  position: absolute;
+  right: 0;
+  top: 60%;
+  transform: translateY(-50%);
+  pointer-events: none;
+  z-index: 0;
+  width: 633px;
+  height: 538px;
+  background-image: url("data:image/svg+xml,%3Csvg width='633' height='538' viewBox='0 0 633 538' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M695.747 186.732C779.415 238.143 847.383 301.201 889.644 361.571C931.932 421.98 948.363 479.516 929.348 520.025C910.333 560.534 859.336 576.638 791.964 569.666C724.638 562.698 641.154 532.692 557.486 481.281C473.819 429.871 405.85 366.813 363.59 306.445C321.301 246.035 304.87 188.498 323.885 147.989C342.9 107.48 393.897 91.3768 461.269 98.3496C528.596 105.318 612.079 135.321 695.747 186.732Z' stroke='%23657B8D' stroke-opacity='0.12'/%3E%3Cpath d='M752.986 349.173C840.635 431.946 904.611 525.34 937.202 609.405C969.806 693.504 970.946 768.096 933.227 813.466C895.508 858.836 825.893 866.61 743.636 842.236C661.412 817.872 566.72 761.425 479.071 678.652C391.422 595.879 327.447 502.485 294.855 418.42C262.251 334.321 261.11 259.729 298.829 214.358C336.548 168.988 406.164 161.215 488.421 185.589C570.645 209.952 665.337 266.399 752.986 349.173Z' stroke='%23657B8D' stroke-opacity='0.12'/%3E%3Cpath d='M573.373 364.551C673.739 403.874 752.848 466.777 799.627 536.666C846.408 606.558 860.83 683.386 831.945 750.623C803.059 817.859 736.29 862.879 651.588 881.256C566.889 899.633 464.312 891.353 363.947 852.031C263.581 812.708 184.471 749.805 137.692 679.916C90.9109 610.024 76.49 533.195 105.376 465.958C134.261 398.722 201.029 353.703 285.731 335.326C370.43 316.949 473.007 325.229 573.373 364.551Z' stroke='%23657B8D' stroke-opacity='0.12'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
