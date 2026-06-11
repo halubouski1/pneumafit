@@ -1219,6 +1219,10 @@
     border-radius: 68px;
   }
 
+  .reviews-btn:hover {
+    background: #657b8d;
+  }
+
   .section-reviews__nav {
     gap: 10px;
   }
