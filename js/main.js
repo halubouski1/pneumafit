@@ -310,15 +310,17 @@ if (window.innerWidth <= 940 && document.querySelector('.faq__list:not([data-sta
 
   function openPopup() {
     _scrollY = window.scrollY;
+    document.body.style.position = 'fixed';
+    document.body.style.top = `-${_scrollY}px`;
+    document.body.style.width = '100%';
     overlay.classList.add('is-open');
-    document.documentElement.style.overflow = 'hidden';
-    document.body.style.overflow = 'hidden';
   }
 
   function closePopup() {
+    document.body.style.position = '';
+    document.body.style.top = '';
+    document.body.style.width = '';
     overlay.classList.remove('is-open');
-    document.documentElement.style.overflow = '';
-    document.body.style.overflow = '';
     window.scrollTo(0, _scrollY);
   }
 
@@ -445,17 +447,19 @@ if (window.innerWidth <= 940 && document.querySelector('.faq__list-accordion')) 
 
   function openMenu() {
     _menuScrollY = window.scrollY;
+    document.body.style.position = 'fixed';
+    document.body.style.top = `-${_menuScrollY}px`;
+    document.body.style.width = '100%';
     menu.classList.add('is-open');
     overlay.classList.add('is-open');
-    document.documentElement.style.overflow = 'hidden';
-    document.body.style.overflow = 'hidden';
   }
 
   function closeMenu() {
+    document.body.style.position = '';
+    document.body.style.top = '';
+    document.body.style.width = '';
     menu.classList.remove('is-open');
     overlay.classList.remove('is-open');
-    document.documentElement.style.overflow = '';
-    document.body.style.overflow = '';
     window.scrollTo(0, _menuScrollY);
   }
 
@@ -472,3 +476,39 @@ if (window.innerWidth <= 940 && document.querySelector('.faq__list-accordion')) 
     });
   });
 })();
+
+// ========================================
+// Pricing "Fragen klären" — scroll to contact
+// ========================================
+if (document.querySelector('.pricing__learn')) {
+  const contact = document.querySelector('.section-contact, .section-tcta');
+  document.querySelectorAll('.pricing__learn').forEach(btn => {
+    btn.addEventListener('click', (e) => {
+      e.preventDefault();
+      if (!contact) return;
+      if (typeof lenis !== 'undefined') {
+        lenis.scrollTo(contact);
+      } else {
+        contact.scrollIntoView({ behavior: 'smooth' });
+      }
+    });
+  });
+}
+
+// ========================================
+// Learn More — scroll to next section
+// ========================================
+document.querySelectorAll('.osteopathy-learn, .hero .hero__btn--secondary').forEach(btn => {
+  btn.addEventListener('click', (e) => {
+    e.preventDefault();
+    const hero = btn.closest('section');
+    const target = hero && hero.nextElementSibling;
+    if (!target) return;
+    if (typeof lenis !== 'undefined') {
+      lenis.scrollTo(target, { offset: -100 });
+    } else {
+      const y = target.getBoundingClientRect().top + window.scrollY - 100;
+      window.scrollTo({ top: y, behavior: 'smooth' });
+    }
+  });
+});

@@ -94,6 +94,20 @@ body {
   background: linear-gradient(to bottom, rgba(0,0,0,0.55) 0%, transparent 100%);
 }
 
+.osteopathy-hero::before,
+.relounge-hero::before,
+.t-shape-hero::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 220px;
+  background: linear-gradient(to bottom, rgba(0,0,0,0.55) 0%, transparent 100%);
+  z-index: 1;
+  pointer-events: none;
+}
+
 .hero::after {
   bottom: 0;
   height: 280px;

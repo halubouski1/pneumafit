@@ -388,6 +388,10 @@
     height: 200px;
   }
 
+  .osteopathy-learn__text {
+    font-size: 12px;
+  }
+
   /* .section-faq */
   .section-faq {
     padding: 75px 0;
