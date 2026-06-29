@@ -136,7 +136,7 @@ body {
 .header__nav {
   display: flex;
   align-items: center;
-  /* gap: 40px; */
+  gap: 5px;
 }
 
 .header__nav-link {

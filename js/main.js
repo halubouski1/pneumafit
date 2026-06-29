@@ -58,42 +58,6 @@ if (scrollTopBtn) {
   });
 }
 
-const burgerBtn = document.querySelector('.header__burger');
-const mobileMenu = document.getElementById('mobileMenu');
-const mobileMenuClose = document.querySelector('.mobile-menu__close');
-const mobileMenuLinks = document.querySelectorAll('.mobile-menu__link, .mobile-menu__cta');
-
-function setMobileMenuOpen(isOpen) {
-  if (!burgerBtn || !mobileMenu) return;
-
-  burgerBtn.setAttribute('aria-expanded', String(isOpen));
-  mobileMenu.setAttribute('aria-hidden', String(!isOpen));
-  mobileMenu.classList.toggle('is-open', isOpen);
-  document.body.classList.toggle('menu-open', isOpen);
-}
-
-burgerBtn?.addEventListener('click', () => {
-  setMobileMenuOpen(!mobileMenu.classList.contains('is-open'));
-});
-
-mobileMenuClose?.addEventListener('click', () => setMobileMenuOpen(false));
-
-mobileMenuLinks.forEach(link => {
-  link.addEventListener('click', () => setMobileMenuOpen(false));
-});
-
-document.addEventListener('keydown', (event) => {
-  if (event.key === 'Escape') {
-    setMobileMenuOpen(false);
-  }
-});
-
-window.addEventListener('resize', () => {
-  if (window.innerWidth > 1100) {
-    setMobileMenuOpen(false);
-  }
-});
-
 if (document.querySelector('.therapies-swiper')) {
   const therapiesSwiper = new Swiper('.therapies-swiper', {
     slidesPerView: 1,

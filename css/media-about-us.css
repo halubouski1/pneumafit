@@ -601,12 +601,25 @@
   }
 
   .for-back__top {
+    position: relative;
     background-image: url('../assets/img/potential-mobile.png');
     background-size: cover;
     background-position: center;
     border-radius: 10px;
     padding: 20px;
     margin-bottom: 70px;
+  }
+
+    .for-back__top::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.65) 0%, transparent 100%);
+    border-radius: 10px;
+    height: 200px;
+    width: 100%;
+    z-index: 0;
   }
 
   .for-back__title {
@@ -621,6 +634,10 @@
     font-size: 14px;
     color: #fff;
     max-width: 100%;
+  }
+
+  .for-back__top-left {
+    z-index: 2;
   }
 
   .for-back__mobile-img {

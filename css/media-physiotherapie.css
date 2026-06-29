@@ -903,6 +903,11 @@
     cursor: pointer;
   }
 
+  .faq__row:hover {
+    background: transparent;
+    border-top-color: transparent;
+  }
+
   .faq__right {
     display: flex;
     flex-direction: column;
