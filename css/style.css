@@ -1798,3 +1798,54 @@ body.popup-open {
 .burger-menu__link:hover .burger-menu__dot {
   opacity: 1;
 }
+
+/* ========================================
+   Phone widget (floating call button)
+   ======================================== */
+.phone-widget {
+  position: fixed;
+  right: 28px;
+  bottom: 28px;
+  z-index: 900;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background: #4d6eff;
+  /* hidden by default, revealed on scroll via .is-visible */
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(28px) scale(0.6);
+  transition: opacity 0.45s ease,
+              transform 0.55s cubic-bezier(0.22, 1, 0.36, 1),
+              visibility 0.45s ease;
+}
+
+.phone-widget.is-visible {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0) scale(1);
+}
+
+.phone-widget svg {
+  display: block;
+  width: 28px;
+  height: 28px;
+}
+
+.phone-widget.is-visible:hover {
+  transform: translateY(0) scale(1.08);
+}
+
+/* soft attention ripple */
+.phone-widget::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  border-radius: 50%;
+  background: #4d6eff;
+  opacity: 0;
+}

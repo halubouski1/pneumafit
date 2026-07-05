@@ -528,6 +528,17 @@
     top: 20px;
     right: 20px;
   }
+
+  /* widget */
+  .phone-widget {
+    width: 50px;
+    height: 50px;
+  }
+
+  .phone-widget svg {
+    width: 23px;
+    height: 23px;
+  }
 }
 
 @media (max-width: 1470px) {
@@ -1593,5 +1604,17 @@
   .burger-menu__close {
     top: 20px;
     right: 20px;
+  }
+
+  /* widget */
+    .phone-widget {
+    right: 16px;
+    bottom: 16px;
+    width: 52px;
+    height: 52px;
+  }
+  .phone-widget svg {
+    width: 24px;
+    height: 24px;
   }
 }

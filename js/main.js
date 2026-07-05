@@ -476,3 +476,26 @@ document.querySelectorAll('.osteopathy-learn, .hero .hero__btn--secondary').forE
     }
   });
 });
+
+// ========================================
+// Phone widget — reveal on scroll past hero
+// ========================================
+(function () {
+  const phoneWidget = document.querySelector('.phone-widget');
+  if (!phoneWidget) return;
+
+  let ticking = false;
+
+  function update() {
+    phoneWidget.classList.toggle('is-visible', window.scrollY > window.innerHeight * 0.6);
+    ticking = false;
+  }
+
+  window.addEventListener('scroll', () => {
+    if (ticking) return;
+    ticking = true;
+    requestAnimationFrame(update);
+  }, { passive: true });
+
+  update();
+})();
