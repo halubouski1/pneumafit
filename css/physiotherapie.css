@@ -645,12 +645,8 @@
 }
 
 .review-card__service {
-  max-width: 169px;
-  word-break: break-all;
-}
-
-.swiper-slide:first-child .review-card__service {
-  max-width: 208px;
+  max-width: 100%;
+  word-break: normal;  
 }
 
 .review-card__item {

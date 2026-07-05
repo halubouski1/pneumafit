@@ -278,16 +278,8 @@
     max-width: 100px;
   }
 
-  .review-card__service {
-    max-width: 116px;
-  }
-
   .review-card__list {
     padding-left: 15px;
-  }
-
-  .swiper-slide:first-child .review-card__service {
-    max-width: 144px;
   }
 
   .section-process__cta {

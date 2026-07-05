@@ -1408,6 +1408,12 @@ pagination-bullets .swiper-pagination-bullet, .swiper-pagination-horizontal.swip
   padding: 22px;
 }
 
+.footer__wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
 .mobile-only {
   display: none;
 }
@@ -1480,7 +1486,7 @@ pagination-bullets .swiper-pagination-bullet, .swiper-pagination-horizontal.swip
 
 .footer__bottom {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: space-between;
 }
 

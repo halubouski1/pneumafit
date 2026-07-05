@@ -813,7 +813,8 @@
 
     .footer__scroll-top {
         position: absolute;
-        bottom: 115px;
+        bottom: 0;
+        left: 0;
     }
 
     .footer__nav {
@@ -1459,10 +1460,6 @@
 
   .footer__content {
     gap: 20px;
-  }
-
-  .footer__scroll-top {
-    bottom: 100px;
   }
 
   .footer__divider {
